@@ -1,0 +1,700 @@
+/* ============================================
+   IT Support Specialist (IHK) - Stylesheet
+   Syntax-Institut 2025
+
+   Farben:
+   - Primär: #060F38 (Dunkelblau)
+   - Akzent: #FFF250 (Gelb - sparsam verwenden)
+   ============================================ */
+
+/* CSS-Variablen für Syntax-Institut Design */
+:root {
+  /* Primärfarbe - Syntax-Institut Dunkelblau */
+  --md-primary-fg-color: #060F38;
+  --md-primary-fg-color--light: #1a2a5c;
+  --md-primary-fg-color--dark: #030820;
+
+  /* Akzentfarbe - Syntax-Institut Gelb (sparsam) */
+  --md-accent-fg-color: #060F38;
+  --md-accent-fg-color--transparent: rgba(6, 15, 56, 0.1);
+
+  /* Highlight-Farbe für besondere Akzente */
+  --syntax-highlight: #FFF250;
+
+  /* Allgemeine Variablen */
+  --card-border-radius: 8px;
+  --card-shadow: 0 2px 8px rgba(6, 15, 56, 0.1);
+  --card-shadow-hover: 0 4px 16px rgba(6, 15, 56, 0.15);
+  --transition-speed: 0.2s;
+}
+
+/* ============================================
+   Header und Navigation
+   ============================================ */
+
+/* Header mit Syntax-Institut Farbe */
+.md-header {
+  background-color: #060F38;
+}
+
+/* Logo im Header */
+.md-header__button.md-logo {
+  padding: 0.2rem;
+}
+
+.md-header__button.md-logo img {
+  height: 1.8rem;
+  width: auto;
+}
+
+/* Tabs im Header */
+.md-tabs {
+  background-color: #060F38;
+}
+
+.md-tabs__link {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+  transition: color var(--transition-speed) ease;
+}
+
+.md-tabs__link:hover,
+.md-tabs__link--active {
+  color: #ffffff;
+}
+
+/* Suchfeld im Header */
+.md-search__input {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.md-search__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ============================================
+   Layout - Volle Breite nutzen
+   ============================================ */
+
+/* Artikel-Bereich auf volle Breite */
+.md-main__inner {
+  max-width: none;
+}
+
+.md-content__inner {
+  max-width: none;
+  padding: 0 1.2rem;
+}
+
+/* Sidebars optimal dimensionieren */
+@media screen and (min-width: 60em) {
+  .md-sidebar--primary {
+    width: 11rem;
+  }
+}
+
+@media screen and (min-width: 76.25em) {
+  .md-sidebar--secondary {
+    width: 12rem;
+  }
+
+  .md-sidebar--primary {
+    width: 12rem;
+  }
+}
+
+/* TOC besser lesbar */
+.md-nav--secondary .md-nav__link {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  padding: 0.4rem 0;
+}
+
+.md-nav--secondary .md-nav__item {
+  padding: 0;
+}
+
+/* Aktiver Navigationspunkt */
+.md-nav__item--active > .md-nav__link {
+  font-weight: 600;
+  color: #060F38;
+}
+
+.md-nav__link:hover {
+  color: #060F38;
+}
+
+/* Linke Navigation */
+.md-nav--primary .md-nav__link {
+  font-weight: 500;
+}
+
+.md-nav--primary .md-nav__item--active > .md-nav__link {
+  color: #060F38;
+  font-weight: 600;
+  border-left: 3px solid #060F38;
+  padding-left: calc(0.6rem - 3px);
+}
+
+/* ============================================
+   Typografie
+   ============================================ */
+
+/* Überschriften */
+.md-typeset h1 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #060F38;
+}
+
+.md-typeset h2 {
+  font-weight: 600;
+  margin-top: 2.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #060F38;
+  color: #060F38;
+}
+
+.md-typeset h3 {
+  font-weight: 600;
+  margin-top: 1.5rem;
+  color: #060F38;
+}
+
+.md-typeset h4 {
+  font-weight: 600;
+  color: #1a2a5c;
+}
+
+/* Bessere Lesbarkeit für Fließtext */
+.md-typeset p {
+  line-height: 1.7;
+}
+
+.md-typeset li {
+  line-height: 1.6;
+}
+
+/* Links */
+.md-typeset a {
+  color: #060F38;
+  text-decoration: underline;
+  text-decoration-color: rgba(6, 15, 56, 0.3);
+  transition: text-decoration-color var(--transition-speed) ease;
+}
+
+.md-typeset a:hover {
+  text-decoration-color: #060F38;
+}
+
+/* ============================================
+   Tabellen
+   ============================================ */
+
+/* Alle Tabellen-Container auf volle Breite */
+.md-typeset__scrollwrap {
+  margin: 0 !important;
+  overflow-x: auto !important;
+}
+
+.md-typeset__table {
+  width: 100% !important;
+  display: block !important;
+  max-width: 100% !important;
+}
+
+/* Tabellen selbst */
+.md-typeset table {
+  width: 100% !important;
+  min-width: 100% !important;
+  display: table !important;
+  table-layout: auto !important;
+  border-radius: var(--card-border-radius);
+  overflow: hidden;
+  box-shadow: var(--card-shadow);
+  margin: 1.5rem 0;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.md-typeset table:not([class]) th {
+  background-color: #060F38;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 0.6rem;
+  text-align: left;
+  border: none;
+  font-size: 0.85rem;
+  word-wrap: break-word;
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.6rem 0.6rem;
+  border-bottom: 1px solid rgba(6, 15, 56, 0.1);
+  vertical-align: top;
+  font-size: 0.85rem;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.md-typeset table:not([class]) tr:last-child td {
+  border-bottom: none;
+}
+
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: rgba(6, 15, 56, 0.02);
+}
+
+.md-typeset table:not([class]) tr:hover {
+  background-color: rgba(6, 15, 56, 0.04);
+}
+
+/* Tabellen mit Code-Inhalten besser formatieren */
+.md-typeset table:not([class]) code {
+  background-color: rgba(6, 15, 56, 0.05);
+  padding: 0.15rem 0.3rem;
+  border-radius: 4px;
+  font-size: 0.8em;
+  word-break: break-word;
+}
+
+/* Spalten automatisch anpassen - keine festen Breiten */
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  white-space: normal;
+}
+
+/* ============================================
+   Hinweisboxen (Admonitions)
+   ============================================ */
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-shadow);
+  margin: 1.5rem 0;
+  border: none;
+  border-left: 4px solid;
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  font-weight: 600;
+}
+
+/* Info-Boxen */
+.md-typeset .admonition.info,
+.md-typeset .admonition.note {
+  border-left-color: #060F38;
+}
+
+.md-typeset .admonition.info > .admonition-title,
+.md-typeset .admonition.note > .admonition-title {
+  background-color: rgba(6, 15, 56, 0.1);
+}
+
+/* Tipp-Boxen */
+.md-typeset .admonition.tip,
+.md-typeset .admonition.hint {
+  border-left-color: #060F38;
+}
+
+/* Warnung-Boxen */
+.md-typeset .admonition.warning {
+  border-left-color: #e6a700;
+}
+
+/* Gefahr-Boxen */
+.md-typeset .admonition.danger,
+.md-typeset .admonition.error {
+  border-left-color: #d32f2f;
+}
+
+/* Erfolg-Boxen */
+.md-typeset .admonition.success {
+  border-left-color: #2e7d32;
+}
+
+/* Abstract-Boxen (Zusammenfassung) */
+.md-typeset .admonition.abstract {
+  border-left-color: #060F38;
+  background-color: rgba(6, 15, 56, 0.03);
+}
+
+.md-typeset .admonition.abstract > .admonition-title {
+  background-color: rgba(6, 15, 56, 0.1);
+}
+
+/* ============================================
+   Aufklappbare Fragen (Details/Summary)
+   ============================================ */
+
+.md-typeset details {
+  border-left: 4px solid #060F38;
+}
+
+.md-typeset details > summary {
+  background-color: rgba(6, 15, 56, 0.03);
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--transition-speed) ease;
+}
+
+.md-typeset details > summary:hover {
+  background-color: rgba(6, 15, 56, 0.08);
+}
+
+.md-typeset details[open] > summary {
+  background-color: rgba(6, 15, 56, 0.1);
+  border-bottom: 1px solid rgba(6, 15, 56, 0.1);
+}
+
+.md-typeset details > summary::after {
+  color: #060F38;
+}
+
+/* Inhalt der aufgeklappten Frage */
+.md-typeset details > *:not(summary) {
+  padding: 0.5rem 1rem;
+}
+
+/* ============================================
+   Codeblöcke und ASCII-Diagramme
+   ============================================ */
+
+.md-typeset pre {
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-shadow);
+  border: 1px solid rgba(6, 15, 56, 0.1);
+}
+
+/* ASCII-Diagramme größer und besser lesbar */
+.md-typeset pre > code {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+/* Inline-Code */
+.md-typeset code {
+  background-color: rgba(6, 15, 56, 0.05);
+  color: #060F38;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+}
+
+/* ============================================
+   Checklisten
+   ============================================ */
+
+.md-typeset .task-list-item {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+.md-typeset .task-list-item input[type="checkbox"] {
+  margin-right: 0.5rem;
+  transform: scale(1.2);
+  accent-color: #060F38;
+}
+
+/* ============================================
+   Tabs
+   ============================================ */
+
+.md-typeset .tabbed-labels {
+  border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
+  overflow: hidden;
+}
+
+.md-typeset .tabbed-labels > label {
+  font-weight: 500;
+  color: #060F38;
+  border-bottom: 2px solid transparent;
+}
+
+.md-typeset .tabbed-labels > label:hover {
+  color: #060F38;
+}
+
+.md-typeset .tabbed-set > input:checked + label {
+  border-bottom-color: #060F38;
+  color: #060F38;
+}
+
+.md-typeset .tabbed-content {
+  border-radius: 0 0 var(--card-border-radius) var(--card-border-radius);
+  box-shadow: var(--card-shadow);
+  padding: 1rem;
+  border: 1px solid rgba(6, 15, 56, 0.1);
+  border-top: none;
+}
+
+/* ============================================
+   Blockzitate
+   ============================================ */
+
+.md-typeset blockquote {
+  border-left: 4px solid #060F38;
+  background-color: rgba(6, 15, 56, 0.03);
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+  border-radius: 0 var(--card-border-radius) var(--card-border-radius) 0;
+}
+
+.md-typeset blockquote p {
+  margin: 0;
+}
+
+/* Speaker Notes in Beispielen */
+.md-typeset .admonition.quote {
+  border-left-color: #060F38;
+  background-color: rgba(6, 15, 56, 0.02);
+}
+
+/* ============================================
+   Buttons und interaktive Elemente
+   ============================================ */
+
+/* Back to top Button */
+.md-top {
+  background-color: #060F38;
+  color: white;
+}
+
+.md-top:hover {
+  background-color: #1a2a5c;
+}
+
+/* ============================================
+   Footer
+   ============================================ */
+
+.md-footer {
+  background-color: #060F38;
+  margin-top: 2rem;
+}
+
+.md-footer-meta {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.md-copyright {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.md-social__link {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.md-social__link:hover {
+  color: white;
+}
+
+/* Navigation im Footer */
+.md-footer__link {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.md-footer__link:hover {
+  color: white;
+}
+
+.md-footer__title {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* ============================================
+   Mermaid Diagramme
+   ============================================ */
+
+.mermaid {
+  background: white;
+  padding: 1rem;
+  border-radius: var(--card-border-radius);
+  box-shadow: var(--card-shadow);
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+/* Horizontale Flowcharts gut darstellen */
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============================================
+   Material Icons - Checkmarks/X
+   ============================================ */
+
+/* Grüne Häkchen */
+.md-typeset .twemoji svg[class*="check"],
+.md-typeset :is(.emojione,.twemoji,.gemoji) svg path[fill="#77b255"] {
+  fill: #2e7d32;
+}
+
+/* Rote X */
+.md-typeset .twemoji svg[class*="close"],
+.md-typeset :is(.emojione,.twemoji,.gemoji) svg path[fill="#dd2e44"] {
+  fill: #d32f2f;
+}
+
+/* ============================================
+   Responsive Anpassungen
+   ============================================ */
+
+@media screen and (max-width: 1219px) {
+  .md-sidebar--secondary {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .md-typeset table:not([class]) {
+    font-size: 0.85rem;
+  }
+
+  .md-typeset table:not([class]) th,
+  .md-typeset table:not([class]) td {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .md-typeset pre > code {
+    font-size: 0.7rem;
+  }
+
+  .md-typeset h2 {
+    margin-top: 2rem;
+  }
+}
+
+/* ============================================
+   Dunkelmodus Anpassungen
+   ============================================ */
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #060F38;
+  --md-primary-fg-color--light: #1a2a5c;
+  --card-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --card-shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+[data-md-color-scheme="slate"] .md-header {
+  background-color: #060F38;
+}
+
+[data-md-color-scheme="slate"] .md-tabs {
+  background-color: #060F38;
+}
+
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3 {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) th {
+  background-color: #1a2a5c;
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-md-color-scheme="slate"] .md-typeset blockquote {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+[data-md-color-scheme="slate"] .md-typeset code {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+[data-md-color-scheme="slate"] .md-typeset a {
+  color: #8fa3d9;
+}
+
+[data-md-color-scheme="slate"] .md-nav__item--active > .md-nav__link {
+  color: #8fa3d9;
+  border-left-color: #8fa3d9;
+}
+
+[data-md-color-scheme="slate"] .md-footer {
+  background-color: #030820;
+}
+
+/* ============================================
+   Druckansicht
+   ============================================ */
+
+@media print {
+  .md-sidebar,
+  .md-header,
+  .md-footer {
+    display: none;
+  }
+
+  .md-content {
+    margin: 0;
+    padding: 0;
+  }
+
+  .md-typeset .admonition,
+  .md-typeset details {
+    break-inside: avoid;
+  }
+
+  .md-typeset table {
+    break-inside: avoid;
+  }
+
+  .md-typeset h2 {
+    border-bottom-color: #060F38;
+  }
+}
+
+/* ============================================
+   Spezielle Komponenten
+   ============================================ */
+
+/* Zeitplan-Boxen (ASCII-Art) besser stylen */
+.md-typeset pre:has(code:not([class])) {
+  background-color: #fafafa;
+  border: 1px solid rgba(6, 15, 56, 0.1);
+}
+
+[data-md-color-scheme="slate"] .md-typeset pre:has(code:not([class])) {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Hervorhebung für wichtige Punkte */
+.md-typeset mark,
+.md-typeset .highlight {
+  background-color: rgba(255, 242, 80, 0.3);
+  padding: 0.1rem 0.2rem;
+  border-radius: 2px;
+}
+
+/* Progress Indicator für Schritte */
+.md-typeset strong:first-child {
+  color: #060F38;
+}
+
+/* ============================================
+   Horizontale Trennlinien
+   ============================================ */
+
+.md-typeset hr {
+  border: none;
+  border-top: 1px solid rgba(6, 15, 56, 0.1);
+  margin: 2rem 0;
+}

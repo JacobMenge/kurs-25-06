@@ -1,0 +1,253 @@
+site_name: Kurs 25-06
+site_description: Kursunterlagen und Übungen – Kurs 25-06
+site_author: Syntax-Institut
+site_url: ""
+
+theme:
+  name: material
+  language: de
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Dunkelmodus aktivieren
+    - scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Hellmodus aktivieren
+  font:
+    text: Inter
+    code: JetBrains Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.tabs.link
+    - content.code.copy
+    - content.code.annotate
+  logo: stylesheets/img/syntax-logo2.svg
+  favicon: stylesheets/img/syntax-logo2.svg
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com
+      name: GitHub Repository
+  generator: false
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+plugins:
+  - search:
+      lang: de
+  - tags
+
+nav:
+  - Dashboard: index.md
+  - Modul 1 – IT Fundamentals:
+    - Übersicht: modul-1/index.md
+    - Woche 1:
+      - Einführung in die IT: modul-1/woche-1/selbstlernaufgaben-1.1.md
+      - Google Workspace vs. Microsoft 365: modul-1/woche-1/selbstlernaufgaben-1.2.md
+      - KI als Arbeitsassistent & Prompting: modul-1/woche-1/selbstlernaufgaben-1.3.md
+      - Digitale Projektorganisation & Kanban: modul-1/woche-1/selbstlernaufgaben-1.4.md
+      - Teamarbeit & Präsentation: modul-1/woche-1/selbstlernaufgaben-1.5.md
+    - Woche 2:
+      - LLMs verstehen: modul-1/woche-2/selbstlernaufgaben-2.1.md
+      - Aufgabe 2.2: modul-1/woche-2/selbstlernaufgaben-2.2.md
+      - Aufgabe 2.3: modul-1/woche-2/selbstlernaufgaben-2.3.md
+      - Aufgabe 2.4: modul-1/woche-2/selbstlernaufgaben-2.4.md
+      - Aufgabe 2.5: modul-1/woche-2/selbstlernaufgaben-2.5.md
+    - Woche 3:
+      - Algorithmisches Denken: modul-1/woche-3/selbstlernaufgaben-3.1.md
+      - Variablen & Datentypen: modul-1/woche-3/selbstlernaufgaben-3.2.md
+      - Aufgabe 3.3: modul-1/woche-3/selbstlernaufgaben-3.3.md
+      - Aufgabe 3.4: modul-1/woche-3/selbstlernaufgaben-3.4.md
+    - Woche 4:
+      - Bedingungen ohne Code: modul-1/woche-4/selbstlernaufgaben-4.1.md
+      - Aufgabe 4.2: modul-1/woche-4/selbstlernaufgaben-4.2.md
+      - Aufgabe 4.3: modul-1/woche-4/selbstlernaufgaben-4.3.md
+      - Aufgabe 4.4: modul-1/woche-4/selbstlernaufgaben-4.4.md
+      - Gruppenaufgabe 4.5: modul-1/woche-4/gruppenaufgaben-4.5.md
+    - Woche 5:
+      - Einführung in PowerShell: modul-1/woche-5/selbstlernaufgaben-5.1.md
+      - Aufgabe 5.2: modul-1/woche-5/selbstlernaufgaben-5.2.md
+      - Aufgabe 5.3: modul-1/woche-5/selbstlernaufgaben-5.3.md
+      - Aufgabe 5.4: modul-1/woche-5/selbstlernaufgaben-5.4.md
+      - Aufgabe 5.5: modul-1/woche-5/selbstlernaufgaben-5.5.md
+    - Woche 6:
+      - Aufgabe 6.1: modul-1/woche-6/selbstlernaufgaben-6.1.md
+      - Aufgabe 6.2: modul-1/woche-6/selbstlernaufgaben-6.2.md
+      - Aufgabe 6.3: modul-1/woche-6/selbstlernaufgaben-6.3.md
+      - Aufgabe 6.4: modul-1/woche-6/selbstlernaufgaben-6.4.md
+      - Aufgabe 6.5: modul-1/woche-6/selbstlernaufgaben-6.5.md
+      - Musterlösung 6.5: modul-1/woche-6/musterloesung-6.5.md
+    - Woche 7:
+      - Aufgabe 7.1: modul-1/woche-7/selbstlernaufgaben-7.1.md
+      - Aufgabe 7.2: modul-1/woche-7/selbstlernaufgaben-7.2.md
+      - Aufgabe 7.3: modul-1/woche-7/selbstlernaufgaben-7.3.md
+      - Aufgabe 7.4: modul-1/woche-7/selbstlernaufgaben-7.4.md
+      - Aufgabe 7.5: modul-1/woche-7/selbstlernaufgaben-7.5.md
+      - Bash Grundbefehle: modul-1/woche-7/bash-grundbefehle.md
+    - Woche 8:
+      - Aufgabe 8.1: modul-1/woche-8/selbstlernaufgaben-8.1.md
+      - Aufgabe 8.2: modul-1/woche-8/selbstlernaufgaben-8.2.md
+      - Aufgabe 8.3: modul-1/woche-8/selbstlernaufgaben-8.3.md
+      - Anleitung 8.4: modul-1/woche-8/anleitung-8.4.md
+      - Aufgabe 8.5: modul-1/woche-8/selbstlernaufgaben-8.5.md
+    - Woche 9:
+      - Aufgabe 9.1: modul-1/woche-9/selbstlernaufgaben-9.1.md
+      - Aufgabe 9.2: modul-1/woche-9/selbstlernaufgaben-9.2.md
+      - Aufgabe 9.3: modul-1/woche-9/selbstlernaufgaben-9.3.md
+      - Aufgabe 9.4: modul-1/woche-9/selbstlernaufgaben-9.4.md
+    - Woche 10:
+      - Aufgabe 10.1: modul-1/woche-10/selbstlernaufgaben-10.1.md
+      - Gruppenaufgabe 10.2: modul-1/woche-10/gruppenaufgaben-10.2.md
+      - Aufgabe 10.3: modul-1/woche-10/selbstlernaufgaben-10.3.md
+      - Aufgabe 10.4: modul-1/woche-10/selbstlernaufgaben-10.4.md
+    - Material:
+      - Shortcuts Tabelle: modul-1/material/shortcuts_tabelle.md
+  - Modul 2 – Programmierung & Cloud:
+    - Übersicht: modul-2/index.md
+    - Woche 1 – Linux & Cloud Intro:
+      - Multipass VM-Einrichtung: modul-2/woche-1/uebung-13.1.md
+      - Linux Texte & Streams: modul-2/woche-1/selbstlernaufgaben-12.3.md
+      - Linux Dateisystem & Navigation: modul-2/woche-1/selbstlernaufgaben-13.2.md
+      - Linux Benutzer & Rechte: modul-2/woche-1/selbstlernaufgaben-13.4.md
+      - Aufgabe 13.5: modul-2/woche-1/selbstlernaufgaben-13.5.md
+    - Woche 2 – Linux Advanced:
+      - Gruppenaufgabe Linux-Distribution: modul-2/woche-2/gruppenaufgabe-13.1.md
+      - Archivierung & Paketverwaltung: modul-2/woche-2/selbstlernuebung-13.2.md
+      - Berechtigungen & Prozesse: modul-2/woche-2/selbstlernuebung-13.3-4.md
+    - Woche 3 – LPI Zertifizierung:
+      - LPI Prüfungsleitfaden: modul-2/woche-3/LPI-010-160-v1.6-leitfaden.md
+    - Woche 4 – AWS Services:
+      - AWS CLI einrichten: modul-2/woche-4/aws-cli-einrichten.md
+      - EC2 Instance erstellen: modul-2/woche-4/ec2-erstellen.md
+      - S3 Bucket erstellen: modul-2/woche-4/s3-bucket-erstellen.md
+      - S3 Übungen: modul-2/woche-4/uebung-s3-15.3.md
+      - AWS Praxisprojekt: modul-2/woche-4/selbstlernaufgabe-15.5.md
+    - Woche 5 – Python Basics:
+      - Python IDE einrichten: modul-2/woche-5/python-ide-einrichten.md
+      - Python Syntax & Operatoren: modul-2/woche-5/uebung-python-syntax-operatoren-16.2.md
+    - Woche 6 – Python Datenstrukturen:
+      - Schleifen in Python: modul-2/woche-6/uebung-python-schleifen-17.1.md
+      - Listen, Tuples, Sets, Dicts: modul-2/woche-6/uebung-python-datenstrukturen-17.2.md
+      - List Comprehensions: modul-2/woche-6/uebung-python-datenstrukturen-list-comprehensions-17.3.md
+      - Funktionen in Python: modul-2/woche-6/uebung-python-funktionen-17.4.md
+      - Assignment Python-Grundlagen: modul-2/woche-6/assignment-17.5.md
+    - Woche 7 – Python OOP & Git:
+      - Git Basics mit Python: modul-2/woche-7/uebung-git-basics-mit-python-18.1.md
+      - OOP Grundlagen: modul-2/woche-7/uebung-python-oop-18.3.md
+      - OOP Vertiefung: modul-2/woche-7/uebung-python-oop-18.4.md
+      - Assignment OOP: modul-2/woche-7/assignment-18.5.md
+    - Woche 8 – FastAPI & REST:
+      - HTTP und REST: modul-2/woche-8/uebung-http-rest-19.1.md
+      - HTTP REST Vertiefung: modul-2/woche-8/uebung-http-rest-19.2.md
+      - FastAPI Basics I: modul-2/woche-8/uebung-fastapi-basics-19.3.md
+      - FastAPI Basics II: modul-2/woche-8/uebung-fastapi-basics-19.4.md
+      - Assignment REST-APIs: modul-2/woche-8/assignment-19.5.md
+    - Woche 9 – SQL & Datenbanken:
+      - SQL Grundlagen: modul-2/woche-9/uebung-sql-basic-20.2.md
+      - SQLite mit Python: modul-2/woche-9/uebung-sqlite3-python-20.3.md
+      - JSON mit Python: modul-2/woche-9/uebung-nosql-json-python-20.4.md
+      - Projekt Rezeptsammlung: modul-2/woche-9/uebung-sqlite-json-python-20.5.md
+    - Woche 10 – Mini-API Projekt:
+      - Wochenübersicht: modul-2/woche-10/uebersicht.md
+      - "Tag 1: FastAPI Basics": modul-2/woche-10/tag-1-setup-und-FastAPI-21.1.md
+      - "Tag 2: SQLite & CRUD": modul-2/woche-10/tag-2-FastAPI-und-sqlite-21.2.md
+      - "Tag 3: Struktur & Validierung": modul-2/woche-10/tag-3-struktur-validierung-errorhandling-21.3.md
+      - "Tag 4: AWS Deployment": modul-2/woche-10/tag-4-deployment-aws-EC2-logging-21.4.md
+  - Modul 3 – Frontend & Fullstack:
+    - Übersicht: modul-3/index.md
+    - Woche 1 – HTML & CSS:
+      - Webarchitektur & HTTP: modul-3/woche-1/uebung-tag1-webarchitektur-http.md
+      - HTML Struktur & Formulare: modul-3/woche-1/uebung-tag2-html-struktur-formulare.md
+      - CSS Grundlagen: modul-3/woche-1/uebung-tag3-css-grundlagen.md
+      - CSS Layout & Responsive: modul-3/woche-1/uebung-tag4-css-layout-responsive.md
+      - Assignment Portfolio-Projekt: modul-3/woche-1/assignment-tag5-portfolio-projekt.md
+      - Schnellreferenz HTML & CSS: modul-3/woche-1/schnellreferenz-html-css.md
+    - Woche 2 – JavaScript:
+      - Node.js & npm Installation: modul-3/woche-2/anleitung-nodejs-npm-installation.md
+      - JavaScript Fundamentals: modul-3/woche-2/uebung-tag6-javascript-fundamentals.md
+      - Arrays, Objects & Patterns: modul-3/woche-2/uebung-tag7-arrays-objects-patterns.md
+      - DOM, Events & Interaktivität: modul-3/woche-2/uebung-tag8-dom-events-interaktivitaet.md
+      - Fetch, Async/Await & APIs: modul-3/woche-2/uebung-tag9-fetch-async-await-apis.md
+      - Assignment JavaScript Mini-App: modul-3/woche-2/assignment-tag10-javascript-mini-app.md
+    - Woche 3 – React Basics:
+      - React Setup & JSX: modul-3/woche-3/uebung-24.1-react-setup-jsx.md
+      - Komponenten & Props: modul-3/woche-3/uebung-24.2-komponenten-props.md
+      - useState & Controlled Inputs: modul-3/woche-3/uebung-24.3-useState-controlled-inputs.md
+      - Rendering, Listen & Keys: modul-3/woche-3/uebung-24.4-rendering-listen-keys.md
+      - Assignment React Mini-App: modul-3/woche-3/assignment-woche3-react-mini-app.md
+    - Woche 4 – React Advanced:
+      - CSS in React & Frameworks: modul-3/woche-4/uebung-25.1-css-in-react-frameworks.md
+      - Hooks in React: modul-3/woche-4/uebung-25.2-hooks-in-react.md
+      - useEffect & API Calls: modul-3/woche-4/uebung-25.3-useeffect-api-calls.md
+      - React Router: modul-3/woche-4/uebung-25.4-react-router.md
+      - Assignment React mit Routing: modul-3/woche-4/assignment-25.5-react-app-mit-routing.md
+    - Woche 5 – React Projekte:
+      - Context API: modul-3/woche-5/uebung-26.1-context-api.md
+      - React Recap Projekt v1: modul-3/woche-5/uebung-26.3-recap-projekt-v1.md
+      - AWS Deployment: modul-3/woche-5/uebung-26.4-aws-deployment.md
+    - Woche 6 – Fullstack Projekt:
+      - Fullstack React + FastAPI: modul-3/woche-6/wochenprojekt-fullstack-react-fastapi.md
+  - Modul 4:
+    - Übersicht: modul-4/index.md
+
+copyright: "&copy; 2025 Syntax-Institut – Kurs 25-06"

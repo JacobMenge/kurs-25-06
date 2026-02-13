@@ -1,0 +1,20 @@
+---
+title: "Modul 3 – Frontend & Fullstack"
+---
+
+# Modul 3 – Frontend & Fullstack
+
+In diesem Modul lernst du Webentwicklung von Grund auf: HTML/CSS, JavaScript, React und schließlich die Verbindung von Frontend und Backend zu einer Fullstack-Anwendung.
+
+---
+
+## Wochenübersicht
+
+| Woche | Themen |
+|-------|--------|
+| [Woche 1](woche-1/uebung-tag1-webarchitektur-http.md) | HTML & CSS – Webarchitektur, Struktur, Styling, Responsive Design |
+| [Woche 2](woche-2/uebung-tag6-javascript-fundamentals.md) | JavaScript – Fundamentals, DOM, Events, Fetch & APIs |
+| [Woche 3](woche-3/uebung-24.1-react-setup-jsx.md) | React Basics – Setup, JSX, Komponenten, Props, State |
+| [Woche 4](woche-4/uebung-25.1-css-in-react-frameworks.md) | React Advanced – CSS Frameworks, Hooks, useEffect, Router |
+| [Woche 5](woche-5/uebung-26.1-context-api.md) | React Projekte – Context API, Recap-Projekt, AWS Deployment |
+| [Woche 6](woche-6/wochenprojekt-fullstack-react-fastapi.md) | Fullstack-Projekt – React + FastAPI |
