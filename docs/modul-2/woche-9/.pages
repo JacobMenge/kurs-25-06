@@ -1,0 +1,6 @@
+nav:
+  - "SQL Grundlagen": uebung-sql-basic-20.2.md
+  - "SQLite mit Python": uebung-sqlite3-python-20.3.md
+  - "JSON mit Python": uebung-nosql-json-python-20.4.md
+  - "Projekt Rezeptsammlung": uebung-sqlite-json-python-20.5.md
+  - ...

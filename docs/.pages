@@ -1,0 +1,7 @@
+nav:
+  - Dashboard: index.md
+  - "Modul 1 \u2013 IT Fundamentals": modul-1
+  - "Modul 2 \u2013 Programmierung & Cloud": modul-2
+  - "Modul 3 \u2013 Frontend & Fullstack": modul-3
+  - Modul 4: modul-4
+  - ...

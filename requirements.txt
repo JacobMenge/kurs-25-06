@@ -5,6 +5,9 @@ mkdocs-material>=9.5.0
 # Required for Material theme features
 mkdocs-material-extensions>=1.3
 
+# Auto-discovery of new pages (no manual nav editing needed)
+mkdocs-awesome-pages-plugin>=2.9.0
+
 # For Mermaid diagrams (flowcharts, etc.)
 # Note: Mermaid is handled via JavaScript in Material theme
 

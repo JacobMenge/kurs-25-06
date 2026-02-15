@@ -1,0 +1,7 @@
+nav:
+  - "Wochen\u00fcbersicht": uebersicht.md
+  - "Tag 1: FastAPI Basics": tag-1-setup-und-FastAPI-21.1.md
+  - "Tag 2: SQLite & CRUD": tag-2-FastAPI-und-sqlite-21.2.md
+  - "Tag 3: Struktur & Validierung": tag-3-struktur-validierung-errorhandling-21.3.md
+  - "Tag 4: AWS Deployment": tag-4-deployment-aws-EC2-logging-21.4.md
+  - ...

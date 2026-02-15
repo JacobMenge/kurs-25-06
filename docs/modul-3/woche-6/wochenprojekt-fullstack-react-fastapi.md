@@ -87,27 +87,17 @@ Bisher hat unser React-Frontend die Daten im **localStorage** des Browsers gespe
 
 ### Die neue Architektur
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                     Fullstack-Architektur                   │
-├─────────────────────────────────────────────────────────────┤
-│                                                             │
-│   ┌───────────────┐     HTTP/JSON     ┌───────────────┐     │
-│   │   React       │ ◄──────────────►  │   FastAPI     │     │
-│   │   Frontend    │   GET /items      │   Backend     │     │
-│   │   (Port 5173) │   POST /items     │   (Port 8000) │     │
-│   │               │   DELETE /items/1 │               │     │
-│   │   Vite Dev    │                   │   Uvicorn     │     │
-│   │   Server      │                   │   Server      │     │
-│   └───────────────┘                   └───────┬───────┘     │
-│                                               │             │
-│                                   ┌───────────▼───────┐     │
-│                                   │   Daten-Speicher  │     │
-│                                   │   (Liste im RAM   │     │
-│                                   │    oder SQLite)   │     │
-│                                   └───────────────────┘     │
-│                                                             │
-└─────────────────────────────────────────────────────────────┘
+```mermaid
+graph LR
+    subgraph Fullstack-Architektur
+        A["🖥️ React Frontend<br/><i>Vite Dev Server</i><br/>Port 5173"] -- "GET /items<br/>POST /items<br/>DELETE /items/1<br/>PATCH /items/1" --> B["⚙️ FastAPI Backend<br/><i>Uvicorn Server</i><br/>Port 8000"]
+        B -- "JSON Response" --> A
+        B --> C[("💾 Daten-Speicher<br/><i>Liste im RAM<br/>oder SQLite</i>")]
+    end
+
+    style A fill:#61dafb,stroke:#333,color:#000
+    style B fill:#009688,stroke:#333,color:#fff
+    style C fill:#ff9800,stroke:#333,color:#000
 ```
 
 ### Was ist FastAPI?
@@ -148,14 +138,16 @@ Das Frontend schickt HTTP-Requests (mit `fetch`) und bekommt JSON-Antworten zur�
 
 Wenn das Frontend auf `localhost:5173` läuft und das Backend auf `localhost:8000`, blockt der Browser die Requests aus Sicherheitsgründen. Das nennt sich **Cross-Origin Resource Sharing (CORS)**.
 
-```
-Browser-Sicherheit:
-  localhost:5173 (Frontend) ──► localhost:8000 (Backend)
-                                      │
-                              ❌ Blockiert! Andere "Origin"!
+```mermaid
+graph LR
+    A["🌐 Browser<br/><i>localhost:5173</i>"] -- "HTTP Request" --> B{"🛡️ CORS-Prüfung"}
+    B -- "❌ Ohne CORS-Config<br/>Blockiert!" --> C["⛔ Fehler<br/><i>Andere Origin!</i>"]
+    B -- "✅ Mit CORS-Middleware<br/>Erlaubt!" --> D["⚙️ FastAPI Backend<br/><i>localhost:8000</i>"]
 
-Lösung: Backend erlaubt explizit Anfragen von localhost:5173
-  → FastAPI hat dafür ein eingebautes CORS-Middleware
+    style A fill:#61dafb,stroke:#333,color:#000
+    style B fill:#ff9800,stroke:#333,color:#000
+    style C fill:#f44336,stroke:#333,color:#fff
+    style D fill:#4caf50,stroke:#333,color:#fff
 ```
 
 FastAPI bietet dafür eine fertige Lösung, die wir einfach einbinden.
@@ -626,21 +618,24 @@ INFO:     Application startup complete.
 
 Die Swagger-Docs sind extrem nützlich! Dort kannst du alle Endpunkte direkt im Browser ausprobieren, ohne ein Frontend zu brauchen:
 
+```mermaid
+graph TD
+    subgraph Swagger["📄 Swagger UI — localhost:8000/docs"]
+        direction TB
+        E1["🟢 GET &nbsp;&nbsp;&nbsp; /items &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ▶ Try it out"]
+        E2["🟡 POST &nbsp;&nbsp; /items &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ▶ Try it out"]
+        E3["🔴 DELETE /items/{id} &nbsp; ▶ Try it out"]
+        E4["🟠 PATCH &nbsp; /items/{id} &nbsp; ▶ Try it out"]
+    end
+
+    style Swagger fill:#1a1a2e,stroke:#e0e0e0,color:#fff
+    style E1 fill:#2e7d32,stroke:#333,color:#fff
+    style E2 fill:#f9a825,stroke:#333,color:#000
+    style E3 fill:#c62828,stroke:#333,color:#fff
+    style E4 fill:#e65100,stroke:#333,color:#fff
 ```
-┌──────────────────────────────────────────────────┐
-│           Swagger UI (localhost:8000/docs)       │
-├──────────────────────────────────────────────────┤
-│                                                  │
-│  GET    /items          ▶ Try it out            │
-│  POST   /items          ▶ Try it out            │
-│  DELETE  /items/{id}    ▶ Try it out            │
-│  PATCH  /items/{id}     ▶ Try it out            │
-│                                                  │
-│  Klicke auf "Try it out" und dann "Execute"      │
-│  um einen Endpunkt zu testen!                    │
-│                                                  │
-└──────────────────────────────────────────────────┘
-```
+
+> **Tipp:** Klicke auf "Try it out" und dann "Execute" um einen Endpunkt zu testen!
 
 > **Tipp:** Teste alle 4 Endpunkte über die Swagger UI, bevor du mit dem Frontend weitermachst. So weisst du sicher, dass das Backend korrekt funktioniert.
 
@@ -990,25 +985,21 @@ Jetzt läuft:
 - **Backend:** http://localhost:8000 (API + Swagger Docs unter `/docs`)
 - **Frontend:** http://localhost:5173 (React App)
 
-```
-┌──────────────────────────────────────────────────┐
-│                 So sieht es aus                  │
-├──────────────────────────────────────────────────┤
-│                                                  │
-│   Terminal 1 (Backend):                          │
-│   $ uvicorn main:app --reload                    │
-│   INFO: Uvicorn running on http://0.0.0.0:8000   │
-│   INFO: GET /items  → 200                        │
-│                                                  │
-│   Terminal 2 (Frontend):                         │
-│   $ npm run dev                                  │
-│   VITE v6.x.x  ready                             │
-│   ➜  Local: http://localhost:5173/              │
-│                                                  │
-│   Browser: http://localhost:5173                 │
-│   → React-App zeigt Items vom Backend!           │
-│                                                  │
-└──────────────────────────────────────────────────┘
+```mermaid
+graph TD
+    subgraph dev["🖥️ Entwicklungs-Setup"]
+        direction LR
+        T1["<b>Terminal 1 — Backend</b><br/><code>$ uvicorn main:app --reload</code><br/>INFO: Running on http://0.0.0.0:8000<br/>INFO: GET /items → 200"]
+        T2["<b>Terminal 2 — Frontend</b><br/><code>$ npm run dev</code><br/>VITE v6.x.x ready<br/>➜ Local: http://localhost:5173/"]
+        BR["<b>🌐 Browser</b><br/>http://localhost:5173<br/><i>React-App zeigt Items<br/>vom Backend!</i>"]
+    end
+
+    T1 -. "API auf Port 8000" .-> BR
+    T2 -. "Dev Server Port 5173" .-> BR
+
+    style T1 fill:#009688,stroke:#333,color:#fff
+    style T2 fill:#61dafb,stroke:#333,color:#000
+    style BR fill:#7c4dff,stroke:#333,color:#fff
 ```
 
 **Teste folgende Dinge:**
@@ -1241,22 +1232,23 @@ Wenn Frontend und Backend lokal laufen, kannst du beides auf einer EC2-Instanz d
 
 ### Überblick: Was muss auf der EC2-Instanz passieren?
 
-```
-┌──────────────────────────────────────────────────────────────┐
-│                    EC2 Instanz                               │
-├──────────────────────────────────────────────────────────────┤
-│                                                              │
-│   1. Nginx (Webserver)                                       │
-│      ├── Port 80 → liefert React-Build aus (statische Files) │
-│      └── /api/* → leitet weiter an FastAPI (Port 8000)       │
-│                                                              │
-│   2. FastAPI Backend                                         │
-│      └── Port 8000 (intern, nicht direkt von aussen)         │
-│                                                              │
-│   3. React Build (statische Dateien)                         │
-│      └── /var/www/mini-hub/ (index.html, JS, CSS)            │
-│                                                              │
-└──────────────────────────────────────────────────────────────┘
+```mermaid
+graph TD
+    subgraph EC2["☁️ EC2 Instanz"]
+        NGINX["🔀 Nginx<br/><i>Webserver — Port 80</i>"]
+        NGINX -- "/ → Statische Dateien" --> REACT["📁 React Build<br/><i>/var/www/mini-hub/</i><br/>index.html, JS, CSS"]
+        NGINX -- "/api/* → Proxy" --> FASTAPI["⚙️ FastAPI Backend<br/><i>Port 8000 (intern)</i>"]
+        FASTAPI --> DB[("💾 SQLite<br/><i>items.db</i>")]
+    end
+
+    USER["👤 Browser"] -- "http://EC2-IP" --> NGINX
+
+    style EC2 fill:none,stroke:#ff9800,stroke-width:2px
+    style NGINX fill:#4caf50,stroke:#333,color:#fff
+    style REACT fill:#61dafb,stroke:#333,color:#000
+    style FASTAPI fill:#009688,stroke:#333,color:#fff
+    style DB fill:#ff9800,stroke:#333,color:#000
+    style USER fill:#7c4dff,stroke:#333,color:#fff
 ```
 
 **Warum Nginx?** In der Produktion verwenden wir Nginx als Reverse Proxy. Der Vite-Dev-Server ist nur für die Entwicklung gedacht. Nginx liefert die gebauten React-Dateien aus und leitet API-Anfragen an FastAPI weiter.

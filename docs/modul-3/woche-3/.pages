@@ -1,0 +1,7 @@
+nav:
+  - "React Setup & JSX": uebung-24.1-react-setup-jsx.md
+  - "Komponenten & Props": uebung-24.2-komponenten-props.md
+  - "useState & Controlled Inputs": uebung-24.3-useState-controlled-inputs.md
+  - "Rendering, Listen & Keys": uebung-24.4-rendering-listen-keys.md
+  - "Assignment React Mini-App": assignment-woche3-react-mini-app.md
+  - ...

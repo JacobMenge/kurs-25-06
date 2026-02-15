@@ -1,0 +1,7 @@
+nav:
+  - "HTTP und REST": uebung-http-rest-19.1.md
+  - "HTTP REST Vertiefung": uebung-http-rest-19.2.md
+  - "FastAPI Basics I": uebung-fastapi-basics-19.3.md
+  - "FastAPI Basics II": uebung-fastapi-basics-19.4.md
+  - "Assignment REST-APIs": assignment-19.5.md
+  - ...

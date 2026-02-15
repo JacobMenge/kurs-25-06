@@ -1,0 +1,8 @@
+nav:
+  - "Webarchitektur & HTTP": uebung-tag1-webarchitektur-http.md
+  - "HTML Struktur & Formulare": uebung-tag2-html-struktur-formulare.md
+  - "CSS Grundlagen": uebung-tag3-css-grundlagen.md
+  - "CSS Layout & Responsive": uebung-tag4-css-layout-responsive.md
+  - "Assignment Portfolio-Projekt": assignment-tag5-portfolio-projekt.md
+  - "Schnellreferenz HTML & CSS": schnellreferenz-html-css.md
+  - ...

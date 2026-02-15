@@ -1,0 +1,8 @@
+nav:
+  - "Node.js & npm Installation": anleitung-nodejs-npm-installation.md
+  - "JavaScript Fundamentals": uebung-tag6-javascript-fundamentals.md
+  - "Arrays, Objects & Patterns": uebung-tag7-arrays-objects-patterns.md
+  - "DOM, Events & Interaktivit\u00e4t": uebung-tag8-dom-events-interaktivitaet.md
+  - "Fetch, Async/Await & APIs": uebung-tag9-fetch-async-await-apis.md
+  - "Assignment JavaScript Mini-App": assignment-tag10-javascript-mini-app.md
+  - ...

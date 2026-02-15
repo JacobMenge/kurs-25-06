@@ -1,0 +1,7 @@
+nav:
+  - "Multipass VM-Einrichtung": uebung-13.1.md
+  - "Linux Texte & Streams": selbstlernaufgaben-12.3.md
+  - "Linux Dateisystem & Navigation": selbstlernaufgaben-13.2.md
+  - "Linux Benutzer & Rechte": selbstlernaufgaben-13.4.md
+  - "Aufgabe 13.5": selbstlernaufgaben-13.5.md
+  - ...

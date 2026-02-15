@@ -1,0 +1,13 @@
+nav:
+  - "\u00dcbersicht": index.md
+  - "Woche 1 \u2013 Linux & Cloud Intro": woche-1
+  - "Woche 2 \u2013 Linux Advanced": woche-2
+  - "Woche 3 \u2013 LPI Zertifizierung": woche-3
+  - "Woche 4 \u2013 AWS Services": woche-4
+  - "Woche 5 \u2013 Python Basics": woche-5
+  - "Woche 6 \u2013 Python Datenstrukturen": woche-6
+  - "Woche 7 \u2013 Python OOP & Git": woche-7
+  - "Woche 8 \u2013 FastAPI & REST": woche-8
+  - "Woche 9 \u2013 SQL & Datenbanken": woche-9
+  - "Woche 10 \u2013 Mini-API Projekt": woche-10
+  - ...

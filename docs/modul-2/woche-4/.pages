@@ -1,0 +1,7 @@
+nav:
+  - "AWS CLI einrichten": aws-cli-einrichten.md
+  - "EC2 Instance erstellen": ec2-erstellen.md
+  - "S3 Bucket erstellen": s3-bucket-erstellen.md
+  - "S3 \u00dcbungen": uebung-s3-15.3.md
+  - "AWS Praxisprojekt": selbstlernaufgabe-15.5.md
+  - ...
