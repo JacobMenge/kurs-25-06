@@ -333,6 +333,9 @@ uvicorn~=0.34.0
 
 Erstelle die Datei `backend/main.py`:
 
+<details>
+<summary><b>backend/main.py anzeigen</b> (kompletter Code mit Kommentaren)</summary>
+
 ```python
 # ===========================================================================
 # MAIN.PY - FastAPI Backend fuer den Mini-Hub
@@ -573,6 +576,8 @@ if __name__ == "__main__":
     uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
 ```
 
+</details>
+
 **Erklärung der wichtigsten Konzepte:**
 
 | Konzept | Beschreibung |
@@ -638,6 +643,9 @@ graph LR
 Jetzt passen wir das Frontend an, damit es die API nutzt statt localStorage.
 
 Erstelle eine neue Datei `frontend/src/utils/api.js`:
+
+<details>
+<summary><b>frontend/src/utils/api.js anzeigen</b> (API-Hilfsfunktionen)</summary>
 
 ```javascript
 // ===========================================================================
@@ -744,6 +752,8 @@ export async function updateItem(id, updateData) {
 }
 ```
 
+</details>
+
 **Erklärung:**
 
 | Funktion | HTTP-Methode | Beschreibung |
@@ -765,6 +775,9 @@ Jetzt ändern wir die `App.jsx`, damit sie die API nutzt statt localStorage.
 - Handler-Funktionen werden `async` und rufen die API auf
 
 Ersetze den Inhalt von `frontend/src/App.jsx` durch:
+
+<details>
+<summary><b>frontend/src/App.jsx anzeigen</b> (komplette Komponente mit Backend-Anbindung)</summary>
 
 ```jsx
 // ===========================================================================
@@ -930,6 +943,8 @@ function App() {
 
 export default App;
 ```
+
+</details>
 
 **Erklärung der wichtigsten Änderungen:**
 
