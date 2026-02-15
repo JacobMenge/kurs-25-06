@@ -1,7 +1,9 @@
 {
   "permissions": {
     "allow": [
-      "Bash(gh run list:*)"
+      "Bash(gh run list:*)",
+      "Bash(grep:*)",
+      "Bash(python -m mkdocs build:*)"
     ]
   }
 }

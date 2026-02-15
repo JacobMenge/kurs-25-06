@@ -524,19 +524,87 @@
    Mermaid Diagramme
    ============================================ */
 
+/* Container */
 .mermaid {
-  background: white;
-  padding: 1rem;
+  padding: 1.5rem 1rem;
   border-radius: var(--card-border-radius);
-  box-shadow: var(--card-shadow);
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   overflow-x: auto;
+  background: transparent;
 }
 
-/* Horizontale Flowcharts gut darstellen */
+/* SVG volle Breite */
 .mermaid svg {
   max-width: 100%;
+  width: 100%;
   height: auto;
+}
+
+/* --- Light Mode Mermaid Nodes --- */
+
+/* Alle Nodes: abgerundete Ecken, weicher Schatten */
+.mermaid .node rect,
+.mermaid .node polygon,
+.mermaid .node circle {
+  rx: 10;
+  ry: 10;
+  filter: drop-shadow(0 2px 6px rgba(0,0,0,0.1));
+}
+
+/* Kanten-Labels lesbarer */
+.mermaid .edgeLabel {
+  font-size: 0.8rem;
+  background-color: rgba(255,255,255,0.85) !important;
+  border-radius: 4px;
+  padding: 2px 6px;
+}
+
+/* Subgraph-Titel */
+.mermaid .cluster-label .nodeLabel {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Subgraph-Rahmen */
+.mermaid .cluster rect {
+  rx: 12 !important;
+  ry: 12 !important;
+  stroke-width: 2px !important;
+}
+
+/* --- Dark Mode Mermaid Overrides --- */
+
+[data-md-color-scheme="slate"] .mermaid .edgeLabel {
+  background-color: rgba(30,30,46,0.9) !important;
+  color: #cdd6f4 !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .edgeLabel span {
+  color: #cdd6f4 !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .node rect,
+[data-md-color-scheme="slate"] .mermaid .node polygon,
+[data-md-color-scheme="slate"] .mermaid .node circle {
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.4));
+}
+
+[data-md-color-scheme="slate"] .mermaid .cluster rect {
+  stroke: rgba(205,214,244,0.25) !important;
+  fill: rgba(255,255,255,0.03) !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid .cluster-label .nodeLabel {
+  color: #cdd6f4 !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid line,
+[data-md-color-scheme="slate"] .mermaid .flowchart-link {
+  stroke: rgba(205,214,244,0.4) !important;
+}
+
+[data-md-color-scheme="slate"] .mermaid marker path {
+  fill: rgba(205,214,244,0.6) !important;
 }
 
 /* ============================================

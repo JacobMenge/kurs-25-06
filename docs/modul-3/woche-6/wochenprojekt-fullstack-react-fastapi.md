@@ -88,16 +88,18 @@ Bisher hat unser React-Frontend die Daten im **localStorage** des Browsers gespe
 ### Die neue Architektur
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#90caf9', 'secondaryColor': '#e0f2f1', 'secondaryTextColor': '#004d40', 'secondaryBorderColor': '#80cbc4', 'tertiaryColor': '#fff3e0', 'tertiaryTextColor': '#e65100', 'tertiaryBorderColor': '#ffcc80', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
 graph LR
-    subgraph Fullstack-Architektur
-        A["🖥️ React Frontend<br/><i>Vite Dev Server</i><br/>Port 5173"] -- "GET /items<br/>POST /items<br/>DELETE /items/1<br/>PATCH /items/1" --> B["⚙️ FastAPI Backend<br/><i>Uvicorn Server</i><br/>Port 8000"]
-        B -- "JSON Response" --> A
-        B --> C[("💾 Daten-Speicher<br/><i>Liste im RAM<br/>oder SQLite</i>")]
-    end
+    subgraph arch [" "]
+        direction LR
+        A["🖥️ <b>React Frontend</b><br/>Vite · Port 5173"]
+        B["⚙️ <b>FastAPI Backend</b><br/>Uvicorn · Port 8000"]
+        C[("💾 <b>Daten</b><br/>RAM / SQLite")]
 
-    style A fill:#61dafb,stroke:#333,color:#000
-    style B fill:#009688,stroke:#333,color:#fff
-    style C fill:#ff9800,stroke:#333,color:#000
+        A -- "GET · POST · DELETE · PATCH" --> B
+        B -- "JSON" --> A
+        B --> C
+    end
 ```
 
 ### Was ist FastAPI?
@@ -139,15 +141,16 @@ Das Frontend schickt HTTP-Requests (mit `fetch`) und bekommt JSON-Antworten zur�
 Wenn das Frontend auf `localhost:5173` läuft und das Backend auf `localhost:8000`, blockt der Browser die Requests aus Sicherheitsgründen. Das nennt sich **Cross-Origin Resource Sharing (CORS)**.
 
 ```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#90caf9', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
 graph LR
-    A["🌐 Browser<br/><i>localhost:5173</i>"] -- "HTTP Request" --> B{"🛡️ CORS-Prüfung"}
-    B -- "❌ Ohne CORS-Config<br/>Blockiert!" --> C["⛔ Fehler<br/><i>Andere Origin!</i>"]
-    B -- "✅ Mit CORS-Middleware<br/>Erlaubt!" --> D["⚙️ FastAPI Backend<br/><i>localhost:8000</i>"]
+    A["🌐 <b>Browser</b><br/>localhost:5173"]
+    B{"🛡️ <b>CORS</b>"}
+    C["❌ <b>Blockiert</b><br/>Andere Origin!"]
+    D["✅ <b>Erlaubt</b><br/>FastAPI :8000"]
 
-    style A fill:#61dafb,stroke:#333,color:#000
-    style B fill:#ff9800,stroke:#333,color:#000
-    style C fill:#f44336,stroke:#333,color:#fff
-    style D fill:#4caf50,stroke:#333,color:#fff
+    A -- "Request" --> B
+    B -- "Ohne Config" --> C
+    B -- "Mit Middleware" --> D
 ```
 
 FastAPI bietet dafür eine fertige Lösung, die wir einfach einbinden.
@@ -619,23 +622,12 @@ INFO:     Application startup complete.
 Die Swagger-Docs sind extrem nützlich! Dort kannst du alle Endpunkte direkt im Browser ausprobieren, ohne ein Frontend zu brauchen:
 
 ```mermaid
-graph TD
-    subgraph Swagger["📄 Swagger UI — localhost:8000/docs"]
-        direction TB
-        E1["🟢 GET &nbsp;&nbsp;&nbsp; /items &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ▶ Try it out"]
-        E2["🟡 POST &nbsp;&nbsp; /items &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ▶ Try it out"]
-        E3["🔴 DELETE /items/{id} &nbsp; ▶ Try it out"]
-        E4["🟠 PATCH &nbsp; /items/{id} &nbsp; ▶ Try it out"]
-    end
-
-    style Swagger fill:#1a1a2e,stroke:#e0e0e0,color:#fff
-    style E1 fill:#2e7d32,stroke:#333,color:#fff
-    style E2 fill:#f9a825,stroke:#333,color:#000
-    style E3 fill:#c62828,stroke:#333,color:#fff
-    style E4 fill:#e65100,stroke:#333,color:#fff
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e8f5e9', 'primaryTextColor': '#1b5e20', 'primaryBorderColor': '#a5d6a7', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
+graph LR
+    G["🟢 <b>GET</b> /items"] ~~~ P["🟡 <b>POST</b> /items"] ~~~ D["🔴 <b>DELETE</b> /items/{id}"] ~~~ PA["🟠 <b>PATCH</b> /items/{id}"]
 ```
 
-> **Tipp:** Klicke auf "Try it out" und dann "Execute" um einen Endpunkt zu testen!
+> **Tipp:** Oeffne **localhost:8000/docs** — klicke auf "Try it out" und dann "Execute" um jeden Endpunkt zu testen!
 
 > **Tipp:** Teste alle 4 Endpunkte über die Swagger UI, bevor du mit dem Frontend weitermachst. So weisst du sicher, dass das Backend korrekt funktioniert.
 
@@ -986,20 +978,10 @@ Jetzt läuft:
 - **Frontend:** http://localhost:5173 (React App)
 
 ```mermaid
-graph TD
-    subgraph dev["🖥️ Entwicklungs-Setup"]
-        direction LR
-        T1["<b>Terminal 1 — Backend</b><br/><code>$ uvicorn main:app --reload</code><br/>INFO: Running on http://0.0.0.0:8000<br/>INFO: GET /items → 200"]
-        T2["<b>Terminal 2 — Frontend</b><br/><code>$ npm run dev</code><br/>VITE v6.x.x ready<br/>➜ Local: http://localhost:5173/"]
-        BR["<b>🌐 Browser</b><br/>http://localhost:5173<br/><i>React-App zeigt Items<br/>vom Backend!</i>"]
-    end
-
-    T1 -. "API auf Port 8000" .-> BR
-    T2 -. "Dev Server Port 5173" .-> BR
-
-    style T1 fill:#009688,stroke:#333,color:#fff
-    style T2 fill:#61dafb,stroke:#333,color:#000
-    style BR fill:#7c4dff,stroke:#333,color:#fff
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e0f2f1', 'primaryTextColor': '#004d40', 'primaryBorderColor': '#80cbc4', 'secondaryColor': '#e3f2fd', 'secondaryTextColor': '#0d47a1', 'secondaryBorderColor': '#90caf9', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
+graph LR
+    T1["⚙️ <b>Terminal 1</b><br/>Backend :8000"] -. "API" .-> BR["🌐 <b>Browser</b><br/>localhost:5173"]
+    T2["🖥️ <b>Terminal 2</b><br/>Frontend :5173"] -. "Dev Server" .-> BR
 ```
 
 **Teste folgende Dinge:**
@@ -1233,22 +1215,16 @@ Wenn Frontend und Backend lokal laufen, kannst du beides auf einer EC2-Instanz d
 ### Überblick: Was muss auf der EC2-Instanz passieren?
 
 ```mermaid
-graph TD
-    subgraph EC2["☁️ EC2 Instanz"]
-        NGINX["🔀 Nginx<br/><i>Webserver — Port 80</i>"]
-        NGINX -- "/ → Statische Dateien" --> REACT["📁 React Build<br/><i>/var/www/mini-hub/</i><br/>index.html, JS, CSS"]
-        NGINX -- "/api/* → Proxy" --> FASTAPI["⚙️ FastAPI Backend<br/><i>Port 8000 (intern)</i>"]
-        FASTAPI --> DB[("💾 SQLite<br/><i>items.db</i>")]
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e8f5e9', 'primaryTextColor': '#1b5e20', 'primaryBorderColor': '#a5d6a7', 'secondaryColor': '#e3f2fd', 'secondaryTextColor': '#0d47a1', 'secondaryBorderColor': '#90caf9', 'tertiaryColor': '#e0f2f1', 'tertiaryTextColor': '#004d40', 'tertiaryBorderColor': '#80cbc4', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
+graph LR
+    USER["👤 <b>Browser</b>"] -- "http://EC2-IP" --> NGINX
+
+    subgraph EC2 ["☁️ EC2 Instanz"]
+        NGINX["🔀 <b>Nginx</b><br/>Port 80"]
+        NGINX -- "/" --> REACT["📁 <b>React Build</b><br/>/var/www/mini-hub/"]
+        NGINX -- "/api/*" --> FASTAPI["⚙️ <b>FastAPI</b><br/>Port 8000"]
+        FASTAPI --> DB[("💾 <b>SQLite</b>")]
     end
-
-    USER["👤 Browser"] -- "http://EC2-IP" --> NGINX
-
-    style EC2 fill:none,stroke:#ff9800,stroke-width:2px
-    style NGINX fill:#4caf50,stroke:#333,color:#fff
-    style REACT fill:#61dafb,stroke:#333,color:#000
-    style FASTAPI fill:#009688,stroke:#333,color:#fff
-    style DB fill:#ff9800,stroke:#333,color:#000
-    style USER fill:#7c4dff,stroke:#333,color:#fff
 ```
 
 **Warum Nginx?** In der Produktion verwenden wir Nginx als Reverse Proxy. Der Vite-Dev-Server ist nur für die Entwicklung gedacht. Nginx liefert die gebauten React-Dateien aus und leitet API-Anfragen an FastAPI weiter.

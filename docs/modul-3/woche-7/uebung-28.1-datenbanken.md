@@ -33,10 +33,17 @@ Bevor wir loslegen, ein kurzer Rückblick auf die wichtigsten Punkte vom Vormitt
 
 ### Euer Stack verändert sich
 
-```
-Bisher:                            Jetzt neu:
-React  ↔  FastAPI  ↔  SQLite      React  ↔  FastAPI  ↔  PostgreSQL
-                      (Datei)                             (Server-Prozess)
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#90caf9', 'secondaryColor': '#e0f2f1', 'secondaryTextColor': '#004d40', 'secondaryBorderColor': '#80cbc4', 'tertiaryColor': '#fff3e0', 'tertiaryTextColor': '#e65100', 'tertiaryBorderColor': '#ffcc80', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
+graph LR
+    subgraph vorher ["Bisher"]
+        direction LR
+        R1["🖥️ <b>React</b>"] <--> F1["⚙️ <b>FastAPI</b>"] <--> S1["📄 <b>SQLite</b><br/>Datei"]
+    end
+    subgraph jetzt ["Jetzt neu"]
+        direction LR
+        R2["🖥️ <b>React</b>"] <--> F2["⚙️ <b>FastAPI</b>"] <--> S2["🐘 <b>PostgreSQL</b><br/>Server-Prozess"]
+    end
 ```
 
 SQLite war perfekt für den Einstieg – eine einzelne Datei, kein Server nötig. Aber für eine Web-Anwendung mit mehreren Nutzern braucht ihr einen richtigen DB-Server. PostgreSQL bringt Concurrency (viele parallele Verbindungen), Benutzer-/Rechteverwaltung und professionelle Backup-Tools mit.
@@ -77,13 +84,14 @@ Was ist der Unterschied zwischen einem PostgreSQL-**Cluster** und einer **Databa
 
 Ein Cluster kann mehrere Databases enthalten. Innerhalb einer Database gibt es Schemas (Standard: `public`), und innerhalb eines Schemas liegen die Tabellen.
 
-```
-Cluster (Server-Instanz)
-  └── Database: kursapp
-        └── Schema: public
-              ├── Table: users
-              └── Table: orders
-  └── Database: postgres (Standard-DB)
+```mermaid
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#90caf9', 'secondaryColor': '#e8f5e9', 'secondaryTextColor': '#1b5e20', 'secondaryBorderColor': '#a5d6a7', 'tertiaryColor': '#fff3e0', 'tertiaryTextColor': '#e65100', 'tertiaryBorderColor': '#ffcc80', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
+graph TD
+    CL["🐘 <b>Cluster</b><br/>Server-Instanz"] --> DB1["🗄️ <b>Database:</b> kursapp"]
+    CL --> DB2["🗄️ <b>Database:</b> postgres"]
+    DB1 --> SC["📂 <b>Schema:</b> public"]
+    SC --> T1["📋 <b>Table:</b> users"]
+    SC --> T2["📋 <b>Table:</b> orders"]
 ```
 
 </details>
