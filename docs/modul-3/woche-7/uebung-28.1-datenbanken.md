@@ -79,7 +79,7 @@ Was ist der Unterschied zwischen einem PostgreSQL-**Cluster** und einer **Databa
 <details>
 <summary>Antwort anzeigen</summary>
 
-- **Cluster** = Eine laufende PostgreSQL-Server-Instanz (der gesamte Server-Prozess).
+- **Cluster** = Das PostgreSQL-Setup (Data Directory + Konfiguration), auf dem eine Server-Instanz läuft.
 - **Database** = Logische Trennung der Daten innerhalb eines Clusters (wie ein Ordner).
 
 Ein Cluster kann mehrere Databases enthalten. Innerhalb einer Database gibt es Schemas (Standard: `public`), und innerhalb eines Schemas liegen die Tabellen.
@@ -164,6 +164,8 @@ winget install PostgreSQL.PostgreSQL
 brew install postgresql@17
 ```
 
+> **Hinweis:** `@17` steht für die aktuelle Hauptversion. Falls bei euch eine andere Version verfügbar ist (z.B. `@16`), passt die Nummer in allen folgenden Befehlen entsprechend an.
+
 Nach der Installation den Server starten:
 
 ```bash
@@ -176,6 +178,8 @@ Falls `psql` nicht gefunden wird, füge den Pfad zur Shell hinzu:
 echo 'export PATH="/opt/homebrew/opt/postgresql@17/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 ```
+
+> **Intel-Mac:** Der Pfad ist `/usr/local/opt/postgresql@17/bin` statt `/opt/homebrew/...`. Prüfe mit `brew --prefix postgresql@17`, welcher Pfad bei dir korrekt ist.
 
 **Überprüfung:**
 
@@ -218,10 +222,10 @@ psql --version
 | Aktion | Windows | macOS | Linux |
 |--------|---------|-------|-------|
 | **Status** | Dienste-App: nach `postgresql` suchen | `brew services list` | `sudo systemctl status postgresql` |
-| **Starten** | Dienste-App → Rechtsklick → Starten | `brew services start postgresql@17` | `sudo systemctl start postgresql` |
-| **Stoppen** | Dienste-App → Rechtsklick → Beenden | `brew services stop postgresql@17` | `sudo systemctl stop postgresql` |
+| **Starten** | Dienste-App → Rechtsklick → Starten | `brew services start postgresql@<VERSION>` | `sudo systemctl start postgresql` |
+| **Stoppen** | Dienste-App → Rechtsklick → Beenden | `brew services stop postgresql@<VERSION>` | `sudo systemctl stop postgresql` |
 
-> **Windows-Tipp:** Öffne die Dienste-App über das Startmenü (suche nach "Dienste" oder `services.msc`). Suche dort nach einem Eintrag wie `postgresql-x64-17`.
+> **Windows-Tipp:** Öffne die Dienste-App über das Startmenü (suche nach "Dienste" oder `services.msc`). Suche dort nach einem Eintrag, der mit `postgresql-` beginnt (z.B. `postgresql-x64-17`).
 
 **Aufgabe:** Stoppe den Server, starte ihn wieder, und prüfe den Status.
 
@@ -299,6 +303,28 @@ Wenn du stattdessen mit Passwort verbinden möchtest, kannst du die Datei `pg_hb
 
 </details>
 
+<details>
+<summary>Notfall: Datenbank löschen und neu anfangen</summary>
+
+Falls bei dir etwas komplett schiefgelaufen ist, kannst du die Datenbank löschen und von vorne beginnen:
+
+```sql
+-- Zur Standard-DB wechseln (man kann keine DB löschen, in der man gerade ist)
+\c postgres
+
+-- Datenbank löschen (ACHTUNG: Alle Daten in kursapp gehen verloren!)
+DROP DATABASE IF EXISTS kursapp;
+
+-- Neu anlegen und von Übung 5 weitermachen
+CREATE DATABASE kursapp;
+\c kursapp
+CREATE EXTENSION IF NOT EXISTS pgcrypto;
+```
+
+> **Hinweis:** Nutze das nur, wenn wirklich nichts anderes mehr hilft. Frag im Zweifel zuerst nach!
+
+</details>
+
 ---
 
 ## Teil 2: psql Grundlagen
@@ -309,7 +335,9 @@ Wenn du stattdessen mit Passwort verbinden möchtest, kannst du die Datei `pg_hb
 > **Zeitbedarf:** ca. 10 Minuten
 > **Du bist fertig, wenn:** Du alle Befehle aus der Tabelle ausprobiert hast
 
-psql hat eigene Befehle, die mit einem Backslash (`\`) beginnen. Diese sind keine SQL-Befehle, sondern psql-spezifische Kommandos:
+psql hat eigene Befehle, die mit einem Backslash (`\`) beginnen. Diese sind keine SQL-Befehle, sondern psql-spezifische Kommandos.
+
+> **Wichtig:** SQL-Befehle enden mit `;` (z.B. `SELECT * FROM users;`), psql-Metabefehle **nicht** (z.B. `\dt`, `\l`).
 
 | Befehl | Beschreibung |
 |--------|-------------|
@@ -327,7 +355,7 @@ psql hat eigene Befehle, die mit einem Backslash (`\`) beginnen. Diese sind kein
 2. Führe `\l` aus – du siehst die Standard-Datenbanken (`postgres`, `template0`, `template1`)
 3. Führe `\du` aus – du siehst den `postgres`-User
 4. Führe `\?` aus – scrolle durch die Hilfe (mit `q` beenden)
-5. Führe `\dt` aus – die Ausgabe ist vermutlich leer (noch keine eigenen Tabellen)
+5. Führe `\dt` aus – die Ausgabe ist vermutlich leer (noch keine eigenen Tabellen). Falls `\dt` auch später nichts zeigt, probiere `\dt *.*` – das zeigt Tabellen aus allen Schemas an.
 
 ---
 
@@ -408,7 +436,7 @@ In diesem Teil erstellst du Tabellen und nutzt dabei die Datentypen und Constrai
 | `integer` / `bigint` | Ganzzahlen | `42`, `9999999` |
 | `boolean` | Wahrheitswert | `true` / `false` |
 | `uuid` | Universally Unique Identifier | `'a0eebc99-9c0b-4ef8-bb6d-6bb9bd380a11'` |
-| `timestamptz` | Zeitstempel mit Zeitzone | `now()` |
+| `timestamptz` | Zeitstempel mit Zeitzone | `now()` oder `'2025-06-15 14:30:00+02'` |
 | `jsonb` | JSON (binär, indexierbar) | `'{"key":"value"}'::jsonb` |
 
 > In unseren Tabellen nutzen wir `DEFAULT gen_random_uuid()` – diese Funktion kommt aus der Extension `pgcrypto` und erzeugt automatisch solche UUIDs.
@@ -745,7 +773,7 @@ JOIN users u ON u.id = o.user_id;
 > **Zeitbedarf:** ca. 15 Minuten
 > **Du bist fertig, wenn:** Du deine Tabellen in pgAdmin siehst und eine Query ausgeführt hast
 
-pgAdmin ist eine grafische Oberfläche für PostgreSQL. Sie macht es einfacher, die Datenbank zu erkunden, ohne alle Befehle auswendig kennen zu müssen.
+pgAdmin ist eine grafische Oberfläche für PostgreSQL. Sie macht es einfacher, die Datenbank zu erkunden, ohne alle Befehle auswendig kennen zu müssen. pgAdmin ist **optional** – alles, was ihr morgen braucht, funktioniert auch mit `psql` allein.
 
 **Schritt 1: pgAdmin starten**
 
@@ -781,7 +809,7 @@ Servers
                                 └── Tables
                                       ├── users
                                       ├── orders
-                                      └── events
+                                      └── events  (nur wenn Übung 8 gemacht)
 ```
 
 Klicke mit Rechtsklick auf `users` → "View/Edit Data" → "All Rows" – du siehst deine eingefügten Daten.
@@ -820,7 +848,7 @@ Beide verbinden sich zum selben PostgreSQL-Server – es sind nur unterschiedlic
 | Konzept | Beschreibung | Beispiel |
 |---------|-------------|---------|
 | **Installation** | PostgreSQL lokal installieren und starten | `brew install postgresql@17` |
-| **psql** | Terminal-Client für PostgreSQL | `psql -h localhost -U postgres` |
+| **psql** | Terminal-Client für PostgreSQL | `psql -h localhost -U postgres -d postgres` |
 | **Meta-Befehle** | psql-eigene Befehle mit Backslash | `\l`, `\dt`, `\d users` |
 | **CREATE DATABASE** | Neue Datenbank anlegen | `CREATE DATABASE kursapp;` |
 | **CREATE TABLE** | Tabelle mit Datentypen definieren | `id uuid PRIMARY KEY` |
@@ -863,6 +891,8 @@ postgresql://kursuser:kurspass@localhost:5432/kursapp
 | Datenbank | Name der Ziel-Datenbank | `kursapp` |
 
 > **Wichtig:** Dieser Connection String kommt in eine `.env`-Datei oder einen Secret Manager – **niemals direkt in den Code committen!**
+>
+> **Im Kurs** nutzen wir den `postgres`-Superuser. In echten Apps erstellt man einen eigenen App-User mit eingeschränkten Rechten.
 
 ---
 
