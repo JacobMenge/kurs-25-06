@@ -120,7 +120,7 @@ fruits.at(-1);    // 'Orange'
 
 Was ist der Unterschied zwischen `fruits[-1]` in Python und JavaScript?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Python:** `fruits[-1]` gibt das letzte Element zurück.
@@ -159,7 +159,7 @@ const mixed = // Dein Code hier (String, Number, Boolean, null)
 console.log(mixed);
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -258,7 +258,7 @@ const colors = ['rot', 'grün', 'blau'];
 console.log(colors);
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -340,7 +340,7 @@ const copy1 = original;
 const copy2 = [...original];
 ```
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **`copy1 = original`:**
@@ -396,7 +396,7 @@ const withBanana = // Dein Code
 console.log(fruits);
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -536,7 +536,7 @@ const myState = ['initialValue', () => console.log('setter called')];
 const [value, setValue] = // Dein Code
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -675,7 +675,7 @@ const formattedPrices = // Dein Code
 const increasedPrices = // Dein Code
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -819,7 +819,7 @@ const startsWithA = // Dein Code
 const twenties = // Dein Code
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -919,7 +919,7 @@ const result2 = arr.findIndex(n => n > 10);
 const result3 = arr.filter(n => n > 10);
 ```
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 ```javascript
@@ -965,7 +965,7 @@ const notFound = // Dein Code
 console.log(notFound); // Was wird ausgegeben?
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1114,7 +1114,7 @@ const highEarners = // Dein Code
 const departments = // Dein Code
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1277,7 +1277,7 @@ console.log(library.address.city);
 console.log(library.books[0].title);
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1429,7 +1429,7 @@ const withAge = // Dein Code
 console.log(user.settings.theme); // Sollte 'light' sein
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1582,7 +1582,7 @@ const formatProduct = ({ name, price }) => {
 console.log(formatProduct(product)); // "Laptop: 999 €"
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1727,7 +1727,7 @@ const addTodo = (newTodo) => {
 };
 ```
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Problem:** `todos.push(newTodo)` mutiert das Original-Array. Dann wird `setTodos(todos)` aufgerufen – aber `todos` ist immer noch die **gleiche Referenz**!
@@ -1781,7 +1781,7 @@ console.log(todos[0].done);              // false
 console.log(user.preferences.theme);     // 'light'
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1948,7 +1948,7 @@ import Button from './Button';
 import { Button } from './Button';
 ```
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **`import Button from './Button'`:**
@@ -2109,7 +2109,7 @@ Neuer Preis: 899
 Original Preis: 999
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript

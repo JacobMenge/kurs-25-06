@@ -199,7 +199,7 @@ print(type(anna))  # <class '__main__.Person'>
 - `type()` zeigt, dass es ein Person-Objekt ist
 - Die Ausgabe sieht kryptisch aus - das ist normal!
 
-<details>
+<details markdown>
 <summary>Schritt-für-Schritt Lösung anzeigen</summary>
 
 ```python
@@ -347,7 +347,7 @@ print(mein_auto == dein_auto)  # False
 2. Warum kann ich mehrere Objekte von einer Klasse erstellen?
 3. Was bedeutet die Speicheradresse in der Ausgabe?
 
-<details>
+<details markdown>
 <summary>Antworten anzeigen</summary>
 
 1. **Klasse = Bauplan** (Rezept), **Objekt = fertiges Produkt** (der Kuchen). Aus einer Klasse kann man viele Objekte erstellen.
@@ -393,7 +393,7 @@ print(ben)   # Ben (15 Jahre)
 
 **Hinweis:** Wir werden `__str__` und andere Special Methods später genauer lernen. Fürs Erste reicht es zu wissen: `__str__` macht `print()` lesbar!
 
-<details>
+<details markdown>
 <summary>Beispiel mit __str__ in allen bisherigen Klassen</summary>
 
 ```python
@@ -546,7 +546,7 @@ print(anna.alter)  # 16
    person = Person()  # Was passiert hier?
    ```
 
-<details>
+<details markdown>
 <summary>Schritt-für-Schritt Lösung anzeigen</summary>
 
 ```python
@@ -835,7 +835,7 @@ FEHLER: FEHLER: __init ohne Unterstriche
 2. Was ist der Unterschied zwischen `name` und `self.name`?
 3. Warum muss `self` der erste Parameter sein?
 
-<details>
+<details markdown>
 <summary>Antworten anzeigen</summary>
 
 1. `__init__` wird **automatisch** aufgerufen, wenn ein Objekt erstellt wird: `anna = Person("Anna", 16)`
@@ -930,7 +930,7 @@ print(anna.wohnort)      # Berlin
    print(anna.hobby)  # Was passiert hier?
    ```
 
-<details>
+<details markdown>
 <summary>Schritt-für-Schritt Lösung anzeigen</summary>
 
 ```python
@@ -1171,7 +1171,7 @@ FEHLER: FEHLER: Auf gelöschtes Attribut zugreifen
 2. Was passiert, wenn ich auf ein nicht existierendes Attribut zugreife?
 3. Warum sollte ich alle Attribute in `__init__` definieren?
 
-<details>
+<details markdown>
 <summary>Antworten anzeigen</summary>
 
 1. Ja, mit `objekt.attribut = neuer_wert`. Das ist in Python standardmäßig möglich.
@@ -1291,7 +1291,7 @@ print(r.flaeche())  # 15
            return a * b
    ```
 
-<details>
+<details markdown>
 <summary>Schritt-für-Schritt Lösung anzeigen</summary>
 
 ```python
@@ -1610,7 +1610,7 @@ FEHLER: FEHLER: Return vergessen
 2. Warum brauchen Methoden `self`?
 3. Kann eine Methode Attribute ändern?
 
-<details>
+<details markdown>
 <summary>Antworten anzeigen</summary>
 
 1. Eine Methode gehört zu einer Klasse und hat `self` als ersten Parameter. Eine Funktion ist unabhängig und hat keinen automatischen Objektbezug.
@@ -1729,7 +1729,7 @@ for person in personen:
        return None
    ```
 
-<details>
+<details markdown>
 <summary>Schritt-für-Schritt Lösung anzeigen</summary>
 
 ```python
@@ -2064,7 +2064,7 @@ FEHLER: FEHLER: Sortieren ohne key
 2. Wie kann ich Objekte in einer Liste speichern?
 3. Wie finde ich ein bestimmtes Objekt in einer Liste?
 
-<details>
+<details markdown>
 <summary>Antworten anzeigen</summary>
 
 1. Nein! Jedes Objekt ist unabhängig und hat eigene Attributwerte.
@@ -2170,7 +2170,7 @@ print(Person.anzahl) # 2 (geteilt)
    print(Auto.anzahl_autos)  # ?
    ```
 
-<details>
+<details markdown>
 <summary>Schritt-für-Schritt Lösung anzeigen</summary>
 
 ```python
@@ -2494,7 +2494,7 @@ FEHLER: FEHLER: Denken, dass a1.klassenattribut nur für a1 gilt
 2. Wie ändere ich ein Klassenattribut richtig?
 3. Wofür würde ich ein Klassenattribut verwenden?
 
-<details>
+<details markdown>
 <summary>Antworten anzeigen</summary>
 
 1. Klassenattribut wird von allen Objekten geteilt, Instanzattribut ist individuell pro Objekt.
@@ -2537,7 +2537,7 @@ Erstelle ein einfaches Bankkonto-System mit folgenden Anforderungen:
    - Führe verschiedene Transaktionen durch
    - Zeige Kontostände
 
-<details>
+<details markdown>
 <summary>Vollständige Lösung anzeigen</summary>
 
 ```python

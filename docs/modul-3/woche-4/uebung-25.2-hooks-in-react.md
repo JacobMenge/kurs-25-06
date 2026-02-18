@@ -220,7 +220,7 @@ function TodoList({ todos }) {
 }
 ```
 
-<details>
+<details markdown>
 <summary>Antworten anzeigen</summary>
 
 **Beispiel A:** Regel 1 verletzt – `useEffect` wird in einer Bedingung (`if`) aufgerufen. **Fix:** Den Hook immer aufrufen, die Bedingung in den Effekt verschieben:
@@ -407,7 +407,7 @@ export default App
 
 3. **Bonus:** Erstelle eine zweite Ref für ein Input-Element. Füge einen Button hinzu, der den Fokus auf das Input setzt, wenn der Timer gestoppt wird (z.B. um eine Runde zu notieren).
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -494,7 +494,7 @@ export default Stopwatch;
 
 Was passiert, wenn du `useState` statt `useRef` für die Timer-ID verwendest?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Es funktioniert technisch, aber:
@@ -663,7 +663,7 @@ export default UserSearch;
 
 2. Teste: Klicke den "Highlight"-Button. Wird die Filterung neu berechnet? (Füge ein `console.log` in die useMemo-Callback-Funktion ein, um es zu überprüfen!)
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -901,7 +901,7 @@ export default CallbackDemo;
 
 > **Hinweis:** In der Praxis wirst du `useCallback` vor allem dann brauchen, wenn du Funktionen an `React.memo()`-Komponenten weitergibst. Für diese Übung reicht es zu verstehen, **was** `useCallback` tut und **warum**.
 
-<details>
+<details markdown>
 <summary>Erklärung anzeigen</summary>
 
 Ohne `React.memo()` auf der Kind-Komponente werden **beide** Buttons bei jedem Re-Render neu gerendert – egal ob mit oder ohne `useCallback`. Das liegt daran, dass React standardmäßig alle Kinder neu rendert, wenn der Parent rendert.
@@ -1132,7 +1132,7 @@ function TodoApp() {
 export default TodoApp;
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1432,7 +1432,7 @@ function WindowInfo() {
 }
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 **useCounter:**
@@ -1617,7 +1617,7 @@ export default PersistentForm;
 
 3. Teste: Gib einen Namen ein, wähle ein Theme, drücke F5 – sind die Daten noch da?
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1965,7 +1965,7 @@ function RecipeSearch() {
 export default RecipeSearch;
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript

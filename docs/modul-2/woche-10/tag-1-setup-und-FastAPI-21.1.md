@@ -255,7 +255,7 @@ Dieser soll eine kurze API-Beschreibung zurückgeben (1-2 Sätze als JSON).
 
 **Tipp:** Schau dir an, wie die `/health`- und `/notes`-Endpoints aufgebaut sind!
 
-<details>
+<details markdown>
 <summary>💡 Lösung anzeigen</summary>
 
 ```python
@@ -305,7 +305,7 @@ Erweitere den `/health`-Endpoint so, dass er auch die aktuelle Uhrzeit zurückgi
 
 **Hinweis:** Du musst `datetime` importieren. Nutze `datetime.now()`.
 
-<details>
+<details markdown>
 <summary>💡 Lösung anzeigen</summary>
 
 ```python
@@ -346,7 +346,7 @@ Erstelle einen neuen Endpoint `GET /notes/count`, der die Anzahl der gespeichert
 
 **Wichtiger Hinweis für später:** Fixe Pfade wie `/notes/count` müssen **vor** dynamischen Pfaden wie `/notes/{note_id}` definiert werden, sonst wird "count" als ID interpretiert - vor allem, wenn `{note_id}` als `str` definiert ist!
 
-<details>
+<details markdown>
 <summary>💡 Lösung anzeigen</summary>
 
 ```python
@@ -391,7 +391,7 @@ Erstelle einen Endpoint `GET /notes/first`, der nur die erste Notiz aus der List
 
 **Tipp:** In Python greift man mit `liste[0]` auf das erste Element zu.
 
-<details>
+<details markdown>
 <summary>💡 Lösung anzeigen</summary>
 
 ```python
@@ -447,7 +447,7 @@ Erstelle eine `.gitignore`-Datei, damit Git bestimmte Dateien ignoriert.
 - `__pycache__/`-Ordner (automatisch generierte Python-Cache-Dateien)
 - `.pyc`-Dateien (kompilierte Python-Dateien)
 
-<details>
+<details markdown>
 <summary>💡 Lösung anzeigen</summary>
 
 Erstelle eine Datei namens `.gitignore` im Projekt-Root mit folgendem Inhalt:

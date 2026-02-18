@@ -136,7 +136,7 @@ Damit du SQLite von überall aufrufen kannst:
 
 3. **Problem?** Siehe Troubleshooting unten.
 
-<details>
+<details markdown>
 <summary>Troubleshooting: "sqlite3 wird nicht erkannt"</summary>
 
 **Lösung 1:** Neue Eingabeaufforderung öffnen
@@ -457,7 +457,7 @@ id  vorname  nachname
 
 **Glückwunsch! Du hast deine erste Tabelle erstellt!**
 
-<details>
+<details markdown>
 <summary>Detaillierte Erklärung anzeigen</summary>
 
 **CREATE TABLE Syntax:**
@@ -569,7 +569,7 @@ sqlite> INSERT INTO personen (id, vorname, nachname)
 sqlite> SELECT * FROM personen;
 ```
 
-<details>
+<details markdown>
 <summary>PRIMARY KEY im Detail</summary>
 
 **Was ist ein PRIMARY KEY?**
@@ -662,7 +662,7 @@ id  vorname  nachname  abteilung
 
 **Die IDs wurden automatisch vergeben!**
 
-<details>
+<details markdown>
 <summary>Automatische IDs verstehen</summary>
 
 **Wie funktioniert das in SQLite?**
@@ -802,7 +802,7 @@ sqlite> INSERT INTO kunden (name)
 sqlite> SELECT * FROM kunden;
 ```
 
-<details>
+<details markdown>
 <summary>NOT NULL im Detail</summary>
 
 **Was bedeutet NOT NULL?**
@@ -921,7 +921,7 @@ id  titel               beschreibung         status    prioritaet
 2   Wichtige Aufgabe                         dringend  1
 ```
 
-<details>
+<details markdown>
 <summary>DEFAULT verstehen</summary>
 
 **Was macht DEFAULT?**
@@ -1033,7 +1033,7 @@ sqlite> INSERT INTO produkte (produktname, preis, lagerbestand)
 
 **Die Datenbank schützt uns vor unsinnigen Werten!**
 
-<details>
+<details markdown>
 <summary>CHECK im Detail</summary>
 
 **Was macht CHECK?**
@@ -1170,7 +1170,7 @@ Bevor du weitermachst, prüfe dein Verständnis:
 6. Wofür ist DEFAULT gut?
 7. Was prüft CHECK?
 
-<details>
+<details markdown>
 <summary>Antworten anzeigen</summary>
 
 1. `CREATE TABLE` erstellt eine neue, leere Tabelle mit definierter Struktur

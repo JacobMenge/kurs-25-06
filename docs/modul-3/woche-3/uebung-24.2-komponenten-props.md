@@ -220,7 +220,7 @@ export default App
 <Greeting name="Anna" message="Willkommen zurück!" />
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 **src/components/Greeting.jsx:**
@@ -271,7 +271,7 @@ Was passiert, wenn du einen Prop vergisst?
 <Greeting name="Max" />  // message fehlt!
 ```
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Der fehlende Prop ist `undefined`. React zeigt keinen Fehler, aber `{props.message}` rendert nichts (undefined wird nicht angezeigt).
@@ -416,7 +416,7 @@ export default ProductCard;
 }
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 **src/components/ProductCard.jsx:**
@@ -579,7 +579,7 @@ export default Button;
 .btn:disabled { opacity: 0.5; cursor: not-allowed; }
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 **src/components/Button.jsx:**
@@ -781,7 +781,7 @@ export default Alert;
 .alert-error { background: #f8d7da; color: #721c24; }
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 **src/components/Card.jsx:**
@@ -874,7 +874,7 @@ Was ist der Unterschied zwischen diesen beiden Verwendungen?
 </Card>
 ```
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Variante A:** `children` ist `undefined` – es gibt keinen Inhalt zwischen den Tags.
@@ -1069,7 +1069,7 @@ function App() {
 }
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 **src/components/UserProfile.jsx:**
@@ -1297,7 +1297,7 @@ export default ContactCard;
 }
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 **src/components/Avatar.jsx:**
@@ -1483,7 +1483,7 @@ src/
 - Verwende children für die Action-Buttons
 - Erstelle kleine, wiederverwendbare Sub-Komponenten
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 **src/components/Avatar.jsx:**
@@ -1775,7 +1775,7 @@ const products = [
 - "Ausverkauft" wenn `inStock: false`
 - Kategorie-Badge
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 **src/components/ProductBadge.jsx:**

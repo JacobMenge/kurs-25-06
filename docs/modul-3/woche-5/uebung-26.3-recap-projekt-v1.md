@@ -254,7 +254,7 @@ const filteredItems = items.filter(item => {
 });
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 **App.jsx (relevante Teile):**
@@ -340,7 +340,7 @@ export default App;
 
 Warum berechnen wir `filteredItems` bei jedem Render neu, statt es in einem separaten State zu speichern?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Derived State:** `filteredItems` ist "abgeleiteter State" - es kann vollständig aus `items` und `searchTerm` berechnet werden. Einen separaten State dafür zu haben würde:
@@ -480,7 +480,7 @@ Füge unter dem Suchfeld die Tag-Buttons ein:
 2. Tippe zusätzlich einen Suchbegriff - beide Filter arbeiten zusammen
 3. Klicke "Alle" - Tag-Filter wird zurückgesetzt
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 **App.jsx (relevante Teile):**
@@ -585,7 +585,7 @@ function App() {
 
 Was passiert, wenn ein User einen Tag auswählt und dann das einzige Item mit diesem Tag löscht?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Der Filter bleibt auf dem gewählten Tag gesetzt, aber es werden keine Items mehr angezeigt (Empty State). Das kann verwirrend sein!
@@ -872,7 +872,7 @@ export default ItemCard;
 
 > **Hinweis:** Die CSS-Klassen `edit-form`, `edit-input`, `edit-actions`, `edit-btn--save` und `edit-btn--cancel` sind bereits in `App.css` vorbereitet!
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 Die vollständige Lösung findest du in der Schritt-für-Schritt Anleitung oben. Hier die wichtigsten Änderungen zusammengefasst:
@@ -928,7 +928,7 @@ return (/* Normale Anzeige */);
 
 Warum verwenden wir `useState` für die Edit-Formular-Werte (`editTitle`, etc.) in der ItemCard, statt die Werte direkt aus `item` zu lesen?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Controlled Component Pattern:** Das Formular braucht eigenen State, weil:
@@ -1064,7 +1064,7 @@ Da der Custom Hook die Persistenz übernimmt, kannst du den `useEffect` für `sa
 3. Das Item sollte noch da sein
 4. Die App sollte sich exakt wie vorher verhalten
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 **src/hooks/useLocalStorageState.js:**
@@ -1129,7 +1129,7 @@ function App() {
 
 Was bedeutet "Lazy Initialization" bei `useState`?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Lazy Initialization** bedeutet, dass wir `useState` eine **Funktion** übergeben statt direkt den Wert:

@@ -160,7 +160,7 @@ Verbindung geschlossen
 
 Schau in deinen Ordner - die Datei `meine_erste_db.db` wurde erstellt!
 
-<details>
+<details markdown>
 <summary>Was passiert im Detail?</summary>
 
 **import sqlite3**
@@ -286,7 +286,7 @@ sqlite> .schema kontakte
 -- Zeigt die Tabellenstruktur
 ```
 
-<details>
+<details markdown>
 <summary>Wichtige Punkte</summary>
 
 **Dreifache Anführungszeichen """**
@@ -433,7 +433,7 @@ sqlite3.IntegrityError: UNIQUE constraint failed: kontakte.email
 2. Datenbank löschen: `kontakte.db` Datei löschen
 3. Fehlerbehandlung einbauen (kommt in Übung 6 - Projekt)
 
-<details>
+<details markdown>
 <summary>Parameter verstehen</summary>
 
 **Die ? Platzhalter:**
@@ -575,7 +575,7 @@ Telefon: 030-234567
 ...
 ```
 
-<details>
+<details markdown>
 <summary>Ergebnisse verstehen</summary>
 
 **fetchall() gibt eine Liste von Tuples zurück:**
@@ -688,7 +688,7 @@ conn.close()
 Geänderte Zeilen: 1
 ```
 
-<details>
+<details markdown>
 <summary>rowcount verstehen</summary>
 
 **cursor.rowcount**

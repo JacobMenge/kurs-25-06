@@ -23,7 +23,7 @@ fruechte = ["Apfel", "Banane", "Orange", "Kiwi", "Mango"]
 - Nutze `enumerate()` für automatische Nummerierung
 - Denke an die Einrückung im Schleifenkörper
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -72,7 +72,7 @@ Erstelle einen Countdown-Timer, der von einer eingegebenen Zahl bis 0 herunterz�
 - Vergiss nicht, die Variable zu verringern (sonst Endlosschleife!)
 - Nutze `input()` und wandle in `int()` um
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -114,7 +114,7 @@ Erstelle ein Programm, das alle geraden Zahlen zwischen 1 und 20 findet und ausg
 - Eine Zahl ist gerade, wenn `zahl % 2 == 0`
 - Nutze einen Zähler für die Anzahl
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -165,7 +165,7 @@ passwoerter = ["12345", "abc", "Sicher123!", "test", "MeinPasswort2024!"]
 - `any(c.isdigit() for c in passwort)` prüft auf Zahlen
 - `any(c in "!@#$%^&*()" for c in passwort)` prüft auf Sonderzeichen
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -219,7 +219,7 @@ Erstelle ein Programm, das durch einen Namen iteriert und Informationen sammelt.
 
 **Schritt 4:** Gib eine Statistik aus
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -285,7 +285,7 @@ Das alte System hatte viel duplizierten Code durch die verschachtelten if-else-S
 - Die Schleifenbedingung: `while versuche_verwendet < max_versuche`
 - Das `else` bei einer Schleife wird nur ausgeführt, wenn **kein break** aufgetreten ist
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -400,7 +400,7 @@ print("="*50)
 
 Erstelle ein Programm, das eine Multiplikationstabelle ausgibt.
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python

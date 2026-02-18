@@ -191,7 +191,7 @@ createRoot(document.getElementById('root')).render(
 
 4. Starte den Dev-Server (`npm run dev`) und prüfe, ob die App ohne Fehler läuft.
 
-<details>
+<details markdown>
 <summary>Fehlerbehebung anzeigen</summary>
 
 **Fehler: "Cannot find module 'react-router-dom'"**
@@ -371,7 +371,7 @@ export default App;
    - `http://localhost:5173/about`
    - `http://localhost:5173/contact`
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -464,7 +464,7 @@ export default NotFound;
 
 3. Teste: Gib eine ungültige URL ein wie `http://localhost:5173/xyz`
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -583,7 +583,7 @@ function App() {
 
 3. Teste: Klicke auf die Links und beobachte die URL-Leiste – die Seite sollte **nicht** neu laden!
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -630,7 +630,7 @@ export default Navigation;
 
 Wann verwendest du `<a href>` und wann `<Link to>`?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **`<Link to>`** für interne Navigation innerhalb deiner React-App:
@@ -768,7 +768,7 @@ export default UserProfile;
 
 5. Teste: Gehe zu `/users` und dann zu `/users/1`, `/users/42`, etc.
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -940,7 +940,7 @@ export default UserProfile;
    - `/users/2` → Anna Schmidt
    - `/users/99` → User nicht gefunden
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1012,7 +1012,7 @@ export default UserProfile;
 
 Warum ist `userId` aus `useParams()` ein String und keine Zahl?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 URL-Parameter kommen aus der Browser-URL, die immer ein String ist. React Router parst diese nicht automatisch zu Zahlen, weil:
@@ -1172,7 +1172,7 @@ export default UserPosts;
    <Link to={`/users/${userId}/posts`}>Posts anzeigen</Link>
    ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1399,7 +1399,7 @@ export default BlogPost;
 
 4. **Füge die Routen in `App.jsx` hinzu** (als Nested Routes!)
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 **src/pages/Blog.jsx:**

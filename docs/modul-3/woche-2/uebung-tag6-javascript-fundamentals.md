@@ -229,7 +229,7 @@ Du kennst bereits Python/FastAPI für das Backend. Jetzt kommt JavaScript/React 
 
 Warum brauchen wir JavaScript, wenn wir doch schon Python können?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Browser können kein Python ausführen!**
@@ -442,7 +442,7 @@ console.log(person);
 // person = { name: "Neu" };
 ```
 
-<details>
+<details markdown>
 <summary>Was passiert?</summary>
 
 1. `const meinName = "Max"` - Erstellt eine Konstante
@@ -518,7 +518,7 @@ typeof (() => {})   // "function"
 
 Was ist der Unterschied zwischen `null` und `undefined`?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **undefined:**
@@ -608,7 +608,7 @@ console.log("" == false);
 // Bonus: Erkläre, warum diese Ergebnisse so sind
 ```
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 ```javascript
@@ -736,7 +736,7 @@ console.log(greet("Max"));        // "Hallo Max!"
 console.log(createProduct("Laptop", 999));  // { name: "Laptop", price: 999 }
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -867,7 +867,7 @@ const bewertung = // "Bestanden" wenn >= 50, sonst "Nicht bestanden"
 const zusammenfassung = // Mehrere Zeilen mit allen Infos
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -973,7 +973,7 @@ const weather = temperature > 30 ? "heiß" : temperature > 20 ? "warm" : "kalt";
 console.log(weather);
 ```
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Ausgabe: "warm"**
@@ -1094,7 +1094,7 @@ console.log("" ?? "Leer");
 console.log(undefined ?? "Fallback");
 ```
 
-<details>
+<details markdown>
 <summary>Lösungen anzeigen</summary>
 
 ```javascript
@@ -1206,7 +1206,7 @@ setTimeout(sayHello, 1000);
 setTimeout(sayHello(), 1000);
 ```
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Version A: Korrekt**
@@ -1624,7 +1624,7 @@ users.forEach((user) => {
 3. Füge einen weiteren User zum `users`-Array hinzu
 4. Erstelle eine neue Funktion `isAdult`, die true/false zurückgibt
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript

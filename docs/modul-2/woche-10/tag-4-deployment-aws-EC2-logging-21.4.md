@@ -1527,7 +1527,7 @@ cat /var/log/notes-api/s3-upload.log
   * Anzahl der Notizen
   * Anzahl der Log-Dateien in `/var/log/notes-api/`
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 **In main.py:**
@@ -1590,7 +1590,7 @@ curl http://localhost:8000/health
 * AWS-Region
 * Log-Retention-Days
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 **Erstelle `.env` Datei:**
@@ -1655,7 +1655,7 @@ echo "Logs uploaded to s3://${S3_BUCKET}/logs/"
 * **Hinweis:** Kostenlose Domain-Anbieter sind oft unzuverlässig - besser kleine Investition
 * Für Testzwecke: Manche Anbieter haben Free Trials
 
-<details>
+<details markdown>
 <summary>Hintergrundwissen</summary>
 
 **Warum HTTPS?**
@@ -1675,7 +1675,7 @@ echo "Logs uploaded to s3://${S3_BUCKET}/logs/"
 
 </details>
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 **Schritt 1: Domain einrichten**
@@ -1759,7 +1759,7 @@ https://deine-domain.com/docs
 
 **Aufgabe:** Implementiere einen einfachen Monitoring-Mechanismus.
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 **Erstelle ein Monitoring-Script:**
@@ -1825,7 +1825,7 @@ tail -f /var/log/notes-api/health-check.log
 
 **Aufgabe:** Erstelle ein Script, das die SQLite-Datenbank täglich zu S3 sichert.
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 **Schritt 1: SQLite CLI installieren (falls nicht vorhanden)**

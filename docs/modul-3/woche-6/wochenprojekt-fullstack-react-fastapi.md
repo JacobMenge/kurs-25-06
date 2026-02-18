@@ -333,7 +333,7 @@ uvicorn~=0.34.0
 
 Erstelle die Datei `backend/main.py`:
 
-<details>
+<details markdown>
 <summary><b>backend/main.py anzeigen</b> (kompletter Code mit Kommentaren)</summary>
 
 ```python
@@ -644,7 +644,7 @@ Jetzt passen wir das Frontend an, damit es die API nutzt statt localStorage.
 
 Erstelle eine neue Datei `frontend/src/utils/api.js`:
 
-<details>
+<details markdown>
 <summary><b>frontend/src/utils/api.js anzeigen</b> (API-Hilfsfunktionen)</summary>
 
 ```javascript
@@ -776,7 +776,7 @@ Jetzt ändern wir die `App.jsx`, damit sie die API nutzt statt localStorage.
 
 Ersetze den Inhalt von `frontend/src/App.jsx` durch:
 
-<details>
+<details markdown>
 <summary><b>frontend/src/App.jsx anzeigen</b> (komplette Komponente mit Backend-Anbindung)</summary>
 
 ```jsx
@@ -1020,7 +1020,7 @@ Aktuell gehen die Daten verloren, wenn das Backend neu gestartet wird. Mit SQLit
 
 Erstelle eine neue Version von `backend/main.py` mit SQLite:
 
-<details>
+<details markdown>
 <summary>main.py mit SQLite-Speicherung anzeigen</summary>
 
 ```python
@@ -1376,7 +1376,7 @@ curl http://localhost:8000/items
 
 > **Tipp:** In einer echten Produktionsumgebung würde man einen Prozess-Manager wie `systemd` verwenden, damit das Backend automatisch bei einem Neustart des Servers mitstartet. Für unser Lernprojekt reicht `nohup`.
 
-<details>
+<details markdown>
 <summary>Bonus: systemd Service für automatischen Start (optional)</summary>
 
 Erstelle eine Service-Datei:

@@ -42,7 +42,7 @@ Wenn der Browser HTML parst und ein `<link rel="stylesheet">` findet, startet er
 
 Deine CSS-Änderungen werden im Browser nicht angezeigt, obwohl du die Datei gespeichert hast. Was sind die ersten zwei Dinge, die du prüfen solltest?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 1. **Hard Reload durchführen:**
@@ -124,7 +124,7 @@ Erstelle ein CSS-Stylesheet für deine HTML-Seite von gestern:
 3. Regeln schreiben
 4. Im Network Tab prüfen: Wird CSS geladen?
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```css
@@ -226,7 +226,7 @@ a:hover {
 
 Warum solltest du für Styling hauptsächlich Klassen statt IDs verwenden?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Klassen sind besser für Styling, weil:**
@@ -318,7 +318,7 @@ Füge deinem Stylesheet Hover- und Focus-Styles hinzu:
 2. Buttons sollen bei Hover dunkler werden
 3. Input-Felder sollen bei Focus einen blauen Rahmen bekommen
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```css
@@ -445,7 +445,7 @@ p { color: red; }
 </div>
 ```
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Der Text ist blau!**
@@ -542,7 +542,7 @@ Style eine "Card"-Komponente mit Box Model:
 5. Abgerundete Ecken: 8px
 6. Außenabstand unten: 20px
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```css
@@ -618,7 +618,7 @@ Zeigt den finalen, berechneten Wert jeder Property:
    - Gibt es durchgestrichene Styles?
    - Was sind die berechneten Werte für `padding` und `margin`?
 
-<details>
+<details markdown>
 <summary>Hinweise zur Lösung</summary>
 
 **So gehst du vor:**
@@ -668,7 +668,7 @@ Zeigt den finalen, berechneten Wert jeder Property:
 
 Du hast eine CSS-Regel geschrieben, aber sie wird im Styles-Tab durchgestrichen angezeigt. Was ist passiert und wie löst du das Problem?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Was passiert ist:**
@@ -781,7 +781,7 @@ Morgen lernst du **CSS Layout & Responsive**:
 
 ## Bonus: Vollständiges Stylesheet
 
-<details>
+<details markdown>
 <summary>Komplettes Beispiel-Stylesheet anzeigen</summary>
 
 ```css

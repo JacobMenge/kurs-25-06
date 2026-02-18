@@ -318,7 +318,7 @@ console.log(document.head);
 
 Was siehst du? Was ist `document`?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **`document`** ist das globale Objekt, das die gesamte HTML-Seite repräsentiert.
@@ -408,7 +408,7 @@ const firstListItem = // Dein Code hier
 console.log('Erstes Item:', firstListItem);
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -445,7 +445,7 @@ console.log('Erstes Item:', firstListItem);
 
 Was ist der Unterschied zwischen `querySelector()` und `querySelectorAll()`?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **`querySelector()`:**
@@ -562,7 +562,7 @@ itemTexts.forEach((item, index) => {
 });
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -707,7 +707,7 @@ listItems.forEach(item => {
 });
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -830,7 +830,7 @@ decrementBtn.addEventListener('click', () => {
 // 3. Bonus: Zeige eine Nachricht wenn counter 10 erreicht
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -966,7 +966,7 @@ itemListEl.addEventListener('click', (e) => {
 // Antwort in der Konsole ausgeben nach Nachdenken!
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1166,7 +1166,7 @@ emailField.addEventListener('input', (e) => {
 });
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1392,7 +1392,7 @@ dynamicList.addEventListener('click', (e) => {
 });
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1547,7 +1547,7 @@ mainItemList.addEventListener('click', (e) => {
 // direkten Event Listener auf sie gesetzt haben?
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1662,7 +1662,7 @@ dataItemList.addEventListener('click', (e) => {
 });
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -2092,7 +2092,7 @@ addTodo('Event Listener verstehen');
 addTodo('Todo-App fertig bauen');
 ```
 
-<details>
+<details markdown>
 <summary>Vollständige Musterlösung anzeigen</summary>
 
 ```javascript

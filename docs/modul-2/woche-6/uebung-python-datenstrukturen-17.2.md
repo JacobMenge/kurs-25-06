@@ -89,7 +89,7 @@ Erstelle ein Programm zur Verwaltung einer Einkaufsliste mit folgenden Funktione
 - Nutze `sort()` zum Sortieren
 - Nutze `enumerate()` für die Nummerierung
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -240,7 +240,7 @@ Erstelle ein Programm für ein 2D-Koordinatensystem:
 - Nutze Tuple Unpacking: `x, y = punkt`
 - Du kannst Tuples in Listen speichern
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -413,7 +413,7 @@ Du hast drei verschiedene E-Mail-Listen von verschiedenen Veranstaltungen. Erste
 - Schnittmenge: `&` oder `.intersection()`
 - Differenz: `-` oder `.difference()`
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -647,7 +647,7 @@ Erstelle ein umfassendes Studentenverwaltungssystem:
 - Nutze `.get()` für sichere Zugriffe
 - Nutze `sum()` und `len()` für Durchschnitte
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -857,7 +857,7 @@ Funktionen:
 - Finde Bücher mit überlappenden Kategorien
 - Erstelle einen Jahresbericht
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python

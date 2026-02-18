@@ -276,7 +276,7 @@ Dieser soll eine Notiz aus der Datenbank löschen.
 - SQL: `DELETE FROM notes WHERE id = ?`
 - Prüfe mit `cursor.rowcount`, ob eine Zeile gelöscht wurde
 
-<details>
+<details markdown>
 <summary>💡 Lösung anzeigen</summary>
 
 ```python
@@ -317,7 +317,7 @@ Implementiere einen Endpoint zum Aktualisieren einer bestehenden Notiz.
 - Bei Erfolg: Aktualisierte Notiz zurückgeben
 - Bei nicht existierender ID: HTTP 404
 
-<details>
+<details markdown>
 <summary>💡 Lösung anzeigen</summary>
 
 ```python
@@ -358,7 +358,7 @@ Erstelle einen Endpoint, der Notizen nach einem Suchbegriff durchsucht.
 - Query Parameter `q` für den Suchtext
 - SQL: `WHERE text LIKE ?` mit Wildcards (`%suchtext%`)
 
-<details>
+<details markdown>
 <summary>💡 Lösung anzeigen</summary>
 
 ```python

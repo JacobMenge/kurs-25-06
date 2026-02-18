@@ -87,7 +87,7 @@ user = db.query(User).filter(User.email == "max@example.com").first()
 
 Nenne zwei Gründe, warum das React-Frontend niemals direkt mit der Datenbank kommunizieren sollte.
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 1. **Sicherheit:** Datenbank-Credentials (Passwort, Host) müssten ins Frontend – das ist öffentlich sichtbar und manipulierbar.
@@ -102,7 +102,7 @@ Weitere Gründe: Wiederverwendbarkeit der API für verschiedene Clients, bessere
 
 Was ist der Hauptvorteil eines ORM gegenüber direktem SQL – und was ist ein Nachteil?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 - **Vorteil:** Produktivität – man arbeitet mit Python-Objekten statt SQL-Strings. Typ-Sicherheit, IDE-Autocomplete, weniger Boilerplate. Migrationen werden automatisch generiert.
@@ -193,7 +193,7 @@ pip list | grep -i -E "fastapi|uvicorn|sqlalchemy|psycopg|dotenv|alembic"
 
 > **Windows (PowerShell):** `pip list | Select-String "fastapi|uvicorn|sqlalchemy|psycopg|dotenv|alembic"`
 
-<details>
+<details markdown>
 <summary>Hilfe: psycopg lässt sich nicht installieren?</summary>
 
 Falls `psycopg[binary]` Probleme macht, probiere die alternative Installation:
@@ -290,7 +290,7 @@ python -c "from app.database import engine; print(engine.url)"
 
 Du solltest deine Datenbank-URL sehen (Passwort wird maskiert angezeigt).
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 Die Ausgabe sollte so aussehen:
@@ -310,7 +310,7 @@ Falls du einen Fehler bekommst:
 
 Warum verwenden wir `yield` in der `get_db()`-Funktion statt `return`?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 `yield` stellt sicher, dass die Session **nach dem Request geschlossen** wird (Cleanup). FastAPI's Dependency-Injection-System ruft den Code nach `yield` automatisch auf – auch bei Fehlern (dank `finally`). So werden offene Datenbankverbindungen vermieden.
@@ -386,7 +386,7 @@ python -c "from app.models import User, Order; print(User.__tablename__, Order._
 
 Erwartete Ausgabe: `users orders`
 
-<details>
+<details markdown>
 <summary>Hilfe: ImportError bei app.database?</summary>
 
 Falls `from app.database import Base` fehlschlägt:
@@ -458,7 +458,7 @@ class OrderResponse(BaseModel):
 python -c "from app.schemas import UserCreate, UserResponse, OrderCreate, OrderResponse; print('OK')"
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 Die Trennung im Überblick:
@@ -477,7 +477,7 @@ Der Datenfluss: `UserCreate` → Validierung → `User` (ORM) → DB → `UserRe
 
 Warum haben wir getrennte Dateien für `models.py` (SQLAlchemy) und `schemas.py` (Pydantic)?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 - **models.py** definiert die **Datenbankstruktur** – wie Daten gespeichert werden (Tabellen, Spalten, Constraints, Beziehungen).
@@ -588,7 +588,7 @@ Du siehst die Swagger UI mit deinen Endpoints. Teste:
 | `ModuleNotFoundError` | Paket nicht installiert oder venv nicht aktiv | venv aktivieren, `pip install ...` |
 | `no module named 'app'` | Falsches Arbeitsverzeichnis | Befehl aus `backend/`-Ordner ausführen |
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 Erwartete Ausgabe im Terminal beim Starten:
@@ -675,7 +675,7 @@ def list_orders(db: Session = Depends(get_db)):
 
 > **Teste auch Fehlerfälle:** Was passiert, wenn du POST /orders mit einer nicht existierenden User-ID aufrufst? Du solltest einen 404-Fehler bekommen.
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 Nach dem Erweitern sollte dein `app/main.py` diese 5 Endpoints haben:
@@ -696,7 +696,7 @@ Alle Endpoints sind über `http://localhost:8000/docs` testbar. Dank `--reload` 
 
 Was passiert, wenn ein `db.commit()` fehlschlägt – z.B. weil ein UNIQUE-Constraint verletzt wird? Was muss man dann tun?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Die Transaktion ist dann in einem **fehlerhaften Zustand**. Man muss `db.rollback()` aufrufen, um die Session wieder in einen sauberen Zustand zu bringen. Erst danach kann man die Session wieder für neue Operationen verwenden.
@@ -796,7 +796,7 @@ alembic current
 
 Du solltest `(head)` sehen – Alembic kennt jetzt den aktuellen Stand.
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 Die kompletten Änderungen in `alembic/env.py`:
@@ -829,7 +829,7 @@ SELECT * FROM alembic_version;
 
 </details>
 
-<details>
+<details markdown>
 <summary>Hilfe: alembic-Befehl nicht gefunden?</summary>
 
 Auf Windows wird `alembic` manchmal nicht als Befehl erkannt. Nutze stattdessen:
@@ -941,7 +941,7 @@ alembic history --verbose
 
 `current` zeigt den Hash eurer Migration, `history` listet alle Migrationen auf.
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 Der vollständige Ablauf:
@@ -976,7 +976,7 @@ Model ändern → alembic revision --autogenerate → Datei prüfen → alembic 
 
 Was ist "Schema Drift" und wie verhindert Alembic dieses Problem?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Schema Drift** bedeutet, dass der Code eine andere Datenbankstruktur erwartet als tatsächlich vorhanden ist – z.B. weil jemand manuell eine Spalte hinzugefügt hat oder ein Teammitglied eine andere Datenbankversion hat.
@@ -1057,7 +1057,7 @@ Gleicher Code – unterschiedliche Konfiguration:
 
 > **Wichtig:** Die `.env`-Datei gehört **niemals** ins Git-Repository! Sie enthält Passwörter und andere Secrets. Die `.env.example` hingegen **soll** committed werden – sie zeigt dem Team, welche Variablen benötigt werden.
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 Eure Projektstruktur sollte jetzt so aussehen:

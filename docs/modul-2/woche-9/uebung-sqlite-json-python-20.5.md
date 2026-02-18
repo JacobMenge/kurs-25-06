@@ -361,7 +361,7 @@ Falls du noch mehr üben möchtest:
 
 ## Musterlösung
 
-<details>
+<details markdown>
 <summary>rezepte.json (Beispieldaten)</summary>
 
 ```json
@@ -392,7 +392,7 @@ Falls du noch mehr üben möchtest:
 
 </details>
 
-<details>
+<details markdown>
 <summary>rezeptverwaltung.py (Vollständiger Code)</summary>
 
 ```python
@@ -792,7 +792,7 @@ with open(JSON_DATEI, "r", encoding="utf-8") as f:
 
 </details>
 
-<details>
+<details markdown>
 <summary>Hinweise zur Musterlösung</summary>
 
 **Was du aus dem Code lernen kannst:**
@@ -869,7 +869,7 @@ Bei ungültigem JSON crasht das Programm mit Traceback - das ist für diese Übu
 
 **Wenn du try/except bereits kennst oder vorgreifen möchtest:**
 
-<details>
+<details markdown>
 <summary>Optionale Erweiterung mit try/except</summary>
 
 So könnte `lade_rezepte()` mit vollständiger Fehlerbehandlung aussehen:

@@ -246,7 +246,7 @@ import { createContext } from 'react';
 
 3. Der Context soll später die Werte `'light'` oder `'dark'` speichern können.
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -275,7 +275,7 @@ export default ThemeContext;
 
 Was ist der Unterschied zwischen dem Default-Wert bei `createContext` und dem `value` beim Provider?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Default-Wert (`createContext(defaultValue)`):**
@@ -413,7 +413,7 @@ export default App;
 
 2. Der Button soll zwischen `'light'` und `'dark'` wechseln.
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -597,7 +597,7 @@ import ThemedButton from './components/ThemedButton';
 </ThemeContext.Provider>
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 **src/components/ThemedBox.jsx:**
@@ -852,7 +852,7 @@ export default Settings;
 
 > **Hinweis:** Die Wrapper-Komponenten (Layout, Main, Sidebar) können wirklich simpel sein – sie müssen nur `{children}` rendern. Es geht hier nur darum, Tiefe in der Hierarchie zu erzeugen, um zu zeigen, dass Context diese Ebenen überspringen kann.
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 **src/components/Settings.jsx:**
@@ -1112,7 +1112,7 @@ C) Der `onChange`-Handler eines Input-Felds
 D) Die gewählte Farbpalette der App
 E) Die Breite eines bestimmten Containers
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Context:** B und D
@@ -1393,7 +1393,7 @@ function App() {
 export default App;
 ```
 
-<details>
+<details markdown>
 <summary>Vollständige Musterlösung anzeigen</summary>
 
 Die Lösung entspricht dem Code oben. Hier noch die CSS-Datei für zusätzliches Styling:
@@ -1722,7 +1722,7 @@ function ProtectedContent() {
 export default ProtectedContent;
 ```
 
-<details>
+<details markdown>
 <summary>Vollständige Musterlösung anzeigen</summary>
 
 **src/contexts/UserContext.jsx:**

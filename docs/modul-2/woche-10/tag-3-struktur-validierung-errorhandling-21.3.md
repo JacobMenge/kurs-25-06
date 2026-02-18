@@ -2061,7 +2061,7 @@ Diese Funktion soll die Gesamtanzahl der Notizen in der Datenbank zurückgeben.
 
 **Bonus:** Erstelle auch einen neuen Endpoint `GET /notes/count` in `main.py`
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 **In db.py:**
@@ -2122,7 +2122,7 @@ Wir haben bereits `Query()` für die Validierung genutzt. Eine alternative, fort
 * `search` ist optional, aber wenn vorhanden, mindestens 2 Zeichen
 * Nutze `Depends()` für Dependency Injection
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 ```python
@@ -2177,7 +2177,7 @@ Ersetze alle `print()`-Statements in `db.py` durch Python's `logging`-Modul.
 * Kann in Dateien geschrieben werden
 * Wird in Production oft gebraucht
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 **Am Anfang von db.py hinzufügen:**
@@ -2264,7 +2264,7 @@ if note is None:
 
 **Zwei Lösungsansätze:**
 
-<details>
+<details markdown>
 <summary>Lösung A: DB-Fehler durchreichen (einfacher)</summary>
 
 **In db.py - Lass DB-Fehler durchgehen:**
@@ -2314,7 +2314,7 @@ def get_note(note_id: int):
 
 </details>
 
-<details>
+<details markdown>
 <summary>Lösung B: Custom Exception + Global Handler (professioneller)</summary>
 
 **Schritt 1: Eigene Exception definieren (z.B. in db.py):**
@@ -2396,7 +2396,7 @@ Implementiere echte Pagination mit `page` und `page_size` statt nur `limit`.
 - `page_size`: Einträge pro Seite (1-100)
 - SQL: `LIMIT page_size OFFSET (page-1)*page_size`
 
-<details>
+<details markdown>
 <summary>Hintergrundwissen</summary>
 
 **Was ist Pagination?**

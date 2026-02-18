@@ -27,7 +27,7 @@ Viele Menschen verwenden diese Begriffe synonym, aber sie beschreiben unterschie
 
 Was ist der Hauptunterschied zwischen Internet und World Wide Web?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Das **Internet** ist die physische Infrastruktur (Kabel, Router, Server) - sozusagen die "Autobahn".
@@ -75,7 +75,7 @@ Versuche, mindestens 5 Schritte zu identifizieren.
 - Was macht der Browser zuerst?
 - Was passiert, bevor die Seite angezeigt wird?
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 Der Weg einer Webanfrage:
@@ -138,7 +138,7 @@ Die HTTP-Methode sagt dem Server, was mit einer Ressource passieren soll:
 
 Du möchtest einen neuen Benutzer in einer Datenbank anlegen. Welche HTTP-Methode verwendest du?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **POST** - Diese Methode wird verwendet, um neue Ressourcen zu erstellen.
@@ -196,7 +196,7 @@ Ordne folgende Szenarien dem richtigen Status Code zu:
 4. Der Server hat einen Fehler und kann die Anfrage nicht verarbeiten
 5. Du sendest ein Formular mit ungültigen Daten
 
-<details>
+<details markdown>
 <summary>Lösungen anzeigen</summary>
 
 1. **404 Not Found** - Die angeforderte Ressource existiert nicht
@@ -242,7 +242,7 @@ Analysiere folgende URL und identifiziere alle Bestandteile:
 https://shop.example.com:8080/products/electronics?category=phones&sort=price#reviews
 ```
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 | Bestandteil | Wert | Erklärung |
@@ -281,7 +281,7 @@ DNS übersetzt: `www.google.com` → `142.250.185.14`
 
 Warum wird die zweite Anfrage an die gleiche Domain oft schneller geladen?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Wegen **DNS-Caching**!
@@ -332,7 +332,7 @@ Wechsle zum **Network Tab**.
 
 **Frage 5:** Findest du einen Request mit Status 304? Was bedeutet das?
 
-<details>
+<details markdown>
 <summary>Hinweise zur Lösung</summary>
 
 **Frage 1:** Die Anzahl siehst du unten im Network Tab (z.B. "15 requests")
@@ -367,7 +367,7 @@ Analysiere einen beliebigen Request im Network Tab genauer:
    - Mindestens 3 Request Headers
    - Mindestens 3 Response Headers
 
-<details>
+<details markdown>
 <summary>Beispiel-Analyse</summary>
 
 **Request URL:** `https://example.com/`
@@ -422,7 +422,7 @@ REST (Representational State Transfer) ist ein Architekturstil für Web-APIs. Es
 
 Du möchtest alle Produkte aus einer REST API abrufen. Welche HTTP-Methode und welchen Endpunkt verwendest du?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Methode:** GET
@@ -484,7 +484,7 @@ Beantworte diese Fragen, um dein Wissen zu prüfen:
 4. Welche HTTP-Methode ist "safe"?
 5. Wo siehst du im Browser, welche HTTP-Requests eine Seite auslöst?
 
-<details>
+<details markdown>
 <summary>Antworten anzeigen</summary>
 
 1. **HTTPS** ist die verschlüsselte Version von HTTP. Es verwendet TLS/SSL, um die Kommunikation zu sichern. Port 80 (HTTP) vs. Port 443 (HTTPS).

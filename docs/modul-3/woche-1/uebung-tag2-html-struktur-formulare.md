@@ -51,7 +51,7 @@ Jedes HTML-Dokument folgt dieser Struktur:
 
 Warum ist das `<meta charset="UTF-8">` so wichtig und sollte immer als erstes im `<head>` stehen?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Das `charset="UTF-8"` definiert die **Zeichenkodierung** des Dokuments.
@@ -89,7 +89,7 @@ Erstelle eine HTML-Seite mit folgenden Anforderungen:
 3. Füge die geforderten Elemente hinzu
 4. Öffne die Datei im Browser
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```html
@@ -173,7 +173,7 @@ Semantische Tags geben dem Inhalt **Bedeutung**, nicht nur Aussehen:
 
 Warum sollte `<main>` nur einmal pro Seite verwendet werden?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 `<main>` markiert den **Hauptinhalt** der Seite - den Content, der einzigartig für diese Seite ist (nicht Header, Footer, Navigation, die auf jeder Seite gleich sind).
@@ -209,7 +209,7 @@ Erweitere deine HTML-Seite mit semantischer Struktur:
 - Die Navigation kann erstmal nur Platzhalter-Links haben (`<a href="#">Link</a>`)
 - Denke an die Überschriften-Hierarchie: `<h1>` → `<h2>` → `<h3>` (keine Stufen überspringen!)
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```html
@@ -300,7 +300,7 @@ projekt/
 
 Wie verlinkst du von `index.html` aus auf `styles.css` und `logo.png`?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Für CSS (im `<head>`):**
@@ -368,7 +368,7 @@ Wenn der Browser HTML parst, lädt er automatisch alle referenzierten Ressourcen
    - Welche Typen siehst du?
    - Gibt es 404-Fehler?
 
-<details>
+<details markdown>
 <summary>Hinweise zur Lösung</summary>
 
 **style.css erstellen:**
@@ -444,7 +444,7 @@ Formulare senden Benutzereingaben an den Server. Jeder Submit = ein neuer HTTP-R
 
 Was passiert, wenn du das `name`-Attribut bei einem Input-Feld vergisst?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Das Feld wird NICHT übertragen!**
@@ -521,7 +521,7 @@ Erstelle ein Kontaktformular mit folgenden Feldern:
 - Alle Felder brauchen `name`, `id` und zugehöriges `<label>`
 - Pflichtfelder mit `required` markieren
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```html
@@ -631,7 +631,7 @@ Wenn ein Formular nicht funktioniert:
    - Welche Daten werden übertragen?
    - Welchen Status Code erhältst du?
 
-<details>
+<details markdown>
 <summary>Hinweise zur Lösung</summary>
 
 **So findest du den Request:**
@@ -735,7 +735,7 @@ Deine HTML-Struktur von heute wird morgen gestylt!
 
 Hier ist eine vollständige HTML-Seite mit allem, was du heute gelernt hast:
 
-<details>
+<details markdown>
 <summary>Vollständige Beispielseite anzeigen</summary>
 
 ```html

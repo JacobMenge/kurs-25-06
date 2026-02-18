@@ -218,7 +218,7 @@ console.log(numberedTasks);
 // Erwartete Ausgabe: ['1. Einkaufen', '2. Kochen', '3. Abwaschen']
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -324,7 +324,7 @@ function createUser(name, age) {
 const createUserArrow = // ???
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -475,7 +475,7 @@ export default App
 
 3. **Bonus:** Erweitere die Komponente, sodass sie die Anzahl der Früchte anzeigt.
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -508,7 +508,7 @@ export default FruitList;
 
 Warum kannst du `map()` direkt in JSX verwenden, aber nicht `forEach()`?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **`map()` gibt ein neues Array zurück** – genau das, was React zum Rendern braucht!
@@ -687,7 +687,7 @@ function UserCard({ user }) {
 }
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -842,7 +842,7 @@ function ProductList() {
 export default ProductList;
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1002,7 +1002,7 @@ export default ProductGrid;
 }
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1192,7 +1192,7 @@ const testProduct = {
 <ProductCard product={testProduct} />
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1408,7 +1408,7 @@ src/
 └── App.jsx
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 **src/components/Badge.jsx:**
@@ -1717,7 +1717,7 @@ function TodoList() {
 export default TodoList;
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript

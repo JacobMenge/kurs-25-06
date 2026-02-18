@@ -160,7 +160,7 @@ Du solltest etwas sehen wie: `git version 2.45.0`
 - `core.autocrlf true` verhindert Probleme mit Zeilenenden unter Windows
 - Du musst diese Konfiguration nur **einmal** machen!
 
-<details>
+<details markdown>
 <summary>Schritt-für-Schritt Lösung anzeigen</summary>
 
 ```bash
@@ -284,7 +284,7 @@ pwd
 2. Was bedeutet `--global` bei git config?
 3. Wie überprüfst du, ob Git richtig installiert ist?
 
-<details>
+<details markdown>
 <summary>Antworten anzeigen</summary>
 
 1. Jeder Commit wird mit Autor und E-Mail gespeichert - zeigt, wer was geändert hat.
@@ -484,7 +484,7 @@ git status
 - Du kannst die Dateien mit VS Code, Notepad++ oder im Terminal erstellen
 - Dateien, die mit `.` beginnen, sind auf Windows evtl. versteckt - aber Git sieht sie!
 
-<details>
+<details markdown>
 <summary>Schritt-für-Schritt Lösung anzeigen</summary>
 
 ```bash
@@ -702,7 +702,7 @@ ls -la
 2. Was bedeutet "untracked file"?
 3. Warum solltest du den `.git` Ordner nicht löschen?
 
-<details>
+<details markdown>
 <summary>Antworten anzeigen</summary>
 
 1. Erstellt ein Git-Repository im aktuellen Ordner (fügt `.git` Ordner hinzu).
@@ -855,7 +855,7 @@ git log --oneline --graph
 - Staged Dateien werden grün angezeigt, unstaged rot
 - Jeder Commit bekommt eine eindeutige ID (Hash)
 
-<details>
+<details markdown>
 <summary>Schritt-für-Schritt Lösung anzeigen</summary>
 
 ```bash
@@ -1108,7 +1108,7 @@ git log --oneline
 2. Warum ist die Staging Area nützlich?
 3. Wie siehst du, welche Dateien bereit für einen Commit sind?
 
-<details>
+<details markdown>
 <summary>Antworten anzeigen</summary>
 
 1. `git add` bereitet Änderungen vor (Staging), `git commit` speichert sie dauerhaft in der Historie.
@@ -1227,7 +1227,7 @@ git clone URL
 - **Windows-Nutzer:** Wenn Browser-Login funktioniert, ist alles richtig!
 - Bei Problemen: Stelle sicher, dass Git for Windows aktuell ist
 
-<details>
+<details markdown>
 <summary>Schritt-für-Schritt Lösung anzeigen</summary>
 
 ```bash
@@ -1530,7 +1530,7 @@ git push origin main
 2. Wofür steht "origin"?
 3. Warum nutzt man `-u` beim ersten Push?
 
-<details>
+<details markdown>
 <summary>Antworten anzeigen</summary>
 
 1. Lokal = auf deinem Computer, Remote = auf einem Server (z.B. GitHub) - wie Backup in der Cloud.
@@ -1664,7 +1664,7 @@ In dieser Übung simulierst du Arbeit an zwei verschiedenen Orten:
 - In der Praxis: Kollegen pushen, du pullst
 - Immer vor dem Push pullen!
 
-<details>
+<details markdown>
 <summary>Schritt-für-Schritt Lösung anzeigen</summary>
 
 ```bash
@@ -1970,7 +1970,7 @@ Nachmittag:
 2. Warum sollte man vor dem Push pullen?
 3. Was ist der Unterschied zwischen Änderungen auf GitHub machen und lokal?
 
-<details>
+<details markdown>
 <summary>Antworten anzeigen</summary>
 
 1. Holt neue Commits vom Remote-Repository und fügt sie in dein lokales Repository ein.
@@ -2080,7 +2080,7 @@ Erstelle ein kleines Python-Projekt **Schritt für Schritt** mit Git:
 5. Pull (um sicher zu gehen)
 6. Push
 
-<details>
+<details markdown>
 <summary>Vollständige Lösung anzeigen</summary>
 
 ```bash

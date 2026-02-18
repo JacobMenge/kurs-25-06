@@ -36,7 +36,7 @@ In dieser Übung lernst du:
 - Rufe die spezifische Methode `bellen()` auf.
 
 
-<details> <summary>Schritt-für-Schritt Lösung anzeigen</summary>
+<details markdown> <summary>Schritt-für-Schritt Lösung anzeigen</summary>
 
 ```python
 
@@ -154,7 +154,7 @@ print(r.info()) # Sollte die geerbte Methode aufrufen
 print("Breite des Rechtecks: {r.breite}")
 ```
 
-<details> <summary>Schritt-für-Schritt Lösung anzeigen</summary>
+<details markdown> <summary>Schritt-für-Schritt Lösung anzeigen</summary>
 
 ```python
 
@@ -260,7 +260,7 @@ print(BLANK_10) # Ruft die Info-Methode auf
 
 ```
 
-<details> <summary>Lösung</summary>
+<details markdown> <summary>Lösung</summary>
 
 ```python
 # BASISKLASSE 1 (Tier)
@@ -340,7 +340,7 @@ Die neue Methode soll:
 - Erstelle eine Instanz für ein Auto
 - Rufe jeweils die Methode `fahren()` einmal für das Fahrzeug und einmal für das Auto auf. Vergleiche die Ausgabe.
 
-<details> <summary>Schritt-für-Schritt Lösung anzeigen</summary>
+<details markdown> <summary>Schritt-für-Schritt Lösung anzeigen</summary>
 
 ```python
 
@@ -448,7 +448,7 @@ class Manager:
          self.bonus = bonus
 ```
 
-<details> <summary>Vollständige Lösung anzeigen</summary>
+<details markdown> <summary>Vollständige Lösung anzeigen</summary>
 
 ```python
 
@@ -563,7 +563,7 @@ Was wir gelernt haben:
 
 Geben Sie die Python-Syntax für Vererbung an, bei der LKW von Fahrzeug erbt.
 
-<details> <summary>Antworten anzeigen</summary>
+<details markdown> <summary>Antworten anzeigen</summary>
 
 1. Generalisierung ist der Prozess, gemeinsame Eigenschaften in eine neue, allgemeinere Basisklasse zu verschieben (Hierarchie nach oben). Spezialisierung ist das Hinzufügen spezifischer Attribute oder das Überschreiben von Methoden in einer abgeleiteten Child-Klasse (Hierarchie nach unten).
 

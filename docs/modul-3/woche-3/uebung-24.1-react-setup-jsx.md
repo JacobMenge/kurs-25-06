@@ -198,7 +198,7 @@ createRoot(document.getElementById('root')).render(
 
 Warum heißen React-Dateien `.jsx` und nicht `.js`?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **JSX = JavaScript + XML**
@@ -405,7 +405,7 @@ Du siehst jetzt dreimal die Greeting-Komponente! Das zeigt die **Wiederverwendba
 
 Warum müssen Komponenten-Namen mit einem Großbuchstaben beginnen?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 React unterscheidet zwischen HTML-Elementen und Komponenten anhand der Groß-/Kleinschreibung:

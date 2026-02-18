@@ -63,7 +63,7 @@ SQLite war perfekt für den Einstieg – eine einzelne Datei, kein Server nötig
 
 Nenne zwei Gründe, warum SQLite für eine Web-API mit vielen gleichzeitigen Nutzern nicht ausreicht.
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 1. **Concurrency:** SQLite erlaubt nur einen Writer gleichzeitig. Bei vielen parallelen Requests wird das zum Flaschenhals. PostgreSQL nutzt MVCC (Multi-Version Concurrency Control) und kann viele Transaktionen parallel verarbeiten.
@@ -76,7 +76,7 @@ Nenne zwei Gründe, warum SQLite für eine Web-API mit vielen gleichzeitigen Nut
 
 Was ist der Unterschied zwischen einem PostgreSQL-**Cluster** und einer **Database**?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 - **Cluster** = Das PostgreSQL-Setup (Data Directory + Konfiguration), auf dem eine Server-Instanz läuft.
@@ -131,7 +131,7 @@ psql --version
 
 Falls `psql` nicht gefunden wird, nutze alternativ **"SQL Shell (psql)"** aus dem Startmenü – das funktioniert immer.
 
-<details>
+<details markdown>
 <summary>Hilfe: psql unter Windows nicht gefunden?</summary>
 
 Der PostgreSQL `bin`-Ordner ist nicht automatisch im PATH. Du hast zwei Optionen:
@@ -233,7 +233,7 @@ psql --version
 
 Was passiert mit euren Daten, wenn ihr den PostgreSQL-Server stoppt?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Die Daten bleiben erhalten.** Sie sind auf der Festplatte gespeichert (im sogenannten Data Directory). Der Server-Prozess muss nur laufen, damit Clients (wie `psql` oder eure App) auf die Daten zugreifen können. Wenn ihr den Server stoppt und wieder startet, sind alle Daten noch da.
@@ -294,7 +294,7 @@ Falls die Verbindung nicht klappt, prüfe diese häufigen Probleme:
 | Service läuft nicht | Nicht gestartet nach Install | Dienste-App (Win), `brew services` (Mac), `systemctl` (Linux) |
 | pgAdmin verbindet nicht | Falsche Einstellungen | Host: `localhost`, Port: `5432`, DB: `postgres` |
 
-<details>
+<details markdown>
 <summary>Hilfe: Passwort wird nicht angenommen (Linux)?</summary>
 
 Auf Linux verwendet PostgreSQL standardmäßig die **Peer-Authentifizierung** – das heißt, dein System-Benutzername muss mit dem PostgreSQL-Benutzernamen übereinstimmen. Deshalb funktioniert `sudo -u postgres psql` (du wechselst zum System-Benutzer `postgres`).
@@ -303,7 +303,7 @@ Wenn du stattdessen mit Passwort verbinden möchtest, kannst du die Datei `pg_hb
 
 </details>
 
-<details>
+<details markdown>
 <summary>Notfall: Datenbank löschen und neu anfangen</summary>
 
 Falls bei dir etwas komplett schiefgelaufen ist, kannst du die Datenbank löschen und von vorne beginnen:
@@ -396,7 +396,7 @@ CREATE EXTENSION IF NOT EXISTS pgcrypto;
 
 **Überprüfung:** Führe `\l` aus – `kursapp` sollte jetzt in der Liste stehen.
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 So sollte die gesamte Sitzung aussehen:
@@ -492,7 +492,7 @@ Du solltest die Spalten mit ihren Typen und Constraints sehen.
 
 Welche Constraints hat die `users`-Tabelle? Nenne sie mit den zugehörigen Spalten.
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Die `users`-Tabelle hat folgende Constraints:
@@ -552,7 +552,7 @@ Schau dir auch die Struktur der Orders-Tabelle an:
 \d orders
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 Die Ausgabe von `\d orders` zeigt die Spalten, Typen und Constraints:
@@ -691,7 +691,7 @@ INSERT INTO orders (user_id, total)
 VALUES ('00000000-0000-0000-0000-000000000000', 100);
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 Die erwarteten Fehlermeldungen:
@@ -825,7 +825,7 @@ Klicke mit Rechtsklick auf `users` → "View/Edit Data" → "All Rows" – du si
 
 Wann würdest du `psql` verwenden und wann `pgAdmin`?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 | psql | pgAdmin |
@@ -908,7 +908,7 @@ postgresql://kursuser:kurspass@localhost:5432/kursapp
 | tags | id (uuid), name (text, UNIQUE) |
 | item_tags | item_id (uuid, FK), tag_id (uuid, FK) |
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```sql

@@ -191,7 +191,7 @@ fetch('https://jsonplaceholder.typicode.com/FALSCHE_URL')
   .catch(error => console.error('Fehler:', error));
 ```
 
-<details>
+<details markdown>
 <summary>Wichtige Erkenntnis anzeigen</summary>
 
 **Achtung:** `fetch` wirft bei HTTP-Fehlern (404, 500) **keinen** Fehler! Der `.catch()`-Block wird nur bei Netzwerkfehlern ausgeführt (z.B. kein Internet). Bei einem 404 kommt trotzdem eine Response – du musst `response.ok` selbst prüfen!
@@ -321,7 +321,7 @@ export async function fetchUserById(id) {
 }
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -373,7 +373,7 @@ export async function fetchUserById(id) {
 
 Was ist der Unterschied zwischen `.then().catch()` und `async/await` mit `try/catch`?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Funktional gibt es **keinen Unterschied** – beide arbeiten mit Promises. Der Unterschied liegt in der **Lesbarkeit**:
@@ -560,7 +560,7 @@ export default App
 
 3. **Bonus:** Öffne die DevTools (F12) → Network-Tab. Siehst du den API-Call? Wie oft wird er gemacht?
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -747,7 +747,7 @@ function UserPosts() {
 export default UserPosts;
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -970,7 +970,7 @@ export default EffectDemo;
 3. Welche Effekte laufen, wenn du ins Textfeld tippst?
 4. Gibt es einen Effekt, der bei beiden Aktionen läuft?
 
-<details>
+<details markdown>
 <summary>Antworten anzeigen</summary>
 
 1. **Beim ersten Laden:** ALLE Effekte (A, B, C, D, E) laufen – jeder Effekt wird mindestens einmal beim Mount ausgeführt.
@@ -1105,7 +1105,7 @@ export default PostList;
 
 3. **Teste den Loading-State:** Öffne DevTools → Network → Throttle auf "Slow 3G" stellen, um den Loading-State länger zu sehen.
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1220,7 +1220,7 @@ export default PostList;
 
 Warum starten wir `loading` mit `true` statt `false`?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Weil der API-Call sofort beim Mount startet (im `useEffect`). Zwischen dem ersten Render und der fertigen API-Antwort vergeht Zeit. In dieser Zeit wollen wir den Loading-State anzeigen.
@@ -1351,7 +1351,7 @@ function UserCard() {
 export default UserCard;
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1665,7 +1665,7 @@ export default WeatherDashboard;
 
 4. Binde `WeatherDashboard` in `App.jsx` ein und teste die App!
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 **CitySearch.jsx (vollständig):**

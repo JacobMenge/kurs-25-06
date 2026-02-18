@@ -287,7 +287,7 @@ wochentage = ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samsta
 - Nutze `max()` um die höchste Temperatur zu finden
 - Nutze eine Zählvariable für Tage über 20°C
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -445,7 +445,7 @@ kurs_b = {"Ben", "Clara", "Frank", "Gina", "Eva"}
 - Set-Operationen: `&` für Schnittmenge, `-` für Differenz
 - Iteriere über die Vereinigung aller Studenten
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -754,7 +754,7 @@ preise = {
 - Nutze f-Strings für formatierte Ausgabe
 - Nutze `.startswith()` für Anfangsbuchstaben
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -1022,7 +1022,7 @@ noten = {
 - Verschachtelte List Comprehension für alle Noten: `[note for noten_liste in ... for note in noten_liste]`
 - Nutze `min()` mit `key` Parameter
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -1206,7 +1206,7 @@ im_angebot = {"Maus", "USB-Kabel", "Headset"}
    - Finde Produkte, die oft zusammen gekauft werden
    - (Vereinfacht: Produkte in aufeinanderfolgenden Bestellungen)
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python

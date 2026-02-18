@@ -190,7 +190,7 @@ Jedes Buch soll folgende Felder haben: id, titel, autor, jahr, gelesen
 - Strings in doppelten Anführungszeichen `"..."`
 - Boolean-Werte: `true` oder `false` (kleingeschrieben!)
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 ```json
@@ -221,7 +221,7 @@ Jedes Buch soll folgende Felder haben: id, titel, autor, jahr, gelesen
 
 </details>
 
-<details>
+<details markdown>
 <summary>JSON-Format verstehen</summary>
 
 **Wichtige Regeln:**
@@ -249,19 +249,19 @@ Jedes Buch soll folgende Felder haben: id, titel, autor, jahr, gelesen
 Bevor du weiter machst, teste dein Verständnis:
 
 1. **Was ist der Unterschied zwischen einer JSON-Datei und einer NoSQL-Datenbank wie MongoDB?**
-   <details>
+   <details markdown>
    <summary>Antwort anzeigen</summary>
    Eine JSON-Datei ist nur Text auf der Festplatte. MongoDB ist eine Datenbank mit Server, Indizes, Transaktionen und Query-Sprache. JSON-Dateien sind einfacher, aber langsamer und weniger leistungsfähig.
    </details>
 
 2. **Welche Python-Typen bekommst du nach `json.load()`?**
-   <details>
+   <details markdown>
    <summary>Antwort anzeigen</summary>
    Typischerweise `list` (für JSON-Array) oder `dict` (für JSON-Object), mit `str`, `int`, `float`, `bool`, `None` als Werte darin.
    </details>
 
 3. **Warum müssen Änderungen explizit gespeichert werden?**
-   <details>
+   <details markdown>
    <summary>Antwort anzeigen</summary>
    Weil JSON-Dateien nur Text sind. Nach `json.load()` arbeitet Python mit Kopien im RAM. Die Datei selbst ändert sich nicht, bis `json.dump()` aufgerufen wird.
    </details>
@@ -347,7 +347,7 @@ def naechste_id(buecher):
 
 **Diese Funktionen nutzen wir ab jetzt in ALLEN folgenden Beispielen!**
 
-<details>
+<details markdown>
 <summary>Warum ensure_ascii=False und indent=2?</summary>
 
 **ensure_ascii=False**
@@ -362,7 +362,7 @@ def naechste_id(buecher):
 
 </details>
 
-<details>
+<details markdown>
 <summary>Ausblick: Version 2 - morgen mit Fehlerbehandlung</summary>
 
 **Morgen werden wir `json_helper.py` erweitern:**
@@ -423,7 +423,7 @@ Erstelle ein Programm `json_lesen.py`, das:
 - Für den Status: `[X]` wenn gelesen, `[ ]` wenn nicht gelesen
 - Nutze einen f-String für die Formatierung
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 ```python
@@ -501,19 +501,19 @@ print(buch["titel"])  # Test
 ### Lernziel-Check Teil 2
 
 1. **Warum erstellen wir `json_helper.py` mit zentralen Funktionen?**
-   <details>
+   <details markdown>
    <summary>Antwort anzeigen</summary>
    Um Code-Duplikate zu vermeiden. Wenn wir die Funktionen überall kopieren, müssen wir bei Änderungen (z.B. anderer Dateiname) jeden Code ändern. Mit Hilfsfunktionen ändern wir nur an einer Stelle.
    </details>
 
 2. **Warum nutzen wir heute KEINE Fehlerbehandlung?**
-   <details>
+   <details markdown>
    <summary>Antwort anzeigen</summary>
    Um den Fokus auf den Grundablauf zu legen: laden → ändern → speichern. Fehlerbehandlung mit try/except ist ein eigenes Thema, das morgen kommt.
    </details>
 
 3. **Was ist der Unterschied zwischen `json.dump()` und `json.dumps()`?**
-   <details>
+   <details markdown>
    <summary>Antwort anzeigen</summary>
    `dump()` schreibt in eine Datei, `dumps()` gibt einen String zurück. Das "s" steht für "string".
    </details>
@@ -555,7 +555,7 @@ Erstelle ein Programm `buch_hinzufuegen.py`, das:
 - Nutze `append()` um das Buch zur Liste hinzuzufügen
 - Vergiss nicht zu speichern!
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 ```python
@@ -626,7 +626,7 @@ Erstelle ein Programm `buch_suchen.py` mit einer Suchfunktion:
 - Nutze `in` Operator: `"abc" in "abcdef"` → True
 - Nutze `.strip()` um Leerzeichen am Anfang/Ende zu entfernen
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 ```python
@@ -709,7 +709,7 @@ def suche_buch_nach_titel(buecher, suchbegriff):
 
 </details>
 
-<details>
+<details markdown>
 <summary>Hilfsfunktion: Nach ID suchen</summary>
 
 **Für exakte ID-Suche:**
@@ -759,7 +759,7 @@ Erstelle ein Programm `buch_aktualisieren.py`:
 - Vergleiche `buch["id"]` mit der gesuchten ID
 - Vergiss nicht zu speichern!
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 ```python
@@ -845,7 +845,7 @@ Erstelle ein Programm `buch_loeschen.py`:
 - Nutze `pop(index)` um Element zu entfernen UND zurückzugeben
 - Vergiss nicht zu speichern!
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 ```python
@@ -921,19 +921,19 @@ Nachteil: Man weiß nicht, ob tatsächlich etwas gelöscht wurde.
 ### Lernziel-Check Teil 3
 
 1. **Was passiert, wenn du nach `buecher.append(neues_buch)` NICHT speicherst?**
-   <details>
+   <details markdown>
    <summary>Antwort anzeigen</summary>
    Die Änderung ist nur im RAM (Arbeitsspeicher). Beim nächsten Programmstart ist das neue Buch weg, weil die Datei nicht geändert wurde.
    </details>
 
 2. **Warum prüfen wir in `suche_buch_nach_titel()` auf leeren Suchbegriff?**
-   <details>
+   <details markdown>
    <summary>Antwort anzeigen</summary>
    Ohne Prüfung würde ein leerer String in JEDEM Titel gefunden werden (leerer String ist in jedem String enthalten). Das ist vermutlich nicht gewollt.
    </details>
 
 3. **Was macht `enumerate()` in der DELETE-Funktion?**
-   <details>
+   <details markdown>
    <summary>Antwort anzeigen</summary>
    `enumerate()` gibt sowohl Index als auch Element zurück: `for i, buch in enumerate(buecher)`. Wir brauchen den Index `i` für `pop(i)`.
    </details>
@@ -1305,7 +1305,7 @@ Teste dein Wissen mit diesen Aufgaben! Versuche sie erst selbst zu lösen, bevor
 **Aufgabe:**
 Schreibe eine Funktion `finde_buecher_nach_autor(buecher, autor)`, die alle Bücher eines bestimmten Autors zurückgibt (exakte Übereinstimmung, case-insensitive).
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 ```python
@@ -1330,7 +1330,7 @@ for buch in ergebnisse:
 **Aufgabe:**
 Schreibe eine Funktion `zaehle_ungelesen(buecher)`, die die Anzahl ungelesener Bücher zurückgibt.
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 ```python
@@ -1358,7 +1358,7 @@ print(f"Du hast noch {anzahl} ungelesene Bücher")
 **Aufgabe:**
 Schreibe eine Funktion `sortiere_nach_jahr(buecher, aufsteigend=True)`, die eine sortierte Kopie der Bücherliste zurückgibt (nach Erscheinungsjahr).
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 ```python
@@ -1409,7 +1409,7 @@ BÜCHERLISTE
     ID: 2
 ```
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 ```python
@@ -1448,7 +1448,7 @@ print("[OK] Exportiert nach buecherliste.txt")
 **Aufgabe:**
 Schreibe eine Funktion `existiert_buch(buecher, titel, autor)`, die `True` zurückgibt wenn ein Buch mit diesem Titel UND Autor bereits existiert (case-insensitive).
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 ```python

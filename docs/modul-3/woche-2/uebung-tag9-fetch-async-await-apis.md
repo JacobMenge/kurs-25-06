@@ -138,7 +138,7 @@ console.log('Ende');  // Sofort!
 
 Warum ist die Ausgabereihenfolge `Anfang → Ende → Daten` und nicht `Anfang → Daten → Ende`?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Die asynchrone Operation `loadDataAsync()` **startet** sofort, aber das Ergebnis kommt **später**. JavaScript wartet nicht darauf, sondern führt direkt die nächste Zeile aus (`console.log('Ende')`).
@@ -288,7 +288,7 @@ fetch('https://jsonplaceholder.typicode.com/posts?userId=1')
 - Was passiert, wenn du eine nicht existierende URL aufrufst?
 - Wie groß ist der erste Datensatz (users)?
 
-<details>
+<details markdown>
 <summary>Erwartete Ausgabe</summary>
 
 ```
@@ -411,7 +411,7 @@ fetch('https://jsonplaceholder.typicode.com/users/1')
 - Warum müssen wir zwei Mal `response.json()` aufrufen?
 - Was passiert, wenn Schritt 2 fehlschlägt?
 
-<details>
+<details markdown>
 <summary>Antworten</summary>
 
 **Warum zwei Mal `response.json()`?**
@@ -588,7 +588,7 @@ async function runTests() {
 runTests();
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -677,7 +677,7 @@ const [user, posts] = await Promise.all([
 ]);
 ```
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Variante A (Nacheinander):**
@@ -991,7 +991,7 @@ async function testCRUD() {
 testCRUD();
 ```
 
-<details>
+<details markdown>
 <summary>Erwartete Ausgabe</summary>
 
 ```
@@ -1156,7 +1156,7 @@ async function testErrorHandling() {
 testErrorHandling();
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1641,7 +1641,7 @@ Dein FastAPI-Backend auf dem gleichen Server → Same Origin, kein CORS!
 
 Warum funktioniert `fetch()` in der Browser-Konsole zu `jsonplaceholder.typicode.com`, aber nicht zu deiner lokalen FastAPI ohne CORS-Config?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **JSONPlaceholder** hat den CORS-Header `Access-Control-Allow-Origin: *` gesetzt. Das bedeutet: "Requests von überall erlaubt."
@@ -2107,7 +2107,7 @@ Erstelle `user-app.html` und **vervollständige die markierten TODO-Stellen**:
 - `String.includes()` prüft ob Teilstring enthalten
 - `.toLowerCase()` für case-insensitive Suche
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript

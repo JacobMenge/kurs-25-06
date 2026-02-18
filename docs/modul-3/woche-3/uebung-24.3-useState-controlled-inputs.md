@@ -195,7 +195,7 @@ export default App
 
 3. Erweitere die Komponente um einen zweiten Button, der eine Begrüßung ausgibt.
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -237,7 +237,7 @@ Was ist der Unterschied zwischen diesen beiden Varianten?
 <button onClick={printDate()}>Klick</button>
 ```
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Variante A:** Korrekt! Die Funktion `printDate` wird als Referenz übergeben und erst beim Klick ausgeführt.
@@ -353,7 +353,7 @@ export default SimpleForm;
 
 3. Erweitere den Handler, um auch `'Formular erfolgreich abgeschickt!'` anzuzeigen.
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -536,7 +536,7 @@ export default Counter;
 
 3. **Bonus:** Füge einen "Reset"-Button hinzu, der count auf 0 zurücksetzt.
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -597,7 +597,7 @@ function Counter() {
 }
 ```
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Zwei Probleme:**
@@ -728,7 +728,7 @@ export default NameInput;
 
 3. **Bonus:** Zeige zusätzlich die Anzahl der eingegebenen Zeichen an.
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -894,7 +894,7 @@ export default ProfileForm;
 }
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1086,7 +1086,7 @@ export default App
 <Counter name="Counter C" />
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung mit Namen</summary>
 
 ```javascript
@@ -1287,7 +1287,7 @@ export default SignInForm;
 }
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1532,7 +1532,7 @@ export default TodoInput;
 2. Zeige die Anzahl der Todos an
 3. Füge einen "Alle löschen"-Button hinzu
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript

@@ -94,7 +94,7 @@ Erstelle ein Programm mit mehreren einfachen Funktionen:
 - Nutze `print()` für die Ausgabe
 - Vergiss nicht die Einrückung (4 Leerzeichen oder Tab)
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -158,7 +158,7 @@ Bevor du weitermachst, prüfe dein Verständnis:
 2. Muss eine Funktion etwas zurückgeben?
 3. Wo muss die Funktionsdefinition stehen - vor oder nach dem Aufruf?
 
-<details>
+<details markdown>
 <summary>Antworten anzeigen</summary>
 
 1. Die Funktion wird NICHT ausgeführt. Python zeigt nur, dass es eine Funktion ist.
@@ -220,7 +220,7 @@ Erstelle Funktionen, die mit Parametern arbeiten:
 - Beim Aufruf werden konkrete Werte übergeben (Argumente)
 - Die Reihenfolge der Argumente muss zur Reihenfolge der Parameter passen
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -316,7 +316,7 @@ Erklärungen:
 2. Können Parameter innerhalb der Funktion wie normale Variablen verwendet werden?
 3. Ist `stelle_vor(25, "Anna")` dasselbe wie `stelle_vor("Anna", 25)`?
 
-<details>
+<details markdown>
 <summary>Antworten anzeigen</summary>
 
 1. Die Werte werden falsch zugeordnet - das erste Argument geht an den ersten Parameter usw.
@@ -405,7 +405,7 @@ Erstelle ein Programm mit Funktionen, die Werte zurückgeben:
 - Speichere Return-Werte in Variablen
 - Bei mehreren Return-Werten nutze Komma-Trennung
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -571,7 +571,7 @@ def addiere(a: int, b: int) -> int:
 2. Erzwingt Python die Typen in Type Hints?
 3. Solltest du Docstrings bei jeder Funktion schreiben?
 
-<details>
+<details markdown>
 <summary>Antworten anzeigen</summary>
 
 1. Direkt unter der `def`-Zeile, in dreifachen Anführungszeichen.
@@ -588,7 +588,7 @@ def addiere(a: int, b: int) -> int:
 2. Gibt eine Funktion ohne `return` einen Wert zurück?
 3. Wie fängst du mehrere Return-Werte auf?
 
-<details>
+<details markdown>
 <summary>Antworten anzeigen</summary>
 
 1. `return` beendet die Funktion sofort. Code danach wird nicht mehr ausgeführt.
@@ -688,7 +688,7 @@ Erstelle Funktionen mit verschiedenen Parameter-Typen:
 - Keyword-Argumente können in beliebiger Reihenfolge übergeben werden
 - Default-Werte werden nur verwendet, wenn kein Argument übergeben wird
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -817,7 +817,7 @@ Erklärungen:
 2. Wo müssen Parameter mit Default-Werten stehen - vor oder nach normalen Parametern?
 3. Warum sollte man keine Liste als Default-Wert verwenden?
 
-<details>
+<details markdown>
 <summary>Antworten anzeigen</summary>
 
 1. Ja! Bei Keyword-Argumenten ist die Reihenfolge egal: `funktion(b=2, a=1)` funktioniert.
@@ -946,7 +946,7 @@ Erstelle ein Programm, um Scope zu verstehen:
 - Lokale Variablen existieren nur in der Funktion
 - Ohne `global`-Keyword wird der globale Wert nicht verändert
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -1072,7 +1072,7 @@ Erklärungen:
 2. Was passiert, wenn du in einer Funktion eine Variable mit gleichem Namen wie eine globale Variable erstellst?
 3. Warum solltest du `global` vermeiden?
 
-<details>
+<details markdown>
 <summary>Antworten anzeigen</summary>
 
 1. Ja! Funktionen können globale Variablen lesen, ohne etwas Besonderes zu tun.
@@ -1174,7 +1174,7 @@ Erstelle ein Text-Verarbeitungsprogramm mit mehreren Funktionen:
 - Verwende sprechende Variablennamen
 - Denk an die Einrückung
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -1369,7 +1369,7 @@ Erstelle einen **Taschenrechner** mit verschiedenen Funktionen:
    - Gibt das formatierte Ergebnis zurück
 6. **teste_rechner()** - Testet alle Funktionen mit verschiedenen Werten
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python

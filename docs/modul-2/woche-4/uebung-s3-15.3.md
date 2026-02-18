@@ -255,7 +255,7 @@ Jetzt hast du beide Dateien: `docs/test.txt` und `docs/test-kopie.txt`
 
 **Aufgabe:** Kopiere alle Dateien aus `images/` in einen neuen Ordner `backup-images/`
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 1. Erstelle den Ordner `backup-images/`
@@ -426,7 +426,7 @@ Wenn du die Datei `test-style.txt` behalten möchtest:
 
 **Aufgabe:** Lade ein Bild (.jpg) als .txt hoch und korrigiere den Content-Type
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 1. Benenne `bild.jpg` um in `bild.txt`

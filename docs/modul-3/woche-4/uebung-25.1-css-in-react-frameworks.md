@@ -372,7 +372,7 @@ function App() {
 export default App;
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 **src/components/InlineCard.jsx:**
@@ -491,7 +491,7 @@ export default ModuleCard;
 
 **Warum kann es problematisch sein, alle CSS-Klassen in globalen CSS-Dateien zu definieren?**
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Globale CSS-Klassen können sich gegenseitig überschreiben, wenn zwei Komponenten denselben Klassennamen verwenden. In einem großen Projekt mit vielen Komponenten ist es schwer, eindeutige Namen zu garantieren. CSS Modules lösen dieses Problem, indem sie Klassennamen automatisch eindeutig machen (z.B. `.card` wird zu `._card_x7k2j_1`). So kann jede Komponente ihre eigenen Klassennamen verwenden, ohne Konflikte befürchten zu müssen.
@@ -610,7 +610,7 @@ Es gibt zwei grundsätzlich verschiedene Ansätze:
 
 **Was ist der Unterschied zwischen Utility-First (Tailwind) und einer Komponenten-Bibliothek (Ant Design)?**
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Utility-First (Tailwind CSS):** Du bekommst viele kleine CSS-Klassen (wie `bg-blue-500`, `p-4`, `rounded`), die du direkt im JSX kombinierst, um dein eigenes Design zu bauen. Du hast volle Kontrolle über das Aussehen.
@@ -883,7 +883,7 @@ function TailwindCard() {
 export default TailwindCard;
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1059,7 +1059,7 @@ function ProductGrid() {
 export default ProductGrid;
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1388,7 +1388,7 @@ function App() {
 export default App;
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1437,7 +1437,7 @@ export default App;
 
 **Warum importiert man bei Ant Design `{ Button }` statt das gesamte Paket?**
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Durch den gezielten Import einzelner Komponenten (`import { Button } from 'antd'`) wird **Tree-Shaking** ermöglicht: Nur der Code der tatsächlich verwendeten Komponenten wird in die finale App eingebunden. Würde man das gesamte Paket importieren, wäre die Bundle-Größe deutlich größer, da der Code aller Komponenten (Button, Table, Form, Modal, etc.) mitgeladen würde – auch wenn man sie gar nicht braucht.
@@ -1648,7 +1648,7 @@ function RegistrationForm() {
 export default RegistrationForm;
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -1934,7 +1934,7 @@ function DaisyDemo() {
 
 **Nenne zwei Vorteile einer Komponenten-Bibliothek (wie Ant Design) gegenüber einem Utility-First-Framework (wie Tailwind CSS).**
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 1. **Schnellere Entwicklung:** Fertige Komponenten wie `<Table>`, `<Form>` oder `<Modal>` können sofort verwendet werden, ohne dass man sie selbst bauen muss.
@@ -2028,7 +2028,7 @@ function App() {
 export default App;
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 **src/components/Avatar.jsx:**
@@ -2222,7 +2222,7 @@ function App() {
 export default App;
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript

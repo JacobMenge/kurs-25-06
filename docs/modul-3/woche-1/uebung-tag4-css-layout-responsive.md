@@ -41,7 +41,7 @@ Diese Übung baut auf den vorherigen Tagen auf und bereitet dich auf das Freitag
 
 Du möchtest eine Navigation erstellen: Logo links, Menü-Links rechts. Flexbox oder Grid?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Flexbox!**
@@ -143,7 +143,7 @@ Erstelle eine responsive Navigation:
 </nav>
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```css
@@ -214,7 +214,7 @@ Zentriere einen Content-Block horizontal UND vertikal auf der Seite:
 - Der Hero-Bereich soll die volle Viewport-Höhe haben
 - Der Inhalt soll exakt in der Mitte sein
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```css
@@ -360,7 +360,7 @@ Erstelle ein Kartenraster mit 3 Spalten:
 - 20px Abstand zwischen den Karten
 - Auf Mobile: 1 Spalte
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```css
@@ -475,7 +475,7 @@ max-width: 500px;  /* ✓ Flexibel mit Maximum */
 
 Du siehst horizontales Scrollen auf einem Smartphone. Was sind die drei häufigsten Ursachen?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Die 3 häufigsten Ursachen für horizontales Scrollen:**
@@ -538,7 +538,7 @@ Erstelle ein vollständiges responsives Layout:
 - Hero-Bereich: Volle Breite
 - Cards: 1 Spalte
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```css
@@ -764,7 +764,7 @@ In Chrome und Firefox:
 4. Prüfe: Gibt es horizontales Scrollen?
 5. Finde ein Flex- oder Grid-Element und aktiviere das Overlay
 
-<details>
+<details markdown>
 <summary>Hinweise zur Lösung</summary>
 
 **So testest du Breakpoints:**
@@ -849,7 +849,7 @@ Du wirst alles zusammenbringen:
 
 ## Bonus: Flexbox vs. Grid Cheatsheet
 
-<details>
+<details markdown>
 <summary>Schnellreferenz anzeigen</summary>
 
 ### Flexbox
