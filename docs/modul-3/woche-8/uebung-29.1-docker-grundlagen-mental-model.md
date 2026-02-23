@@ -48,7 +48,7 @@ Dies ist dein erster Docker-Tag – du brauchst keine Vorkenntnisse in Docker. S
 1. **Docker Desktop** ist installiert und läuft (das Docker-Symbol ist in der Taskleiste sichtbar)
 2. Du hast ein **Terminal** offen (PowerShell, CMD, oder Git Bash unter Windows; Terminal unter macOS/Linux)
 
-<details>
+<details markdown>
 <summary>Welche Shell nutze ich? (wichtig für Windows)</summary>
 
 Unter Windows gibt es mehrere Shells – und sie verhalten sich unterschiedlich:
@@ -78,7 +78,7 @@ docker run hello-world
 
 Falls dies eine Erfolgsmeldung ausgibt, bist du startklar!
 
-<details>
+<details markdown>
 <summary>Hilfe: Docker ist nicht installiert?</summary>
 
 1. Gehe zu [docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop/) und lade Docker Desktop herunter
@@ -127,7 +127,7 @@ Docker ist eine Plattform, die Anwendungen in **isolierten, reproduzierbaren Umg
 
 Warum reichen Virtual Environments (z.B. Python venv) nicht aus, um das "Works on my machine"-Problem vollständig zu lösen?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Virtual Environments isolieren nur **Python-Pakete**. Sie lösen nicht:
@@ -146,7 +146,7 @@ Docker verpackt **alles** – Dateisystem (Userland), Libraries, App, Abhängigk
 
 Was sind die drei Kernversprechen von Docker?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 1. **Isolation:** Jede App läuft in ihrem eigenen Container, unabhängig von anderen Apps und dem Host-System
@@ -195,7 +195,7 @@ Eine VM virtualisiert die **komplette Hardware** und braucht ein **eigenes Betri
 
 In welchem Szenario würdest du eher eine VM statt Docker verwenden?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 VMs sind besser geeignet, wenn:
@@ -213,7 +213,7 @@ Für die meisten Webentwicklungs-Szenarien ist Docker die bessere Wahl – leich
 
 Warum starten Docker-Container in Sekunden, während VMs Minuten brauchen?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 - **VM:** Muss ein komplettes Betriebssystem hochfahren (Kernel laden, Services starten, etc.) – das dauert wie ein normaler Computerstart.
@@ -306,7 +306,7 @@ Ein **Dockerfile** ist die Bauanleitung für ein Image. Du schreibst hinein, was
 
 Was ist der Unterschied zwischen einem Image und einem Container?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 - Ein **Image** ist eine unveränderliche (read-only) Vorlage, die alle Dateien und Konfigurationen enthält, die eine Anwendung braucht.
@@ -320,7 +320,7 @@ Aus einem Image können beliebig viele Container erstellt werden – genau wie a
 
 Warum ist das Layer-System von Docker vorteilhaft?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Das Layer-System bringt zwei Hauptvorteile:
@@ -335,7 +335,7 @@ Das Layer-System bringt zwei Hauptvorteile:
 
 Was ist Docker Hub und wie verhält es sich zu npm oder PyPI?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Docker Hub** ist die öffentliche Standard-Registry für Docker Images – genau wie:
@@ -358,7 +358,7 @@ Ordne die folgenden Szenarien dem richtigen Docker-Begriff zu (Image, Container,
 4. Beim Build wird zuerst Ubuntu installiert, dann Python, dann deine App
 5. Du teilst dein fertiges Image mit deinem Team über einen zentralen Server
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 1. **Image** – `nginx:latest` ist ein Image, das du herunterlädst
@@ -403,7 +403,7 @@ graph LR
 
 Was ist der Unterschied zwischen `docker ps` und `docker ps -a`?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 - `docker ps` zeigt nur **laufende** Container (Status: Running)
@@ -417,7 +417,7 @@ Ein gestoppter Container existiert noch – er belegt Speicher und kann mit `doc
 
 Was passiert mit den Daten eines Containers, wenn du ihn mit `docker stop` stoppst? Und was bei `docker rm`?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 - **`docker stop`:** Der Container wird beendet, aber seine Daten und die beschreibbare Schicht bleiben erhalten. Du kannst ihn mit `docker start` wieder starten.
@@ -475,7 +475,7 @@ Beantworte folgende Fragen:
 2. Siehst du ihn bei `docker ps -a`? Welchen Status hat er?
 3. Siehst du das hello-world Image bei `docker images`? Wie groß ist es?
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 1. **Nein** – bei `docker ps` siehst du ihn nicht, weil er bereits beendet ist (er läuft nicht mehr).
@@ -612,7 +612,7 @@ docker ps -a
 
 Der Container "web" sollte nicht mehr auftauchen.
 
-<details>
+<details markdown>
 <summary>Zusammenfassung der Befehle</summary>
 
 ```bash
@@ -704,7 +704,7 @@ docker container prune
 
 > **Vorsicht:** `docker container prune` löscht **alle** gestoppten Container auf deinem System. Alternativ kannst du mit `docker ps -a` die Container-IDs finden und gezielt mit `docker rm <ID>` löschen.
 
-<details>
+<details markdown>
 <summary>Lösung und Erklärung</summary>
 
 - **Python-Container:** Zeigt Python 3.11.x und `linux` als Plattform
@@ -752,7 +752,7 @@ docker run -d --name web2 -p 8080:80 nginx
 
 Was passiert? Wie löst du das?
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 Du bekommst einen Fehler: `port is already allocated` oder `Bind for 0.0.0.0:8080 failed`.
@@ -784,7 +784,7 @@ docker run -d --name test nginx
 docker run -d --name test nginx
 ```
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 Du bekommst: `The container name "/test" is already in use`.
@@ -820,7 +820,7 @@ docker rm test2
 docker run ngixn
 ```
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 Du bekommst: `Unable to find image 'ngixn:latest' locally` und dann einen Fehler vom Docker Hub.
@@ -902,7 +902,7 @@ docker stop site-a site-b
 docker rm site-a site-b
 ```
 
-<details>
+<details markdown>
 <summary>Erklärung</summary>
 
 Du hast den kompletten Lifecycle durchgespielt:
