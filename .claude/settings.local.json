@@ -6,7 +6,9 @@
       "Bash(python -m mkdocs build:*)",
       "Bash(powershell -Command:*)",
       "Bash(powershell -ExecutionPolicy Bypass -File:*)",
-      "Bash(/tmp/verify_details.ps1 << 'PSEOF'\n$remainCount = 0\n$mdCount = 0\nGet-ChildItem -Path 'C:\\\\Users\\\\jacob_arbeit\\\\Desktop\\\\kurs-25-06-newlayout\\\\kurs-25-06\\\\docs' -Recurse -Filter '*.md' | ForEach-Object {\n    $matches_old = \\(Select-String -Path $_.FullName -Pattern '^<details> -AllMatches\\).Count\n    $matches_new = \\(Select-String -Path $_.FullName -Pattern '<details markdown>' -AllMatches\\).Count\n    if \\($matches_old -gt 0\\) {\n        Write-Output \"REMAINING <details> in: $\\($_.FullName\\) \\($matches_old occurrences\\)\"\n        $remainCount += $matches_old\n    }\n    $mdCount += $matches_new\n}\nWrite-Output \"\"\nWrite-Output \"Total remaining <details> \\(exact\\): $remainCount\"\nWrite-Output \"Total <details markdown> occurrences: $mdCount\"\nPSEOF)"
+      "Bash(/tmp/verify_details.ps1 << 'PSEOF'\n$remainCount = 0\n$mdCount = 0\nGet-ChildItem -Path 'C:\\\\Users\\\\jacob_arbeit\\\\Desktop\\\\kurs-25-06-newlayout\\\\kurs-25-06\\\\docs' -Recurse -Filter '*.md' | ForEach-Object {\n    $matches_old = \\(Select-String -Path $_.FullName -Pattern '^<details> -AllMatches\\).Count\n    $matches_new = \\(Select-String -Path $_.FullName -Pattern '<details markdown>' -AllMatches\\).Count\n    if \\($matches_old -gt 0\\) {\n        Write-Output \"REMAINING <details> in: $\\($_.FullName\\) \\($matches_old occurrences\\)\"\n        $remainCount += $matches_old\n    }\n    $mdCount += $matches_new\n}\nWrite-Output \"\"\nWrite-Output \"Total remaining <details> \\(exact\\): $remainCount\"\nWrite-Output \"Total <details markdown> occurrences: $mdCount\"\nPSEOF)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ]
   }
 }
