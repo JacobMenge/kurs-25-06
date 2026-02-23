@@ -1,0 +1,8 @@
+nav:
+  - "Auth Konzepte & Password Hashing": 01-auth-konzepte-password-hashing.md
+  - "JWT & FastAPI": 02-auth-jwt-fastapi.md
+  - "Auth React Frontend": 03-auth-react-frontend.md
+  - "Fullstack Integration": 04-auth-fullstack-integration.md
+  - "Auth mit Docker Compose": 05-auth-docker-compose.md
+  - "Schnellreferenz": schnellreferenz-auth.md
+  - ...

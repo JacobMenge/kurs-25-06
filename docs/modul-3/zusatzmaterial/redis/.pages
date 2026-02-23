@@ -1,0 +1,7 @@
+nav:
+  - "Redis Grundlagen": 01-redis-grundlagen.md
+  - "Redis mit Python & FastAPI": 02-redis-python-fastapi.md
+  - "Redis Fullstack Caching": 03-redis-fullstack-caching.md
+  - "Redis mit Docker Compose": 04-redis-docker-compose.md
+  - "Schnellreferenz": schnellreferenz-redis.md
+  - ...
