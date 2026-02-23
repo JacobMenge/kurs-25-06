@@ -61,7 +61,7 @@ graph TD
 
 Warum ist Docker Compose besser als drei einzelne `docker run`-Befehle?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 1. **Ein Befehl:** `docker compose up` startet alle Services gleichzeitig.
@@ -377,7 +377,7 @@ docker compose exec redis redis-cli GET wichtig
 
 Was passiert mit den Redis-Daten, wenn du `docker compose down -v` statt `docker compose down` verwendest?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Das `-v` Flag löscht auch die **Volumes**. Das heißt: Sowohl die PostgreSQL-Daten (`pgdata`) als auch die Redis-Daten (`redisdata`) werden **unwiderruflich gelöscht**!

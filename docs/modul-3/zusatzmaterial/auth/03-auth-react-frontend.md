@@ -80,7 +80,7 @@ src/
 
 > Was ändert sich am UserContext, wenn wir echte Authentication hinzufügen?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 1. **Login wird async** – er muss auf die API-Antwort warten (`POST /login`)
@@ -109,7 +109,7 @@ src/
 4. Fehlerbehandlung (Email schon vergeben → Fehlermeldung)
 5. Erfolg → Weiterleitung zum Login
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```jsx
@@ -224,7 +224,7 @@ export default RegisterForm;
 3. Bei Erfolg: Token speichern (erstmal in `console.log`, die richtige Speicherung kommt in Teil 2)
 4. Bei Fehler: Fehlermeldung anzeigen
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```jsx
@@ -372,7 +372,7 @@ export function removeToken() {
 2. Fügt automatisch `Content-Type: application/json` hinzu
 3. Reagiert auf `401`-Responses (Token ungültig/abgelaufen)
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -425,7 +425,7 @@ const user = await response.json();
 
 > Warum müssen wir den Token bei jedem API-Request mitsenden?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 HTTP ist **stateless** – der Server erinnert sich nicht an vorherige Requests. Jede Anfrage ist unabhängig. Der Server weiß bei einem neuen Request nicht, dass wir uns vor 5 Sekunden eingeloggt haben. Der JWT-Token ist unser "Ausweis", den wir bei jeder Anfrage vorzeigen. Ohne Token behandelt der Server uns wie einen anonymen Besucher.
@@ -464,7 +464,7 @@ graph TB
 
 **Aufgabe:** Erstelle `src/contexts/AuthContext.jsx`:
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```jsx
@@ -653,7 +653,7 @@ function LoginForm() {
 
 **Erstelle `src/components/ProtectedRoute.jsx`:**
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```jsx
@@ -697,7 +697,7 @@ export default ProtectedRoute;
 
 **Aktualisiere `App.jsx`:**
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```jsx
@@ -787,7 +787,7 @@ export default DashboardPage;
 
 > Reicht es, Routen nur im Frontend zu schützen?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Nein!** Frontend-Schutz ist nur UX – es verhindert, dass User eine Seite sehen, die sie nicht sehen sollten. Aber ein Angreifer kann den Frontend-Code umgehen (DevTools, direkte API-Calls mit curl). **Jeder Endpoint im Backend muss eigenständig prüfen**, ob der User berechtigt ist (`Depends(get_current_user)`). Das Frontend schützt die UI, das Backend schützt die Daten.
@@ -845,7 +845,7 @@ Drei Szenarien:
 > **Zeitbedarf:** ca. 7 Minuten
 > **Du bist fertig, wenn:** Die Navbar "Login/Register" für Gäste und "Dashboard/Profil/Logout" für eingeloggte User zeigt
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```jsx

@@ -71,7 +71,7 @@ In der letzten Übung hat der Login einfach `{"message": "Login erfolgreich"}` z
 
 > Warum ist Stateless Authentication (JWT) besonders gut für SPAs und APIs geeignet?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Bei JWT muss der Server keinen Zustand speichern. Jeder Request enthält den Token mit allen nötigen Informationen (User-ID, Rolle, Ablaufdatum). Der Server prüft nur die Signatur – das funktioniert auf jedem Server gleich, ohne Zugriff auf eine Session-Datenbank. Das ist besonders gut für SPAs, weil Frontend und Backend oft auf verschiedenen Servern/Domains laufen und der Token einfach als HTTP-Header mitgeschickt wird.
@@ -153,7 +153,7 @@ HMAC-SHA256(
 
 > Kann jemand den Inhalt eines JWT lesen? Kann jemand ihn verändern?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Lesen: Ja.** Der Payload ist nur Base64-encoded, nicht verschlüsselt. Jeder, der den Token hat, kann den Inhalt lesen. Deshalb gehören keine sensiblen Daten (Passwörter, Kreditkarten) in den Payload.
@@ -319,7 +319,7 @@ class TokenResponse(BaseModel):
 
 Ersetze den bisherigen Login-Endpoint in `app/main.py`:
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -400,7 +400,7 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/login")
 
 Erstelle die Datei `app/dependencies.py`:
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -492,7 +492,7 @@ curl http://localhost:8000/me \
 
 > Warum laden wir den User bei jedem Request aus der DB, obwohl die User-ID schon im JWT steht?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Die User-ID im JWT reicht, um den User zu identifizieren. Aber wir brauchen die aktuellen Daten aus der DB, weil:
@@ -591,7 +591,7 @@ Das Beste an `OAuth2PasswordBearer`: Swagger UI zeigt automatisch einen "Authori
 
 > Was ist der Unterschied zwischen HTTP 401 und 403?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **401 Unauthorized** bedeutet: "Du bist nicht authentifiziert – ich weiß nicht wer du bist." Das passiert, wenn kein Token mitgeschickt wird oder der Token ungültig/abgelaufen ist. **403 Forbidden** bedeutet: "Du bist authentifiziert (ich weiß wer du bist), aber du hast nicht die nötige Berechtigung." Das passiert z.B. wenn ein normaler User einen Admin-Endpoint aufruft.

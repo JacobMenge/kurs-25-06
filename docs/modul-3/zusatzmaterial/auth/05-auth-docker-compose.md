@@ -51,7 +51,7 @@ graph TB
 
 > Warum darf man den SECRET_KEY nicht direkt im Code oder Dockerfile hardcoden?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 1. **Git-Gefahr:** Hardcodierte Secrets landen im Repository. Jeder mit Zugriff auf den Code hat dann den Key – inklusive Public Repos auf GitHub.
@@ -176,7 +176,7 @@ python-jose[cryptography]
 
 **Schritt 3: docker-compose.yml erstellen**
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```yaml
@@ -330,7 +330,7 @@ services:
       - backend
 ```
 
-<details>
+<details markdown>
 <summary>Vollständige docker-compose.yml anzeigen</summary>
 
 ```yaml

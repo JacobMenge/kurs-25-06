@@ -115,7 +115,7 @@ sequenceDiagram
 
 > Warum reicht es nicht, den Login-Status nur im React-State (Context) zu speichern?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Der React-State lebt nur im Browser. Jeder kann den State manipulieren (z.B. über die DevTools), sich als Admin ausgeben oder beliebige Daten senden. Das Backend hat keine Möglichkeit zu prüfen, ob der Request von einem echten, eingeloggten User kommt. Echte Authentication braucht serverseitige Prüfung – das Frontend ist niemals vertrauenswürdig.
@@ -126,7 +126,7 @@ Der React-State lebt nur im Browser. Jeder kann den State manipulieren (z.B. üb
 
 > Was ist der Unterschied zwischen Stateful (Session-basiert) und Stateless (JWT-basiert) Authentication?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Bei **Stateful Authentication** speichert der Server den Login-Status (z.B. in Redis oder einer Datenbank). Der Client bekommt nur eine Session-ID. Bei **Stateless Authentication** (JWT) enthält der Token selbst alle nötigen Informationen (User-ID, Rolle, Ablaufdatum). Der Server muss keinen Status speichern – er prüft nur die Signatur des Tokens.
@@ -183,7 +183,7 @@ Selbst bei einem Breach: Der Angreifer sieht nur unleserliche Hashes. Er kann da
 
 > Was ist der Unterschied zwischen Hashing und Verschlüsselung?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Hashing** ist eine Einweg-Funktion: Aus einem Passwort wird ein Hash berechnet, aber aus dem Hash kann man das Passwort nicht zurückberechnen. **Verschlüsselung** ist eine Zweiweg-Funktion: Daten werden mit einem Schlüssel verschlüsselt und können mit demselben (oder einem passenden) Schlüssel wieder entschlüsselt werden. Für Passwörter verwenden wir immer Hashing, weil wir das Original-Passwort nie wieder brauchen – wir prüfen nur, ob ein eingegebenes Passwort zum gespeicherten Hash passt.
@@ -274,7 +274,7 @@ print(pwd_context.verify("geheim123", hash2))  # True ✅
 
 > Warum erzeugt `pwd_context.hash("geheim123")` jedes Mal einen anderen Hash – und warum ist das eine gute Sache?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 bcrypt fügt bei jedem Aufruf einen zufälligen **Salt** hinzu. Der Salt wird zusammen mit dem Hash gespeichert. Das bedeutet: Selbst wenn zwei User dasselbe Passwort verwenden, haben sie unterschiedliche Hashes in der Datenbank. Ein Angreifer kann also nicht erkennen, welche User das gleiche Passwort haben. Ohne Salt könnte ein Angreifer eine Tabelle aller möglichen Hashes vorberechnen (Rainbow Table) und Passwörter schnell nachschlagen.
@@ -312,7 +312,7 @@ kursapp-backend/
 1. `hash_password(password: str) -> str` – Hasht ein Klartext-Passwort
 2. `verify_password(plain_password: str, hashed_password: str) -> bool` – Prüft ein Passwort gegen einen Hash
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -429,7 +429,7 @@ class UserResponse(BaseModel):
 
 > Warum hat das `UserResponse`-Schema kein Passwort- oder Hash-Feld?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Der Passwort-Hash darf niemals über die API an den Client gesendet werden. Selbst ein Hash könnte einem Angreifer Informationen liefern (z.B. für Offline-Brute-Force-Angriffe). Pydantic-Schemas trennen sauber, was hereinkommt (UserRegister mit Passwort) und was herausgeht (UserResponse ohne Passwort). So kann das Passwort-Feld nicht versehentlich in einer API-Response landen.
@@ -462,7 +462,7 @@ Der Passwort-Hash darf niemals über die API an den Client gesendet werden. Selb
 4. Speichert den User mit dem Hash in PostgreSQL
 5. Gibt `UserResponse` zurück (ohne Passwort!)
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -533,7 +533,7 @@ def register(user_data: UserRegister, db: Session = Depends(get_db)):
 
 > **Sicherheitsregel:** Die Fehlermeldung darf **nicht** verraten, ob die Email existiert oder das Passwort falsch war. Sonst kann ein Angreifer herausfinden, welche Emails registriert sind.
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -574,7 +574,7 @@ def login(login_data: LoginRequest, db: Session = Depends(get_db)):
 
 > Warum sollte die Login-Fehlermeldung NICHT verraten, ob die Email existiert oder das Passwort falsch war?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Wenn die Fehlermeldung unterscheidet ("Email nicht gefunden" vs "Passwort falsch"), kann ein Angreifer systematisch Emails durchprobieren und herausfinden, welche Accounts existieren. Das nennt man **User Enumeration**. Mit einer generischen Meldung ("Ungültige Anmeldedaten") bekommt der Angreifer keine Information darüber, ob eine Email registriert ist oder nicht.

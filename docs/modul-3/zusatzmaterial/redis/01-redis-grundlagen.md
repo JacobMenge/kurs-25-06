@@ -84,7 +84,7 @@ Redis speichert **alles im RAM** – deshalb ist es ca. 1000x schneller als Fest
 
 Was unterscheidet eine Key-Value-Datenbank von einer relationalen Datenbank?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 - **Key-Value:** Speichert Daten als einfache Schlüssel-Wert-Paare. Kein Schema, keine Tabellen, keine Beziehungen. Extrem schnell, aber keine komplexen Abfragen möglich.
@@ -98,7 +98,7 @@ Was unterscheidet eine Key-Value-Datenbank von einer relationalen Datenbank?
 
 Warum speichert man nicht einfach alle Daten in Redis, wenn es so schnell ist?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 1. **RAM ist teuer:** 1 GB RAM kostet ca. 10x mehr als 1 GB SSD-Speicher. Für große Datenmengen (Millionen von Datensätzen) wird das schnell unbezahlbar.
@@ -171,7 +171,7 @@ PONG
 | Container startet, aber `redis-cli` zeigt Fehler | Container noch nicht bereit | 2 Sekunden warten, dann nochmal versuchen |
 | `Unable to find image 'redis:7-alpine' locally` | Normales Verhalten | Docker lädt das Image automatisch herunter |
 
-<details>
+<details markdown>
 <summary>Alternative: Redis ohne Docker (macOS/Linux)</summary>
 
 **macOS:**
@@ -303,7 +303,7 @@ Jetzt ist die Datenbank leer.
 
 Was gibt `GET meinemail` zurück, wenn du nie `SET meinemail ...` ausgeführt hast?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 `(nil)` – Redis gibt `nil` zurück für Keys, die nicht existieren. Das ist vergleichbar mit `None` in Python oder `null` in JavaScript. Kein Fehler, einfach "nichts da".
@@ -512,7 +512,7 @@ SISMEMBER besucher:heute "user:2"
 
 Du möchtest die letzten 10 Chat-Nachrichten eines Raums speichern. Welchen Redis-Datentyp wählst du – und warum?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Liste (List)** – weil:
@@ -621,7 +621,7 @@ Du siehst den Countdown: 9... 7... 4... 1... -2 (weg!).
 
 Warum ist TTL für Caching besonders nützlich?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 1. **Automatische Aktualisierung:** Gecachte Daten werden nach Ablauf automatisch gelöscht. Der nächste Request holt dann frische Daten aus PostgreSQL und schreibt sie erneut in den Cache.

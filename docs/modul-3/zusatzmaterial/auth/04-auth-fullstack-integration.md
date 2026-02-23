@@ -78,7 +78,7 @@ sequenceDiagram
 
 > Welche Daten gehen über die Leitung, wenn sich ein User einloggt?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Request:** Email und Passwort im Klartext (im JSON-Body über HTTP). Deshalb ist HTTPS in Produktion Pflicht! **Response:** Ein JWT Access Token, der die User-ID, Rolle und Ablaufdatum enthält (signiert, aber nicht verschlüsselt). Das Passwort verlässt den Server nie wieder – es wird nur gegen den Hash geprüft.
@@ -213,7 +213,7 @@ def login(login_data: LoginRequest, db: Session = Depends(get_db)):
 
 **Schritt 3: Refresh-Endpoint**
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -267,7 +267,7 @@ def refresh_token(request: RefreshRequest, db: Session = Depends(get_db)):
 
 **Aktualisiere `src/utils/api.js`:**
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```javascript
@@ -423,7 +423,7 @@ alembic upgrade head
 
 **Schritt 2: Endpoints schützen**
 
-<details>
+<details markdown>
 <summary>Musterlösung anzeigen</summary>
 
 ```python
@@ -526,7 +526,7 @@ def admin_get_all_items(
 
 > Warum prüfen wir die Berechtigung im Backend und nicht nur im Frontend?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Das Frontend kann jederzeit manipuliert werden (DevTools, curl, Postman). Ein Angreifer kann den Frontend-Code komplett umgehen und direkt API-Calls absetzen. Deshalb muss **jeder Endpoint im Backend eigenständig prüfen**, ob der User authentifiziert ist und ob er auf die angeforderten Daten zugreifen darf. Frontend-Schutz ist nur UX – Backend-Schutz ist Sicherheit.
@@ -612,7 +612,7 @@ def login(login_data: LoginRequest, request: Request, db: Session = Depends(get_
 
 > Warum sollte man bei fehlerhaftem Login NICHT sagen, ob Email oder Passwort falsch war?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Wenn die Fehlermeldung unterscheidet ("Email nicht gefunden" vs "Passwort falsch"), kann ein Angreifer **User Enumeration** betreiben: Er probiert systematisch Emails durch und erkennt an der Fehlermeldung, welche Accounts existieren. Mit einer generischen Meldung ("Ungültige Anmeldedaten") erhält der Angreifer keine Information darüber, ob eine bestimmte Email registriert ist.

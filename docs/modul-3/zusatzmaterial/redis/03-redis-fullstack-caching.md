@@ -58,7 +58,7 @@ graph LR
 
 Warum cached man nicht einfach alles im Frontend (z.B. in localStorage)?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 1. **Mehrere Clients:** Wenn User A Daten ändert, sieht User B die Änderung nicht, weil sein localStorage noch die alten Daten hat. Ein Server-seitiger Cache wird zentral invalidiert.
@@ -449,7 +449,7 @@ def delete_cache_key(key: str):
     return {"message": f"Key '{key}' existierte nicht"}
 ```
 
-<details>
+<details markdown>
 <summary>Musterlösung: Cache-Management testen</summary>
 
 ```bash

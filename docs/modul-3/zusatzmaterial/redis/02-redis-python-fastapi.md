@@ -52,7 +52,7 @@ graph LR
 
 Warum speichert man Session-Daten lieber in Redis als direkt im FastAPI-Server (z.B. in einem Python-Dictionary)?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 1. **Server-Neustart:** Ein Python-Dict geht verloren, wenn der Server neu startet. Redis behält die Daten.
@@ -119,7 +119,7 @@ r.delete("sprache", "zaehler")
 
 Was passiert, wenn du `decode_responses=True` weglässt und dann `r.get("name")` aufrufst?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Du bekommst ein **Bytes-Objekt** statt eines Strings zurück: `b"Max"` statt `"Max"`. Das liegt daran, dass Redis intern alles als Bytes speichert. Mit `decode_responses=True` konvertiert die Bibliothek automatisch zu Python-Strings (UTF-8).
@@ -326,7 +326,7 @@ def delete_user(user_id: int, db: Session = Depends(get_db)):
 
 Was passiert, wenn du einen User in PostgreSQL änderst, aber vergisst den Cache zu invalidieren?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Der GET-Endpoint liefert **bis zu 60 Sekunden lang veraltete Daten** (je nach TTL). Erst wenn die TTL abläuft und der Cache-Eintrag gelöscht wird, holt der nächste Request die aktuellen Daten aus PostgreSQL.
@@ -450,7 +450,7 @@ def logout(authorization: str | None = Header(default=None)):
 | PostgreSQL | Persistent | Langsamer, extra DB-Abfrage pro Request |
 | **Redis** | **Schnell, TTL eingebaut, skalierbar** | **Extra Service nötig** |
 
-<details>
+<details markdown>
 <summary>Musterlösung: Vollständiges Session-Beispiel testen</summary>
 
 ```bash
