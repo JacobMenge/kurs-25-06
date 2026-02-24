@@ -50,7 +50,7 @@ Du kennst bereits die Docker-Grundlagen vom Vortag (Images, Container, Lifecycle
 2. Du hast ein **Terminal** offen (PowerShell, CMD, oder Git Bash unter Windows; Terminal unter macOS/Linux)
 3. Du hast einen **Texteditor** bereit (VS Code empfohlen)
 
-<details>
+<details markdown>
 <summary>Welche Shell nutze ich? (wichtig für Windows)</summary>
 
 Unter Windows gibt es mehrere Shells – und sie verhalten sich unterschiedlich:
@@ -84,7 +84,7 @@ docker rm test-setup
 
 Falls alles ohne Fehler durchläuft, bist du startklar!
 
-<details>
+<details markdown>
 <summary>Hilfe: Docker ist nicht installiert?</summary>
 
 1. Gehe zu [docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop/) und lade Docker Desktop herunter
@@ -115,7 +115,7 @@ graph LR
 
 Was ist der Unterschied zwischen einem Image und einem Container?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 - Ein **Image** ist eine unveränderliche (read-only) Vorlage, die alle Dateien und Konfigurationen enthält, die eine Anwendung braucht.
@@ -129,7 +129,7 @@ Was ist der Unterschied zwischen einem Image und einem Container?
 
 Welche Docker-Befehle verwendest du, um (a) einen Container im Hintergrund zu starten, (b) die Logs anzuzeigen, (c) eine Shell im Container zu öffnen?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 1. **Container im Hintergrund starten:** `docker run -d --name <name> <image>` (das `-d` Flag steht für "detached")
@@ -142,7 +142,7 @@ Welche Docker-Befehle verwendest du, um (a) einen Container im Hintergrund zu st
 
 Was bedeutet das Flag `-p 8080:80` bei `docker run`?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Port-Mapping:** Port 8080 auf dem Host (deinem Rechner) wird an Port 80 im Container weitergeleitet.
@@ -208,7 +208,7 @@ CMD ["python", "app.py"]
 
 Was ist ein Dockerfile und warum ist es besser, als einen Container manuell einzurichten?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Ein Dockerfile ist eine Textdatei mit Anweisungen zum Aufbau eines Images. Es ist besser als manuelle Einrichtung, weil:
@@ -224,7 +224,7 @@ Ein Dockerfile ist eine Textdatei mit Anweisungen zum Aufbau eines Images. Es is
 
 Welche Dockerfile-Anweisungen erzeugen neue Layer im Image?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 - **`RUN`** und **`COPY`** erzeugen neue Dateisystem-Layer (sie verändern das Dateisystem im Image).
@@ -329,7 +329,7 @@ CMD python app.py
 
 Was passiert, wenn du `docker run myimage bash` ausführst, obwohl das Dockerfile `CMD ["python", "app.py"]` enthält?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Der `bash`-Befehl **überschreibt** den `CMD`-Befehl aus dem Dockerfile. Statt `python app.py` wird `bash` gestartet – du landest in einer Shell im Container.
@@ -364,7 +364,7 @@ CMD ["node", "server.js"]
 3. Warum werden `package.json` und `package-lock.json` **VOR** dem restlichen Code kopiert?
 4. Was passiert, wenn du `docker run <image> bash` ausführst?
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 1. **`node:20-slim`** – Node.js Version 20 in der schlanken Variante
@@ -443,7 +443,7 @@ CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
 
 > **Wichtig:** `--host 0.0.0.0` ist notwendig! Ohne das hört die App nur auf `localhost` innerhalb des Containers und ist von deinem Browser aus nicht erreichbar.
 
-<details>
+<details markdown>
 <summary>Hinweis für Windows: Dateiendung prüfen</summary>
 
 Stelle sicher, dass die Datei wirklich `Dockerfile` heißt (ohne Endung wie `.txt`). In manchen Editoren wird automatisch `.txt` angehängt.
@@ -522,7 +522,7 @@ docker ps -a
 
 Der Container "api" sollte nicht mehr auftauchen.
 
-<details>
+<details markdown>
 <summary>Troubleshooting</summary>
 
 | Problem | Mögliche Ursache | Lösung |
@@ -536,7 +536,7 @@ Der Container "api" sollte nicht mehr auftauchen.
 
 </details>
 
-<details>
+<details markdown>
 <summary>Zusammenfassung: Projektstruktur</summary>
 
 ```
@@ -637,7 +637,7 @@ CMD ["python", "app.py"]
 
 Warum ist die Reihenfolge der Anweisungen im Dockerfile wichtig für die Build-Geschwindigkeit?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Weil Docker **Layer-Caching** verwendet. Wenn sich ein Layer ändert, müssen **alle folgenden Layer** neu gebaut werden.
@@ -722,7 +722,7 @@ RUN pip install -r requirements.txt
 COPY . .
 ```
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 - **Version A (schlecht):** Bei **jeder** Code-Änderung wird `COPY . .` ungültig. Da `RUN pip install` danach kommt, muss auch dieser Layer neu gebaut werden – **alle Dependencies werden bei jeder Code-Änderung neu installiert**. Das dauert jedes Mal Minuten.
@@ -824,7 +824,7 @@ docker image rm fastapi-unsicher fastapi-sicher
 
 Lösche das Test-Dockerfile (die `.dockerignore` behalten wir!):
 
-<details>
+<details markdown>
 <summary>Git Bash / macOS / Linux</summary>
 
 ```bash
@@ -833,7 +833,7 @@ rm Dockerfile.copyall
 
 </details>
 
-<details>
+<details markdown>
 <summary>PowerShell</summary>
 
 ```powershell
@@ -842,7 +842,7 @@ Remove-Item Dockerfile.copyall
 
 </details>
 
-<details>
+<details markdown>
 <summary>Lösung und Erklärung</summary>
 
 **Ohne .dockerignore:** `COPY . .` kopiert ALLES aus dem Build-Context ins Image – auch `.env`, `.git`, `__pycache__`, etc. Jeder, der das Image bekommt (z.B. über eine Registry), kann die Geheimnisse lesen.
@@ -983,7 +983,7 @@ docker image rm fastapi-full fastapi-alpine
 
 Lösche auch die zusätzlichen Dockerfiles:
 
-<details>
+<details markdown>
 <summary>Git Bash / macOS / Linux</summary>
 
 ```bash
@@ -992,7 +992,7 @@ rm Dockerfile.full Dockerfile.alpine
 
 </details>
 
-<details>
+<details markdown>
 <summary>PowerShell / CMD</summary>
 
 ```powershell
@@ -1005,7 +1005,7 @@ del Dockerfile.full Dockerfile.alpine
 
 </details>
 
-<details>
+<details markdown>
 <summary>Lösung und erwartete Größen</summary>
 
 Erwartete Größen (ungefähr, variiert je nach Plattform und Architektur):
@@ -1024,7 +1024,7 @@ Erwartete Größen (ungefähr, variiert je nach Plattform und Architektur):
 
 Warum wird Alpine trotz seiner geringen Größe nicht immer empfohlen?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Alpine Linux verwendet **`musl`** statt **`glibc`** als C-Library. Viele Python-Pakete mit C-Erweiterungen (z.B. numpy, pandas, Pillow) sind gegen `glibc` kompiliert und:
@@ -1076,7 +1076,7 @@ CMD ["python", "app.py"]
 docker build -f Dockerfile.test -t test-fehler .
 ```
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 Du bekommst: `COPY failed: file not found in build context` oder ähnlich.
@@ -1099,7 +1099,7 @@ CMD ["python", "app.py"]
 docker build -f Dockerfile.test -t test-fehler .
 ```
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 Du bekommst: `ERROR: failed to solve: python:3.11-slm: not found` oder `pull access denied`.
@@ -1126,7 +1126,7 @@ docker build -f Dockerfile.test -t test-fehler .
 docker run --rm test-fehler
 ```
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 Der Build klappt! Aber beim Starten bekommst du: `ModuleNotFoundError: No module named 'main'`.
@@ -1157,7 +1157,7 @@ docker run -d --name test-host -p 8000:8000 test-fehler
 
 Öffne `http://localhost:8000` im Browser.
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 Der Container startet (`docker ps` zeigt ihn als "Up"), aber der Browser zeigt "Connection refused" oder "This site can't be reached".
@@ -1184,7 +1184,7 @@ docker image rm test-fehler
 
 Lösche das Test-Dockerfile:
 
-<details>
+<details markdown>
 <summary>Git Bash / macOS / Linux</summary>
 
 ```bash
@@ -1193,7 +1193,7 @@ rm Dockerfile.test
 
 </details>
 
-<details>
+<details markdown>
 <summary>PowerShell / CMD</summary>
 
 ```powershell
@@ -1337,7 +1337,7 @@ CMD python app.py
 
 > **Tipp:** Denke an die Themen der heutigen Übung – Basis-Image, Tags, Layer-Reihenfolge, Cache-Optimierung, Layer-Anzahl, CMD-Form.
 
-<details>
+<details markdown>
 <summary>Musterlösung</summary>
 
 **Die 6 Probleme und ihre Lösungen:**
