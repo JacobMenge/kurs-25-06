@@ -51,7 +51,7 @@ Du kennst bereits Docker-Grundlagen (Tag 1) und kannst eigene Images bauen (Tag 
 2. Du hast ein **Terminal** offen (PowerShell, CMD, oder Git Bash unter Windows; Terminal unter macOS/Linux)
 3. Du kannst ein **eigenes Image bauen und starten** (Tag 2 Wissen)
 
-<details>
+<details markdown>
 <summary>Welche Shell nutze ich? (wichtig für Windows)</summary>
 
 Unter Windows gibt es mehrere Shells – und sie verhalten sich unterschiedlich:
@@ -87,7 +87,7 @@ docker rm test-setup
 
 Falls alles ohne Fehler durchläuft, bist du startklar!
 
-<details>
+<details markdown>
 <summary>Hilfe: Docker ist nicht installiert?</summary>
 
 1. Gehe zu [docker.com/products/docker-desktop](https://www.docker.com/products/docker-desktop/) und lade Docker Desktop herunter
@@ -117,7 +117,7 @@ graph LR
 
 Was macht ein Dockerfile und welche fünf Befehle hast du am häufigsten verwendet?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Ein **Dockerfile** ist eine Textdatei mit Anweisungen zum Aufbau eines Images. Die fünf wichtigsten Befehle:
@@ -134,7 +134,7 @@ Ein **Dockerfile** ist eine Textdatei mit Anweisungen zum Aufbau eines Images. D
 
 Warum werden Dependencies (requirements.txt / package.json) **VOR** dem App-Code kopiert?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Wegen **Layer-Caching**! Wenn sich ein Layer ändert, werden alle folgenden Layer neu gebaut.
@@ -150,7 +150,7 @@ Wenn Dependencies vor dem App-Code kopiert werden, muss `pip install` / `npm ins
 
 Was ist eine `.dockerignore` und warum ist sie wichtig?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Eine `.dockerignore` funktioniert wie `.gitignore` und schließt Dateien vom **Build-Context** aus:
@@ -233,7 +233,7 @@ docker run -d --name daten-test ubuntu sleep infinity
 docker exec daten-test cat /tmp/meine-daten.txt
 ```
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 Du bekommst: `cat: /tmp/meine-daten.txt: No such file or directory`
@@ -255,7 +255,7 @@ docker rm daten-test
 
 Warum sind Container absichtlich "stateless" – warum werden Daten bei `docker rm` gelöscht?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Container sind absichtlich stateless, weil sie **austauschbar** und **skalierbar** sein sollen:
@@ -314,7 +314,7 @@ docker run -v <volume_name>:/pfad/im/container <image>
 
 Was ist der Unterschied zwischen dem Writeable Layer eines Containers und einer Docker Volume?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 | Eigenschaft | Writeable Layer | Docker Volume |
@@ -378,7 +378,7 @@ docker run -d --name reader -v meine-daten:/data ubuntu sleep infinity
 docker exec reader cat /data/persistent.txt
 ```
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 Du siehst die Daten aus Schritt 3 – `Diese Daten überleben!` und das Datum. Die Daten haben den `docker rm` überlebt!
@@ -437,7 +437,7 @@ Bind Mounts verbinden ein **Verzeichnis auf deinem Host** direkt mit einem Verze
 
 Wann verwendest du eine Docker Volume und wann einen Bind Mount?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Docker Volume** verwenden für:
@@ -482,7 +482,7 @@ Erstelle die Datei `index.html`:
 
 **Schritt 2:** Starte einen nginx-Container mit Bind Mount:
 
-<details>
+<details markdown>
 <summary>Git Bash (empfohlen unter Windows)</summary>
 
 ```bash
@@ -491,7 +491,7 @@ docker run -d --name web -p 8080:80 -v "$(pwd)":/usr/share/nginx/html:ro nginx
 
 </details>
 
-<details>
+<details markdown>
 <summary>PowerShell</summary>
 
 ```powershell
@@ -500,7 +500,7 @@ docker run -d --name web -p 8080:80 -v "${PWD}:/usr/share/nginx/html:ro" nginx
 
 </details>
 
-<details>
+<details markdown>
 <summary>CMD (Eingabeaufforderung)</summary>
 
 ```cmd
@@ -509,7 +509,7 @@ docker run -d --name web -p 8080:80 -v "%cd%":/usr/share/nginx/html:ro nginx
 
 </details>
 
-<details>
+<details markdown>
 <summary>macOS / Linux</summary>
 
 ```bash
@@ -546,7 +546,7 @@ Du solltest "Version 1" sehen.
 
 **Schritt 5:** Lade die Seite im Browser neu (F5 oder Strg+R).
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 Du siehst sofort "Version 2 - Live Update!" – **ohne** den Container neu zu starten oder das Image neu zu bauen!
@@ -570,7 +570,7 @@ docker rm web
 
 Lösche den Testordner:
 
-<details>
+<details markdown>
 <summary>Git Bash / macOS / Linux</summary>
 
 ```bash
@@ -580,7 +580,7 @@ rm -rf bind-mount-test
 
 </details>
 
-<details>
+<details markdown>
 <summary>PowerShell</summary>
 
 ```powershell
@@ -590,7 +590,7 @@ Remove-Item -Recurse -Force bind-mount-test
 
 </details>
 
-<details>
+<details markdown>
 <summary>CMD</summary>
 
 ```cmd
@@ -667,7 +667,7 @@ graph TD
 
 Warum funktioniert `localhost` nicht, wenn ein Container einen anderen Container erreichen will?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 Weil `localhost` (127.0.0.1) in jedem Container auf den **Container selbst** zeigt – nicht auf den Host und nicht auf andere Container.
@@ -722,7 +722,7 @@ docker run --rm --network mein-netzwerk curlimages/curl http://server1
 
 > **Warum ein eigener Container?** Viele Images (auch `nginx`) enthalten **kein** `curl`. Statt Tools im Ziel-Container zu installieren, starten wir einen kleinen Einweg-Container (`--rm`) mit `curlimages/curl` – das ist robuster und funktioniert immer.
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 Du siehst die HTML-Ausgabe der nginx-Willkommensseite von `server1`! Das beweist:
@@ -792,7 +792,7 @@ docker run -d \
   postgres:16
 ```
 
-<details>
+<details markdown>
 <summary>PowerShell: Zeilenumbrüche</summary>
 
 In PowerShell verwendest du das Backtick `` ` `` statt `\` für Zeilenumbrüche:
@@ -897,7 +897,7 @@ docker run -d \
   postgres:16
 ```
 
-<details>
+<details markdown>
 <summary>PowerShell: Zeilenumbrüche</summary>
 
 ```powershell
@@ -920,7 +920,7 @@ docker run -d `
 docker exec -it db psql -U admin -d meine_db -c "SELECT * FROM notizen;"
 ```
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 Die Notizen sind noch da! Die Ausgabe zeigt beide Einträge mit `id`, `titel`, `inhalt` und `erstellt_am`.
@@ -946,7 +946,7 @@ docker run --rm --network db-netzwerk -e PGPASSWORD=geheim123 postgres:16 \
   psql -h db -U admin -d meine_db -c "SELECT * FROM notizen;"
 ```
 
-<details>
+<details markdown>
 <summary>PowerShell: Zeilenumbrüche</summary>
 
 ```powershell
@@ -999,7 +999,7 @@ docker run -d \
   postgres:16
 ```
 
-<details>
+<details markdown>
 <summary>PowerShell: Zeilenumbrüche</summary>
 
 ```powershell
@@ -1117,7 +1117,7 @@ docker run -d \
   fastapi-db-app
 ```
 
-<details>
+<details markdown>
 <summary>PowerShell: Zeilenumbrüche</summary>
 
 ```powershell
@@ -1142,7 +1142,7 @@ http://localhost:8000/health
 
 Lade die Hauptseite mehrmals neu – der Besuchszähler sollte bei jedem Reload steigen!
 
-<details>
+<details markdown>
 <summary>Troubleshooting</summary>
 
 | Problem | Mögliche Ursache | Lösung |
@@ -1171,7 +1171,7 @@ docker exec app python -c "import psycopg2; psycopg2.connect('postgresql://admin
 
 </details>
 
-<details>
+<details markdown>
 <summary>Zusammenfassung: Das Setup</summary>
 
 ```
@@ -1198,7 +1198,7 @@ docker image rm fastapi-db-app
 
 Lösche den Projektordner:
 
-<details>
+<details markdown>
 <summary>Git Bash / macOS / Linux</summary>
 
 ```bash
@@ -1208,7 +1208,7 @@ rm -rf fastapi-db
 
 </details>
 
-<details>
+<details markdown>
 <summary>PowerShell</summary>
 
 ```powershell
@@ -1218,7 +1218,7 @@ Remove-Item -Recurse -Force fastapi-db
 
 </details>
 
-<details>
+<details markdown>
 <summary>CMD</summary>
 
 ```cmd
@@ -1259,7 +1259,7 @@ rmdir /s /q fastapi-db
 
 Du startest eine App und eine Datenbank in Docker. Die App zeigt `Connection refused` beim Verbinden zur Datenbank. Nenne drei mögliche Ursachen und wie du sie diagnostizierst.
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Drei mögliche Ursachen:**
@@ -1284,7 +1284,7 @@ Du startest eine App und eine Datenbank in Docker. Die App zeigt `Connection ref
 
 Erkläre den Unterschied zwischen `-p 5432:5432` (Port-Mapping) und `--network mein-netzwerk` (Docker-Netzwerk). Wann brauchst du was?
 
-<details>
+<details markdown>
 <summary>Antwort anzeigen</summary>
 
 **Port-Mapping (`-p HOST:CONTAINER`):**
@@ -1340,7 +1340,7 @@ docker run -d \
   redis:7
 ```
 
-<details>
+<details markdown>
 <summary>PowerShell: Zeilenumbrüche</summary>
 
 ```powershell
@@ -1385,7 +1385,7 @@ docker run --rm --network multi-netzwerk busybox nslookup multi-redis
 
 > **Warum nicht `getent` oder `ping`?** Nicht jedes Image hat diese Tools. `busybox` ist ein minimaler Tool-Container mit `nslookup` – das funktioniert zuverlässig.
 
-<details>
+<details markdown>
 <summary>Lösung anzeigen</summary>
 
 `nslookup multi-db` zeigt die IP-Adresse des PostgreSQL-Containers. Das beweist, dass Docker-DNS funktioniert und alle Container sich gegenseitig über ihre Namen erreichen können.
