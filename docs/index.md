@@ -53,7 +53,6 @@ flowchart LR
 !!! abstract "Zertifikate im Kurs"
     Im Verlauf des Kurses werden folgende Zertifizierungen vorbereitet:
 
-    - **Professional Scrum Master I – PSM I** :flag_gb:
     - **LPI Linux Essentials** :flag_gb: :flag_de:
     - **AWS Cloud Practitioner Zertifikat** :flag_de: :flag_gb:
     - **Cloud Business Expert (IHK)** :flag_de:
