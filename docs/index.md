@@ -15,7 +15,7 @@ Willkommen auf der Kursplattform. Hier findest du alle Unterlagen, Übungen und 
 flowchart LR
     A[Modul 1<br>IT Fundamentals] --> B[Modul 2<br>Programmierung & Cloud]
     B --> C[Modul 3<br>Frontend & Fullstack]
-    C --> D[Modul 4<br>Vertiefung]
+    C --> D[Modul 4<br>DevOps & Cloud]
 ```
 
 ---
@@ -24,10 +24,10 @@ flowchart LR
 
 | Modul | Thema | Wochen | Beschreibung |
 |-------|-------|--------|--------------|
-| [**Modul 1**](modul-1/index.md) | IT Fundamentals | 12 Wochen | Grundlagen der IT, Betriebssysteme, Netzwerke, PowerShell, Bash |
-| [**Modul 2**](modul-2/index.md) | Programmierung & Cloud | 12 Wochen | Linux, AWS, Python, FastAPI, SQL, Datenbanken |
+| [**Modul 1**](modul-1/index.md) | IT Fundamentals | 12 Wochen | Grundlagen der IT, Google Workspace, KI & Prompting, PowerShell, Bash |
+| [**Modul 2**](modul-2/index.md) | Programmierung & Cloud | 12 Wochen | Linux, AWS, Python, FastAPI, SQL, Datenbanken, Git |
 | [**Modul 3**](modul-3/index.md) | Frontend & Fullstack | 12 Wochen | HTML/CSS, JavaScript, React, Fullstack-Projekte, Datenbanken, Docker |
-| [**Modul 4**](modul-4/index.md) | Vertiefung | 12 Wochen | Wird noch bekannt gegeben |
+| [**Modul 4**](modul-4/index.md) | DevOps & Cloud | 12 Wochen | DevOps, Cloud-Infrastruktur, CI/CD |
 
 ---
 
