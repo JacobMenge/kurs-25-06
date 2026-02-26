@@ -24,10 +24,10 @@ flowchart LR
 
 | Modul | Thema | Wochen | Beschreibung |
 |-------|-------|--------|--------------|
-| [**Modul 1**](modul-1/index.md) | IT Fundamentals | 10 Wochen | Grundlagen der IT, Betriebssysteme, Netzwerke, PowerShell, Bash |
-| [**Modul 2**](modul-2/index.md) | Programmierung & Cloud | 10 Wochen | Linux, AWS, Python, FastAPI, SQL, Datenbanken |
-| [**Modul 3**](modul-3/index.md) | Frontend & Fullstack | 8 Wochen | HTML/CSS, JavaScript, React, Fullstack-Projekte, Datenbanken, Docker |
-| [**Modul 4**](modul-4/index.md) | Vertiefung | – | Wird noch bekannt gegeben |
+| [**Modul 1**](modul-1/index.md) | IT Fundamentals | 12 Wochen | Grundlagen der IT, Betriebssysteme, Netzwerke, PowerShell, Bash |
+| [**Modul 2**](modul-2/index.md) | Programmierung & Cloud | 12 Wochen | Linux, AWS, Python, FastAPI, SQL, Datenbanken |
+| [**Modul 3**](modul-3/index.md) | Frontend & Fullstack | 12 Wochen | HTML/CSS, JavaScript, React, Fullstack-Projekte, Datenbanken, Docker |
+| [**Modul 4**](modul-4/index.md) | Vertiefung | 12 Wochen | Wird noch bekannt gegeben |
 
 ---
 
