@@ -2,4 +2,5 @@ nav:
   - "Docker Grundlagen": uebung-29.1-docker-grundlagen-mental-model.md
   - "Dockerfile – Eigene Images bauen": uebung-29.2-dockerfile-eigene-images-bauen.md
   - "Persistenz & Networking": uebung-29.3-persistenz-networking.md
+  - "Docker Compose": uebung-29.4-docker-compose.md
   - ...
