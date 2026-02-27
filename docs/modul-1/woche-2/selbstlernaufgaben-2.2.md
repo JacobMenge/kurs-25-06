@@ -1,4 +1,5 @@
 ---
+title: "2.2 – Professionelles Prompting"
 tags:
   - KI
   - LLM

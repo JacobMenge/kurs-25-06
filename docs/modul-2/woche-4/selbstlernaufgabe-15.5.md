@@ -1,4 +1,5 @@
 ---
+title: "15.5 – AWS Praxisprojekt: Apache Logfile-Upload zu S3"
 tags:
   - AWS
   - EC2

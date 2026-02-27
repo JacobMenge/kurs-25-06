@@ -1,4 +1,5 @@
 ---
+title: "Redis 4 – Redis mit Docker Compose"
 tags:
   - Redis
   - Caching

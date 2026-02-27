@@ -1,4 +1,5 @@
 ---
+title: "20.4 – JSON mit Python - Dokumente speichern und verwalten"
 tags:
   - SQL
   - SQLite

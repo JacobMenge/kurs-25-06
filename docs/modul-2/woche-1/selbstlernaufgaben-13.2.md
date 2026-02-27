@@ -1,4 +1,5 @@
 ---
+title: "13.2 – Linux Dateisystem & Navigation"
 tags:
   - Linux
   - VM

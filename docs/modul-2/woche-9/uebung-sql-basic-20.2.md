@@ -1,4 +1,5 @@
 ---
+title: "20.2 – SQL Grundlagen - Von Null zur eigenen Datenbank"
 tags:
   - SQL
   - SQLite

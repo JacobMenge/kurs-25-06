@@ -1,4 +1,5 @@
 ---
+title: "9.2 – IP-Adressen & DNS"
 tags:
   - Git
   - Linux

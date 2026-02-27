@@ -1,4 +1,5 @@
 ---
+title: "Statische Website mit AWS S3 hosten - Die Basics"
 tags:
   - AWS
   - EC2

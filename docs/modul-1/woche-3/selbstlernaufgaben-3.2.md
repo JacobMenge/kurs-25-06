@@ -1,4 +1,5 @@
 ---
+title: "3.2 – Variablen & Datentypen visualisiert"
 tags:
   - Algorithmen
   - Scratch

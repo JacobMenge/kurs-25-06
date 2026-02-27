@@ -1,4 +1,5 @@
 ---
+title: "Python Installation auf Windows 11 – Schritt-für-Schritt-Anleitung"
 tags:
   - Python
   - Setup

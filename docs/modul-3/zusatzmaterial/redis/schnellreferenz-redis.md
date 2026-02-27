@@ -1,4 +1,5 @@
 ---
+title: "Schnellreferenz – Redis"
 tags:
   - Redis
   - Caching

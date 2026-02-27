@@ -1,4 +1,5 @@
 ---
+title: "7.1 – Einführung in Bash-Scripting"
 tags:
   - Bash
   - Linux

@@ -1,4 +1,5 @@
 ---
+title: "9.3 – Netzwerk-Diagnosen praktisch"
 tags:
   - Git
   - Linux

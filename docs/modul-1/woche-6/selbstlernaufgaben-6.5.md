@@ -1,7 +1,8 @@
 ---
+title: "6.5 – Linux Szenario: Einfache Entwicklungsumgebung für ein Team einrichten"
 tags:
-  - PowerShell
-  - Problemlösung
+  - Linux
+  - Szenario
 ---
 # Linux Szenario: Einfache Entwicklungsumgebung für ein Team einrichten
 

@@ -1,14 +1,14 @@
 nav:
   - "\u00dcbersicht": index.md
-  - Woche 1: woche-1
-  - Woche 2: woche-2
-  - Woche 3: woche-3
-  - Woche 4: woche-4
-  - Woche 5: woche-5
-  - Woche 6: woche-6
-  - Woche 7: woche-7
-  - Woche 8: woche-8
-  - Woche 9: woche-9
-  - Woche 10: woche-10
+  - "Woche 1 \u2013 Einf\u00fchrung in die IT": woche-1
+  - "Woche 2 \u2013 Large Language Models": woche-2
+  - "Woche 3 \u2013 Algorithmisches Denken": woche-3
+  - "Woche 4 \u2013 Bedingungen & Windows": woche-4
+  - "Woche 5 \u2013 PowerShell": woche-5
+  - "Woche 6 \u2013 Vertiefung & Linux": woche-6
+  - "Woche 7 \u2013 Bash Grundbefehle": woche-7
+  - "Woche 8 \u2013 Server & Infrastruktur": woche-8
+  - "Woche 9 \u2013 Netzwerke & Sicherheit": woche-9
+  - "Woche 10 \u2013 Gruppenarbeit & Praxis": woche-10
   - Material: material
   - ...

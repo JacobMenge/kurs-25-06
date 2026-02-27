@@ -1,4 +1,5 @@
 ---
+title: "Authentication 4 – Auth Fullstack: React + FastAPI + PostgreSQL"
 tags:
   - Auth
   - JWT

@@ -1,4 +1,5 @@
 ---
+title: "Assignment 18.5 – Objektorientierte Programmierung in Python"
 tags:
   - Python
   - OOP

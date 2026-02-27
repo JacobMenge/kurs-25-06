@@ -1,4 +1,5 @@
 ---
+title: "2.3 – Wissensdatenbanken mit OneNote"
 tags:
   - KI
   - LLM

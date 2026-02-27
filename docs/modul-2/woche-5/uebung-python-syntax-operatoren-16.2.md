@@ -1,4 +1,5 @@
 ---
+title: "16.2 – Einstieg in Python-Syntax & Operatoren"
 tags:
   - Python
   - Setup

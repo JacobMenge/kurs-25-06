@@ -1,4 +1,5 @@
 ---
+title: "18.4 – Objektorientierte Programmierung (OOP) in Python - Vertiefung"
 tags:
   - Python
   - OOP

@@ -1,4 +1,5 @@
 ---
+title: "Authentication 5 – Auth mit Docker Compose"
 tags:
   - Auth
   - JWT

@@ -1,4 +1,5 @@
 ---
+title: "5.2 – PowerShell Skripte erstellen (Grundlagen)"
 tags:
   - PowerShell
   - Windows

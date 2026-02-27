@@ -47,7 +47,7 @@ theme:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com
+      link: https://github.com/JacobMenge/kurs-25-06
       name: GitHub Repository
   generator: false
 

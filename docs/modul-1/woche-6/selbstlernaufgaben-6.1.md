@@ -1,7 +1,7 @@
 ---
+title: "6.1 – Einführung in Linux"
 tags:
-  - PowerShell
-  - Problemlösung
+  - Linux
 ---
 # Selbstlernaufgaben - Einführung in Linux
 

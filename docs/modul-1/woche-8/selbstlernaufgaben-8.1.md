@@ -1,4 +1,5 @@
 ---
+title: "8.1 – Servertypen im Überblick"
 tags:
   - Setup
   - Linux

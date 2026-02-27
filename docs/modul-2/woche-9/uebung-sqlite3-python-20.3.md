@@ -1,4 +1,5 @@
 ---
+title: "20.3 – SQLite mit Python - Datenbanken programmieren"
 tags:
   - SQL
   - SQLite

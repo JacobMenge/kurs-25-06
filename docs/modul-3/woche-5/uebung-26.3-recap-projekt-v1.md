@@ -1,4 +1,5 @@
 ---
+title: "26.3 – React Recap Mini-Hub - Nachmittags-Übungen (Tag 1)"
 tags:
   - React
   - Context-API

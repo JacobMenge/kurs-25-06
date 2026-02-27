@@ -1,4 +1,5 @@
 ---
+title: "Wochenprojekt – Fullstack mit React + FastAPI"
 tags:
   - Fullstack
   - React

@@ -1,4 +1,5 @@
 ---
+title: "8.2 – Client-Server-Kommunikation"
 tags:
   - Setup
   - Linux

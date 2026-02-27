@@ -1,4 +1,5 @@
 ---
+title: "Redis 3 – Redis im Fullstack: React + FastAPI + Redis"
 tags:
   - Redis
   - Caching

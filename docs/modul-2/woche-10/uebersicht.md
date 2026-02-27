@@ -1,4 +1,5 @@
 ---
+title: "Woche 10 – Mini-API Projekt: Übersicht"
 tags:
   - FastAPI
   - SQLite

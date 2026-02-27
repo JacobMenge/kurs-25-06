@@ -1,4 +1,5 @@
 ---
+title: "2.1 – Large Language Models verstehen"
 tags:
   - KI
   - LLM

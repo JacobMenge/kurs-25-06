@@ -1,4 +1,5 @@
 ---
+title: "Tag 8 – DOM, Events & Interaktivität"
 tags:
   - JavaScript
   - DOM

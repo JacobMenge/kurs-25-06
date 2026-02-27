@@ -24,6 +24,7 @@ Am Ende der Woche kannst du:
 | Mi | Dateioperationen | [Selbstlernaufgabe 7.2](selbstlernaufgaben-7.2.md) |
 | Do | grep & Regex | [Selbstlernaufgabe 7.3](selbstlernaufgaben-7.3.md) |
 | Fr | Bash Scripting | [Selbstlernaufgabe 7.4](selbstlernaufgaben-7.4.md) |
+| Bonus | Bash For-/While-Schleifen & Bedingungen II | [Selbstlernaufgabe 7.5](selbstlernaufgaben-7.5.md) |
 
 ---
 

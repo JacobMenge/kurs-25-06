@@ -1,10 +1,13 @@
 ---
+title: "19.3 – FastAPI Grundlagen"
 tags:
   - HTTP
   - REST
   - FastAPI
   - Python
 ---
+# 19.3 – FastAPI Grundlagen
+
 ## 1. Der erste statische GET-Endpunkt
 
 Schwierigkeitsgrad: **Grundlegend** 

@@ -1,4 +1,5 @@
 ---
+title: "18.3 – Objektorientierte Programmierung (OOP) in Python - Grundlagen"
 tags:
   - Python
   - OOP

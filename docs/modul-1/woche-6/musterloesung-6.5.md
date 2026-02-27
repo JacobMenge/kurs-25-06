@@ -1,7 +1,8 @@
 ---
+title: "Musterlösung 6.5 – Linux Entwicklungsumgebung"
 tags:
-  - PowerShell
-  - Problemlösung
+  - Linux
+  - Musterloesung
 ---
 # Linux Entwicklungsumgebung - Musterlösung
 

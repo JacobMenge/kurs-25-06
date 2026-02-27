@@ -1,10 +1,13 @@
 ---
+title: "19.4 – FastAPI mit Pydantic"
 tags:
   - HTTP
   - REST
   - FastAPI
   - Python
 ---
+# 19.4 – FastAPI mit Pydantic
+
 ## 1. Grundlagen: Pydantic und Schemadefinition
 
 Schwierigkeitsgrad: **Grundlegend** 

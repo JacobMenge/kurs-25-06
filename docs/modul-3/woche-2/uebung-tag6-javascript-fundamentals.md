@@ -1,4 +1,5 @@
 ---
+title: "Tag 6 – JavaScript Fundamentals"
 tags:
   - JavaScript
   - DOM

@@ -1,5 +1,5 @@
 ---
-title: Aufgabe 1.4 – Digitale Projektorganisation & Kanban
+title: "1.4 – Digitale Projektorganisation & Kanban"
 tags:
   - IT-Grundlagen
   - Google-Workspace

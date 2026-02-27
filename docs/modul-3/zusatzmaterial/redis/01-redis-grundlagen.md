@@ -1,4 +1,5 @@
 ---
+title: "Redis 1 – Redis Grundlagen"
 tags:
   - Redis
   - Caching

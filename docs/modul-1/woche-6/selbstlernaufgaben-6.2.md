@@ -1,7 +1,8 @@
 ---
+title: "6.2 – Gnome Desktop, Terminal und Package Manager"
 tags:
-  - PowerShell
-  - Problemlösung
+  - Linux
+  - Terminal
 ---
 # Selbstlernaufgaben - Gnome Desktop, Terminal und Package Manager
 

@@ -1,4 +1,5 @@
 ---
+title: "24.2 – Komponenten & Props"
 tags:
   - React
   - JSX

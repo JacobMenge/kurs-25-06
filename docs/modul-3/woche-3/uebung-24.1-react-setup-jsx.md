@@ -1,4 +1,5 @@
 ---
+title: "24.1 – React Setup & JSX"
 tags:
   - React
   - JSX

@@ -1,4 +1,5 @@
 ---
+title: "AWS EC2 Instance mit nginx"
 tags:
   - AWS
   - EC2

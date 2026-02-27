@@ -1,5 +1,5 @@
 ---
-title: "Modul 4 – Vertiefung"
+title: "Modul 4 – DevOps & Cloud"
 ---
 
 # Modul 4 – DevOps & Cloud

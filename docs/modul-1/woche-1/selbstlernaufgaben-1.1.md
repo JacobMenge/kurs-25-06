@@ -1,5 +1,5 @@
 ---
-title: Aufgabe 1.1 – Einführung in die IT
+title: "1.1 – Einführung in die IT"
 tags:
   - IT-Grundlagen
   - Google-Workspace

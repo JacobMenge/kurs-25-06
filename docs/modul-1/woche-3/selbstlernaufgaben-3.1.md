@@ -1,5 +1,5 @@
 ---
-title: Aufgabe 3.1 - Einführung in das algorithmische Denken
+title: "3.1 – Einführung in das algorithmische Denken"
 tags:
   - Algorithmen
   - Scratch

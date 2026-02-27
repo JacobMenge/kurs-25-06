@@ -1,7 +1,8 @@
 ---
+title: "6.3 – Linux Dateisystem"
 tags:
-  - PowerShell
-  - Problemlösung
+  - Linux
+  - Dateisystem
 ---
 # Selbstlernaufgaben - Linux Dateisystem
 

@@ -1,4 +1,5 @@
 ---
+title: "Gruppenarbeit 10.2 – Challenge: Sichere Verbindung aufbauen"
 tags:
   - Git
   - Gruppenarbeit

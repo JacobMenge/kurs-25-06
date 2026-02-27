@@ -1,4 +1,5 @@
 ---
+title: "17.2 – Datenstrukturen in Python: Listen, Tuples, Sets und Dictionaries"
 tags:
   - Python
   - Schleifen

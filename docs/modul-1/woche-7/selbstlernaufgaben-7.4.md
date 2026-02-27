@@ -1,4 +1,5 @@
 ---
+title: "7.4 – Bash für Systemadministration"
 tags:
   - Bash
   - Linux

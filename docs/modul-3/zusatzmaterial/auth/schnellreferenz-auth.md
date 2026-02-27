@@ -1,4 +1,5 @@
 ---
+title: "Schnellreferenz – Authentication"
 tags:
   - Auth
   - JWT

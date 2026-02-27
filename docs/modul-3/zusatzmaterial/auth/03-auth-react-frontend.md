@@ -1,4 +1,5 @@
 ---
+title: "Authentication 3 – Authentication im React-Frontend"
 tags:
   - Auth
   - JWT

@@ -1,4 +1,5 @@
 ---
+title: "Redis 2 – Redis mit Python & FastAPI"
 tags:
   - Redis
   - Caching

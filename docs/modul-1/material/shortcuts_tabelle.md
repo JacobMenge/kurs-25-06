@@ -1,4 +1,5 @@
 ---
+title: "Windows 11 Shortcuts - Komplette Übersicht"
 tags:
   - Windows
   - Shortcuts

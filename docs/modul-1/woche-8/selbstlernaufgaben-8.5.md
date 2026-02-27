@@ -1,4 +1,5 @@
 ---
+title: "8.5 – Recap Woche 8: Server-Infrastruktur & Kommunikation"
 tags:
   - Setup
   - Linux

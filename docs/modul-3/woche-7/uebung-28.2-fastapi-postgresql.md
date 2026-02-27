@@ -1,4 +1,5 @@
 ---
+title: "28.2 – FastAPI & PostgreSQL"
 tags:
   - PostgreSQL
   - Datenbanken

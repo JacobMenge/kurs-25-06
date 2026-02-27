@@ -1,4 +1,5 @@
 ---
+title: "Tag 7 – Arrays, Objects & Moderne Patterns"
 tags:
   - JavaScript
   - DOM

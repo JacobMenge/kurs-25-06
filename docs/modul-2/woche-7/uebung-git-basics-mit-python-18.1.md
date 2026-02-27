@@ -1,4 +1,5 @@
 ---
+title: "18.1 – Git und Python - Versionierung Basics"
 tags:
   - Python
   - OOP

@@ -1,4 +1,5 @@
 ---
+title: "25.2 – Hooks in React"
 tags:
   - React
   - Hooks

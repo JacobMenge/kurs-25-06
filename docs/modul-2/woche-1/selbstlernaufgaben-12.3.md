@@ -1,4 +1,5 @@
 ---
+title: "12.3 – Linux Texte & Streams"
 tags:
   - Linux
   - VM

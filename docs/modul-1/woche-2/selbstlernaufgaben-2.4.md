@@ -1,4 +1,5 @@
 ---
+title: "2.4 – Notion oder Obsidian vertiefen"
 tags:
   - KI
   - LLM

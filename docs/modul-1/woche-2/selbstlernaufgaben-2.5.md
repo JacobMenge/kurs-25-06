@@ -1,4 +1,5 @@
 ---
+title: "2.5 – Git & GitHub vertiefen"
 tags:
   - KI
   - LLM

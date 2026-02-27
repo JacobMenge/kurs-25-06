@@ -1,5 +1,5 @@
 ---
-title: Aufgabe 2.1 – KI als Arbeitsassistent & Prompting
+title: "1.3 – KI als digitaler Arbeitsassistent"
 tags:
   - IT-Grundlagen
   - Google-Workspace

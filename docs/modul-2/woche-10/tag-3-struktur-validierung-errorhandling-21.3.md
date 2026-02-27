@@ -1,4 +1,5 @@
 ---
+title: "Tag 3 – Saubere Struktur + Validierung + Error Handling"
 tags:
   - FastAPI
   - SQLite

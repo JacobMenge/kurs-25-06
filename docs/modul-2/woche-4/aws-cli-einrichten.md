@@ -1,4 +1,5 @@
 ---
+title: "AWS CLI einrichten und nutzen - Die Basics"
 tags:
   - AWS
   - EC2

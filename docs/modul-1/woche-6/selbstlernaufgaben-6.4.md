@@ -1,7 +1,9 @@
 ---
+title: "6.4 – Linux Benutzer & Rechteverwaltung"
 tags:
-  - PowerShell
-  - Problemlösung
+  - Linux
+  - Benutzer
+  - Rechteverwaltung
 ---
 # Selbstlernaufgaben - Linux Benutzer & Rechteverwaltung
 

@@ -1,4 +1,5 @@
 ---
+title: "Assignment Tag 10 – JavaScript Mini-App"
 tags:
   - JavaScript
   - DOM

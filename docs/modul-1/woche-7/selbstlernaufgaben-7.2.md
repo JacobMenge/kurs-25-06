@@ -1,4 +1,5 @@
 ---
+title: "7.2 – Bash Arithmetik, Eingaben & Kontrollstrukturen"
 tags:
   - Bash
   - Linux

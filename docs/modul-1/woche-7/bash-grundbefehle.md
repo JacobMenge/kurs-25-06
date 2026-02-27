@@ -1,4 +1,5 @@
 ---
+title: "Bash Grundbefehle - Referenztabelle"
 tags:
   - Bash
   - Linux

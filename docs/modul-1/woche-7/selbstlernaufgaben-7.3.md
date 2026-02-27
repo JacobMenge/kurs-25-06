@@ -1,4 +1,5 @@
 ---
+title: "7.3 – Bash For-/While-Schleifen & Bedingungen"
 tags:
   - Bash
   - Linux

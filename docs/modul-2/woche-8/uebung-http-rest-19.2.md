@@ -1,10 +1,13 @@
 ---
+title: "19.2 – HTTP & REST Vertiefung"
 tags:
   - HTTP
   - REST
   - FastAPI
   - Python
 ---
+# 19.2 – HTTP & REST Vertiefung
+
 ## 1. Grundlagen API und API-Call
 
 Schwierigkeitsgrad: **Grundlegend** 

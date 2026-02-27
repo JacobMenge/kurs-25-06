@@ -1,4 +1,5 @@
 ---
+title: "Tag 4 – Deployment auf AWS EC2 + Logging"
 tags:
   - FastAPI
   - SQLite

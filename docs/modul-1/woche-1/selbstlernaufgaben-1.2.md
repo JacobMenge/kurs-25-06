@@ -1,5 +1,5 @@
 ---
-title: Aufgabe 1.2 – Google Workspace vs. Microsoft 365
+title: "1.2 – Google Workspace vs. Microsoft 365"
 tags:
   - IT-Grundlagen
   - Google-Workspace
