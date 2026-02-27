@@ -36,11 +36,9 @@ Alle Unterlagen, Übungen und Assignments zu den Modulen und Wochen.
 
     ---
 
-    - LPI Linux Essentials
-    - AWS Cloud Practitioner
-    - Cloud Business Expert (IHK)
-    - IT-Support Specialist (IHK)
-    - IT-Administrator (IHK)
+    - **M2:** LPI Linux Essentials · IT-Support Specialist (IHK)
+    - **M3:** IT-Administrator (IHK)
+    - **M4:** AWS Cloud Practitioner · Cloud Business Expert (IHK)
 
 -   :material-upload-outline: **Abgaben**
 
@@ -48,9 +46,7 @@ Alle Unterlagen, Übungen und Assignments zu den Modulen und Wochen.
 
     Über **Google Classroom**
 
-    Frist: freitags 23:59 Uhr
-
-    Formate: PDF, DOCX, ODT, PNG, JPG
+    Fristen und Abgabeformate sind dem jeweiligen Classroom zu entnehmen.
 
 </div>
 
