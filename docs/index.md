@@ -5,90 +5,74 @@ description: Kursunterlagen und Übungen – Kurs 25-06
 
 # Kurs 25-06
 
-Willkommen auf der Kursplattform. Hier findest du alle Unterlagen, Übungen und Assignments zu den einzelnen Modulen und Wochen.
+Alle Unterlagen, Übungen und Assignments zu den Modulen und Wochen.
 
 ---
 
-## Kursverlauf
+## Module
 
-```mermaid
-flowchart LR
-    A[Modul 1<br>IT Fundamentals] --> B[Modul 2<br>Programmierung & Cloud]
-    B --> C[Modul 3<br>Frontend & Fullstack]
-    C --> D[Modul 4<br>DevOps & Cloud]
-```
-
----
-
-## Module im Überblick
-
-| Modul | Thema | Wochen | Beschreibung |
-|-------|-------|--------|--------------|
-| [**Modul 1**](modul-1/index.md) | IT Fundamentals | 12 Wochen | Grundlagen der IT, Google Workspace, KI & Prompting, PowerShell, Bash |
-| [**Modul 2**](modul-2/index.md) | Programmierung & Cloud | 12 Wochen | Linux, AWS, Python, FastAPI, SQL, Datenbanken, Git |
-| [**Modul 3**](modul-3/index.md) | Frontend & Fullstack | 12 Wochen | HTML/CSS, JavaScript, React, Fullstack-Projekte, Datenbanken, Docker |
-| [**Modul 4**](modul-4/index.md) | DevOps & Cloud | 12 Wochen | DevOps, Cloud-Infrastruktur, CI/CD |
+| Modul | Thema | Inhalte |
+|-------|-------|---------|
+| [**Modul 1**](modul-1/index.md) | IT Fundamentals | IT-Grundlagen, KI, Prompting, PowerShell, Bash |
+| [**Modul 2**](modul-2/index.md) | Programmierung & Cloud | Linux, AWS, Python, FastAPI, SQL, Git |
+| [**Modul 3**](modul-3/index.md) | Frontend & Fullstack | HTML/CSS, JavaScript, React, Docker |
+| [**Modul 4**](modul-4/index.md) | DevOps & Cloud | CI/CD, Cloud-Infrastruktur |
 
 ---
 
-## Wichtige Termine
+<div class="grid cards" markdown>
 
-!!! info "Kurszeiten"
-    :alarm_clock: Modul I, II, III & IV: Montag bis Freitag
+-   :material-clock-outline: **Kurszeiten**
 
-    - 37,5 Wochenstunden exkl. Pausen (50 UE)
-    - 09:00 Uhr - 12:00 Uhr
-    - 13:00 Uhr - 17:00 Uhr (10 UE + Selbstlernzeiten)
+    ---
 
-| Datum | Ereignis |
-|-------|----------|
-| 30.06.2025 | Kursstart |
-| 26.09.2025 | Ende Modul 1 |
-| 29.06.2026 | Kursende |
+    Mo–Fr, 09:00–17:00 Uhr
 
----
+    37,5h/Woche (50 UE)
 
-## Zertifikate
+    **Start:** 30.06.2025 · **Ende:** 29.06.2026
 
-!!! abstract "Zertifikate im Kurs"
-    Im Verlauf des Kurses werden folgende Zertifizierungen vorbereitet:
+-   :material-certificate-outline: **Zertifikate**
 
-    - **LPI Linux Essentials** :flag_gb: :flag_de:
-    - **AWS Cloud Practitioner Zertifikat** :flag_de: :flag_gb:
-    - **Cloud Business Expert (IHK)** :flag_de:
-    - **IT-Support Specialist (IHK)** :flag_de:
-    - **IT-Administrator (IHK)** :flag_de:
+    ---
 
----
+    - LPI Linux Essentials
+    - AWS Cloud Practitioner
+    - Cloud Business Expert (IHK)
+    - IT-Support Specialist (IHK)
+    - IT-Administrator (IHK)
 
-## Wichtige Informationen
+-   :material-upload-outline: **Abgaben**
 
-!!! tip "Allgemeine Hinweise"
-    - Abgaben erfolgen über Google Classroom
-    - Abgabefristen: in der Regel freitags bis 23:59 Uhr
-    - Akzeptierte Formate: PDF, DOCX, ODT, PNG, JPG
-    - Bei Fragen oder Problemen: frühzeitig melden
+    ---
+
+    Über **Google Classroom**
+
+    Frist: freitags 23:59 Uhr
+
+    Formate: PDF, DOCX, ODT, PNG, JPG
+
+</div>
 
 ---
 
-## Freie Tage & Ferien
+## Ferien & Feiertage
 
-!!! note "Unterrichtsfreie Tage"
-    Insgesamt hat jede(r) Teilnehmer(in) einen gesetzlichen Anspruch auf **20 Urlaubstage** pro Kursjahr. **10 Urlaubstage** werden durch gemeinsame Ferienzeiten abgebildet. Zusätzlich stehen jede(r) Teilnehmer(in) **10 Urlaubstage** zur individuellen Inanspruchnahme zur Verfügung.
+Jede(r) Teilnehmer(in) hat Anspruch auf **20 Urlaubstage** pro Kursjahr. Davon sind **10 Tage** durch gemeinsame Ferienzeiten festgelegt, **10 Tage** stehen zur freien Verfügung. Zusätzlich gelten die hamburgischen Feiertage. Abwesenheit bitte per E-Mail an: abwesenheit@techstarter.de
 
-    Schicke hierfür bitte eine kurze E-Mail an: abwesenheit@techstarter.de.
+<details markdown>
+<summary><strong>Ferienzeiten (für alle verpflichtend)</strong></summary>
 
-    Zusätzlich gelten die hamburgischen Feiertage, da die Techstarter GmbH in Hamburg ansässig ist. Du hast an allen unten genannten Feiertagen keinen Unterricht.
-
-**Ferien (für alle verpflichtend):**
-
-| Zeitraum | Ferien | Urlaubstage |
-|----------|--------|-------------|
-| 04.08.2025 – 08.08.2025 | Sommerferien 2025 | 5 |
+| Zeitraum | Ferien | Tage |
+|----------|--------|------|
+| 04.08. – 08.08.2025 | Sommerferien 2025 | 5 |
 | 24.12.2025 – 02.01.2026 | Winterferien 2025 | 4 |
 | 15.05.2026 | Mai-Brücke | 1 |
 
-**Feiertage 2025/2026 (Hamburg):**
+</details>
+
+<details markdown>
+<summary><strong>Feiertage 2025/2026 (Hamburg)</strong></summary>
 
 | Datum | Feiertag |
 |-------|----------|
@@ -97,8 +81,10 @@ flowchart LR
 | 25.12.2025 | 1. Weihnachtstag |
 | 26.12.2025 | 2. Weihnachtstag |
 | 01.01.2026 | Neujahr |
-| 03.04.2026 | Karfreitag 2026 |
+| 03.04.2026 | Karfreitag |
 | 06.04.2026 | Ostermontag |
 | 01.05.2026 | Tag der Arbeit |
 | 14.05.2026 | Christi Himmelfahrt |
 | 25.05.2026 | Pfingstmontag |
+
+</details>
