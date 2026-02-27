@@ -6,16 +6,6 @@ title: "Modul 1 – IT Fundamentals"
 
 In diesem Modul lernst du die Grundlagen der Informationstechnologie kennen: von Hardware und Software über Betriebssysteme und Netzwerke bis hin zu Kommandozeilen-Tools wie PowerShell und Bash.
 
-<div class="progress-container">
-  <div class="progress-label">
-    <span>Fortschritt</span>
-    <span>10 von 12 Wochen online</span>
-  </div>
-  <div class="progress-bar">
-    <div class="progress-bar__fill" style="width: 83.3%"></div>
-  </div>
-</div>
-
 ---
 
 ## Wochenübersicht

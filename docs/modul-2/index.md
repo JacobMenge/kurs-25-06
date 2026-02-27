@@ -6,16 +6,6 @@ title: "Modul 2 – Programmierung & Cloud"
 
 In diesem Modul steigst du in Linux, Cloud-Services (AWS) und die Programmiersprache Python ein. Du lernst REST-APIs mit FastAPI zu bauen und Datenbanken mit SQL zu nutzen.
 
-<div class="progress-container">
-  <div class="progress-label">
-    <span>Fortschritt</span>
-    <span>10 von 12 Wochen online</span>
-  </div>
-  <div class="progress-bar">
-    <div class="progress-bar__fill" style="width: 83.3%"></div>
-  </div>
-</div>
-
 ---
 
 ## Wochenübersicht
