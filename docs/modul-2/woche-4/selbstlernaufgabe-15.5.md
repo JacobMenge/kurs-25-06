@@ -1,3 +1,10 @@
+---
+tags:
+  - AWS
+  - EC2
+  - S3
+  - CLI
+---
 # AWS Praxisprojekt: Apache Logfile-Upload zu S3
 
 ## Überblick

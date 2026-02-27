@@ -1,3 +1,11 @@
+---
+tags:
+  - Python
+  - Schleifen
+  - Datenstrukturen
+  - Funktionen
+  - Assignment
+---
 # Pflicht-Assignment: Python-Grundlagen (Einzelarbeit)
 
 ## Wochenabschluss: Variablen bis Funktionen

@@ -1,3 +1,9 @@
+---
+tags:
+  - Python
+  - OOP
+  - Git
+---
 # Objektorientierte Programmierung (OOP) in Python - Grundlagen
 
 ## Übersicht

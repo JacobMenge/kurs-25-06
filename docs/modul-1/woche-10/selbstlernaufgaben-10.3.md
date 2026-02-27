@@ -1,3 +1,8 @@
+---
+tags:
+  - Git
+  - Gruppenarbeit
+---
 # Linux Praxis Challenge: grep & vim
 *Für Windows 11 mit WSL (Windows Subsystem for Linux)*
 

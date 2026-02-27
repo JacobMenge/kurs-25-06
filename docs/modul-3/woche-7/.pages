@@ -1,4 +1,5 @@
 nav:
+  - "Wochenübersicht": uebersicht.md
   - "PostgreSQL & Datenbanken": uebung-28.1-datenbanken.md
   - "FastAPI & PostgreSQL": uebung-28.2-fastapi-postgresql.md
   - "Performance & MongoDB": uebung-28.3-performance-mongodb.md

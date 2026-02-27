@@ -1,3 +1,8 @@
+---
+tags:
+  - Linux
+  - Paketverwaltung
+---
 # Übung: Spezielle Berechtigungen, Prozesse & Systemverwaltung
 ## Praktische Übungen für Ubuntu
 

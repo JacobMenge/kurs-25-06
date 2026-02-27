@@ -1,3 +1,10 @@
+---
+tags:
+  - AWS
+  - EC2
+  - S3
+  - CLI
+---
 # AWS S3 Übungen - Schritt für Schritt
 
 Praktische Aufgaben zum Vertiefen deiner S3-Kenntnisse

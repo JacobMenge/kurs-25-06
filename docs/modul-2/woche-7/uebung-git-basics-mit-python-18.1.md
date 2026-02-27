@@ -1,3 +1,9 @@
+---
+tags:
+  - Python
+  - OOP
+  - Git
+---
 # Git und Python - Versionierung Basics
 
 ## Übersicht

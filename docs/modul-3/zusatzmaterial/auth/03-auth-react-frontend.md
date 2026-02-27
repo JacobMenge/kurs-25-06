@@ -1,3 +1,11 @@
+---
+tags:
+  - Auth
+  - JWT
+  - Security
+  - FastAPI
+  - React
+---
 # Authentication im React-Frontend - Praktische Übungen
 
 ## Übersicht

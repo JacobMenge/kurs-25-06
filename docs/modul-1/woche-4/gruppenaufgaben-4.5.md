@@ -1,3 +1,10 @@
+---
+tags:
+  - Algorithmen
+  - Bedingungen
+  - Scratch
+  - Windows
+---
 # Gruppenaufgaben - Windows 11 Troubleshooting
 ## Problem-Szenarien für Gruppenarbeit
 

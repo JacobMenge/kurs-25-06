@@ -1,4 +1,5 @@
 nav:
+  - "Wochenübersicht": uebersicht.md
   - "CSS in React & Frameworks": uebung-25.1-css-in-react-frameworks.md
   - "Hooks in React": uebung-25.2-hooks-in-react.md
   - "useEffect & API Calls": uebung-25.3-useeffect-api-calls.md

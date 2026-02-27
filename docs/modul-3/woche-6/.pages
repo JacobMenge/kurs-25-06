@@ -1,3 +1,4 @@
 nav:
+  - "Wochenübersicht": uebersicht.md
   - "Fullstack React + FastAPI": wochenprojekt-fullstack-react-fastapi.md
   - ...

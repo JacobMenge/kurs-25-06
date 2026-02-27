@@ -1,5 +1,11 @@
 ---
 title: Code-Beispiele
+tags:
+  - JavaScript
+  - DOM
+  - Events
+  - Fetch
+  - Code-Beispiele
 ---
 
 # Code-Beispiele

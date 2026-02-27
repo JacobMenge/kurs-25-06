@@ -1,3 +1,10 @@
+---
+tags:
+  - Python
+  - OOP
+  - Git
+  - Assignment
+---
 # Pflicht-Assignment: Objektorientierte Programmierung in Python (Einzelarbeit)
 
 ## Wochenabschluss: OOP-Grundlagen

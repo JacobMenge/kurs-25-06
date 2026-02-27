@@ -1,3 +1,8 @@
+---
+tags:
+  - PowerShell
+  - Problemlösung
+---
 # Linux Szenario: Einfache Entwicklungsumgebung für ein Team einrichten
 
 Diese Aufgabe ist als Übung für den VOrmittag gedacht, ihr müsst also nichts einreichen!

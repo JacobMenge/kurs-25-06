@@ -5,6 +5,7 @@ site_url: ""
 
 theme:
   name: material
+  custom_dir: overrides
   language: de
   palette:
     - scheme: default
@@ -82,6 +83,8 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.snippets:
       base_path: ["docs"]
+      auto_append:
+        - includes/abbreviations.md
   - pymdownx.smartsymbols
   - pymdownx.superfences:
       custom_fences:
@@ -97,7 +100,8 @@ markdown_extensions:
 plugins:
   - search:
       lang: de
-  - tags
+  - tags:
+      tags_file: tags.md
   - awesome-pages
 
 # Navigation wird automatisch aus .pages-Dateien in den Verzeichnissen generiert.

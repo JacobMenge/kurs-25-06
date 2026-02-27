@@ -1,3 +1,11 @@
+---
+tags:
+  - SQL
+  - SQLite
+  - NoSQL
+  - JSON
+  - Python
+---
 # JSON mit Python - Dokumente speichern und verwalten
 
 ## Übersicht

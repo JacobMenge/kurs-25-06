@@ -1,3 +1,10 @@
+---
+tags:
+  - AWS
+  - EC2
+  - S3
+  - CLI
+---
 # AWS CLI einrichten und nutzen - Die Basics
 
 Eine Schritt-für-Schritt-Anleitung

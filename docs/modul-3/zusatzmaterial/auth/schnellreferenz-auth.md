@@ -1,3 +1,12 @@
+---
+tags:
+  - Auth
+  - JWT
+  - Security
+  - FastAPI
+  - React
+  - Schnellreferenz
+---
 # Schnellreferenz: Authentication
 
 Diese Referenz enthält alle wichtigen Code-Snippets und Patterns für JWT-basierte Authentication mit FastAPI + React.

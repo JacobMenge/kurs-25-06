@@ -1,3 +1,9 @@
+---
+tags:
+  - Setup
+  - Linux
+  - Git
+---
 # Arbeiten mit SSH Anleitung - Windows 11 Edition
 
 ## Was ist SSH?

@@ -1,3 +1,11 @@
+---
+tags:
+  - FastAPI
+  - SQLite
+  - AWS
+  - Deployment
+  - Projekt
+---
 # Mini-API: Wochenübersicht
 
 ## Wochenziele

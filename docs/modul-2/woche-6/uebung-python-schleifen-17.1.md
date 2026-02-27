@@ -1,3 +1,10 @@
+---
+tags:
+  - Python
+  - Schleifen
+  - Datenstrukturen
+  - Funktionen
+---
 # Praktische Übungen: Schleifen in Python
 
 ## Übung 1: Früchtekorb (for-Schleife Grundlagen)

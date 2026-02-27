@@ -1,3 +1,10 @@
+---
+tags:
+  - IT-Grundlagen
+  - Google-Workspace
+  - KI
+  - Prompting
+---
 # Selbstlernaufgabe – Teamarbeit & Präsentation: Digitales Arbeiten praktisch umsetzen
 
 Heute habt ihr die Gelegenheit, euer Wissen aus der gesamten Woche gemeinsam anzuwenden. Ihr arbeitet in Kleingruppen (3–4 Personen) an einer Präsentation, die ihr **am Montag ab 9 Uhr im Kurs** vorstellt. Diese Aufgabe begleitet euch durch den gesamten Tag.

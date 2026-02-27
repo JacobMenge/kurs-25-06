@@ -1,3 +1,12 @@
+---
+tags:
+  - React
+  - Hooks
+  - useEffect
+  - Router
+  - CSS
+  - Assignment
+---
 # Optionales Assignment: React App mit Routing (Einzelarbeit)
 
 ## Wochenabschluss: React Fortgeschritten (Woche 4)

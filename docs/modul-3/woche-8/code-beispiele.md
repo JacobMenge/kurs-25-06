@@ -1,5 +1,10 @@
 ---
 title: "Code-Beispiele \u2013 Rezeptbuch"
+tags:
+  - Docker
+  - Dockerfile
+  - Docker-Compose
+  - Code-Beispiele
 ---
 
 # Code-Beispiele – Rezeptbuch

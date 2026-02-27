@@ -1,3 +1,11 @@
+---
+tags:
+  - Redis
+  - Caching
+  - Docker
+  - FastAPI
+  - Schnellreferenz
+---
 # Schnellreferenz: Redis
 
 Diese Referenz enthält alle wichtigen Befehle und Code-Snippets für die Arbeit mit Redis.

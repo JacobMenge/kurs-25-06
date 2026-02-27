@@ -1,4 +1,5 @@
 nav:
+  - "Wochenübersicht": uebersicht.md
   - "HTTP und REST": uebung-http-rest-19.1.md
   - "HTTP REST Vertiefung": uebung-http-rest-19.2.md
   - "FastAPI Basics I": uebung-fastapi-basics-19.3.md

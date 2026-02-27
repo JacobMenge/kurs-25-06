@@ -1,3 +1,10 @@
+---
+tags:
+  - Redis
+  - Caching
+  - Docker
+  - FastAPI
+---
 # Redis Grundlagen - Praktische Übungen
 
 ## Übersicht

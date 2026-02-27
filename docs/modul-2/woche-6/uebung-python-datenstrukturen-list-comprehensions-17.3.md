@@ -1,3 +1,10 @@
+---
+tags:
+  - Python
+  - Schleifen
+  - Datenstrukturen
+  - Funktionen
+---
 # Iteration über Datenstrukturen und List Comprehensions
 
 ## Übersicht

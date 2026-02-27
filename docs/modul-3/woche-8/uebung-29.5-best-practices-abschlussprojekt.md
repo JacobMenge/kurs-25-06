@@ -1,3 +1,9 @@
+---
+tags:
+  - Docker
+  - Dockerfile
+  - Docker-Compose
+---
 # Best Practices & Abschlussprojekt – Praktische Übungen
 
 ## Übersicht
@@ -1788,9 +1794,3 @@ rmdir /s /q rezeptbuch
 - [ ] Ich kann **Docker Best Practices** anwenden (explizite Tags, Healthchecks, keine Secrets in YAML, nur nötige Ports)
 
 > **Glückwunsch!** Du hast in 5 Tagen den kompletten Weg von "Was ist ein Container?" bis zu einem professionellen Multi-Container-Projekt mit Docker Compose gemeistert. Diese Fähigkeiten sind in der modernen Webentwicklung Standard — ob im Team, in CI/CD-Pipelines oder beim Cloud-Deployment.
->
-> **Was kommt als Nächstes?**
-> - **Docker in CI/CD:** GitHub Actions mit Docker-Builds automatisieren
-> - **Container Registries:** Images auf Docker Hub oder GitHub Container Registry veröffentlichen
-> - **Kubernetes:** Container-Orchestrierung für Production (Skalierung, Self-Healing)
-> - **Cloud-Services:** AWS ECS, Google Cloud Run, Azure Container Apps — managed Container-Hosting

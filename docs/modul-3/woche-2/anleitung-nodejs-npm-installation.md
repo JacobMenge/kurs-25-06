@@ -1,3 +1,10 @@
+---
+tags:
+  - JavaScript
+  - DOM
+  - Events
+  - Fetch
+---
 # Node.js & npm Installation - Schritt-für-Schritt Anleitung
 
 ## Übersicht

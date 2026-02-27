@@ -1,4 +1,5 @@
 nav:
+  - "Wochenübersicht": uebersicht.md
   - "Gruppenaufgabe Linux-Distribution": gruppenaufgabe-13.1.md
   - "Archivierung & Paketverwaltung": selbstlernuebung-13.2.md
   - "Berechtigungen & Prozesse": selbstlernuebung-13.3-4.md

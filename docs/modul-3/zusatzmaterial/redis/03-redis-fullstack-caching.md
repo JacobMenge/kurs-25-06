@@ -1,3 +1,10 @@
+---
+tags:
+  - Redis
+  - Caching
+  - Docker
+  - FastAPI
+---
 # Redis im Fullstack: React + FastAPI + Redis - Praktische Übungen
 
 ## Übersicht

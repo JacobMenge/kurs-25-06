@@ -1,5 +1,11 @@
 ---
 title: Code-Beispiele
+tags:
+  - Python
+  - Schleifen
+  - Datenstrukturen
+  - Funktionen
+  - Code-Beispiele
 ---
 
 # Code-Beispiele

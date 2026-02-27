@@ -1,3 +1,8 @@
+---
+tags:
+  - PowerShell
+  - Problemlösung
+---
 # Selbstlernaufgaben - Einführung in Linux
 
 Bitte lade deine Ergebnisse bis spätestens **Sonntag um 23:59 Uhr im Google Classroom** zur entsprechenden Aufgabe hoch.

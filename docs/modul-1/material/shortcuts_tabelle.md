@@ -1,3 +1,8 @@
+---
+tags:
+  - Windows
+  - Shortcuts
+---
 # Windows 11 Shortcuts - Komplette Übersicht
 
 ## Basis-Shortcuts (funktionieren in allen Programmen)

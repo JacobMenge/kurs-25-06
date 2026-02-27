@@ -1,4 +1,5 @@
 nav:
+  - "Wochenübersicht": uebersicht.md
   - "Node.js & npm Installation": anleitung-nodejs-npm-installation.md
   - "JavaScript Fundamentals": uebung-tag6-javascript-fundamentals.md
   - "Arrays, Objects & Patterns": uebung-tag7-arrays-objects-patterns.md

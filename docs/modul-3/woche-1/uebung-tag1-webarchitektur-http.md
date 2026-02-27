@@ -1,3 +1,10 @@
+---
+tags:
+  - HTML
+  - CSS
+  - Webarchitektur
+  - HTTP
+---
 # Webarchitektur & HTTP - Praktische Übungen
 
 ## Übersicht

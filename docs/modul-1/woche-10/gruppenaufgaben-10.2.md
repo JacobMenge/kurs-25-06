@@ -1,3 +1,8 @@
+---
+tags:
+  - Git
+  - Gruppenarbeit
+---
 # Challenge: Sichere Verbindung aufbauen
 ## Linux & SSH mit WSL - Verteilte Teams Edition
 

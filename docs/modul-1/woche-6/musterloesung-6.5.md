@@ -1,3 +1,8 @@
+---
+tags:
+  - PowerShell
+  - Problemlösung
+---
 # Linux Entwicklungsumgebung - Musterlösung
 
 ## Phase 1: Benutzer und Gruppen erstellen

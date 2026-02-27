@@ -1,3 +1,10 @@
+---
+tags:
+  - JavaScript
+  - DOM
+  - Events
+  - Fetch
+---
 # Fetch, Async/Await & APIs - Praktische Übungen
 
 ## Übersicht

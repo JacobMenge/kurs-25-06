@@ -1,3 +1,10 @@
+---
+tags:
+  - React
+  - Context-API
+  - AWS
+  - Deployment
+---
 # React Recap Mini-Hub - Nachmittags-Übungen (Tag 1)
 
 ## Übersicht

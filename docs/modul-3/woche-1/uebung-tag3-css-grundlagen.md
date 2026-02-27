@@ -1,3 +1,10 @@
+---
+tags:
+  - HTML
+  - CSS
+  - Webarchitektur
+  - HTTP
+---
 # CSS Grundlagen: Styling, Selektoren & Debugging - Praktische Übungen
 
 ## Übersicht

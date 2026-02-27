@@ -1,3 +1,10 @@
+---
+tags:
+  - Python
+  - Schleifen
+  - Datenstrukturen
+  - Funktionen
+---
 # Datenstrukturen in Python: Listen, Tuples, Sets und Dictionaries
 
 ## Übersicht

@@ -1,3 +1,9 @@
+---
+tags:
+  - Fullstack
+  - React
+  - FastAPI
+---
 # Optionales Wochenprojekt: Fullstack mit React + FastAPI (Einzelarbeit)
 
 ## Wochenabschluss: Vom Frontend zum Fullstack

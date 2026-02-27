@@ -1,3 +1,11 @@
+---
+tags:
+  - React
+  - JSX
+  - Komponenten
+  - Props
+  - useState
+---
 # useState & Controlled Inputs - Praktische Übung
 
 ## Übersicht

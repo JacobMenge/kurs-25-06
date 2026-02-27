@@ -1,3 +1,11 @@
+---
+tags:
+  - HTML
+  - CSS
+  - Webarchitektur
+  - HTTP
+  - Assignment
+---
 # Pflicht-Assignment: Einfache Portfolio-Webseite (Einzelarbeit)
 
 ## Wochenabschluss: Webentwicklung Grundlagen I

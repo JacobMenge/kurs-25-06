@@ -1,3 +1,8 @@
+---
+tags:
+  - Linux
+  - Paketverwaltung
+---
 # Gruppenaufgabe: Linux-Distribution präsentieren
 
 **Abgabe / Präsentation:**  

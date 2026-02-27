@@ -1,3 +1,10 @@
+---
+tags:
+  - HTML
+  - CSS
+  - Webarchitektur
+  - HTTP
+---
 # CSS Layout & Responsive - Praktische Übungen
 
 ## Übersicht

@@ -1,3 +1,11 @@
+---
+tags:
+  - React
+  - JSX
+  - Komponenten
+  - Props
+  - useState
+---
 # Rendering, Listen & Keys - Praktische Übung
 
 ## Übersicht

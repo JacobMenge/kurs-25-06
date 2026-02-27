@@ -1,3 +1,10 @@
+---
+tags:
+  - Redis
+  - Caching
+  - Docker
+  - FastAPI
+---
 # Redis mit Python & FastAPI - Praktische Übungen
 
 ## Übersicht

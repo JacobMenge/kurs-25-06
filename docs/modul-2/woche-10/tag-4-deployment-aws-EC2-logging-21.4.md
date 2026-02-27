@@ -1,3 +1,11 @@
+---
+tags:
+  - FastAPI
+  - SQLite
+  - AWS
+  - Deployment
+  - Projekt
+---
 # Tag 4: Deployment auf AWS EC2 + Logging
 
 > **Wichtig:** Wir nutzen die Techstarter AWS Sandbox unter https://sandboxes.techstarter.de/ mit einem Budget-Limit von 15€. Alle Ressourcen sollten am Ende aufgeräumt werden!

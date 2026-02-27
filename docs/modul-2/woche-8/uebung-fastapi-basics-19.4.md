@@ -1,3 +1,10 @@
+---
+tags:
+  - HTTP
+  - REST
+  - FastAPI
+  - Python
+---
 ## 1. Grundlagen: Pydantic und Schemadefinition
 
 Schwierigkeitsgrad: **Grundlegend** 

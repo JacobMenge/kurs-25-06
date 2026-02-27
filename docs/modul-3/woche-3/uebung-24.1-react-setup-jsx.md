@@ -1,3 +1,11 @@
+---
+tags:
+  - React
+  - JSX
+  - Komponenten
+  - Props
+  - useState
+---
 # React Setup & JSX - Praktische Übung
 
 ## Übersicht

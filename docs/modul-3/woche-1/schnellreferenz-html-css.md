@@ -1,3 +1,11 @@
+---
+tags:
+  - HTML
+  - CSS
+  - Webarchitektur
+  - HTTP
+  - Schnellreferenz
+---
 # Schnellreferenz: HTML & CSS
 
 Diese Referenz enthält alle wichtigen Code-Snippets, die du für das Assignment brauchst.

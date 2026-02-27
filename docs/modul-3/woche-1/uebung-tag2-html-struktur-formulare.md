@@ -1,3 +1,10 @@
+---
+tags:
+  - HTML
+  - CSS
+  - Webarchitektur
+  - HTTP
+---
 # HTML: Struktur, Semantik & Formulare - Praktische Übungen
 
 ## Übersicht

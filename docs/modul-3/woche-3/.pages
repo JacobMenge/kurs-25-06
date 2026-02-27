@@ -1,4 +1,5 @@
 nav:
+  - "Wochenübersicht": uebersicht.md
   - "React Setup & JSX": uebung-24.1-react-setup-jsx.md
   - "Komponenten & Props": uebung-24.2-komponenten-props.md
   - "useState & Controlled Inputs": uebung-24.3-useState-controlled-inputs.md

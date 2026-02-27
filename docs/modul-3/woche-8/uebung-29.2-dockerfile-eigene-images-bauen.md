@@ -1,3 +1,9 @@
+---
+tags:
+  - Docker
+  - Dockerfile
+  - Docker-Compose
+---
 # Dockerfile - Eigene Images bauen - Praktische Übungen
 
 ## Übersicht

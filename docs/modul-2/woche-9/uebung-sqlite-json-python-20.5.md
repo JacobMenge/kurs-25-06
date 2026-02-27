@@ -1,3 +1,11 @@
+---
+tags:
+  - SQL
+  - SQLite
+  - NoSQL
+  - JSON
+  - Python
+---
 # Übungs-Projekt: Persönliche Rezeptsammlung
 
 ## Hinweise zum Übungsprojekt

@@ -1,3 +1,10 @@
+---
+tags:
+  - AWS
+  - EC2
+  - S3
+  - CLI
+---
 # Statische Website mit AWS S3 hosten - Die Basics
 
 Eine Schritt-für-Schritt-Anleitung für Anfänger

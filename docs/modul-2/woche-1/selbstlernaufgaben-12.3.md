@@ -1,3 +1,9 @@
+---
+tags:
+  - Linux
+  - VM
+  - Dateisystem
+---
 # Übung – Linux Texte & Streams
 
 

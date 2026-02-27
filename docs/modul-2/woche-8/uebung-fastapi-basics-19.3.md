@@ -1,3 +1,10 @@
+---
+tags:
+  - HTTP
+  - REST
+  - FastAPI
+  - Python
+---
 ## 1. Der erste statische GET-Endpunkt
 
 Schwierigkeitsgrad: **Grundlegend** 

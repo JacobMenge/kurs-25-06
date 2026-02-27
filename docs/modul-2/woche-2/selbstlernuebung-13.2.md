@@ -1,3 +1,8 @@
+---
+tags:
+  - Linux
+  - Paketverwaltung
+---
 # Übung: Archivierung & Paketverwaltung in Linux
 ## Praktische Übungen für Ubuntu
 

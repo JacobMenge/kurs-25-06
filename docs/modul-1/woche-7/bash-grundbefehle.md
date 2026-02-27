@@ -1,3 +1,8 @@
+---
+tags:
+  - Bash
+  - Linux
+---
 # Bash Grundbefehle - Referenztabelle
 
 ## Absolute Grundlagen

@@ -1,3 +1,11 @@
+---
+tags:
+  - Auth
+  - JWT
+  - Security
+  - FastAPI
+  - React
+---
 # Auth mit Docker Compose - Praktische Übungen
 
 ## Übersicht

@@ -1,5 +1,12 @@
 ---
 title: "Code-Beispiele \u2013 Mini-API"
+tags:
+  - FastAPI
+  - SQLite
+  - AWS
+  - Deployment
+  - Projekt
+  - Code-Beispiele
 ---
 
 # Code-Beispiele – Mini-API

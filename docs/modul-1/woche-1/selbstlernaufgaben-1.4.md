@@ -1,5 +1,10 @@
 ---
 title: Aufgabe 1.4 – Digitale Projektorganisation & Kanban
+tags:
+  - IT-Grundlagen
+  - Google-Workspace
+  - KI
+  - Prompting
 ---
 # Selbstlernaufgaben – Digitale Projektorganisation mit modernen Tools
 Bitte lade deine Ergebnisse bis spätestens **Sonntag um 23:59 Uhr im Google Classroom** zur entsprechenden Aufgabe hoch.

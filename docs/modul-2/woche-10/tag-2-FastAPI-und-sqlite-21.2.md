@@ -1,3 +1,11 @@
+---
+tags:
+  - FastAPI
+  - SQLite
+  - AWS
+  - Deployment
+  - Projekt
+---
 # Tag 2: SQLite anbinden + CRUD-Operationen
 
 ## Lernziele

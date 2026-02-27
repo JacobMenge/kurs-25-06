@@ -1,3 +1,9 @@
+---
+tags:
+  - Docker
+  - Dockerfile
+  - Docker-Compose
+---
 # Docker Compose – Praktische Übungen
 
 ## Übersicht

@@ -1,3 +1,11 @@
+---
+tags:
+  - FastAPI
+  - SQLite
+  - AWS
+  - Deployment
+  - Projekt
+---
 # Tag 3: Saubere Struktur + Validierung + Error Handling
 
 ## Lernziele

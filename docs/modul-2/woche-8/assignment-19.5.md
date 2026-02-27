@@ -1,3 +1,11 @@
+---
+tags:
+  - HTTP
+  - REST
+  - FastAPI
+  - Python
+  - Assignment
+---
 # Pflicht-Assignment: REST-APIs mit FastAPI (Einzelarbeit)
 
 ## Wochenabschluss: HTTP, REST & FastAPI-Grundlagen

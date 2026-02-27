@@ -1,3 +1,10 @@
+---
+tags:
+  - JavaScript
+  - DOM
+  - Events
+  - Fetch
+---
 # Arrays, Objects & Moderne Patterns - Praktische Übungen
 
 ## Übersicht

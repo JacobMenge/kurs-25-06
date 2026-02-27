@@ -1,0 +1,9 @@
+nav:
+  - "Python": python-cheatsheet.md
+  - "Git": git-cheatsheet.md
+  - "Bash & Linux": bash-cheatsheet.md
+  - "SQL": sql-cheatsheet.md
+  - "JavaScript": javascript-cheatsheet.md
+  - "React": react-cheatsheet.md
+  - "Docker": docker-cheatsheet.md
+  - ...

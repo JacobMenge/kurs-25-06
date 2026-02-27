@@ -1,3 +1,11 @@
+---
+tags:
+  - React
+  - Hooks
+  - useEffect
+  - Router
+  - CSS
+---
 # CSS in React & CSS-Frameworks - Praktische Übung
 
 ## Übersicht

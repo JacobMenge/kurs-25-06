@@ -1,3 +1,10 @@
+---
+tags:
+  - JavaScript
+  - DOM
+  - Events
+  - Fetch
+---
 # JavaScript Fundamentals - Praktische Übungen
 
 ## Übersicht

@@ -1,3 +1,10 @@
+---
+tags:
+  - PostgreSQL
+  - Datenbanken
+  - MongoDB
+  - FastAPI
+---
 # PostgreSQL & Datenbanken - Praktische Übungen
 
 ## Übersicht

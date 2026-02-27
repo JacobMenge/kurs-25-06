@@ -1,3 +1,10 @@
+---
+tags:
+  - Redis
+  - Caching
+  - Docker
+  - FastAPI
+---
 # Redis mit Docker Compose - Praktische Übungen
 
 ## Übersicht

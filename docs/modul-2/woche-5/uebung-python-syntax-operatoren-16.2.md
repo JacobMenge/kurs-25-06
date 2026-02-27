@@ -1,3 +1,8 @@
+---
+tags:
+  - Python
+  - Setup
+---
 # Geführte Übung: Einstieg in Python-Syntax & Operatoren
 
 Diese Übungen helfen dir, die grundlegende Syntax von Python Schritt für Schritt zu verstehen.  

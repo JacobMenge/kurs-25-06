@@ -1,5 +1,10 @@
 ---
 title: Aufgabe 1.1 – Einführung in die IT
+tags:
+  - IT-Grundlagen
+  - Google-Workspace
+  - KI
+  - Prompting
 ---
 
 # Selbstlernaufgaben – Einführung in die IT

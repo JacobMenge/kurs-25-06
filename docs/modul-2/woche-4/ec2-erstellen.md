@@ -1,3 +1,10 @@
+---
+tags:
+  - AWS
+  - EC2
+  - S3
+  - CLI
+---
 # AWS EC2 Instance mit nginx - Praktische Übung
 
 ## Schritt-für-Schritt-Anleitung für Windows 11

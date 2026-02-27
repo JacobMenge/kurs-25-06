@@ -1,3 +1,10 @@
+---
+tags:
+  - HTTP
+  - REST
+  - FastAPI
+  - Python
+---
 ## 1. Grundlagen API und API-Call
 
 Schwierigkeitsgrad: **Grundlegend** 

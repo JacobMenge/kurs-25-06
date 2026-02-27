@@ -1,3 +1,12 @@
+---
+tags:
+  - React
+  - JSX
+  - Komponenten
+  - Props
+  - useState
+  - Assignment
+---
 # Optionales Assignment: React Mini-App (Einzelarbeit)
 
 ## Wochenabschluss: React Grundlagen

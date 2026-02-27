@@ -1,3 +1,11 @@
+---
+tags:
+  - SQL
+  - SQLite
+  - NoSQL
+  - JSON
+  - Python
+---
 # SQL Grundlagen - Von Null zur eigenen Datenbank
 
 ## Übersicht

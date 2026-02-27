@@ -1,5 +1,9 @@
 ---
 title: Aufgabe 3.1 - Einführung in das algorithmische Denken
+tags:
+  - Algorithmen
+  - Scratch
+  - Variablen
 ---
 
 # Selbstlernaufgaben - Einführung in das algorithmische Denken

@@ -1,3 +1,9 @@
+---
+tags:
+  - Setup
+  - Linux
+  - Git
+---
 # Selbstlernaufgaben - Recap Woche 8: Server-Infrastruktur & Kommunikation
 
 **Abgabe:** Bis spätestens **Sonntag um 23:59 Uhr im Google Classroom**

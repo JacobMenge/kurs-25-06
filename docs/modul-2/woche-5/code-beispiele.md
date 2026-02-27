@@ -1,5 +1,9 @@
 ---
 title: Code-Beispiele
+tags:
+  - Python
+  - Setup
+  - Code-Beispiele
 ---
 
 # Code-Beispiele

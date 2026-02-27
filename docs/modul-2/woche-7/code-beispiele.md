@@ -1,5 +1,10 @@
 ---
 title: Code-Beispiele
+tags:
+  - Python
+  - OOP
+  - Git
+  - Code-Beispiele
 ---
 
 # Code-Beispiele

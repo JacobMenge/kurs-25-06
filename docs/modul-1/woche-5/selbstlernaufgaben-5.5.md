@@ -1,3 +1,9 @@
+---
+tags:
+  - PowerShell
+  - Windows
+  - Scripting
+---
 # Selbstlernaufgaben - Eigene Skripte programmieren
 
 Du erhältst die Anforderungen und ein Code-Gerüst - den Rest programmierst du selbständig. Das ist deine Gelegenheit, das Gelernte praktisch anzuwenden und eigene Lösungen zu entwickeln.

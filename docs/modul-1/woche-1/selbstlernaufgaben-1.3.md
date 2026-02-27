@@ -1,5 +1,10 @@
 ---
 title: Aufgabe 2.1 – KI als Arbeitsassistent & Prompting
+tags:
+  - IT-Grundlagen
+  - Google-Workspace
+  - KI
+  - Prompting
 ---
 # Selbstlernaufgaben – KI als digitaler Arbeitsassistent
 Bitte lade deine Ergebnisse bis spätestens **Sonntag um 23:59 Uhr im Google Classroom** zur entsprechenden Aufgabe hoch.

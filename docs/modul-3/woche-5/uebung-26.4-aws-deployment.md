@@ -1,3 +1,10 @@
+---
+tags:
+  - React
+  - Context-API
+  - AWS
+  - Deployment
+---
 # Übung 26.4: React-App auf AWS deployen
 
 ## Lernziele

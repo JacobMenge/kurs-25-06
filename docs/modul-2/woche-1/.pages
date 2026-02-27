@@ -1,4 +1,5 @@
 nav:
+  - "Wochenübersicht": uebersicht.md
   - "Multipass VM-Einrichtung": uebung-13.1.md
   - "Linux Texte & Streams": selbstlernaufgaben-12.3.md
   - "Linux Dateisystem & Navigation": selbstlernaufgaben-13.2.md

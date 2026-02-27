@@ -1,4 +1,5 @@
 nav:
+  - "Wochenübersicht": uebersicht.md
   - "AWS CLI einrichten": aws-cli-einrichten.md
   - "EC2 Instance erstellen": ec2-erstellen.md
   - "S3 Bucket erstellen": s3-bucket-erstellen.md

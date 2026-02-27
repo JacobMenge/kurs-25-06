@@ -1,3 +1,10 @@
+---
+tags:
+  - Python
+  - Schleifen
+  - Datenstrukturen
+  - Funktionen
+---
 # Funktionen in Python
 
 ## Übersicht

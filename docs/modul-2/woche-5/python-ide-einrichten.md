@@ -1,3 +1,8 @@
+---
+tags:
+  - Python
+  - Setup
+---
 # Python Installation auf Windows 11 – Schritt-für-Schritt-Anleitung
 
 ## Installationsübersicht (Nachmittag)

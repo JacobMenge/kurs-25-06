@@ -1,3 +1,8 @@
+---
+tags:
+  - Bash
+  - Linux
+---
 # Selbstlernaufgaben – Einführung in Bash-Scripting
 
 Bitte lade deine Ergebnisse bis spätestens **Sonntag um 23:59 Uhr im Google Classroom** zur entsprechenden Aufgabe hoch.

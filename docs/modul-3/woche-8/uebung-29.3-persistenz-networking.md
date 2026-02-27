@@ -1,3 +1,9 @@
+---
+tags:
+  - Docker
+  - Dockerfile
+  - Docker-Compose
+---
 # Persistenz & Networking - Praktische Übungen
 
 ## Übersicht

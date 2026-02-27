@@ -1,3 +1,11 @@
+---
+tags:
+  - FastAPI
+  - SQLite
+  - AWS
+  - Deployment
+  - Projekt
+---
 # Tag 1: FastAPI Basics + Requests testen
 
 ## Lernziele

@@ -1,3 +1,8 @@
+---
+tags:
+  - Git
+  - Gruppenarbeit
+---
 # Networking-Tools – Selbstlernaufgaben
 
 Dieses Übungsblatt führt dich **schrittweise** durch vier zentrale Netzwerk-Tools auf Linux/Unix-Systemen.  

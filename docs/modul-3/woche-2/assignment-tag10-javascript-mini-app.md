@@ -1,3 +1,11 @@
+---
+tags:
+  - JavaScript
+  - DOM
+  - Events
+  - Fetch
+  - Assignment
+---
 # Optionales Assignment: JavaScript Mini-App (Einzelarbeit)
 
 ## Wochenabschluss: Webentwicklung Grundlagen II

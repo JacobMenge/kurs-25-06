@@ -4,4 +4,9 @@ nav:
   - "Modul 2 \u2013 Programmierung & Cloud": modul-2
   - "Modul 3 \u2013 Frontend & Fullstack": modul-3
   - Modul 4: modul-4
+  - "Cheat Sheets": cheatsheets
+  - "Lernpfade": lernpfade.md
+  - Glossar: glossar.md
+  - "Themen-Index": tags.md
+  - FAQ: faq.md
   - ...

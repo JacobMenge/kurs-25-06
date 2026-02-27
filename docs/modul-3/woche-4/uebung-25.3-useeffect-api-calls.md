@@ -1,3 +1,11 @@
+---
+tags:
+  - React
+  - Hooks
+  - useEffect
+  - Router
+  - CSS
+---
 # useEffect & API Calls - Praktische Übung
 
 ## Übersicht

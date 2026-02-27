@@ -1,3 +1,11 @@
+---
+tags:
+  - SQL
+  - SQLite
+  - NoSQL
+  - JSON
+  - Python
+---
 # SQLite mit Python - Datenbanken programmieren
 
 ## Übersicht

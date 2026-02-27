@@ -1,4 +1,5 @@
 nav:
+  - "Wochenübersicht": uebersicht.md
   - "Webarchitektur & HTTP": uebung-tag1-webarchitektur-http.md
   - "HTML Struktur & Formulare": uebung-tag2-html-struktur-formulare.md
   - "CSS Grundlagen": uebung-tag3-css-grundlagen.md

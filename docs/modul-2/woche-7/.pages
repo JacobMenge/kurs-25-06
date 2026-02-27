@@ -1,4 +1,5 @@
 nav:
+  - "Wochenübersicht": uebersicht.md
   - "Git Basics mit Python": uebung-git-basics-mit-python-18.1.md
   - "OOP Grundlagen": uebung-python-oop-18.3.md
   - "OOP Vertiefung": uebung-python-oop-18.4.md

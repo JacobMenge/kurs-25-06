@@ -1,3 +1,11 @@
+---
+tags:
+  - Auth
+  - JWT
+  - Security
+  - FastAPI
+  - React
+---
 # Authentication Konzepte & Password Hashing - Praktische Übungen
 
 ## Übersicht

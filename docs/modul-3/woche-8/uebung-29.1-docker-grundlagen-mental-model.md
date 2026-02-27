@@ -1,3 +1,9 @@
+---
+tags:
+  - Docker
+  - Dockerfile
+  - Docker-Compose
+---
 # Docker Grundlagen & Mental Model - Praktische Übungen
 
 ## Übersicht
