@@ -3,4 +3,5 @@ nav:
   - "Dockerfile – Eigene Images bauen": uebung-29.2-dockerfile-eigene-images-bauen.md
   - "Persistenz & Networking": uebung-29.3-persistenz-networking.md
   - "Docker Compose": uebung-29.4-docker-compose.md
+  - "Code-Beispiele \u2013 Rezeptbuch": code-beispiele.md
   - ...

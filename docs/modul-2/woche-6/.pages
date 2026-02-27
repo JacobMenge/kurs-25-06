@@ -4,4 +4,5 @@ nav:
   - "List Comprehensions": uebung-python-datenstrukturen-list-comprehensions-17.3.md
   - "Funktionen in Python": uebung-python-funktionen-17.4.md
   - "Assignment Python-Grundlagen": assignment-17.5.md
+  - "Code-Beispiele": code-beispiele.md
   - ...

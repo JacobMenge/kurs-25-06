@@ -1,0 +1,61 @@
+services:
+
+  # sql datenbank fuer kategorien
+  postgres:
+    image: postgres:16                # fertiges image von docker hub
+    environment:                      # werte kommen aus der .env datei
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
+    volumes:
+      - pg-daten:/var/lib/postgresql/data    # daten bleiben nach restart erhalten
+    healthcheck:                      # prueft ob postgres verbindungen annimmt
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # nosql datenbank fuer rezepte
+  mongo:
+    image: mongo:7
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD}
+    volumes:
+      - mongo-daten:/data/db
+    healthcheck:                      # prueft ob mongo antwortet
+      test:                           # $$ weil wir die variable im container meinen nicht in compose
+        [
+          "CMD-SHELL",
+          "mongosh --quiet -u $$MONGO_INITDB_ROOT_USERNAME -p $$MONGO_INITDB_ROOT_PASSWORD --authenticationDatabase admin --eval \"db.adminCommand('ping').ok\" | grep 1",
+        ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+      start_period: 20s              # mongo braucht etwas laenger zum hochfahren
+
+  # python backend mit fastapi
+  api:
+    build: ./backend                  # baut das image aus backend/Dockerfile
+    depends_on:
+      postgres:
+        condition: service_healthy    # wartet bis der healthcheck gruen ist
+      mongo:
+        condition: service_healthy
+    environment:                      # verbindungsstrings fuer die datenbanken
+      DATABASE_URL: "postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}"
+      MONGO_URL: "mongodb://${MONGO_USER}:${MONGO_PASSWORD}@mongo:27017/?authSource=admin"
+      # "postgres" und "mongo" sind die servicenamen oben. docker loest die als hostnamen auf
+
+  # react frontend mit nginx als reverse proxy
+  frontend:
+    build: ./frontend                 # baut das image aus frontend/Dockerfile
+    ports:
+      - "3000:80"                     # einziger port der nach aussen geht
+    depends_on:
+      - api
+
+# named volumes damit die daten container neustarts ueberleben
+volumes:
+  pg-daten:
+  mongo-daten:

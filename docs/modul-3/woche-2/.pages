@@ -5,4 +5,5 @@ nav:
   - "DOM, Events & Interaktivit\u00e4t": uebung-tag8-dom-events-interaktivitaet.md
   - "Fetch, Async/Await & APIs": uebung-tag9-fetch-async-await-apis.md
   - "Assignment JavaScript Mini-App": assignment-tag10-javascript-mini-app.md
+  - "Code-Beispiele": code-beispiele.md
   - ...

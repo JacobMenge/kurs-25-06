@@ -80,6 +80,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.keys
   - pymdownx.mark
+  - pymdownx.snippets:
+      base_path: ["docs"]
   - pymdownx.smartsymbols
   - pymdownx.superfences:
       custom_fences:
