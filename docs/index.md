@@ -36,9 +36,13 @@ Alle Unterlagen, Übungen und Assignments zu den Modulen und Wochen.
 
     ---
 
-    - **M2:** LPI Linux Essentials · IT-Support Specialist (IHK)
-    - **M3:** IT-Administrator (IHK)
-    - **M4:** AWS Cloud Practitioner · Cloud Business Expert (IHK)
+    | Modul | Zertifikat |
+    |-------|------------|
+    | M2 | LPI Linux Essentials |
+    | M2 | IT-Support Specialist (IHK) |
+    | M3 | IT-Administrator (IHK) |
+    | M4 | AWS Cloud Practitioner |
+    | M4 | Cloud Business Expert (IHK) |
 
 -   :material-upload-outline: **Abgaben**
 
