@@ -26,7 +26,7 @@ Alle Unterlagen, Übungen und Assignments zu den Modulen und Wochen.
 
     ---
 
-    Mo–Fr, 09:00–17:00 Uhr
+    Mo bis Fr, 09:00 bis 17:00 Uhr
 
     37,5h/Woche (50 UE)
 
@@ -60,19 +60,15 @@ Alle Unterlagen, Übungen und Assignments zu den Modulen und Wochen.
 
 Jede(r) Teilnehmer(in) hat Anspruch auf **20 Urlaubstage** pro Kursjahr. Davon sind **10 Tage** durch gemeinsame Ferienzeiten festgelegt, **10 Tage** stehen zur freien Verfügung. Zusätzlich gelten die hamburgischen Feiertage. Abwesenheit bitte per E-Mail an: abwesenheit@techstarter.de
 
-<details markdown>
-<summary><strong>Ferienzeiten (für alle verpflichtend)</strong></summary>
+### Ferienzeiten (für alle verpflichtend)
 
 | Zeitraum | Ferien | Tage |
 |----------|--------|------|
-| 04.08. – 08.08.2025 | Sommerferien 2025 | 5 |
-| 24.12.2025 – 02.01.2026 | Winterferien 2025 | 4 |
+| 04.08. bis 08.08.2025 | Sommerferien 2025 | 5 |
+| 24.12.2025 bis 02.01.2026 | Winterferien 2025 | 4 |
 | 15.05.2026 | Mai-Brücke | 1 |
 
-</details>
-
-<details markdown>
-<summary><strong>Feiertage 2025/2026 (Hamburg)</strong></summary>
+### Feiertage 2025/2026 (Hamburg)
 
 | Datum | Feiertag |
 |-------|----------|
@@ -86,5 +82,3 @@ Jede(r) Teilnehmer(in) hat Anspruch auf **20 Urlaubstage** pro Kursjahr. Davon s
 | 01.05.2026 | Tag der Arbeit |
 | 14.05.2026 | Christi Himmelfahrt |
 | 25.05.2026 | Pfingstmontag |
-
-</details>

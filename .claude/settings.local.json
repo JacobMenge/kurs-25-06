@@ -17,7 +17,8 @@
       "Bash(xargs cat)",
       "Bash(done)",
       "Bash(gh api repos/JacobMenge/kurs-25-06/pages)",
-      "WebFetch(domain:jacobmenge.github.io)"
+      "WebFetch(domain:jacobmenge.github.io)",
+      "Bash(find \"C:\\\\Users\\\\jacob_arbeit\\\\Desktop\\\\kurs-25-06-newlayout\\\\kurs-25-06\\\\docs\" -name \".pages\" -exec cat {} ;)"
     ]
   }
 }
