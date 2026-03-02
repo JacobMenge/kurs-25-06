@@ -25,13 +25,11 @@ Alle Unterlagen, Übungen und Assignments zu den Modulen und Wochen.
 
     ---
 
-    | Modul | Zertifikat |
-    |-------|------------|
-    | M2 | LPI Linux Essentials |
-    | M2 | IT-Support Specialist (IHK) |
-    | M3 | IT-Administrator (IHK) |
-    | M4 | AWS Cloud Practitioner |
-    | M4 | Cloud Business Expert (IHK) |
+    **M2:** LPI Linux Essentials · IT-Support Specialist (IHK)
+
+    **M3:** IT-Administrator (IHK)
+
+    **M4:** AWS Cloud Practitioner · Cloud Business Expert (IHK)
 
 -   :material-upload-outline: **Abgaben**
 
@@ -39,7 +37,45 @@ Alle Unterlagen, Übungen und Assignments zu den Modulen und Wochen.
 
     Über **[Google Classroom](https://classroom.google.com/c/NzY1MDM4MTYzMjE4)**
 
-    Fristen und Abgabeformate sind dem jeweiligen Classroom zu entnehmen.
+    Abgabe bis **17:00 Uhr**, bei entschuldigten Ausnahmen bis 23:59 Uhr.
+
+</div>
+
+---
+
+<div class="grid cards" markdown>
+
+-   :material-account-outline: **Trainer**
+
+    ---
+
+    **Jacob** · jacob@techstarter.de
+
+    Mo bis Fr
+
+-   :material-account-group-outline: **Class Manager**
+
+    ---
+
+    **Kevin** · kevin@techstarter.de
+
+    Tel: 01579-2512270 · Mo bis Fr
+
+-   :material-briefcase-outline: **Career Coach**
+
+    ---
+
+    **Katrin** · katrin@techstarter.de
+
+    Di+Do 09:00 bis 17:00, Mi 12:00 bis 16:00
+
+-   :material-headset: **Support**
+
+    ---
+
+    support@techstarter.de
+
+    WhatsApp: 01579-2512273
 
 </div>
 
