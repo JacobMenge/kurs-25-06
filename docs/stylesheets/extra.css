@@ -865,14 +865,13 @@
    Team Cards - 4 in einer Reihe, kompakt
    ============================================ */
 
-/* 4 Spalten erzwingen mit hoher Spezifität */
-.md-typeset .md-typeset .team-cards > ul,
-.md-typeset div.team-cards > ul {
+/* 4 Spalten erzwingen - grid-template ist auf .grid selbst, nicht auf ul */
+.md-typeset .grid.team-cards {
   grid-template-columns: repeat(4, 1fr) !important;
 }
 
 /* Team-Cards kompaktere Schrift */
-.md-typeset div.team-cards > ul > li > p:not(:first-child) {
+.md-typeset .grid.team-cards > ul > li > p:not(:first-child) {
   font-size: 0.75rem;
   line-height: 1.4;
   margin: 0.2rem 0;
@@ -880,8 +879,7 @@
 
 /* Responsive: bei kleinen Bildschirmen 2 Spalten */
 @media screen and (max-width: 768px) {
-  .md-typeset .md-typeset .team-cards > ul,
-  .md-typeset div.team-cards > ul {
+  .md-typeset .grid.team-cards {
     grid-template-columns: repeat(2, 1fr) !important;
   }
 }
