@@ -9,17 +9,6 @@ Alle Unterlagen, Übungen und Assignments zu den Modulen und Wochen.
 
 ---
 
-## Module
-
-| Modul | Thema | Inhalte |
-|-------|-------|---------|
-| [**Modul 1**](modul-1/index.md) | IT Fundamentals | IT-Grundlagen, KI, Prompting, PowerShell, Bash |
-| [**Modul 2**](modul-2/index.md) | Programmierung & Cloud | Linux, AWS, Python, FastAPI, SQL, Git |
-| [**Modul 3**](modul-3/index.md) | Frontend & Fullstack | HTML/CSS, JavaScript, React, Docker |
-| [**Modul 4**](modul-4/index.md) | DevOps & Cloud | CI/CD, Cloud-Infrastruktur |
-
----
-
 <div class="grid cards" markdown>
 
 -   :material-clock-outline: **Kurszeiten**
@@ -82,3 +71,14 @@ Jede(r) Teilnehmer(in) hat Anspruch auf **20 Urlaubstage** pro Kursjahr. Davon s
 | 01.05.2026 | Tag der Arbeit |
 | 14.05.2026 | Christi Himmelfahrt |
 | 25.05.2026 | Pfingstmontag |
+
+---
+
+## Module
+
+| Modul | Thema | Inhalte |
+|-------|-------|---------|
+| [**Modul 1**](modul-1/index.md) | IT Fundamentals | IT-Grundlagen, KI, Prompting, PowerShell, Bash |
+| [**Modul 2**](modul-2/index.md) | Programmierung & Cloud | Linux, AWS, Python, FastAPI, SQL, Git |
+| [**Modul 3**](modul-3/index.md) | Frontend & Fullstack | HTML/CSS, JavaScript, React, Docker |
+| [**Modul 4**](modul-4/index.md) | DevOps & Cloud | CI/CD, Cloud-Infrastruktur |
