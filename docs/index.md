@@ -41,6 +41,12 @@ Alle Unterlagen, Übungen und Assignments zu den Modulen und Wochen.
 
 ## Dein Kurs-Team
 
+<style>
+.team-cards { grid-template-columns: repeat(4, 1fr) !important; }
+.team-cards > ul > li > p:not(:first-child) { font-size: 0.75rem !important; line-height: 1.4 !important; margin: 0.2rem 0 !important; }
+@media (max-width: 768px) { .team-cards { grid-template-columns: repeat(2, 1fr) !important; } }
+</style>
+
 <div class="grid cards team-cards" markdown>
 
 -   :material-account-outline: **Trainer**
