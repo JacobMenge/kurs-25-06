@@ -15,9 +15,7 @@ Alle Unterlagen, Übungen und Assignments zu den Modulen und Wochen.
 
     ---
 
-    Mo bis Fr, 09:00 bis 17:00 Uhr
-
-    37,5h/Woche (50 UE)
+    Mo bis Fr, 09:00 bis 17:00 Uhr · 37,5h/Woche (50 UE)
 
     **Start:** 30.06.2025 · **Ende:** 29.06.2026
 
@@ -41,41 +39,14 @@ Alle Unterlagen, Übungen und Assignments zu den Modulen und Wochen.
 
 ---
 
-<div class="grid cards" markdown>
+## Dein Kurs-Team
 
--   :material-account-outline: **Trainer**
-
-    ---
-
-    **Jacob** · jacob@techstarter.de
-
-    Mo bis Fr
-
--   :material-account-group-outline: **Class Manager**
-
-    ---
-
-    **Kevin** · kevin@techstarter.de
-
-    Tel: 01579-2512270 · Mo bis Fr
-
--   :material-briefcase-outline: **Career Coach**
-
-    ---
-
-    **Katrin** · katrin@techstarter.de
-
-    Di+Do 09:00 bis 17:00, Mi 12:00 bis 16:00
-
--   :material-headset: **Support**
-
-    ---
-
-    support@techstarter.de
-
-    WhatsApp: 01579-2512273
-
-</div>
+| Rolle | Name | Kontakt | Verfügbarkeit |
+|-------|------|---------|---------------|
+| **Trainer** | Jacob | jacob@techstarter.de | Mo bis Fr |
+| **Class Manager** | Kevin | kevin@techstarter.de · Tel: 01579-2512270 | Mo bis Fr |
+| **Career Coach** | Katrin | katrin@techstarter.de | Di+Do 09:00 bis 17:00, Mi 12:00 bis 16:00 |
+| **Support** | | support@techstarter.de · WhatsApp: 01579-2512273 | |
 
 ---
 

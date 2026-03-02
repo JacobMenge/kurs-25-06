@@ -782,22 +782,27 @@
 }
 
 /* ============================================
-   Grid Cards - Header mit blauem Hintergrund
+   Grid Cards - Kompakt mit blauem Header
    ============================================ */
 
-/* Card-Container: Padding entfernen für Header-Effekt */
+/* Card-Container: kompakt */
 .md-typeset .grid.cards > ul > li {
   padding: 0 !important;
   overflow: hidden;
+}
+
+/* Kompakteres Card-Grid */
+.md-typeset .grid.cards > ul {
+  gap: 0.6rem;
 }
 
 /* Erster Absatz = Header mit Icon + Titel */
 .md-typeset .grid.cards > ul > li > p:first-child {
   background-color: #060F38;
   color: white !important;
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 0.8rem;
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 /* Icon im Header weiß */
@@ -812,44 +817,46 @@
   color: white !important;
 }
 
-/* HR-Trennlinie zwischen Header und Content ausblenden */
+/* HR-Trennlinie ausblenden */
 .md-typeset .grid.cards > ul > li > hr {
   margin: 0 !important;
   border: none !important;
   height: 0;
 }
 
-/* Content-Bereich: Padding hinzufügen */
+/* Content-Bereich: kompaktes Padding */
 .md-typeset .grid.cards > ul > li > p:not(:first-child) {
-  padding: 0 1rem;
-  margin: 0.5rem 0;
+  padding: 0 0.8rem;
+  margin: 0.3rem 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
 }
 
-/* Erstes Content-Element nach HR: oberes Padding */
+/* Erstes Content-Element nach HR */
 .md-typeset .grid.cards > ul > li > hr + p,
-.md-typeset .grid.cards > ul > li > hr + ul,
-.md-typeset .grid.cards > ul > li > hr + table {
-  margin-top: 0.75rem;
+.md-typeset .grid.cards > ul > li > hr + ul {
+  margin-top: 0.5rem;
 }
 
-/* Letztes Element: unteres Padding */
+/* Letztes Element */
 .md-typeset .grid.cards > ul > li > *:last-child {
-  margin-bottom: 0.75rem !important;
+  margin-bottom: 0.5rem !important;
 }
 
 /* Tabellen innerhalb von Cards */
 .md-typeset .grid.cards > ul > li > .md-typeset__scrollwrap {
-  padding: 0 1rem;
+  padding: 0 0.8rem;
 }
 
 /* Listen in Cards */
 .md-typeset .grid.cards > ul > li > ul {
-  padding-left: 2rem;
-  padding-right: 1rem;
-  margin: 0.5rem 0;
+  padding-left: 1.8rem;
+  padding-right: 0.8rem;
+  margin: 0.3rem 0;
+  font-size: 0.8rem;
 }
 
-/* Dark Mode: Header bleibt gleich, Content anpassen */
+/* Dark Mode */
 [data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li > p:first-child {
   background-color: #1a2a5c;
 }
