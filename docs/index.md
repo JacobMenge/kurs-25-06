@@ -33,7 +33,7 @@ Alle Unterlagen, Übungen und Assignments zu den Modulen und Wochen.
 
     ---
 
-    [Google Classroom](https://classroom.google.com/c/NzY1MDM4MTYzMjE4) · [AWS Sandboxes](https://syntax-institut.app.hypercloudlabs.com/)
+    [Klassenzimmer (Google Meet)](https://meet.google.com/qnu-awsy-euv) · [Google Classroom](https://classroom.google.com/c/NzY1MDM4MTYzMjE4) · [AWS Sandboxes](https://syntax-institut.app.hypercloudlabs.com/)
 
 </div>
 
