@@ -47,11 +47,11 @@ Diese Woche baust du Schritt für Schritt eine komplette Cloud-Anwendung auf. He
 | **Teil 6** | Image taggen & nach ECR pushen | 25 min |
 | **Teil 7** | Image in ECR verifizieren & verwalten | 15 min |
 | **Bonus** | ECR Lifecycle Policies & Image Scanning | 15 min |
-| | **Gesamt** | **ca. 2,5–3 Stunden** |
+| | **Gesamt** | **ca. 2,5 bis 3 Stunden** |
 
 ### Minimalpfad (wenn du wenig Zeit hast)
 
-**In 60–90 Minuten die wichtigsten Schritte:**
+**In 60 bis 90 Minuten die wichtigsten Schritte:**
 
 1. **Teil 1** - Sandbox & CLI einrichten - *Grundvoraussetzung*
 2. **Teil 4** - CloudNotes Backend bauen - *Die App*
@@ -114,7 +114,7 @@ graph LR
         CODE["Code"] --> IMG["Docker Image"]
         IMG --> CON["Container"]
     end
-    subgraph cloud ["☁️ AWS Cloud (diese Woche)"]
+    subgraph cloud ["☁️ AWS Cloud"]
         direction TB
         ECR["ECR<br/>(Image Storage)"]
         EC2["EC2<br/>(Container läuft)"]
@@ -820,6 +820,12 @@ notes.db
 
 ### 5.3 Image bauen
 
+Stelle sicher, dass du im `backend/` Ordner bist:
+
+```bash
+cd backend
+```
+
 ```bash
 docker build -t cloudnotes-api:v1.0 .
 ```
@@ -1092,7 +1098,7 @@ Was ist der Unterschied zwischen einem Image-Tag (z.B. `v1.0`) und einem Image-D
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#90caf9', 'secondaryColor': '#e8f5e9', 'secondaryTextColor': '#1b5e20', 'secondaryBorderColor': '#a5d6a7', 'tertiaryColor': '#fff3e0', 'tertiaryTextColor': '#e65100', 'tertiaryBorderColor': '#ffcc80', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
 graph TD
     subgraph heute ["✅ Tag 1: Heute"]
-        A["CloudNotes API gebaut<br/>(FastAPI + SQLAlchemy)"] --> B["Docker Image gebaut"]
+        A["API gebaut<br/>(FastAPI)"] --> B["Docker Image"]
         B --> C["Image nach ECR gepusht"]
     end
     subgraph morgen ["📋 Tag 2: Morgen"]

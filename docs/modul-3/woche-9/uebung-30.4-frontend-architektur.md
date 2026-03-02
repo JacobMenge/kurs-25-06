@@ -48,11 +48,11 @@ Heute ist der Abschluss der Woche: Frontend → S3, Backend → EC2, Datenbank �
 | **Teil 6** | CloudWatch: Metriken & Alarme | 25 min |
 | **Teil 7** | Cleanup: Alle Ressourcen aufräumen | 20 min |
 | **Bonus** | CloudFront CDN vor S3 | 15 min |
-| | **Gesamt** | **ca. 2,5–3 Stunden** |
+| | **Gesamt** | **ca. 2,5 bis 3 Stunden** |
 
 ### Minimalpfad (wenn du wenig Zeit hast)
 
-**In 60–90 Minuten die wichtigsten Schritte:**
+**In 60 bis 90 Minuten die wichtigsten Schritte:**
 
 1. **Teil 1** - React Frontend bauen - *Die App*
 2. **Teil 2+3** - S3 Hosting + Upload - *Deployment*
@@ -65,7 +65,7 @@ Heute ist der Abschluss der Woche: Frontend → S3, Backend → EC2, Datenbank �
 
 **Bevor du startest:**
 
-1. **Übungen 30.1–30.3 abgeschlossen:**
+1. **Übungen 30.1 bis 30.3 abgeschlossen:**
    - CloudNotes API läuft auf EC2 (`http://<ec2-ip>/`)
    - RDS PostgreSQL ist verbunden
 2. **Node.js und npm** sind lokal installiert
@@ -139,7 +139,7 @@ In der Praxis nutzt man oft noch ein **CDN** (CloudFront) vor S3 für noch besse
 > **Ziel:** Eine funktionsfähige React-App für CloudNotes
 > **Zeitbedarf:** ca. 30 Minuten
 
-> **Rückblick:** React mit Vite, useState, useEffect und fetch kennst du aus [Woche 3–5 (React)](../woche-3/uebung-24.1-react-setup-jsx.md). Hier baust du eine einfache App, die das Gelernte anwendet.
+> **Rückblick:** React mit Vite, useState, useEffect und fetch kennst du aus [Woche 3 bis 5 (React)](../woche-3/uebung-24.1-react-setup-jsx.md). Hier baust du eine einfache App, die das Gelernte anwendet.
 
 ### 1.1 React-Projekt erstellen
 
@@ -465,10 +465,24 @@ VITE_API_URL=http://<deine-ec2-public-ip>
 
 > **Wichtig:** Ersetze `<deine-ec2-public-ip>` mit der tatsächlichen IP deines EC2-Servers!
 
+!!! warning "EC2-IP kann sich ändern"
+    Wenn dein EC2-Server zwischenzeitlich gestoppt und neu gestartet wurde, hat er möglicherweise eine **neue Public IP**. Prüfe die aktuelle IP in der EC2 Console. Falls die IP sich ändert, musst du `.env.production` anpassen, neu builden und erneut hochladen.
+
 Erstelle den Production Build:
 
 ```bash
 npm run build
+```
+
+Erwartete Ausgabe (ähnlich):
+
+```
+vite v5.x.x building for production...
+✓ 42 modules transformed.
+dist/index.html                  0.46 kB │ gzip: 0.30 kB
+dist/assets/index-xxxxx.css      1.42 kB │ gzip: 0.74 kB
+dist/assets/index-xxxxx.js     144.26 kB │ gzip: 46.60 kB
+✓ built in 1.23s
 ```
 
 Der Build liegt jetzt im `dist/` Ordner. Schaue hinein:
@@ -593,7 +607,7 @@ http://cloudnotes-frontend-<dein-name>.s3-website.eu-central-1.amazonaws.com
 **Notiere dir diese URL!**
 
 !!! warning "S3 Website Hosting = nur HTTP"
-    Die S3 Website Endpoint URL beginnt mit `http://` (nicht `https://`). S3 Static Website Hosting unterstützt **kein HTTPS**. Für HTTPS brauchst du **CloudFront** davor (siehe Bonus-Abschnitt am Ende). Für unsere Übung reicht HTTP völlig aus, weil keine echten Nutzerdaten oder Logins übertragen werden. Für euer Abschlussprojekt mit echten Nutzern: CloudFront + HTTPS einrichten (siehe Bonus am Ende).
+    Die S3 Website Endpoint URL beginnt mit `http://` (nicht `https://`). S3 Static Website Hosting unterstützt **kein HTTPS**. Für HTTPS bräuchte man **CloudFront** davor (siehe Bonus-Abschnitt am Ende). Für unsere Übung und euer Abschlussprojekt reicht HTTP völlig aus, weil wir Prototypen bauen und keine echten Nutzerdaten oder Logins übertragen werden. HTTPS wäre erst relevant, wenn ihr mal eine produktive Anwendung mit echten Nutzern betreibt.
 
 ### Wissensfrage 3
 
@@ -684,11 +698,22 @@ graph LR
 
 Das Frontend (S3-URL) und das Backend (EC2-IP) haben **unterschiedliche Origins**. Der Browser blockiert standardmäßig Requests zwischen verschiedenen Origins, es sei denn, der Server (Backend) erlaubt es explizit über **CORS-Header**.
 
+### Überblick: Der CORS-Update-Workflow
+
+Um die CORS-Konfiguration zu ändern, durchläufst du den gleichen Workflow wie bei jedem Code-Update:
+
+1. Code **lokal** ändern (auf deinem PC)
+2. Neues Docker Image **lokal** bauen
+3. Image nach **ECR pushen**
+4. Per SSH auf **EC2** das neue Image pullen und Container neu starten
+
+Das sind ein paar Schritte, aber genau so funktioniert Deployment in der Praxis.
+
 ### 4.1 CORS in der FastAPI-App anpassen
 
 In Übung 30.1 haben wir bereits CORS mit `allow_origins=["*"]` konfiguriert. Für Produktion schränken wir das ein.
 
-Bearbeite `main.py` in deinem `backend/` Ordner:
+Bearbeite `main.py` in deinem **lokalen** `backend/` Ordner (auf deinem PC, nicht auf EC2!):
 
 ```python
 # CORS - Erlaube nur das S3-Frontend
@@ -708,7 +733,7 @@ app.add_middleware(
 
 ### 4.2 Neues Docker Image bauen und pushen
 
-Da wir die `main.py` geändert haben, brauchen wir ein neues Image:
+Da wir die `main.py` geändert haben, brauchen wir ein neues Image. Stelle sicher, dass du im `backend/` Ordner bist:
 
 ```bash
 cd backend
@@ -774,7 +799,7 @@ docker logs cloudnotes-api
 
 ### 4.4 Alternative: CORS war bereits auf "*" gesetzt
 
-Falls du die CORS-Einstellung nicht ändern möchtest (z.B. Zeitdruck), funktioniert `allow_origins=["*"]` aus Übung 30.1 ebenfalls. In dem Fall kannst du die Schritte 4.1–4.3 überspringen.
+Falls du die CORS-Einstellung nicht ändern möchtest (z.B. Zeitdruck), funktioniert `allow_origins=["*"]` aus Übung 30.1 ebenfalls. In dem Fall kannst du die Schritte 4.1 bis 4.3 überspringen.
 
 > **Best Practice:** In Produktion sollte man die Origins **immer** einschränken. `"*"` bedeutet, dass **jede** Website API-Requests an dein Backend senden kann.
 
@@ -1055,13 +1080,21 @@ Oder über die Console: ECR → Repository auswählen → "Delete"
 3. Wähle die Role → **Delete**
 4. Bestätige
 
-### 7.7 Key Pairs aufräumen (optional)
+### 7.7 CloudWatch aufräumen
+
+Falls du in Teil 6 ein Dashboard oder einen Alarm erstellt hast:
+
+1. Gehe zur **CloudWatch Console** → **Dashboards**
+2. Wähle `CloudNotes-Overview` → **Delete**
+3. Gehe zu **Alarms** → Wähle `CloudNotes-High-CPU` → **Actions** → **Delete**
+
+### 7.8 Key Pairs aufräumen (optional)
 
 1. Gehe zur **EC2 Console** → **Key Pairs**
 2. Lösche `cloudnotes-key`
 3. Lösche auch die lokale `.pem` Datei
 
-### 7.8 Abschluss-Check
+### 7.9 Abschluss-Check
 
 Prüfe in der AWS Console, ob noch Ressourcen laufen:
 
@@ -1069,6 +1102,7 @@ Prüfe in der AWS Console, ob noch Ressourcen laufen:
 - **RDS**: Keine Databases
 - **S3**: Kein CloudNotes-Bucket
 - **ECR**: Kein Repository
+- **CloudWatch**: Keine Dashboards oder Alarme von dir
 
 ---
 
@@ -1077,7 +1111,7 @@ Prüfe in der AWS Console, ob noch Ressourcen laufen:
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#90caf9', 'secondaryColor': '#e8f5e9', 'secondaryTextColor': '#1b5e20', 'secondaryBorderColor': '#a5d6a7', 'tertiaryColor': '#fff3e0', 'tertiaryTextColor': '#e65100', 'tertiaryBorderColor': '#ffcc80', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
 graph TD
-    subgraph woche ["✅ Woche 30: AWS Cloud Services"]
+    subgraph woche ["✅ Woche 30"]
         subgraph mo ["Montag"]
             A["FastAPI App gebaut"]
             B["Docker Image → ECR"]
@@ -1119,9 +1153,10 @@ Das ist die Realität in der Cloud-Entwicklung: Der Code bleibt gleich, die Infr
 
 ---
 
-## Bonus: CloudFront CDN vor S3
+## Bonus: CloudFront CDN vor S3 (Praxis-Ausblick)
 
 > **Zeitbedarf:** ca. 15 Minuten
+> **Hinweis:** CloudFront ist **nicht** für euer Abschlussprojekt gedacht. Dieser Abschnitt zeigt euch, wie es in der Praxis bei produktiven Anwendungen mit echten Nutzern aussieht.
 
 ### Was ist CloudFront?
 

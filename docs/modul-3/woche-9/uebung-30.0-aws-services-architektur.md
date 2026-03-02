@@ -30,7 +30,7 @@ Diese Übung gibt dir das **Big Picture**, bevor wir ab morgen Schritt für Schr
 | **Teil 3** | Entscheidungsmatrix: Warum Architektur A? | 10 min |
 | **Teil 4** | Was wir bewusst nicht wählen, und warum | 10 min |
 | **Teil 5** | Zielbild: Abschlussprojekt-Architektur | 10 min |
-| | **Gesamt** | **ca. 45–60 Minuten** |
+| | **Gesamt** | **ca. 45 bis 60 Minuten** |
 
 ---
 
@@ -44,34 +44,34 @@ AWS hat über 200 Services. Für uns als Fullstack-Entwickler sind aber nur eine
 ### 1.1 Die Service-Landkarte
 
 ```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#90caf9', 'secondaryColor': '#e8f5e9', 'secondaryTextColor': '#1b5e20', 'secondaryBorderColor': '#a5d6a7', 'tertiaryColor': '#fff3e0', 'tertiaryTextColor': '#e65100', 'tertiaryBorderColor': '#ffcc80', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#90caf9', 'secondaryColor': '#e8f5e9', 'secondaryTextColor': '#1b5e20', 'secondaryBorderColor': '#a5d6a7', 'tertiaryColor': '#fff3e0', 'tertiaryTextColor': '#e65100', 'tertiaryBorderColor': '#ffcc80', 'lineColor': '#78909c', 'fontSize': '13px'}}}%%
 graph TB
-    subgraph compute ["🖥️ Compute: Wo läuft mein Code?"]
+    subgraph compute ["🖥️ Compute"]
         EC2["<b>EC2</b><br/>Virtuelle Server"]
-        LAMBDA["<b>Lambda</b><br/>Serverless Functions"]
-        ECS["<b>ECS / Fargate</b><br/>Container-Orchestrierung"]
+        LAMBDA["<b>Lambda</b><br/>Serverless"]
+        ECS["<b>ECS/Fargate</b><br/>Container"]
     end
-    subgraph storage ["📦 Storage: Wo liegen meine Dateien?"]
-        S3["<b>S3</b><br/>Objekt-Speicher<br/>(Dateien, Frontend)"]
-        EBS["<b>EBS</b><br/>Block-Speicher<br/>(Festplatten für EC2)"]
-        ECR["<b>ECR</b><br/>Container-Registry<br/>(Docker Images)"]
+    subgraph storage ["📦 Storage"]
+        S3["<b>S3</b><br/>Objekt-Speicher"]
+        EBS["<b>EBS</b><br/>Block-Speicher"]
+        ECR["<b>ECR</b><br/>Docker Images"]
     end
-    subgraph db ["🗄️ Datenbanken: Wo liegen meine Daten?"]
-        RDS["<b>RDS</b><br/>Relationale DB<br/>(PostgreSQL, MySQL)"]
-        DYNAMO["<b>DynamoDB</b><br/>NoSQL<br/>(Key-Value, Document)"]
+    subgraph db ["🗄️ Datenbanken"]
+        RDS["<b>RDS</b><br/>PostgreSQL, MySQL"]
+        DYNAMO["<b>DynamoDB</b><br/>NoSQL"]
     end
-    subgraph network ["🌐 Netzwerk & Routing"]
+    subgraph network ["🌐 Netzwerk"]
         VPC["<b>VPC</b><br/>Virtuelles Netzwerk"]
-        SG["<b>Security Groups</b><br/>Firewall-Regeln"]
+        SG["<b>Security Groups</b><br/>Firewall"]
         R53["<b>Route 53</b><br/>DNS"]
         CF["<b>CloudFront</b><br/>CDN"]
-        APIGW["<b>API Gateway</b><br/>API-Management"]
+        APIGW["<b>API Gateway</b>"]
     end
-    subgraph observe ["📊 Observability: Was passiert gerade?"]
-        CW["<b>CloudWatch</b><br/>Logs, Metriken, Alarme"]
+    subgraph observe ["📊 Observability"]
+        CW["<b>CloudWatch</b><br/>Metriken, Alarme"]
     end
-    subgraph security ["🔑 Security: Wer darf was?"]
-        IAM["<b>IAM</b><br/>Users, Roles, Policies"]
+    subgraph security ["🔑 Security"]
+        IAM["<b>IAM</b><br/>Users, Roles"]
     end
 ```
 
@@ -140,7 +140,7 @@ graph LR
 | Aspekt | Bewertung |
 |--------|-----------|
 | Komplexität | Mittel: du verwaltest den EC2-Server selbst |
-| Kosten (Sandbox) | ~25–30€/Monat (EC2 + RDS laufen 24/7) |
+| Kosten (Sandbox) | ~25 bis 30€/Monat (EC2 + RDS laufen 24/7) |
 | Debugging | Einfach: SSH auf den Server, `docker logs` |
 | Skalierung | Manuell (mehr/größere EC2-Instanzen) |
 | Lernkurve | Niedrig: baut auf Docker- und EC2-Wissen auf |
@@ -282,7 +282,7 @@ Transparenz ist wichtig: Hier die Dinge, die wir **bewusst weglassen** und warum
 | Auto-Scaling | Brauchen wir nicht für ein Lernprojekt |
 | Managed Infrastructure | Der Load Balancer hat laufende Basiskosten + Nutzungsgebühren, selbst ohne viel Traffic wird das in Sandboxes schnell teuer |
 
-> **Für euer Abschlussprojekt:** ECS/Fargate ist eine gute Option, wenn ihr euch zutraut, die zusätzlichen Konzepte zu lernen. Es baut auf Docker auf (ECR-Images funktionieren identisch).
+> **Gut zu wissen:** ECS/Fargate begegnet euch in der Praxis häufig, z.B. im Job. Es baut auf Docker auf (eure ECR-Images funktionieren identisch). Für euer Abschlussprojekt bleibt aber bei EC2 + Docker, das reicht völlig aus.
 
 ### 4.2 Nicht gewählt: Lambda + API Gateway
 
@@ -290,9 +290,9 @@ Transparenz ist wichtig: Hier die Dinge, die wir **bewusst weglassen** und warum
 |-------------|--------------------------|
 | Serverless, kein Server-Management | Andere Denkweise (Event-basiert statt Server-basiert), das wäre ein eigenes Thema |
 | Pay-per-Call, günstig bei wenig Traffic | FastAPI auf Lambda erfordert einen Adapter (Mangum), zusätzliche Komplexität |
-| Automatische Skalierung | Cold Starts (erste Anfrage dauert 1-3 Sekunden), frustrierend beim Debugging |
+| Automatische Skalierung | Cold Starts: Lambda muss bei der ersten Anfrage erst "aufwachen" (1-3 Sekunden Wartezeit), das macht Testen und Debugging mühsam |
 
-> **Für euer Abschlussprojekt:** Lambda eignet sich gut für einfache APIs oder einzelne Funktionen (z.B. Bild-Upload verarbeiten, E-Mail senden). Für eine klassische CRUD-API ist EC2 + Docker einfacher.
+> **Gut zu wissen:** Lambda begegnet euch in der Praxis bei Startups und MVPs. Für eine klassische CRUD-API (wie euer Abschlussprojekt) ist EC2 + Docker aber einfacher und transparenter.
 
 ### 4.3 Nicht gewählt: Kubernetes (EKS)
 
@@ -317,7 +317,7 @@ Transparenz ist wichtig: Hier die Dinge, die wir **bewusst weglassen** und warum
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#90caf9', 'secondaryColor': '#e8f5e9', 'secondaryTextColor': '#1b5e20', 'secondaryBorderColor': '#a5d6a7', 'tertiaryColor': '#fff3e0', 'tertiaryTextColor': '#e65100', 'tertiaryBorderColor': '#ffcc80', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
 graph TB
-    subgraph nutzen ["✅ Diese Woche nutzen wir"]
+    subgraph nutzen ["✅ Nutzen wir"]
         A["EC2: Server"]
         B["ECR: Docker Registry"]
         C["RDS: PostgreSQL"]
@@ -326,7 +326,7 @@ graph TB
         F["Security Groups: Firewall"]
         G["CloudWatch: Monitoring"]
     end
-    subgraph nicht ["⏭️ Bewusst nicht diese Woche"]
+    subgraph nicht ["⏭️ Nicht diese Woche"]
         H["ECS / Fargate"]
         I["Lambda"]
         J["API Gateway"]
@@ -364,12 +364,12 @@ Die Architektur, die wir diese Woche bauen, ist **genau das**, was ihr für euer
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#90caf9', 'secondaryColor': '#e8f5e9', 'secondaryTextColor': '#1b5e20', 'secondaryBorderColor': '#a5d6a7', 'tertiaryColor': '#fff3e0', 'tertiaryTextColor': '#e65100', 'tertiaryBorderColor': '#ffcc80', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
 graph TB
-    subgraph cloudnotes ["CloudNotes (diese Woche)"]
+    subgraph cloudnotes ["CloudNotes"]
         direction LR
         CN_S3["S3: React"] --> CN_EC2["EC2: FastAPI"]
         CN_EC2 --> CN_RDS["RDS: PostgreSQL"]
     end
-    subgraph abschluss ["Euer Abschlussprojekt"]
+    subgraph abschluss ["Abschlussprojekt"]
         direction LR
         AP_S3["S3: React Frontend"] --> AP_EC2["EC2: FastAPI Backend"]
         AP_EC2 --> AP_RDS["RDS: PostgreSQL"]
@@ -389,19 +389,19 @@ graph TB
 | CORS konfigurieren | Frontend-Backend-Kommunikation |
 | Cleanup & Kosten | Budget-Bewusstsein |
 
-### 5.3 Empfehlungen für das Abschlussprojekt
+### 5.3 Ausblick: So sieht es in Produktion aus
 
-Je nach Anforderung könnt ihr die Architektur **erweitern**:
+In der Praxis (z.B. im Job oder bei einem eigenen Produkt mit echten Nutzern) würde man die Architektur noch erweitern:
 
-| Wenn ihr wollt... | Dann ergänzt... | Aufwand |
-|------------------|----------------|---------|
-| HTTPS für eure Domain | CloudFront + ACM (SSL-Zertifikat) | Mittel |
-| Eigene Domain | Route 53 (DNS) | Niedrig |
-| Datei-Uploads (Bilder etc.) | S3 für Uploads + Pre-signed URLs | Mittel |
-| Hintergrund-Jobs (E-Mails etc.) | Lambda für einzelne Funktionen | Mittel |
-| Caching | ElastiCache (Redis) | Mittel |
+| Produktions-Feature | AWS-Service | Warum in Produktion wichtig |
+|---------------------|-------------|----------------------------|
+| HTTPS (verschlüsselt) | CloudFront + ACM | Pflicht bei echten Nutzerdaten und Logins |
+| Eigene Domain | Route 53 (DNS) | Professionelle URL statt AWS-Adressen |
+| Datei-Uploads (Bilder) | S3 + Pre-signed URLs | Sichere Uploads ohne Server-Last |
+| Hintergrund-Jobs | Lambda | E-Mails, Bild-Verarbeitung etc. |
+| Caching | ElastiCache (Redis) | Performance bei vielen Nutzern |
 
-> **Tipp:** Startet euer Abschlussprojekt mit der **einfachen** Architektur (EC2 + RDS + S3) und erweitert sie nur, wenn ihr es wirklich braucht. YAGNI: "You Ain't Gonna Need It" gilt auch in der Cloud.
+> **Für euer Abschlussprojekt:** Bleibt bei der **einfachen** Architektur (EC2 + RDS + S3) ohne eigene Domain, ohne HTTPS, ohne CloudFront. Euer Abschlussprojekt ist ein Prototyp. Es geht darum, die Technologien zu lernen und zu zeigen, dass ihr eine Fullstack-App in die Cloud bringen könnt. YAGNI: "You Ain't Gonna Need It" gilt hier besonders.
 
 ### 5.4 Die Woche im Überblick
 
@@ -412,7 +412,7 @@ Hier nochmal der Plan, wie wir diese Architektur Stück für Stück aufbauen:
 | **Mo** | Docker Image in die Cloud | ECR | [Docker (Woche 8)](../woche-8/uebung-29.2-dockerfile-eigene-images-bauen.md) |
 | **Di** | Datenbank in die Cloud | RDS | [PostgreSQL (Woche 7)](../woche-7/uebung-28.2-fastapi-postgresql.md) |
 | **Mi** | Backend in die Cloud | EC2 + Docker | [EC2 (Modul 2)](../../modul-2/woche-4/ec2-erstellen.md) + [Docker (Woche 8)](../woche-8/uebung-29.1-docker-grundlagen-mental-model.md) |
-| **Do** | Frontend in die Cloud + Cleanup | S3 | [React (Woche 3–5)](../woche-5/uebung-26.4-aws-deployment.md) + [S3 (Modul 2)](../../modul-2/woche-4/s3-bucket-erstellen.md) |
+| **Do** | Frontend in die Cloud + Cleanup | S3 | [React (Woche 3 bis 5)](../woche-5/uebung-26.4-aws-deployment.md) + [S3 (Modul 2)](../../modul-2/woche-4/s3-bucket-erstellen.md) |
 
 Jeder Tag hat ein klares Ziel. Am Ende jedes Tages wird aufgeräumt, was nicht mehr gebraucht wird, und am Donnerstag machen wir einen vollständigen Cleanup aller Ressourcen.
 

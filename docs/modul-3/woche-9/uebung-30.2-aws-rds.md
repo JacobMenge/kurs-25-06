@@ -46,11 +46,11 @@ Gestern hast du die CloudNotes-App mit SQLite lokal getestet. Heute wechselst du
 | **Teil 5** | CloudNotes mit RDS verbinden | 25 min |
 | **Teil 6** | Alembic Migrations auf RDS | 20 min |
 | **Bonus** | RDS Snapshots & Monitoring | 15 min |
-| | **Gesamt** | **ca. 2,5–3 Stunden** |
+| | **Gesamt** | **ca. 2,5 bis 3 Stunden** |
 
 ### Minimalpfad (wenn du wenig Zeit hast)
 
-**In 60–90 Minuten die wichtigsten Schritte:**
+**In 60 bis 90 Minuten die wichtigsten Schritte:**
 
 1. **Teil 2** - Security Group erstellen - *Netzwerk absichern*
 2. **Teil 3** - RDS Instanz erstellen - *Kernübung*
@@ -170,15 +170,15 @@ Bei einer **managed Database** kümmert sich AWS um alles, was nichts mit deinen
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#90caf9', 'secondaryColor': '#e8f5e9', 'secondaryTextColor': '#1b5e20', 'secondaryBorderColor': '#a5d6a7', 'tertiaryColor': '#fff3e0', 'tertiaryTextColor': '#e65100', 'tertiaryBorderColor': '#ffcc80', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
 graph TD
-    subgraph aws ["AWS kümmert sich um:"]
+    subgraph aws ["AWS übernimmt"]
         A["🔧 Hardware & Server"]
         B["🔄 Software-Updates"]
         C["💾 Automatische Backups"]
         D["📊 Monitoring"]
         E["🔒 Netzwerk & Verschlüsselung"]
-        F["🔁 Failover (Hochverfügbarkeit)"]
+        F["🔁 Failover"]
     end
-    subgraph du ["Du kümmerst dich um:"]
+    subgraph du ["Du machst"]
         G["📝 Tabellen & Schema"]
         H["🔍 Queries & Logik"]
         I["🔑 Zugangsdaten"]
@@ -608,9 +608,11 @@ Starte die App:
 uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-> **Hinweis:** Beim ersten Start erstellt SQLAlchemy automatisch die `notes`-Tabelle auf RDS (`Base.metadata.create_all`). Das ist ein Komfort-Shortcut für Lernprojekte. In echtem Produktivcode würde man `create_all` entfernen und stattdessen Alembic-Migrationen nutzen (siehe Teil 6). Für euer **Abschlussprojekt** empfehlen wir ebenfalls Alembic.
+> **Hinweis:** Beim ersten Start erstellt SQLAlchemy automatisch die `notes`-Tabelle auf RDS (`Base.metadata.create_all`). Das ist ein Komfort-Shortcut für Lernprojekte und euer Abschlussprojekt. In echtem Produktivcode würde man `create_all` entfernen und stattdessen Alembic-Migrationen nutzen (siehe Teil 6), damit Schema-Änderungen nachvollziehbar und sicher ablaufen.
 
 ### 5.4 CRUD testen
+
+> **Tipp:** Du brauchst jetzt **zwei Terminal-Fenster**: eines, in dem Uvicorn läuft (das bleibt offen), und ein zweites für die folgenden Test-Befehle.
 
 Öffne **http://localhost:8000/docs** im Browser und teste:
 
@@ -941,5 +943,13 @@ Prüfe, ob du alle Ziele erreicht hast:
 - [ ] Aktualisiertes Docker Image (v1.1) nach ECR gepusht
 - [ ] Ich kann erklären, warum sich am Code fast nichts geändert hat
 - [ ] Budget-Check: RDS läuft oder ist gestoppt (je nach Plan für morgen)
+
+!!! warning "Werte für morgen sichern!"
+    Notiere dir diese Werte und speichere sie in einer Textdatei. Du brauchst sie morgen in Übung 30.3:
+
+    - **RDS Endpoint:** `cloudnotes-db.xxxxxxxxxx.eu-central-1.rds.amazonaws.com`
+    - **RDS Username:** `cloudnotes_admin`
+    - **RDS Passwort:** (dein gewähltes Passwort)
+    - **ECR Repository URI:** `<account-id>.dkr.ecr.eu-central-1.amazonaws.com/cloudnotes-api`
 
 > **Ausblick:** Morgen in Übung 30.3 deployen wir das CloudNotes-Backend auf einen EC2-Server. Der Server pullt das Docker Image aus ECR und verbindet sich mit der RDS-Datenbank. Dann läuft dein Backend komplett in der Cloud!

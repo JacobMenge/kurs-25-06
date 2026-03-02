@@ -49,11 +49,11 @@ Heute kommt alles zusammen: Docker (Woche 29) + ECR (Tag 30.1) + RDS (Tag 30.2) 
 | **Teil 6** | Nginx Reverse Proxy einrichten | 25 min |
 | **Teil 7** | API testen & Troubleshooting | 15 min |
 | **Bonus** | Container Auto-Restart mit Systemd | 15 min |
-| | **Gesamt** | **ca. 2,5–3 Stunden** |
+| | **Gesamt** | **ca. 2,5 bis 3 Stunden** |
 
 ### Minimalpfad (wenn du wenig Zeit hast)
 
-**In 60–90 Minuten die wichtigsten Schritte:**
+**In 60 bis 90 Minuten die wichtigsten Schritte:**
 
 1. **Teil 1** - EC2 Instanz starten - *Server bereitstellen*
 2. **Teil 2** - Docker installieren - *Grundvoraussetzung*
@@ -240,6 +240,15 @@ ssh -i %USERPROFILE%\aws-keys\cloudnotes-key.pem ubuntu@<deine-ec2-ip>
 
 </details>
 
+Bei der **ersten Verbindung** fragt SSH, ob du dem Server vertraust:
+
+```
+The authenticity of host '3.123.45.67' can't be established.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+```
+
+Tippe `yes` und drücke Enter. Das ist normal und kommt nur beim ersten Mal.
+
 Du bist verbunden, wenn du siehst:
 
 ```
@@ -305,7 +314,14 @@ docker --version
 docker run hello-world
 ```
 
-Du solltest die Hello-World-Nachricht sehen. Docker läuft!
+Du solltest diese Nachricht sehen:
+
+```
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+```
+
+Docker läuft!
 
 ### 2.6 AWS CLI installieren
 
@@ -700,7 +716,7 @@ graph LR
 | Vorteil | Erklärung |
 |---------|-----------|
 | **Standard-Port** | Port 80 (HTTP) statt 8000, saubere URLs |
-| **SSL/TLS** | Nginx kann HTTPS terminieren (nicht Teil dieser Übung, aber möglich für euer Abschlussprojekt) |
+| **SSL/TLS** | Nginx kann HTTPS terminieren (in Produktion wichtig, nicht Teil dieser Übung) |
 | **Load Balancing** | Mehrere Container hinter einem Nginx |
 | **Static Files** | Kann statische Dateien direkt ausliefern |
 | **Security** | Versteckt den eigentlichen Application Server |
