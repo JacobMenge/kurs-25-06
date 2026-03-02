@@ -861,3 +861,62 @@
   background-color: #1a2a5c;
 }
 
+/* ============================================
+   Team Cards - Ohne Header, 4 in einer Reihe
+   ============================================ */
+
+/* Team-Cards: kein blauer Header, kompakt */
+.team-cards.grid.cards > ul > li > p:first-child {
+  background-color: transparent !important;
+  color: #060F38 !important;
+  padding: 0.5rem 0.8rem 0 !important;
+  border-bottom: 2px solid #060F38;
+  margin-bottom: 0.3rem;
+}
+
+.team-cards.grid.cards > ul > li > p:first-child strong {
+  color: #060F38 !important;
+}
+
+.team-cards.grid.cards > ul > li > p:first-child .twemoji svg,
+.team-cards.grid.cards > ul > li > p:first-child .emojione svg,
+.team-cards.grid.cards > ul > li > p:first-child .gemoji svg {
+  fill: #060F38 !important;
+}
+
+/* 4 Spalten erzwingen */
+.team-cards.grid.cards > ul {
+  grid-template-columns: repeat(4, 1fr) !important;
+}
+
+/* Noch kompaktere Schrift für Team-Cards */
+.team-cards.grid.cards > ul > li > p:not(:first-child) {
+  font-size: 0.75rem;
+  line-height: 1.4;
+  margin: 0.2rem 0;
+}
+
+/* Dark Mode Team Cards */
+[data-md-color-scheme="slate"] .team-cards.grid.cards > ul > li > p:first-child {
+  background-color: transparent !important;
+  color: #8fa3d9 !important;
+  border-bottom-color: #8fa3d9;
+}
+
+[data-md-color-scheme="slate"] .team-cards.grid.cards > ul > li > p:first-child strong {
+  color: #8fa3d9 !important;
+}
+
+[data-md-color-scheme="slate"] .team-cards.grid.cards > ul > li > p:first-child .twemoji svg,
+[data-md-color-scheme="slate"] .team-cards.grid.cards > ul > li > p:first-child .emojione svg,
+[data-md-color-scheme="slate"] .team-cards.grid.cards > ul > li > p:first-child .gemoji svg {
+  fill: #8fa3d9 !important;
+}
+
+/* Responsive: bei kleinen Bildschirmen 2 Spalten */
+@media screen and (max-width: 768px) {
+  .team-cards.grid.cards > ul {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+

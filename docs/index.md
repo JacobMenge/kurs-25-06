@@ -41,12 +41,47 @@ Alle Unterlagen, Übungen und Assignments zu den Modulen und Wochen.
 
 ## Dein Kurs-Team
 
-| Rolle | Name | Kontakt | Verfügbarkeit |
-|-------|------|---------|---------------|
-| **Trainer** | Jacob | jacob@techstarter.de | Mo bis Fr |
-| **Class Manager** | Kevin | kevin@techstarter.de · Tel: 01579-2512270 | Mo bis Fr |
-| **Career Coach** | Katrin | katrin@techstarter.de | Di+Do 09:00 bis 17:00, Mi 12:00 bis 16:00 |
-| **Support** | | support@techstarter.de · WhatsApp: 01579-2512273 | |
+<div class="grid cards team-cards" markdown>
+
+-   :material-account-outline: **Trainer**
+
+    ---
+
+    **Jacob**
+
+    jacob@techstarter.de
+
+    Mo bis Fr
+
+-   :material-account-group-outline: **Class Manager**
+
+    ---
+
+    **Kevin**
+
+    kevin@techstarter.de
+
+    Tel: 01579-2512270
+
+-   :material-briefcase-outline: **Career Coach**
+
+    ---
+
+    **Katrin**
+
+    katrin@techstarter.de
+
+    Di+Do, Mi 12 bis 16 Uhr
+
+-   :material-headset: **Support**
+
+    ---
+
+    support@techstarter.de
+
+    WhatsApp: 01579-2512273
+
+</div>
 
 ---
 
