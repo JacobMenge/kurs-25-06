@@ -31,13 +31,11 @@ Alle Unterlagen, Übungen und Assignments zu den Modulen und Wochen.
 
     **M4:** AWS Cloud Practitioner · Cloud Business Expert (IHK)
 
--   :material-upload-outline: **Abgaben**
+-   :material-toolbox-outline: **Tools & Links**
 
     ---
 
-    Über **[Google Classroom](https://classroom.google.com/c/NzY1MDM4MTYzMjE4)**
-
-    Abgabe bis **17:00 Uhr**, bei entschuldigten Ausnahmen bis 23:59 Uhr.
+    [Google Classroom](https://classroom.google.com/c/NzY1MDM4MTYzMjE4) · [AWS Sandboxes](https://syntax-institut.app.hypercloudlabs.com/)
 
 </div>
 

@@ -205,6 +205,9 @@ Die AWS Cloud Practitioner Prüfung (CLF-C02) wird über **Pearson VUE** abgeleg
 
 Alle Abgaben und Fristen findest du im **[Google Classroom](https://classroom.google.com/c/NzY1MDM4MTYzMjE4)**. Abgabeformate sind dem jeweiligen Classroom zu entnehmen.
 
+- Hausaufgaben müssen bis **17:00 Uhr** eingereicht werden
+- Bei entschuldigten Ausnahmen ist eine Abgabe bis 23:59 Uhr möglich
+
 </details>
 
 <details markdown>
@@ -214,6 +217,42 @@ Alle Abgaben und Fristen findest du im **[Google Classroom](https://classroom.go
 - 37,5 Stunden pro Woche (50 Unterrichtseinheiten)
 - **Kursstart:** 30.06.2025
 - **Kursende:** 29.06.2026
+
+</details>
+
+<details markdown>
+<summary><strong>Wo finde ich die Kursunterlagen?</strong></summary>
+
+Alle Kursunterlagen, Übungen und Assignments findest du auf dieser Website. Die Inhalte sind nach Modulen und Wochen sortiert. Nutze die Navigation links oder die Suchfunktion oben.
+
+</details>
+
+<details markdown>
+<summary><strong>Welche Tools brauche ich?</strong></summary>
+
+Diese Tools werden im Verlauf des Kurses installiert und genutzt:
+
+| Tool | Zweck |
+|------|-------|
+| **VS Code** | Code-Editor |
+| **Git** | Versionskontrolle |
+| **Python** | Programmiersprache (ab M2) |
+| **Docker Desktop** | Container (ab M3) |
+| **Node.js / npm** | JavaScript Runtime (ab M3) |
+| **AWS CLI** | Cloud-Zugang (ab M2) |
+
+Installationsanleitungen bekommst du jeweils zu Beginn des Moduls.
+
+</details>
+
+<details markdown>
+<summary><strong>Welche Regeln gelten im Slack-Channel?</strong></summary>
+
+- Respektvoller Umgang: keine Beleidigungen, Diskriminierung oder Belästigung
+- Unterschiedliche Meinungen sachlich, offen und mit Wertschätzung diskutieren
+- Keine illegalen Inhalte teilen (Links, Grafiken, Software etc.)
+- Keine privaten Informationen anderer Personen weitergeben (Telefonnummern, E-Mail-Adressen, Adressen) ohne deren Zustimmung
+- Krankmeldungen und administrative Unterlagen nur per E-Mail an abwesenheit@techstarter.de senden, nicht über Slack
 
 </details>
 
@@ -617,6 +656,13 @@ conn = sqlite3.connect("meine_db.db", timeout=10)
 ## AWS
 
 <details markdown>
+<summary><strong>Wo finde ich die AWS Sandboxes?</strong></summary>
+
+Für die AWS-Übungen nutzen wir Sandbox-Umgebungen. Du erreichst sie über das **[Sandbox-Portal](https://syntax-institut.app.hypercloudlabs.com/)**. Die Zugangsdaten bekommst du von deinem Trainer.
+
+</details>
+
+<details markdown>
 <summary><strong>AWS CLI Credentials nicht konfiguriert</strong></summary>
 
 **Problem:** `Unable to locate credentials`
@@ -686,5 +732,32 @@ ssh -i ~/.ssh/mein-key.pem ec2-user@PUBLIC_IP
 | ++alt+up++ / ++alt+down++ | Zeile verschieben |
 | ++ctrl+shift+k++ | Zeile löschen |
 | ++ctrl+slash++ | Kommentar umschalten |
+
+</details>
+
+<details markdown>
+<summary><strong>Mein Terminal zeigt komische Zeichen oder Farben</strong></summary>
+
+**Problem:** Das Terminal zeigt unleserliche Zeichen, kaputte Farben oder seltsame Symbole.
+
+**Lösung:**
+
+1. Nutze das integrierte Terminal in VS Code (++ctrl+grave++)
+2. Stelle sicher, dass du die richtige Shell nutzt:
+    - **Windows:** PowerShell oder Git Bash (nicht CMD)
+    - **Linux/Mac:** Bash oder Zsh
+3. In VS Code: `Strg+Shift+P` → "Terminal: Select Default Profile" → Git Bash oder PowerShell auswählen
+
+</details>
+
+<details markdown>
+<summary><strong>Wie halte ich meinen Laptop aktuell?</strong></summary>
+
+- **Windows Updates:** Regelmäßig installieren (am besten nach Feierabend)
+- **VS Code:** Aktualisiert sich automatisch
+- **Docker Desktop:** Gelegentlich auf Updates prüfen
+- **Node.js/Python:** Nur aktualisieren, wenn im Kurs angekündigt
+
+Bei Laptop-Problemen: **Onyo Support** kontaktieren (support@onyo.io, Tel: 089 244 186 161)
 
 </details>
