@@ -12,7 +12,10 @@
       "Bash(dir:*)",
       "Bash(git push:*)",
       "Bash(git pull:*)",
-      "Bash(ls -la \"C:\\\\Users\\\\jacob_arbeit\\\\Desktop\\\\kurs-25-06-newlayout\\\\kurs-25-06\\\\docs\\\\modul-4\"\" 2>/dev/null || echo \"modul-4 does not exist \")"
+      "Bash(ls -la \"C:\\\\Users\\\\jacob_arbeit\\\\Desktop\\\\kurs-25-06-newlayout\\\\kurs-25-06\\\\docs\\\\modul-4\"\" 2>/dev/null || echo \"modul-4 does not exist \")",
+      "Bash(find /c/Users/jacob_arbeit/Desktop/kurs-25-06-newlayout/kurs-25-06/docs -type d -name code -exec sh -c 'echo \"\"=== $1 ===\"\" && ls -la \"\"$1\"\"' _ {} ;)",
+      "Bash(xargs cat)",
+      "Bash(done)"
     ]
   }
 }

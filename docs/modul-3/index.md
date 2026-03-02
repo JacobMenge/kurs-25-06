@@ -20,6 +20,7 @@ In diesem Modul lernst du Webentwicklung von Grund auf: HTML/CSS, JavaScript, Re
 | [Woche 6](woche-6/wochenprojekt-fullstack-react-fastapi.md) | Fullstack-Projekt – React + FastAPI |
 | [Woche 7](woche-7/uebung-28.1-datenbanken.md) | Datenbanken – PostgreSQL, FastAPI-Anbindung, MongoDB |
 | [Woche 8](woche-8/uebung-29.1-docker-grundlagen-mental-model.md) | Docker – Grundlagen, Container-Lifecycle, CLI |
+| [Woche 9](woche-9/uebersicht.md) | AWS Cloud Services – Architektur-Überblick, ECR, RDS, EC2 mit Docker, S3 Frontend |
 
 ---
 

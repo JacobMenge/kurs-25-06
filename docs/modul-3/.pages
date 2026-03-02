@@ -1,12 +1,13 @@
 nav:
-  - "\u00dcbersicht": index.md
-  - "Woche 1 \u2013 HTML & CSS": woche-1
-  - "Woche 2 \u2013 JavaScript": woche-2
-  - "Woche 3 \u2013 React Basics": woche-3
-  - "Woche 4 \u2013 React Advanced": woche-4
-  - "Woche 5 \u2013 React Projekte": woche-5
-  - "Woche 6 \u2013 Fullstack Projekt": woche-6
-  - "Woche 7 \u2013 Datenbanken": woche-7
-  - "Woche 8 \u2013 Docker": woche-8
+  - "Übersicht": index.md
+  - "Woche 1 – HTML & CSS": woche-1
+  - "Woche 2 – JavaScript": woche-2
+  - "Woche 3 – React Basics": woche-3
+  - "Woche 4 – React Advanced": woche-4
+  - "Woche 5 – React Projekte": woche-5
+  - "Woche 6 – Fullstack Projekt": woche-6
+  - "Woche 7 – Datenbanken": woche-7
+  - "Woche 8 – Docker": woche-8
+  - "Woche 9 – AWS Cloud Services": woche-9
   - "Zusatzmaterial": zusatzmaterial
   - ...
