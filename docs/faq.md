@@ -34,12 +34,71 @@ Hier findest du Antworten auf organisatorische Fragen und Lösungen für technis
 <details markdown>
 <summary><strong>Wie reiche ich meinen Urlaub ein?</strong></summary>
 
-Urlaub per E-Mail an **abwesenheit@techstarter.de** einreichen.
+Urlaubsanträge per E-Mail an **abwesenheit@techstarter.de** einreichen.
 
 - Du hast Anspruch auf **20 Urlaubstage** pro Kursjahr
-- **10 Tage** sind durch gemeinsame Ferienzeiten festgelegt (siehe [Dashboard](index.md))
-- **10 Tage** stehen dir zur freien Verfügung
-- Urlaub bitte **mindestens 2 Wochen vorher** einreichen
+- **Modul 1 und 2:** Jeweils mit fest geplanten gemeinsamen Ferienzeiten (insgesamt 10 Tage, z.B. Sommer-/Winterferien, siehe [Dashboard](index.md))
+- **Modul 3 und 4:** Hier stehen dir je 5 flexible Urlaubstage zur Verfügung, die du individuell beantragen kannst (insgesamt 10 Tage zur freien Planung)
+- Bitte beachte eine **Vorlaufzeit von mindestens 7 Tagen** vor dem gewünschten Urlaubsbeginn
+- Wenn du nur einzelne Module buchst (z.B. 3 oder 6 Monate), verringert sich dein Urlaubsanspruch entsprechend
+
+</details>
+
+<details markdown>
+<summary><strong>Wie melde ich mich krank oder abwesend?</strong></summary>
+
+Wenn du vom Unterricht verhindert bist:
+
+1. **Vorab informieren:** Melde dich bei deinem Trainer oder Class Manager
+2. **Attest einreichen:** Noch am selben Tag per E-Mail an **abwesenheit@techstarter.de**
+3. Entschuldigungen ohne Nachweis (Arbeitsunfähigkeitsbescheinigung oder offizielles Amtsschreiben) werden nicht akzeptiert
+4. Bei **technischen Problemen** (z.B. Internetausfall): Screenshot als Nachweis an abwesenheit@techstarter.de senden
+
+**Wichtig:** Alle Abwesenheiten (entschuldigt und unentschuldigt) werden vermerkt. Auch bei Nichtabgabe von Hausaufgaben wird der Tag als "abwesend" eingetragen.
+
+</details>
+
+<details markdown>
+<summary><strong>Was passiert bei unentschuldigten Fehltagen?</strong></summary>
+
+| Fehltage | Konsequenz |
+|----------|------------|
+| **3 aufeinanderfolgende** unentschuldigte Fehltage | Arbeitsvermittler wird verständigt, Ermahnung |
+| **5 aufeinanderfolgende** unentschuldigte Fehltage | Erste schriftliche Abmahnung |
+| **Weitere 5** unentschuldigte Abwesenheiten | Zweite Abmahnung und möglicher Kursaustritt (in Absprache mit der Arbeitsvermittlung) |
+
+</details>
+
+<details markdown>
+<summary><strong>Welche Regeln gelten im digitalen Kurszimmer?</strong></summary>
+
+- **Kamera an:** Deine Kamera soll während des Unterrichts eingeschaltet sein
+- **Mikrofon aus:** Schalte dein Mikrofon nur ein, wenn du etwas sagen möchtest
+- **Hand heben:** Hebe deine virtuelle Hand und warte, bis dein Trainer dich aufruft
+- **Pünktlichkeit:** Erscheine pünktlich zum Unterrichtsbeginn (auch nach Pausen). Verspätung bis 15 Min. wird als verspätet eingetragen, ab 15 Min. als unentschuldigt
+- **Kein Essen** während des Unterrichts, Pausen für Snacks und Heißgetränke nutzen
+- **Kein Alkohol, Zigaretten oder Drogen** während des Unterrichts
+- **Konflikte** bitte beim Class Manager melden, nicht im Unterrichtsgeschehen besprechen
+
+</details>
+
+<details markdown>
+<summary><strong>Wann und wie gebe ich Hausaufgaben ab?</strong></summary>
+
+- Der **Nachmittag** ist für deine Hausaufgaben vorgesehen
+- Bei Fragen stehen dir deine Trainer bis 17:00 Uhr zur Verfügung
+- Hausaufgaben müssen bis **17:00 Uhr** in **[Google Classroom](https://classroom.google.com/c/NzY1MDM4MTYzMjE4)** eingereicht werden
+- Bei entschuldigten Ausnahmen können Hausaufgaben bis 23:59 Uhr eingereicht werden
+
+</details>
+
+<details markdown>
+<summary><strong>Was ist das Anwesenheitsprotokoll?</strong></summary>
+
+Dein Arbeitsvermittler erhält einmal pro Monat eine Übersicht deines Anwesenheitsprotokolls. Dieses unterschreibst du digital vorab.
+
+- Wenn deine Unterschrift nicht innerhalb von **5 Werktagen** erfolgt, wird es ohne deine Unterschrift an den Arbeitsvermittler gesendet
+- Sollte deine Anwesenheit nicht korrekt dargestellt sein, hast du **5 Werktage** Zeit, dies mit deinem Trainer und Class Manager zu besprechen
 
 </details>
 
