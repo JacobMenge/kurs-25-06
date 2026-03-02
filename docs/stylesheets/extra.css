@@ -781,3 +781,76 @@
   margin: 2rem 0;
 }
 
+/* ============================================
+   Grid Cards - Header mit blauem Hintergrund
+   ============================================ */
+
+/* Card-Container: Padding entfernen für Header-Effekt */
+.md-typeset .grid.cards > ul > li {
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+/* Erster Absatz = Header mit Icon + Titel */
+.md-typeset .grid.cards > ul > li > p:first-child {
+  background-color: #060F38;
+  color: white !important;
+  padding: 0.75rem 1rem;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Icon im Header weiß */
+.md-typeset .grid.cards > ul > li > p:first-child .twemoji svg,
+.md-typeset .grid.cards > ul > li > p:first-child .emojione svg,
+.md-typeset .grid.cards > ul > li > p:first-child .gemoji svg {
+  fill: white;
+}
+
+/* Fetter Text im Header weiß */
+.md-typeset .grid.cards > ul > li > p:first-child strong {
+  color: white !important;
+}
+
+/* HR-Trennlinie zwischen Header und Content ausblenden */
+.md-typeset .grid.cards > ul > li > hr {
+  margin: 0 !important;
+  border: none !important;
+  height: 0;
+}
+
+/* Content-Bereich: Padding hinzufügen */
+.md-typeset .grid.cards > ul > li > p:not(:first-child) {
+  padding: 0 1rem;
+  margin: 0.5rem 0;
+}
+
+/* Erstes Content-Element nach HR: oberes Padding */
+.md-typeset .grid.cards > ul > li > hr + p,
+.md-typeset .grid.cards > ul > li > hr + ul,
+.md-typeset .grid.cards > ul > li > hr + table {
+  margin-top: 0.75rem;
+}
+
+/* Letztes Element: unteres Padding */
+.md-typeset .grid.cards > ul > li > *:last-child {
+  margin-bottom: 0.75rem !important;
+}
+
+/* Tabellen innerhalb von Cards */
+.md-typeset .grid.cards > ul > li > .md-typeset__scrollwrap {
+  padding: 0 1rem;
+}
+
+/* Listen in Cards */
+.md-typeset .grid.cards > ul > li > ul {
+  padding-left: 2rem;
+  padding-right: 1rem;
+  margin: 0.5rem 0;
+}
+
+/* Dark Mode: Header bleibt gleich, Content anpassen */
+[data-md-color-scheme="slate"] .md-typeset .grid.cards > ul > li > p:first-child {
+  background-color: #1a2a5c;
+}
+
