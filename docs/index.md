@@ -48,7 +48,7 @@ Alle Unterlagen, Übungen und Assignments zu den Modulen und Wochen.
 
     ---
 
-    Über **Google Classroom**
+    Über **[Google Classroom](https://classroom.google.com/c/NzY1MDM4MTYzMjE4)**
 
     Fristen und Abgabeformate sind dem jeweiligen Classroom zu entnehmen.
 

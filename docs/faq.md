@@ -4,7 +4,159 @@ title: "FAQ – Häufige Fragen & Probleme"
 
 # FAQ – Häufige Fragen & Probleme
 
-Hier findest du Lösungen für die häufigsten Probleme und Fehlermeldungen im Kurs.
+Hier findest du Antworten auf organisatorische Fragen und Lösungen für technische Probleme im Kurs.
+
+---
+
+## Organisation & Kurs
+
+<details markdown>
+<summary><strong>An wen wende ich mich bei welchem Anliegen?</strong></summary>
+
+| Anliegen | Ansprechperson | Kontakt |
+|----------|---------------|---------|
+| **Kursinhalt, Übungen, technische Fragen** | Jacob (Trainer) | jacob@techstarter.de |
+| **Organisatorisches, Kursablauf, Agentur/Jobcenter** | Kevin (Class Manager) | kevin@techstarter.de, Tel: 01579-2512270 |
+| **Bewerbungen, Arbeitsmarkt, Karriere** | Katrin (Career Coach) | katrin@techstarter.de |
+| **Stellensuche, Recherche** | Christiane (Personalberaterin) | christiane.schwammenhoefer@techstarter.de |
+| **Abwesenheit, Urlaub, Krankmeldung** | per E-Mail | abwesenheit@techstarter.de |
+| **Technischer Support (nicht Laptop)** | Techstarter Support | support@techstarter.de, WhatsApp: 01579-2512273 |
+| **Laptop-Probleme** | Onyo Support | support@onyo.io, Tel: 089 244 186 161 |
+
+**Verfügbarkeiten:**
+
+- **Jacob (Trainer):** Mo bis Fr
+- **Kevin (Class Manager):** Mo bis Fr, 08:30 bis 17:00 Uhr
+- **Katrin (Career Coach):** Di und Do 09:00 bis 17:00 Uhr, Mi 12:00 bis 16:00 Uhr
+
+</details>
+
+<details markdown>
+<summary><strong>Wie reiche ich meinen Urlaub ein?</strong></summary>
+
+Urlaub per E-Mail an **abwesenheit@techstarter.de** einreichen.
+
+- Du hast Anspruch auf **20 Urlaubstage** pro Kursjahr
+- **10 Tage** sind durch gemeinsame Ferienzeiten festgelegt (siehe [Dashboard](index.md))
+- **10 Tage** stehen dir zur freien Verfügung
+- Urlaub bitte **mindestens 2 Wochen vorher** einreichen
+
+</details>
+
+<details markdown>
+<summary><strong>Wie viele Prüfungsversuche habe ich?</strong></summary>
+
+Das hängt von der Prüfungsart ab:
+
+| Prüfungsart | Versuche | Beispiele |
+|-------------|----------|-----------|
+| **Präsentationsprüfungen** | 1 Versuch | IHK-Projektpräsentationen |
+| **L-Plus Prüfungen** (Single/Multiple Choice) | 2 Versuche | IHK-Onlineprüfungen |
+| **Externe Prüfungen** (LPI, AWS) | 2 Versuche (Voucher) | LPI Linux Essentials, AWS Cloud Practitioner |
+
+Bei allen Prüfungsarten übernimmt das Syntax Institut die Kosten.
+
+</details>
+
+<details markdown>
+<summary><strong>Welche Zertifikate gibt es und wann finden die Prüfungen statt?</strong></summary>
+
+| Modul | Zertifikat | Art |
+|-------|------------|-----|
+| M2 | LPI Linux Essentials | Extern (Pearson VUE) |
+| M2 | IT-Support Specialist (IHK) | IHK |
+| M3 | IT-Administrator (IHK) | IHK |
+| M4 | AWS Cloud Practitioner | Extern (Pearson VUE) |
+| M4 | Cloud Business Expert (IHK) | IHK |
+
+Die Prüfungen finden **meistens nach Abschluss des jeweiligen Moduls** statt, da das Modul als Voraussetzung bestanden sein muss. Es kann aber Ausnahmen geben.
+
+</details>
+
+<details markdown>
+<summary><strong>Wie melde ich mich für eine IHK-Prüfung an?</strong></summary>
+
+Um IHK-Prüfungen (IT-Support Specialist, IT-Administrator, Cloud Business Expert) musst du dich nicht selbst kümmern. Du bekommst **rechtzeitig vor der Prüfung alle Infos zur Anmeldung per E-Mail** zugeschickt.
+
+</details>
+
+<details markdown>
+<summary><strong>Wie melde ich mich für die LPI Linux Essentials Prüfung an?</strong></summary>
+
+Die LPI Linux Essentials Prüfung wird über **Pearson VUE** abgelegt. Du erhältst einen **Voucher** von deinem Dozenten, nachdem du eine Probeprüfung bestanden hast. Das Syntax Institut übernimmt die Kosten für 2 Versuche.
+
+**Anleitung zur Anmeldung:**
+
+1. Öffne die Pearson VUE Website für LPI: [pearsonvue.com/lpi](https://home.pearsonvue.com/lpi)
+2. Klicke auf **"Schedule your exam"**
+3. Auf der Anmeldeseite klicke auf **"Create a web account"**
+4. Akzeptiere die Datenschutzrichtlinien (Privacy Policy)
+5. Gib deine **LPI-ID** ein. Falls du noch keine hast:
+    - Gehe zur [LPI Registrierungsseite](https://cs.lpi.org/caf/Xamman/register)
+    - Erstelle ein Profil und notiere dir deine LPI-ID
+6. Fülle alle erforderlichen Felder aus, um die Registrierung abzuschließen
+7. Nach der Anmeldung klicke auf **"Schedule an exam"**
+8. Wähle den Unterpunkt **"Essentials"**
+9. Wähle die Prüfung **"Essential 0.10 - OnVue (online proctored exam)"**
+10. Wähle Tag und Uhrzeit für deine Prüfung
+11. Im Zahlungsschritt gib den **Voucher-Code** ein, den du von deinem Dozenten erhalten hast
+12. Klicke auf **"Next"** und schließe die Anmeldung ab
+
+</details>
+
+<details markdown>
+<summary><strong>Wie melde ich mich für die AWS Cloud Practitioner Prüfung an?</strong></summary>
+
+Die AWS Cloud Practitioner Prüfung (CLF-C02) wird über **Pearson VUE** abgelegt, die Anmeldung läuft aber über das **AWS Training Portal**. Du erhältst einen **Voucher** von deinem Dozenten, nachdem du eine Probeprüfung bestanden hast. Das Syntax Institut übernimmt die Kosten für 2 Versuche.
+
+**Schritt 1: Im AWS Certification Portal einloggen**
+
+1. Gehe auf [aws.training/Certification](https://aws.training/Certification)
+2. Klicke auf **"Sign In"** und logge dich mit deiner **AWS Builder ID** ein (nicht mit dem normalen Amazon-Konto)
+3. Klicke auf **"Go to your Account"**
+
+**Schritt 2: Prüfung auswählen und Termin buchen**
+
+1. Wähle **"Schedule new exam"**
+2. Suche nach **"AWS Certified Cloud Practitioner"**
+3. Klicke auf **"Schedule with Pearson VUE"**
+4. Wähle deine Prüfungsart:
+    - **Test Center:** In einem lokalen Testzentrum
+    - **Online proctored:** Online von zu Hause aus
+5. Wähle Prüfungssprache (Englisch oder Deutsch) und Prüfer
+6. Wähle Datum und Uhrzeit
+
+**Schritt 3: Voucher einlösen**
+
+1. Gehe zum Checkout/Zahlungsbereich
+2. Klicke auf **"Add Voucher or Promo Code"**
+3. Gib deinen **Voucher-Code** ein (Betrag wird auf 0$ reduziert)
+4. Überprüfe die Daten und klicke auf **"Confirm"**
+
+**Wichtige Hinweise:**
+
+- **Voucher-Gültigkeit:** Voucher sind in der Regel 12 Monate gültig
+- **Systemtest:** Wenn du die Prüfung online ablegst ("OnVUE"), führe vorher den Systemtest auf deinem Computer durch
+- **Ausweis:** Ein gültiger Lichtbildausweis ist zwingend erforderlich
+
+</details>
+
+<details markdown>
+<summary><strong>Wo finde ich Abgaben und Fristen?</strong></summary>
+
+Alle Abgaben und Fristen findest du im **[Google Classroom](https://classroom.google.com/c/NzY1MDM4MTYzMjE4)**. Abgabeformate sind dem jeweiligen Classroom zu entnehmen.
+
+</details>
+
+<details markdown>
+<summary><strong>Was sind die Kurszeiten?</strong></summary>
+
+- **Montag bis Freitag**, 09:00 bis 17:00 Uhr
+- 37,5 Stunden pro Woche (50 Unterrichtseinheiten)
+- **Kursstart:** 30.06.2025
+- **Kursende:** 29.06.2026
+
+</details>
 
 ---
 
