@@ -54,6 +54,9 @@ extra:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/glossar-links.js
+
 markdown_extensions:
   - abbr
   - admonition

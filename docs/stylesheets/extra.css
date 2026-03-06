@@ -861,4 +861,34 @@
   background-color: #1a2a5c;
 }
 
+/* ============================================
+   Glossar-Links: Klickbare Abbreviations
+   ============================================ */
+
+/* Abbreviations als klickbare Links stylen */
+.md-typeset a.glossar-link {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: 1px dotted #060F38;
+}
+
+.md-typeset a.glossar-link:hover {
+  border-bottom-color: #1a73e8;
+  color: #1a73e8;
+}
+
+.md-typeset a.glossar-link abbr {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Dark Mode */
+[data-md-color-scheme="slate"] .md-typeset a.glossar-link {
+  border-bottom-color: #8fa3d9;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a.glossar-link:hover {
+  border-bottom-color: #64b5f6;
+  color: #64b5f6;
+}
 
