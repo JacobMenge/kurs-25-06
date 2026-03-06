@@ -57,6 +57,22 @@ Wir arbeiten in Sprints, ähnlich wie im letzten Abschlussprojekt. Der genaue **
 
 ---
 
+## KI-Nutzung & eigenständiges Arbeiten
+
+KI-Tools (z.B. ChatGPT, Claude, Copilot) sind im Abschlussprojekt **nicht nur erlaubt, sondern ausdrücklich erwünscht**. KI ist ein Werkzeug, das euch hilft, eure Projektziele besser zu erreichen, zum Beispiel um euch stärker auf Deployment, DevOps, Architektur oder Projektplanung zu konzentrieren statt nur auf reinen Code.
+
+**Dabei gelten folgende Regeln:**
+
+- Jedes Teammitglied muss den eingereichten Code **verstehen und erklären** können
+- Code, der bei Nachfrage nicht durch das Team erklärt werden kann, wird **nicht gewertet**
+- In der Präsentation kann nach beliebigen Stellen im Code gefragt werden
+- Nutzt KI verantwortungsbewusst als Unterstützung, nicht als Ersatz für euer eigenes Verständnis
+
+!!! tip "Empfehlung"
+    Nutzt KI gezielt, um schneller voranzukommen: Boilerplate-Code generieren, Bugs debuggen, Konzepte nachschlagen, Deployment-Konfigurationen erstellen. Investiert die gewonnene Zeit in das Verständnis eurer Architektur und ein sauberes Deployment.
+
+---
+
 ## Teams
 
 ### Team 1
