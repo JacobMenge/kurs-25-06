@@ -45,7 +45,7 @@ graph TB
         DEV["👩‍💻 <b>Developers</b><br/>Mehrere Personen"]
     end
 
-    team --- note["Keine Sub-Teams<br/>Keine Hierarchien<br/>Max. 10 Personen"]
+    team --- note["Keine Sub-Teams<br/>Keine Hierarchien<br/>Typischerweise 10 oder weniger"]
 ```
 
 ### Kernregeln
@@ -59,7 +59,10 @@ graph TB
 | **Selbstmanagend** | Das Team entscheidet intern, **wer** was **wann** und **wie** tut. |
 
 !!! info "Accountabilities, nicht Roles"
-    Der Scrum Guide 2020 verwendet den Begriff **"Accountabilities"** (Verantwortlichkeiten) statt "Roles" (Rollen). Der Grund: "Roles" impliziert Jobtitel oder Positionen. "Accountabilities" betont, dass es um **Verantwortung** geht, nicht um eine Stellenbeschreibung. Eine Person kann auch mehrere Verantwortlichkeiten haben (z.B. ein Scrum Master, der auch als Developer am Increment arbeitet).
+    Der Scrum Guide 2020 verwendet den Begriff **"Accountabilities"** (Verantwortlichkeiten) statt "Roles" (Rollen). Der Grund: "Roles" impliziert Jobtitel oder Positionen. "Accountabilities" betont, dass es um **Verantwortung** geht, nicht um eine Stellenbeschreibung.
+
+!!! warning "Mehrfach-Accountabilities: Möglich, aber heikel"
+    Der Scrum Guide verbietet nicht, dass eine Person mehrere Accountabilities hält. So dürfen PO oder SM auch als **Developer am Increment mitarbeiten** ("participate as Developers"). Allerdings birgt die Kombination von **PO und SM in einer Person** ein hohes Konfliktpotenzial (Priorisierung vs. Prozess-Coaching). In der PSM 1 Prüfung gilt: Technisch erlaubt, aber **nicht empfohlen**, besonders PO + SM auf derselben Person.
 
 ### Wissensfrage 1
 
@@ -308,7 +311,7 @@ Die Änderung in 2020 betont die **erweiterte Autonomie** des Scrum Teams. Es ge
 
 **Teamregeln:**
 
-- Max. 10 Personen
+- Typischerweise **10 oder weniger** Personen (inkl. SM und PO)
 - Keine Sub-Teams, keine Hierarchien
 - Self-managing: Wer, Was, Wann, Wie
 - Cross-funktional: Alle nötigen Skills im Team

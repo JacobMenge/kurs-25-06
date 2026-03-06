@@ -59,6 +59,9 @@ graph LR
 
 > **Merke:** Es gibt keinen Zeitraum zwischen Sprints. Ein neuer Sprint beginnt **sofort** nach dem Ende des vorherigen Sprints. Die Sprint Retrospective ist das letzte Event des Sprints.
 
+!!! danger "Scrum existiert nur in seiner Gesamtheit"
+    Der Scrum Guide sagt klar: *"Each element of the framework serves a specific purpose that is essential to the overall value and results realized with Scrum."* Das bedeutet: **Kein Event darf weggelassen werden.** Wer z.B. die Retrospective streicht oder das Daily Scrum ausfallen lässt, praktiziert **kein Scrum**. Jedes Element dient einem bestimmten Zweck, der für den Gesamtwert essenziell ist. In der PSM 1 Prüfung ist das ein häufiges Thema: Scrum ist ein **vollständiges Framework**, kein Menü zum Aussuchen.
+
 ### Wissensfrage 1
 
 **Warum bezeichnet der Scrum Guide Events als "formale Gelegenheiten"?**
@@ -91,7 +94,7 @@ Der Sprint ist ein **Container** für alle anderen Events. Innerhalb eines Sprin
 | **Dauer** | Feste Länge, **maximal 1 Monat**. Kürzere Sprints sind üblich (häufig 2 Wochen). |
 | **Konsistenz** | Die Sprint-Länge bleibt während der Produktentwicklung idealerweise konstant. |
 | **Kein Zwischenraum** | Ein neuer Sprint beginnt **sofort** nach dem Ende des vorherigen. |
-| **Sprint Goal** | Das Sprint Goal darf während des Sprints **nicht geändert** werden. |
+| **Sprint Goal** | Es werden **keine Änderungen** vorgenommen, die das Sprint Goal **gefährden**. |
 | **Qualität** | Die Qualitätsstandards (Definition of Done) dürfen **nicht gesenkt** werden. |
 | **Scope** | Der Umfang (Scope) kann mit dem Product Owner **verhandelt und geklärt** werden. |
 | **Product Backlog** | Wird bei Bedarf **verfeinert** (Refinement ist eine fortlaufende Aktivität). |
@@ -110,7 +113,7 @@ Der Sprint ist ein **Container** für alle anderen Events. Innerhalb eines Sprin
 - ✅ Product Backlog wird bei Bedarf verfeinert
 - ✅ Scope kann mit dem PO geklärt und nachverhandelt werden
 
-> **Merke:** Das **Sprint Goal** ist unveränderlich, der **Scope** (welche konkreten Items) kann sich jedoch ändern. Das ist ein wichtiger Unterschied! Das Team kann Items hinzufügen oder entfernen, solange das Sprint Goal nicht gefährdet wird.
+> **Merke:** Während des Sprints werden **keine Änderungen** vorgenommen, die das **Sprint Goal gefährden**. Der **Scope** (welche konkreten Items) kann mit dem Product Owner neu verhandelt werden, ohne das Sprint Goal zu beeinträchtigen.
 
 ### Wissensfrage 2
 
@@ -139,7 +142,7 @@ Der Scrum Master, das Management oder die Developers können keinen Sprint abbre
 **Ja**, der Scope kann angepasst werden, **aber** mit Einschränkungen:
 
 - Der **Scope** (welche konkreten Product Backlog Items) kann mit dem Product Owner **geklärt und nachverhandelt** werden
-- Das **Sprint Goal** darf dabei **NICHT** geändert werden
+- Es dürfen **keine Änderungen** vorgenommen werden, die das **Sprint Goal gefährden**
 - Es dürfen keine Änderungen vorgenommen werden, die das Sprint Goal **gefährden**
 - Die **Qualität** (Definition of Done) darf nicht gesenkt werden
 
@@ -457,7 +460,7 @@ Dies gilt für alle Scrum Events: Timeboxen sind **Obergrenzen**. Die Events kö
 - [ ] Ich weiß, dass das Daily Scrum KEIN Status-Report ist
 - [ ] Ich weiß, dass die drei Daily-Fragen NICHT vorgeschrieben sind
 - [ ] Ich kann erklären, warum das Sprint Review KEINE Präsentation ist
-- [ ] Ich kenne den Unterschied zwischen Sprint Goal (unveränderlich) und Scope (verhandelbar)
+- [ ] Ich kenne den Unterschied zwischen Sprint Goal (keine Änderungen die es gefährden) und Scope (verhandelbar)
 
 ## Nächste Schritte
 

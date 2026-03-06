@@ -48,11 +48,21 @@ Dieses Material bereitet dich gezielt auf die **PSM 1 Prüfung** (Professional S
 | **Kosten** | $200 USD pro Versuch |
 | **Gültigkeit** | **Lebenslang** (keine Erneuerung nötig) |
 | **Ort** | Online, von zu Hause aus |
-| **Open Book** | Ja, aber 45 Sekunden pro Frage lassen wenig Zeit zum Nachschlagen |
+| **Nachschlagen** | Nicht proctored, aber Standard of Conduct beachten (siehe unten) |
 | **Grundlage** | Scrum Guide 2020 |
 
 !!! warning "85% Bestehensgrenze"
     Die Bestehensgrenze von **85%** ist hoch. Du darfst maximal **12 von 80 Fragen** falsch beantworten. Das erfordert gründliche Vorbereitung. Die meisten erfolgreichen Kandidaten bereiten sich **2 bis 3 Wochen** intensiv vor.
+
+!!! info "Standard of Conduct: Was ist erlaubt?"
+    Scrum.org verlangt die Einhaltung eines **Standard of Conduct** während der Prüfung:
+
+    - ✅ **Erlaubt:** Ausgedruckte Papierkopien des Scrum Guides bereitlegen
+    - ✅ **Erlaubt:** Eigene handschriftliche Notizen auf Papier
+    - ❌ **Nicht erlaubt:** Vom aktiven Testfenster weg navigieren (kein Tab-Wechsel!)
+    - ❌ **Nicht erlaubt:** Prüfungsinhalte kopieren oder weitergeben
+
+    **Praxis-Tipp:** Drucke den Scrum Guide 2020 aus und lege ihn neben deinen Computer. Bei 45 Sekunden pro Frage bleibt aber kaum Zeit zum Nachschlagen. Du musst den Inhalt verinnerlicht haben.
 
 ### Fragetypen
 
@@ -88,7 +98,7 @@ Mit 80 Fragen in 60 Minuten hast du durchschnittlich **45 Sekunden pro Frage**. 
 
 5. **Keine Frage leer lassen** - Es gibt keine Strafpunkte für falsche Antworten. Rate lieber als nichts anzukreuzen.
 
-> **Merke:** Die Prüfung ist "Open Book", aber bei 45 Sekunden pro Frage hast du **keine Zeit zum Nachschlagen**. Du musst den Scrum Guide bereits verinnerlicht haben. Nachschlagen funktioniert nur bei einzelnen, sehr spezifischen Fragen.
+> **Merke:** Du darfst ausgedruckte Unterlagen neben dir liegen haben, aber bei 45 Sekunden pro Frage bleibt **kaum Zeit zum Nachschlagen**. Du musst den Scrum Guide verinnerlicht haben. Tab-Wechsel während der Prüfung verstößt gegen den Standard of Conduct.
 
 ---
 
@@ -138,7 +148,38 @@ Diese Fallen sind die Hauptgründe, warum Kandidaten die PSM 1 Prüfung nicht be
 
 ---
 
-## Teil 4: Übungsfragen - Multiple Choice
+## Teil 4: Weitere PSM I Focus Areas
+
+Neben den Fallen oben gibt es einige Themen, die in der Prüfung regelmäßig vorkommen und die nicht in den bisherigen Kapiteln ausführlich behandelt werden.
+
+### Value und Wertmaximierung
+
+Der Product Owner ist dafür verantwortlich, den **Wert des Produkts zu maximieren**. Der Scrum Guide definiert absichtlich nicht, was "Wert" genau bedeutet. Wert kann Umsatz, Kundenzufriedenheit, Marktanteil oder andere Metriken sein. Scrum liefert das Framework, die Definition von "Wert" bleibt beim Product Owner und den Stakeholdern.
+
+!!! tip "Prüfungstipp"
+    Wenn eine Frage nach "Wert" fragt: Der PO entscheidet, was wertvoll ist. Das Scrum Team liefert Increments, die diesen Wert realisieren.
+
+### Forecasting (Vorhersagen)
+
+Der Scrum Guide erwähnt Forecasting, schreibt aber **keine bestimmte Methode** vor. Velocity, Burn-Down Charts und Story Points sind **keine offiziellen Scrum-Elemente**. Sie sind ergänzende Praktiken, die Teams nutzen können, aber nicht müssen.
+
+- Forecasting basiert auf **Empirismus** (vergangene Daten)
+- Es gibt keine Pflicht zur Schätzung im Scrum Guide
+- Der Fortschritt zum Product Goal kann "auf verschiedene Weise" verfolgt werden
+
+### Releases
+
+Scrum schreibt **keinen festen Release-Rhythmus** vor. Wichtige Fakten:
+
+- Ein **Increment ist nutzbar**, sobald es die Definition of Done erfüllt
+- Es können **mehrere Increments** innerhalb eines Sprints erstellt werden
+- Die **Entscheidung über den Release** liegt beim Product Owner
+- Ein Sprint Review ist **kein Release-Gate** (Increments müssen nicht im Review "abgenommen" werden)
+- Continuous Delivery ist mit Scrum kompatibel
+
+---
+
+## Teil 5: Übungsfragen - Multiple Choice
 
 Beantworte jede Frage, bevor du die Antwort aufklappst.
 
@@ -320,7 +361,7 @@ D) Den Projektplan für das nächste Quartal
 
 ---
 
-## Teil 5: Übungsfragen - True/False
+## Teil 6: Übungsfragen - True/False
 
 ### Frage 12
 
@@ -357,7 +398,7 @@ Richtig oder Falsch?
 <details markdown>
 <summary>Antwort anzeigen</summary>
 
-**Falsch.** Das Sprint Goal ist **unveränderlich** während des Sprints. Es ist das einzige Element des Sprint Backlogs, das nicht angepasst werden darf. Wenn das Sprint Goal obsolet wird, kann nur der Product Owner den Sprint abbrechen.
+**Falsch.** Es dürfen keine Änderungen vorgenommen werden, die das Sprint Goal **gefährden**. Es gibt dem Sprint Fokus und Kohärenz. Der Scope kann mit dem Product Owner verhandelt werden, aber das Sprint Goal bleibt bestehen. Wenn es obsolet wird, kann nur der Product Owner den Sprint abbrechen.
 
 </details>
 
@@ -441,7 +482,7 @@ Richtig oder Falsch?
 
 ---
 
-## Teil 6: Übungsfragen - Multiple Answer
+## Teil 7: Übungsfragen - Multiple Answer
 
 Bei diesen Fragen musst du **alle** richtigen Antworten auswählen. Die Anzahl wird angegeben.
 
@@ -606,7 +647,7 @@ E) Die Developers berichten ihre Velocity an den PO
 
 ---
 
-## Teil 7: Lernplan und Ressourcen
+## Teil 8: Lernplan und Ressourcen
 
 ### Empfohlener 2-Wochen-Lernplan
 

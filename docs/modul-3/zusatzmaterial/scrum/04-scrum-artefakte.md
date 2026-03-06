@@ -166,7 +166,7 @@ graph TD
 
 | Bestandteil | Beschreibung | Änderbar? |
 |-------------|--------------|-----------|
-| **Sprint Goal** | Warum ist dieser Sprint wertvoll? | ❌ **Nein** (unveränderlich) |
+| **Sprint Goal** | Warum ist dieser Sprint wertvoll? | ❌ Keine Änderungen, die es **gefährden** |
 | **Ausgewählte Product Backlog Items** | Was wird im Sprint umgesetzt? | ✅ Ja (mit PO verhandeln) |
 | **Umsetzungsplan** | Wie wird die Arbeit erledigt? | ✅ Ja (täglich aktualisiert) |
 
@@ -185,12 +185,12 @@ Das Sprint Goal ist das **einzige Ziel** des Sprints. Es wird während des Sprin
 |-------------|---------|
 | **Erstellt in** | Sprint Planning |
 | **Erstellt von** | Gesamtes Scrum Team |
-| **Änderbar?** | **NEIN** - Das Sprint Goal ist während des Sprints unveränderlich |
+| **Änderbar?** | Keine Änderungen, die das Sprint Goal **gefährden** (Scope ist verhandelbar) |
 | **Zweck** | Gibt dem Sprint Kohärenz und Fokus |
 | **Flexibilität** | Ermöglicht Flexibilität bei den konkreten Items |
 
 !!! warning "Wichtig für die Prüfung"
-    Das Sprint Goal ist der **einzige unveränderliche Teil** des Sprint Backlogs. Die konkreten Items und der Plan können sich ändern, aber das Sprint Goal bleibt bestehen. Wenn das Sprint Goal obsolet wird, ist das der einzige Grund, warum der Product Owner einen Sprint abbrechen könnte.
+    Das Sprint Goal gibt dem Sprint Fokus und Kohärenz. Es dürfen **keine Änderungen vorgenommen werden, die das Sprint Goal gefährden**. Die konkreten Items und der Plan können sich ändern (Scope ist verhandelbar), aber das Sprint Goal bleibt bestehen. Wenn das Sprint Goal obsolet wird, ist das der einzige Grund, warum der Product Owner einen Sprint abbrechen könnte.
 
 ### Wissensfrage 4
 
@@ -221,7 +221,7 @@ Weder der Scrum Master noch der Product Owner können das Sprint Backlog direkt 
 
 - Die **ausgewählten Items** können mit dem Product Owner verhandelt werden (Scope-Änderungen)
 - Der **Umsetzungsplan** wird von den Developers täglich aktualisiert, wenn sie mehr lernen
-- Das **Sprint Goal** darf **NICHT** geändert werden
+- Das **Sprint Goal** darf **nicht gefährdet** werden (keine Änderungen, die es untergraben)
 
 Das Sprint Backlog ist ein lebendes Artefakt. Die Developers passen es kontinuierlich an, wenn sie mehr über die Arbeit lernen. Es ist ein Echtzeit-Bild der Arbeit, kein starrer Plan.
 
@@ -371,7 +371,7 @@ Das Sprint Goal gibt **Flexibilität**: Es definiert das WARUM, nicht das exakte
 **Wichtige Regeln:**
 
 - Product Backlog ist **nie fertig** (lebendes Artefakt)
-- Sprint Goal ist **unveränderlich** während des Sprints
+- Keine Änderungen, die das **Sprint Goal gefährden** (Scope ist verhandelbar)
 - Definition of Done ist der **harte Qualitätsstandard**
 - Items ohne DoD gehen **zurück ins Product Backlog**
 - Refinement ist eine **Aktivität, kein Event** (max. 10% Kapazität)

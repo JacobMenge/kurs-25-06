@@ -65,7 +65,7 @@ graph LR
 
 **Teamregeln:**
 
-- Max. **10 Personen** (inkl. SM und PO)
+- Typischerweise **10 oder weniger** Personen (inkl. SM und PO)
 - **Keine** Sub-Teams, **keine** Hierarchien
 - **Self-managing**: Team entscheidet wer, was, wann, wie
 - **Cross-functional**: Alle nötigen Skills im Team
@@ -103,7 +103,7 @@ graph LR
 **Wichtige Regeln:**
 
 - Product Goal: Immer nur **eines** zur gleichen Zeit
-- Sprint Goal: **Unveränderlich** während des Sprints
+- Sprint Goal: Keine Änderungen, die es **gefährden** (Scope ist verhandelbar)
 - Definition of Done: Organisationsstandards sind **Minimum**
 - Items ohne DoD: Gehen **zurück** ins Product Backlog
 - Refinement: Fortlaufende **Aktivität** (kein Event!), max. 10% Kapazität
