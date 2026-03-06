@@ -21,6 +21,7 @@ In diesem Modul lernst du Webentwicklung von Grund auf: HTML/CSS, JavaScript, Re
 | [Woche 7](woche-7/uebung-28.1-datenbanken.md) | Datenbanken – PostgreSQL, FastAPI-Anbindung, MongoDB |
 | [Woche 8](woche-8/uebung-29.1-docker-grundlagen-mental-model.md) | Docker – Grundlagen, Container-Lifecycle, CLI |
 | [Woche 9](woche-9/uebersicht.md) | AWS Cloud Services – Architektur-Überblick, ECR, RDS, EC2 mit Docker, S3 Frontend |
+| [Abschlussprojekt](abschlussprojekt/uebersicht.md) | Woche 10 bis 12 – Modulabschlussprojekt (Teamarbeit) |
 
 ---
 
