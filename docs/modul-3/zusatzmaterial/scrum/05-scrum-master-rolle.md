@@ -227,32 +227,16 @@ Die "8 Stances of a Scrum Master" (nach Barry Overeem) beschreiben die verschied
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#90caf9', 'secondaryColor': '#e8f5e9', 'secondaryTextColor': '#1b5e20', 'secondaryBorderColor': '#a5d6a7', 'tertiaryColor': '#fff3e0', 'tertiaryTextColor': '#e65100', 'tertiaryBorderColor': '#ffcc80', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
-mindmap
-  root((8 Stances<br/>des Scrum<br/>Masters))
-    🛡️ Servant Leader
-      Führt durch Dienen
-      Befähigt das Team
-    🎯 Facilitator
-      Moderiert Events
-      Schafft Zusammenarbeit
-    🧭 Coach
-      Stellt Fragen
-      Hilft zur Selbstreflexion
-    📊 Manager
-      Verwaltet den Scrum-Prozess
-      Nicht die Personen
-    🧑‍🏫 Mentor
-      Teilt Erfahrung
-      Langfristige Entwicklung
-    📚 Teacher
-      Erklärt Scrum-Theorie
-      Vermittelt Wissen
-    🔧 Impediment Remover
-      Beseitigt Hindernisse
-      Schafft Freiraum
-    🔄 Change Agent
-      Treibt Veränderung
-      Organisationskultur
+graph TD
+    ROOT((Scrum Master))
+    ROOT --> SL["🛡️ Servant Leader"]
+    ROOT --> FA["🎯 Facilitator"]
+    ROOT --> CO["🧭 Coach"]
+    ROOT --> MA["📊 Manager"]
+    ROOT --> ME["🧑‍🏫 Mentor"]
+    ROOT --> TE["📚 Teacher"]
+    ROOT --> IR["🔧 Impediment Remover"]
+    ROOT --> CA["🔄 Change Agent"]
 ```
 
 ### Die 8 Stances im Detail

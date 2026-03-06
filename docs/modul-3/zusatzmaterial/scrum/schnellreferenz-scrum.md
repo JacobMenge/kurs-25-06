@@ -18,19 +18,17 @@ Diese Referenz enthält alle prüfungsrelevanten Fakten für die **PSM 1 Zertifi
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#90caf9', 'secondaryColor': '#e8f5e9', 'secondaryTextColor': '#1b5e20', 'secondaryBorderColor': '#a5d6a7', 'tertiaryColor': '#fff3e0', 'tertiaryTextColor': '#e65100', 'tertiaryBorderColor': '#ffcc80', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
 graph LR
-    PB["📦 <b>Product Backlog</b><br/>🎯 Product Goal"] --> SP["📋 <b>Sprint Planning</b><br/>(max. 8h)"]
+    PB["📦 <b>Product Backlog</b><br/>🎯 Product Goal"] --> SP
 
     subgraph sprint ["🔄 Sprint (max. 1 Monat)"]
-        SP --> WORK["👩‍💻 Arbeit"]
-        WORK --> DS["🗣️ <b>Daily Scrum</b><br/>(15 min)"]
-        DS --> WORK
-        WORK --> SR["🔍 <b>Sprint Review</b><br/>(max. 4h)"]
-        SR --> RE["🔧 <b>Sprint Retro</b><br/>(max. 3h)"]
+        direction LR
+        SP["📋 <b>Sprint Planning</b>"] --> DS["🗣️ <b>Daily Scrum</b>"]
+        DS --> SR["🔍 <b>Sprint Review</b>"]
+        SR --> RE["🔧 <b>Retrospective</b>"]
     end
 
-    SP --> SB["📋 <b>Sprint Backlog</b><br/>🏃 Sprint Goal"]
-    SR --> INC["✅ <b>Increment</b><br/>📏 Definition of Done"]
-    RE --> |"Nächster Sprint"| SP
+    SP -.-> SB["📋 Sprint Backlog"]
+    SR -.-> INC["✅ Increment"]
 ```
 
 ---

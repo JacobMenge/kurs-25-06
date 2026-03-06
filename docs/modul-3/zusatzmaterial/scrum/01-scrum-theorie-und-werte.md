@@ -64,16 +64,14 @@ Der Scrum Guide ist das **offizielle Regelwerk** für Scrum. Alles, was in der P
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#90caf9', 'secondaryColor': '#e8f5e9', 'secondaryTextColor': '#1b5e20', 'secondaryBorderColor': '#a5d6a7', 'tertiaryColor': '#fff3e0', 'tertiaryTextColor': '#e65100', 'tertiaryBorderColor': '#ffcc80', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
 graph LR
+    PB["📦 Product<br/>Backlog"] --> SP
     subgraph sprint ["🔄 Sprint (max. 1 Monat)"]
         direction LR
         SP["📋 Sprint<br/>Planning"] --> DS["🗣️ Daily<br/>Scrum"]
-        DS --> DS
         DS --> SR["🔍 Sprint<br/>Review"]
         SR --> RE["🔧 Sprint<br/>Retrospective"]
     end
-    PB["📦 Product<br/>Backlog"] --> SP
     SR --> INC["✅ Increment"]
-    RE --> |"Nächster Sprint"| SP
 ```
 
 ---
@@ -240,23 +238,13 @@ Die fünf Werte geben Scrum seine **Kultur und Richtung**. Sie beschreiben, wie 
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#90caf9', 'secondaryColor': '#e8f5e9', 'secondaryTextColor': '#1b5e20', 'secondaryBorderColor': '#a5d6a7', 'tertiaryColor': '#fff3e0', 'tertiaryTextColor': '#e65100', 'tertiaryBorderColor': '#ffcc80', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
-mindmap
-  root((Scrum<br/>Werte))
-    💪 Commitment
-      Persönliches Engagement
-      für die Teamziele
-    🎯 Focus
-      Konzentration auf
-      die Sprint-Arbeit
-    🔓 Openness
-      Offenheit über Arbeit
-      und Herausforderungen
-    🤝 Respect
-      Gegenseitige Wertschätzung
-      als fähige Personen
-    🦁 Courage
-      Mut, das Richtige zu tun
-      und schwierige Probleme anzugehen
+graph TD
+    ROOT((Scrum Werte))
+    ROOT --> C["💪 <b>Commitment</b><br/>Engagement für die Teamziele"]
+    ROOT --> F["🎯 <b>Focus</b><br/>Konzentration auf Sprint-Arbeit"]
+    ROOT --> O["🔓 <b>Openness</b><br/>Offenheit über Herausforderungen"]
+    ROOT --> R["🤝 <b>Respect</b><br/>Wertschätzung als fähige Personen"]
+    ROOT --> CO["🦁 <b>Courage</b><br/>Mut, das Richtige zu tun"]
 ```
 
 ### Die Werte im Detail

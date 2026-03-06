@@ -241,21 +241,17 @@ Eines der wichtigsten Konzepte im Scrum Guide 2020. Ein selbstmanagend Team ents
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#90caf9', 'secondaryColor': '#e8f5e9', 'secondaryTextColor': '#1b5e20', 'secondaryBorderColor': '#a5d6a7', 'tertiaryColor': '#fff3e0', 'tertiaryTextColor': '#e65100', 'tertiaryBorderColor': '#ffcc80', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
-graph LR
-    subgraph sm2020 ["Self-Managing (Scrum Guide 2020)"]
-        direction TB
+graph TD
+    subgraph so2017 ["Self-Organizing (2017)"]
+        O1["<b>WIE</b> wird gearbeitet?"]
+    end
+    subgraph sm2020 ["Self-Managing (2020)"]
         W1["<b>WER</b> macht was?"]
         W2["<b>WAS</b> wird gearbeitet?"]
         W3["<b>WANN</b> wird gearbeitet?"]
         W4["<b>WIE</b> wird gearbeitet?"]
     end
-
-    subgraph so2017 ["Self-Organizing (Scrum Guide 2017)"]
-        direction TB
-        O1["<b>WIE</b> wird gearbeitet?"]
-    end
-
-    so2017 -.->|"breiter gefasst"| sm2020
+    so2017 -.->|"erweitert zu"| sm2020
 ```
 
 ### Self-Managing vs. Self-Organizing

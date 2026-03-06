@@ -40,20 +40,13 @@ Scrum Events sind **formale Gelegenheiten** zur Inspektion und Adaption von Scru
 
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#90caf9', 'secondaryColor': '#e8f5e9', 'secondaryTextColor': '#1b5e20', 'secondaryBorderColor': '#a5d6a7', 'tertiaryColor': '#fff3e0', 'tertiaryTextColor': '#e65100', 'tertiaryBorderColor': '#ffcc80', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
-graph TB
+graph LR
     subgraph sprint ["🔄 Sprint (Container)"]
-        SP["📋 Sprint Planning<br/>(Beginn des Sprints)"]
-        DS["🗣️ Daily Scrum<br/>(Jeden Arbeitstag)"]
-        SR["🔍 Sprint Review<br/>(Ende des Sprints)"]
-        RE["🔧 Sprint Retrospective<br/>(Letztes Event)"]
-
-        SP --> DS
-        DS --> DS
-        DS --> SR
-        SR --> RE
+        direction LR
+        SP["📋 Sprint Planning"] --> DS["🗣️ Daily Scrum<br/>(täglich)"]
+        DS --> SR["🔍 Sprint Review"]
+        SR --> RE["🔧 Sprint<br/>Retrospective"]
     end
-
-    RE -->|"Nächster Sprint<br/>beginnt sofort"| sprint
 ```
 
 ### Grundregeln für alle Events
@@ -167,22 +160,14 @@ Das Sprint Planning **initiiert** den Sprint. Es werden drei Fragen beantwortet,
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#90caf9', 'secondaryColor': '#e8f5e9', 'secondaryTextColor': '#1b5e20', 'secondaryBorderColor': '#a5d6a7', 'tertiaryColor': '#fff3e0', 'tertiaryTextColor': '#e65100', 'tertiaryBorderColor': '#ffcc80', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
 graph TD
-    subgraph planning ["📋 Sprint Planning"]
-        T1["🎯 <b>Thema 1: WARUM</b><br/>Warum ist dieser Sprint wertvoll?"]
-        T2["📦 <b>Thema 2: WAS</b><br/>Was kann in diesem Sprint erledigt werden?"]
-        T3["🔧 <b>Thema 3: WIE</b><br/>Wie wird die ausgewählte Arbeit erledigt?"]
+    T1["🎯 <b>Thema 1: WARUM</b><br/>Warum ist dieser Sprint wertvoll?"]
+    T2["📦 <b>Thema 2: WAS</b><br/>Was kann erledigt werden?"]
+    T3["🔧 <b>Thema 3: WIE</b><br/>Wie wird die Arbeit erledigt?"]
+    SB["📋 <b>Sprint Backlog</b><br/>Goal + Items + Plan"]
 
-        T1 -->|"Sprint Goal"| T2
-        T2 -->|"Ausgewählte Items"| T3
-    end
-
-    T1 --> SG["Sprint Goal"]
-    T2 --> SI["Ausgewählte<br/>Product Backlog Items"]
-    T3 --> PLAN["Plan für die<br/>Umsetzung"]
-
-    SG --> SB["📋 Sprint Backlog"]
-    SI --> SB
-    PLAN --> SB
+    T1 -->|"Sprint Goal"| T2
+    T2 -->|"Ausgewählte Items"| T3
+    T3 --> SB
 ```
 
 | Thema | Frage | Ergebnis |
@@ -432,10 +417,10 @@ Diese Tabelle ist **prüfungskritisch**. Die Timeboxen werden in der PSM 1 Prüf
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#90caf9', 'secondaryColor': '#e8f5e9', 'secondaryTextColor': '#1b5e20', 'secondaryBorderColor': '#a5d6a7', 'tertiaryColor': '#fff3e0', 'tertiaryTextColor': '#e65100', 'tertiaryBorderColor': '#ffcc80', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
 graph LR
-    SP["📋 Sprint<br/>Planning<br/>(max. 8h)"] --> W["👩‍💻 Arbeit +<br/>Daily Scrums<br/>(je 15 min)"]
-    W --> SR["🔍 Sprint<br/>Review<br/>(max. 4h)"]
-    SR --> RE["🔧 Sprint<br/>Retro<br/>(max. 3h)"]
-    RE --> |"Neuer Sprint"| SP2["📋 Sprint<br/>Planning"]
+    SP["📋 Sprint Planning<br/>(max. 8h)"] --> W["👩‍💻 Arbeit +<br/>Daily Scrums<br/>(je 15 min)"]
+    W --> SR["🔍 Sprint Review<br/>(max. 4h)"]
+    SR --> RE["🔧 Retrospective<br/>(max. 3h)"]
+    RE --> NEXT["🔄 Nächster Sprint"]
 ```
 
 ### Wissensfrage 9
