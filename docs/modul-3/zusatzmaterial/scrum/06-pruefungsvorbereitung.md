@@ -9,6 +9,11 @@ tags:
 ---
 # PSM 1 Prüfungsvorbereitung
 
+<figure markdown="span">
+  ![Professional Scrum Master Badge von Scrum.org](img/psm1-badge.png){ width="200" }
+  <figcaption>Professional Scrum Master Zertifizierung (Quelle: <a href="https://www.scrum.org" target="_blank">Scrum.org</a>, Badge via <a href="https://www.colenet.de" target="_blank">Colenet</a>)</figcaption>
+</figure>
+
 ## Übersicht
 
 Dieses Material bereitet dich gezielt auf die **PSM 1 Prüfung** (Professional Scrum Master I) von Scrum.org vor. Es enthält Prüfungsfakten, Strategien, die häufigsten Fallen und Übungsfragen in allen Frageformaten:
@@ -16,6 +21,7 @@ Dieses Material bereitet dich gezielt auf die **PSM 1 Prüfung** (Professional S
 - **Die Prüfung im Überblick** - Format, Kosten, Bestehensgrenze
 - **Prüfungsstrategie** - Zeitmanagement und Herangehensweise
 - **Die 10 häufigsten Fallen** - Wo Kandidaten typischerweise scheitern
+- **Weitere PSM I Focus Areas** - Value, Forecasting, Releases
 - **Übungsfragen** - Multiple Choice, True/False, Multiple Answer
 - **Lernplan und Ressourcen** - Strukturierte Vorbereitung
 
@@ -24,11 +30,12 @@ Dieses Material bereitet dich gezielt auf die **PSM 1 Prüfung** (Professional S
 | **Teil 1** | Die Prüfung im Überblick | 10 min |
 | **Teil 2** | Prüfungsstrategie | 15 min |
 | **Teil 3** | Die 10 häufigsten Fallen | 25 min |
-| **Teil 4** | Übungsfragen: Multiple Choice | 25 min |
-| **Teil 5** | Übungsfragen: True/False | 15 min |
-| **Teil 6** | Übungsfragen: Multiple Answer | 20 min |
-| **Teil 7** | Lernplan und Ressourcen | 10 min |
-| | **Gesamt** | **ca. 2 bis 2,5 Stunden** |
+| **Teil 4** | Weitere PSM I Focus Areas | 10 min |
+| **Teil 5** | Übungsfragen: Multiple Choice | 25 min |
+| **Teil 6** | Übungsfragen: True/False | 15 min |
+| **Teil 7** | Übungsfragen: Multiple Answer | 20 min |
+| **Teil 8** | Lernplan und Ressourcen | 10 min |
+| | **Gesamt** | **ca. 2,5 bis 3 Stunden** |
 
 ---
 
@@ -188,8 +195,11 @@ Beantworte jede Frage, bevor du die Antwort aufklappst.
 **Wer ist verantwortlich für die Ordnung des Product Backlogs?**
 
 A) Die Developers
+
 B) Der Scrum Master
+
 C) Der Product Owner
+
 D) Das gesamte Scrum Team
 
 <details markdown>
@@ -204,8 +214,11 @@ D) Das gesamte Scrum Team
 **Was ist die maximale Dauer eines Sprints?**
 
 A) 2 Wochen
+
 B) 4 Wochen
+
 C) 1 Monat
+
 D) Es gibt kein Maximum
 
 <details markdown>
@@ -220,8 +233,11 @@ D) Es gibt kein Maximum
 **Was passiert, wenn ein Product Backlog Item die Definition of Done nicht erfüllt?**
 
 A) Es wird trotzdem released, mit einem Hinweis auf offene Punkte
+
 B) Es wird im Sprint Review als "fast fertig" präsentiert
+
 C) Es geht zurück ins Product Backlog
+
 D) Der Scrum Master entscheidet, ob es akzeptabel ist
 
 <details markdown>
@@ -236,8 +252,11 @@ D) Der Scrum Master entscheidet, ob es akzeptabel ist
 **Wer entscheidet, wie viel Arbeit im Sprint Planning ausgewählt wird?**
 
 A) Der Product Owner
+
 B) Der Scrum Master
+
 C) Die Developers
+
 D) Das Management
 
 <details markdown>
@@ -252,8 +271,11 @@ D) Das Management
 **Was ist der Hauptzweck des Daily Scrum?**
 
 A) Den Scrum Master über den Fortschritt zu informieren
+
 B) Den Fortschritt Richtung Sprint Goal zu inspizieren und den Sprint Backlog anzupassen
+
 C) Stakeholdern den aktuellen Status zu berichten
+
 D) Aufgaben für den Tag zuzuweisen
 
 <details markdown>
@@ -268,8 +290,11 @@ D) Aufgaben für den Tag zuzuweisen
 **Wann findet die Sprint Retrospective statt?**
 
 A) Vor dem Sprint Review
+
 B) Nach dem Sprint Review, als letztes Event des Sprints
+
 C) Am Anfang des nächsten Sprints
+
 D) Wenn der Scrum Master es für nötig hält
 
 <details markdown>
@@ -284,8 +309,11 @@ D) Wenn der Scrum Master es für nötig hält
 **Was ist KEIN Scrum Artefakt?**
 
 A) Product Backlog
+
 B) Sprint Backlog
+
 C) Burn-Down Chart
+
 D) Increment
 
 <details markdown>
@@ -300,8 +328,11 @@ D) Increment
 **Wer erstellt das Sprint Goal?**
 
 A) Der Product Owner
+
 B) Die Developers
+
 C) Der Scrum Master
+
 D) Das gesamte Scrum Team
 
 <details markdown>
@@ -316,8 +347,11 @@ D) Das gesamte Scrum Team
 **Was ist die Rolle des Scrum Masters im Daily Scrum?**
 
 A) Er leitet das Daily Scrum
+
 B) Er stellt sicher, dass die drei Fragen beantwortet werden
+
 C) Er stellt sicher, dass das Event stattfindet und die Developers es durchführen
+
 D) Er berichtet dem Product Owner über den Fortschritt
 
 <details markdown>
@@ -332,8 +366,11 @@ D) Er berichtet dem Product Owner über den Fortschritt
 **Wie oft sollte das Product Backlog verfeinert (refined) werden?**
 
 A) Einmal pro Sprint in einem festen Meeting
+
 B) Fortlaufend, als kontinuierliche Aktivität
+
 C) Nur im Sprint Planning
+
 D) Nur wenn der Product Owner es anordnet
 
 <details markdown>
@@ -348,8 +385,11 @@ D) Nur wenn der Product Owner es anordnet
 **Was beschreibt das Product Goal am besten?**
 
 A) Die Liste aller Features, die gebaut werden sollen
+
 B) Das Budget und den Zeitrahmen des Projekts
+
 C) Einen zukünftigen Zustand des Produkts, der als langfristiges Ziel dient
+
 D) Den Projektplan für das nächste Quartal
 
 <details markdown>
@@ -488,24 +528,31 @@ Bei diesen Fragen musst du **alle** richtigen Antworten auswählen. Die Anzahl w
 
 ### Frage 21
 
-**Welche der folgenden sind Scrum Events? (Wähle 4)**
+**Welche der folgenden sind offizielle Scrum Events? (Wähle 5)**
 
 A) Sprint
+
 B) Sprint Planning
+
 C) Backlog Refinement
+
 D) Daily Scrum
+
 E) Sprint Review
+
 F) Sprint Retrospective
+
 G) Release Planning
 
 <details markdown>
 <summary>Antwort anzeigen</summary>
 
-**A, B, D, E und F** - Aber die Frage verlangt nur 4 und es gibt 5 korrekte. In der echten Prüfung wäre die Frage präziser formuliert.
+**A, B, D, E und F.**
 
 Die 5 Scrum Events sind: **Sprint, Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective**.
 
-**NICHT** Scrum Events: Backlog Refinement (ist eine Aktivität) und Release Planning (existiert nicht in Scrum).
+- **C) Falsch:** Backlog Refinement ist eine **fortlaufende Aktivität**, kein Event
+- **G) Falsch:** Release Planning existiert **nicht** im Scrum Framework
 
 </details>
 
@@ -514,9 +561,13 @@ Die 5 Scrum Events sind: **Sprint, Sprint Planning, Daily Scrum, Sprint Review, 
 **Welche Aussagen über den Product Owner sind korrekt? (Wähle 3)**
 
 A) Der Product Owner ist eine einzelne Person
+
 B) Der Product Owner kann die Backlog-Arbeit an andere delegieren
+
 C) Der Product Owner ist ein Komitee, das gemeinsam Entscheidungen trifft
+
 D) Der Product Owner muss vom gesamten Unternehmen respektiert werden
+
 E) Der Product Owner berichtet an den Scrum Master
 
 <details markdown>
@@ -537,9 +588,13 @@ E) Der Product Owner berichtet an den Scrum Master
 **Welche der folgenden Praktiken sind NICHT Teil des Scrum Frameworks? (Wähle 3)**
 
 A) Sprint Retrospective
+
 B) Story Points
+
 C) Burn-Down Charts
+
 D) Definition of Done
+
 E) Velocity
 
 <details markdown>
@@ -560,9 +615,13 @@ E) Velocity
 **Was gehört zum Sprint Backlog? (Wähle 3)**
 
 A) Sprint Goal
+
 B) Product Goal
+
 C) Ausgewählte Product Backlog Items
+
 D) Umsetzungsplan (Plan for delivering)
+
 E) Definition of Done
 
 <details markdown>
@@ -583,8 +642,11 @@ Das Product Goal gehört zum Product Backlog, nicht zum Sprint Backlog. Die Defi
 **Welche Services leistet der Scrum Master für den Product Owner? (Wähle 2)**
 
 A) Das Product Backlog für den PO ordnen
+
 B) Techniken für effektives Product Backlog Management vermitteln
+
 C) Die Prioritäten des PO gegenüber Stakeholdern durchsetzen
+
 D) Stakeholder-Zusammenarbeit bei Bedarf facilitieren
 
 <details markdown>
@@ -604,9 +666,13 @@ D) Stakeholder-Zusammenarbeit bei Bedarf facilitieren
 **Welche Aussagen über die Definition of Done sind korrekt? (Wähle 3)**
 
 A) Wenn die Organisation Standards hat, muss das Team sie als Minimum befolgen
+
 B) Das Team kann eine strengere DoD als die Organisationsstandards definieren
+
 C) Jedes Scrum Team kann seine eigene DoD haben, auch wenn mehrere Teams am gleichen Produkt arbeiten
+
 D) Wenn die Organisation keine Standards hat, erstellt das Scrum Team eine DoD
+
 E) Die DoD kann von Sprint zu Sprint gelockert werden, wenn das Team Schwierigkeiten hat
 
 <details markdown>
@@ -627,9 +693,13 @@ E) Die DoD kann von Sprint zu Sprint gelockert werden, wenn das Team Schwierigke
 **Was passiert während des Sprint Reviews? (Wähle 3)**
 
 A) Das Scrum Team präsentiert das Increment
+
 B) Stakeholder geben Feedback
+
 C) Der Scrum Master bewertet die Leistung der Developers
+
 D) Das Product Backlog wird bei Bedarf angepasst
+
 E) Die Developers berichten ihre Velocity an den PO
 
 <details markdown>

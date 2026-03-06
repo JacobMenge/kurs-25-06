@@ -31,6 +31,17 @@ Dieses Material taucht tief in die Scrum Master Verantwortlichkeit ein. Als ange
 
 ---
 
+Die folgende Grafik zeigt, wie der Scrum Master als Verbindungsglied zwischen dem Scrum Team (Product Owner, Developers) und externen Stakeholdern (Management, Kunden, Anwender) agiert:
+
+<figure markdown="span">
+  ![Rollen im Scrum: Der Scrum Master im Zentrum des Teams, verbunden mit Manager, Kunden und Anwendern](img/scrum-master.png){ width="80%" }
+  <figcaption>Der Scrum Master als Bindeglied im Scrum Team (Quelle: <a href="https://alphanodes.com" target="_blank">AlphaNodes</a>)</figcaption>
+</figure>
+
+Der Scrum Master schützt das Team nach außen (z.B. gegenüber dem Management) und sorgt gleichzeitig dafür, dass die Kommunikation mit Kunden und Anwendern über den Product Owner funktioniert. Er ist kein Projektleiter, sondern ein **Servant Leader**.
+
+---
+
 ## Teil 1: Servant Leadership
 
 ### Was bedeutet Servant Leadership?

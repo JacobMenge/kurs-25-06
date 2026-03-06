@@ -48,6 +48,16 @@ graph TB
     team --- note["Keine Sub-Teams<br/>Keine Hierarchien<br/>Typischerweise 10 oder weniger"]
 ```
 
+Die folgende Grafik zeigt eine alternative Darstellung der Scrum-Verantwortlichkeiten mit ihrem jeweiligen Fokus:
+
+<figure markdown="span">
+  ![Scrum Rollen: Umsetzungsteam, Product Owner, Scrum Master und Team mit Fokus und Verantwortung](img/scrum-rollen.jpg){ width="100%" }
+  <figcaption>Scrum Verantwortlichkeiten im Überblick (Quelle: <a href="https://agile-verwaltung.org" target="_blank">Forum Agile Verwaltung</a>)</figcaption>
+</figure>
+
+!!! note "Hinweis zur Terminologie"
+    Die Grafik verwendet den älteren Begriff **"Umsetzungsteam"**. Seit dem Scrum Guide 2020 heißt diese Accountability **"Developers"** und umfasst alle Personen, die am Increment arbeiten (nicht nur Programmierer). Auch der Begriff "Rollen" wurde durch **"Accountabilities"** (Verantwortlichkeiten) ersetzt.
+
 ### Kernregeln
 
 | Eigenschaft | Regel |

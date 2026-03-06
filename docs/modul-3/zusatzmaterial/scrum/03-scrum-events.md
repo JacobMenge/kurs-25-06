@@ -38,6 +38,13 @@ Die Scrum Events sind das Herzstück des empirischen Prozesses. Jedes Event dien
 
 Scrum Events sind **formale Gelegenheiten** zur Inspektion und Adaption von Scrum-Artefakten. Sie schaffen Regelmäßigkeit und minimieren die Notwendigkeit von Meetings, die nicht in Scrum definiert sind.
 
+<figure markdown="span">
+  ![Der Scrum Prozess im Überblick: Product Backlog, Sprint Planning, Sprint mit Daily Stand-Ups, Sprint Review und Retrospective](img/scrum-process.jpg){ width="100%" }
+  <figcaption>Der Scrum Prozess im Überblick (Quelle: <a href="https://www.pm-partners.com.au" target="_blank">PM-Partners</a>)</figcaption>
+</figure>
+
+Die Grafik zeigt den kompletten Sprint-Zyklus: Aus dem **Product Backlog** werden im **Sprint Planning** Items ausgewählt und in das **Sprint Backlog** überführt. Während des **Sprints** (1 bis 4 Wochen) findet täglich ein **Daily Stand-Up** statt. Am Ende stehen **Sprint Review** und **Sprint Retrospective**, bevor der nächste Sprint beginnt. Der **Scrum Master** unterstützt den gesamten Prozess, während **Product Owner** und **Team** die Inhalte verantworten.
+
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#e3f2fd', 'primaryTextColor': '#0d47a1', 'primaryBorderColor': '#90caf9', 'secondaryColor': '#e8f5e9', 'secondaryTextColor': '#1b5e20', 'secondaryBorderColor': '#a5d6a7', 'tertiaryColor': '#fff3e0', 'tertiaryTextColor': '#e65100', 'tertiaryBorderColor': '#ffcc80', 'lineColor': '#78909c', 'fontSize': '14px'}}}%%
 graph LR
