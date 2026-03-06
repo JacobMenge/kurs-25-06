@@ -1,4 +1,5 @@
 nav:
+  - "Scrum & PSM 1": scrum
   - "Redis": redis
   - "Authentication": auth
   - ...
