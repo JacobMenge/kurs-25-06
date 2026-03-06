@@ -110,16 +110,16 @@ m3-t1-marvin-khalil-little
 
 | | |
 |---|---|
-| **Mitglieder** | Lukas Behlau, Miguel Gil Vera, David |
-| **Thema** | *wird noch ergänzt* |
-| **GitHub** | *wird noch ergänzt* |
+| **Mitglieder** | Lukas Behlau, Miguel Gil Vera, David Vaupel |
+| **Thema** | Diabetes-Tool |
+| **GitHub** | [m3-t2-behlau-gil_vera-vaupel](https://github.com/kurs-25-06/m3-t2-behlau-gil_vera-vaupel) |
 
 ### Team 3
 
 | | |
 |---|---|
 | **Mitglieder** | Tobias, Tommy, Auren |
-| **Thema** | *wird noch ergänzt* |
+| **Thema** | CloudCookBook |
 | **GitHub** | *wird noch ergänzt* |
 
 ### Team 4
@@ -127,5 +127,21 @@ m3-t1-marvin-khalil-little
 | | |
 |---|---|
 | **Mitglieder** | Katharina, Marina Stanic, Alex Bergheim, Florian |
+| **Thema** | *wird noch ergänzt* |
+| **GitHub** | *wird noch ergänzt* |
+
+### Team 5
+
+| | |
+|---|---|
+| **Mitglieder** | Marcel Dean Mikulovic, Baris Özgün, Javier Tu Apellido |
+| **Thema** | *wird noch ergänzt* |
+| **GitHub** | *wird noch ergänzt* |
+
+### Team 6
+
+| | |
+|---|---|
+| **Mitglieder** | Rebekka Mangelsdorf, Katja Schulz |
 | **Thema** | *wird noch ergänzt* |
 | **GitHub** | *wird noch ergänzt* |
