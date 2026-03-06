@@ -10,14 +10,14 @@ In den letzten drei Wochen von Modul 3 (Woche 10 bis 12) entwickelt ihr in **Tea
 
 ## Anforderungen
 
-| Bereich | Anforderung |
-|---------|-------------|
-| **Frontend** | React mit JavaScript |
-| **Backend** | FastAPI mit Python |
-| **Datenbank** | Mindestens eine relationale Datenbank (PostgreSQL empfohlen) |
-| **Deployment** | Anwendung auf einer EC2-Instanz erreichbar (Mindestziel) |
-| **Versionskontrolle** | Gemeinsames GitHub-Repository |
-| **Teamarbeit** | Scrum-ähnliche Arbeitsweise mit Daily Standups |
+| Bereich | Anforderung | Referenz |
+|---------|-------------|----------|
+| **Frontend** | React mit JavaScript | [Woche 3](../woche-3/uebung-24.1-react-setup-jsx.md), [Woche 4](../woche-4/uebung-25.1-css-in-react-frameworks.md), [Woche 5](../woche-5/uebung-26.1-context-api.md) |
+| **Backend** | FastAPI mit Python, REST-API mit CRUD-Endpunkten | [Woche 6](../woche-6/wochenprojekt-fullstack-react-fastapi.md) |
+| **Datenbank** | Mindestens eine relationale Datenbank (PostgreSQL empfohlen) | [Woche 7](../woche-7/uebung-28.1-datenbanken.md) |
+| **Deployment** | Anwendung auf einer EC2-Instanz erreichbar (Mindestziel), Docker empfohlen | [Woche 8](../woche-8/uebung-29.1-docker-grundlagen-mental-model.md), [Woche 9](../woche-9/uebersicht.md) |
+| **Versionskontrolle** | Gemeinsames GitHub-Repository | |
+| **Teamarbeit** | Scrum-ähnliche Arbeitsweise mit Daily Standups | |
 
 ---
 
