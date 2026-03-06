@@ -16,7 +16,7 @@ In den letzten drei Wochen von Modul 3 (Woche 10 bis 12) entwickelt ihr in **Tea
 | **Backend** | FastAPI mit Python, REST-API mit CRUD-Endpunkten | [Woche 6](../woche-6/wochenprojekt-fullstack-react-fastapi.md) |
 | **Datenbank** | Mindestens eine relationale Datenbank (PostgreSQL empfohlen) | [Woche 7](../woche-7/uebung-28.1-datenbanken.md) |
 | **Deployment** | Anwendung auf einer EC2-Instanz erreichbar (Mindestziel), Docker empfohlen | [Woche 8](../woche-8/uebung-29.1-docker-grundlagen-mental-model.md), [Woche 9](../woche-9/uebersicht.md) |
-| **Versionskontrolle** | Gemeinsames GitHub-Repository | |
+| **Versionskontrolle** | Gemeinsames GitHub-Repository in der [Kurs-Organisation](https://github.com/kurs-25-06) | |
 | **Teamarbeit** | Scrum-ähnliche Arbeitsweise mit Daily Standups | |
 
 ---
@@ -65,11 +65,31 @@ KI-Tools (z.B. ChatGPT, Claude, Copilot) sind im Abschlussprojekt **nicht nur er
 
 - Jedes Teammitglied muss den eingereichten Code **verstehen und erklären** können
 - Code, der bei Nachfrage nicht durch das Team erklärt werden kann, wird **nicht gewertet**
-- In der Präsentation kann nach beliebigen Stellen im Code gefragt werden
 - Nutzt KI verantwortungsbewusst als Unterstützung, nicht als Ersatz für euer eigenes Verständnis
 
 !!! tip "Empfehlung"
     Nutzt KI gezielt, um schneller voranzukommen: Boilerplate-Code generieren, Bugs debuggen, Konzepte nachschlagen, Deployment-Konfigurationen erstellen. Investiert die gewonnene Zeit in das Verständnis eurer Architektur und ein sauberes Deployment.
+
+---
+
+## GitHub-Repository
+
+Jedes Team erstellt ein Repository in der **[Kurs-Organisation (kurs-25-06)](https://github.com/kurs-25-06)**.
+
+**Namenskonvention:**
+
+```
+m3-t<teamnummer>-<nachname1>-<nachname2>-<nachname3>
+```
+
+**Beispiel:** Team 2 mit Behlau, Gil Vera und David erstellt:
+
+```
+m3-t2-behlau-gilvera-david
+```
+
+!!! warning "Wichtig"
+    Alles kleingeschrieben, keine Leerzeichen, keine Umlaute, Nachnamen mit Bindestrich getrennt.
 
 ---
 
