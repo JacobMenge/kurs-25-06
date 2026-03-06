@@ -46,7 +46,10 @@ Im Daily bespricht jedes Teammitglied:
 - **Was mache ich heute?**
 - **Gibt es Hindernisse?**
 
-Die Daily-Ergebnisse werden dokumentiert und von **allen Teammitgliedern** eingereicht.
+Die Daily-Ergebnisse werden von **allen Teammitgliedern** im **[Google Classroom](https://classroom.google.com/c/NzY1MDM4MTYzMjE4)** eingereicht. Dafür steht jeden Tag eine Aufgabe bereit.
+
+- **Abgabefrist:** bis **17:15 Uhr**
+- **Format:** schriftlich (Gestaltung ist frei wählbar)
 
 ### Sprints & Terminplan
 
@@ -82,10 +85,10 @@ Jedes Team erstellt ein Repository in der **[Kurs-Organisation (kurs-25-06)](htt
 m3-t<teamnummer>-<nachname1>-<nachname2>-<nachname3>
 ```
 
-**Beispiel:** Team 2 mit Behlau, Gil Vera und David erstellt:
+**Beispiel:** Team 1 mit Marvin, Khalil und Little erstellt:
 
 ```
-m3-t2-behlau-gilvera-david
+m3-t1-marvin-khalil-little
 ```
 
 !!! warning "Wichtig"
@@ -99,7 +102,7 @@ m3-t2-behlau-gilvera-david
 
 | | |
 |---|---|
-| **Mitglieder** | Marc Marvin, Elisabeth, Khalil, Chris Little |
+| **Mitglieder** | Marc Marvin, Elisabeth Khalil, Chris Little |
 | **Thema** | *wird noch ergänzt* |
 | **GitHub** | *wird noch ergänzt* |
 
