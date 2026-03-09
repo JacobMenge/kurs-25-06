@@ -78,8 +78,8 @@ Wir arbeiten in **Sprints** von jeweils ca. **3 Tagen**, angelehnt an Scrum. Dab
 | **Do** | 12.03. | Arbeitstag |
 | **Fr** | 13.03. | **Zwischenpräsentation** (kein Sprint-Meeting, Details siehe unten) |
 
-!!! info "Freitag, 13.03.: Besuch von Sohib"
-    Am Freitag kommt **Sohib** zu Besuch, der neue Trainer, der ab Modul 4 den Kurs übernimmt. Jede Gruppe stellt in ca. **5 Minuten** kurz vor, woran sie arbeiten und was sie vielleicht schon haben. Keine Folien nötig, einfach erzählen und ggf. kurz zeigen.
+!!! info "Freitag, 13.03.: Besuch von Suheib"
+    Am Freitag kommt **Suheib** zu Besuch, der neue Trainer, der ab Modul 4 den Kurs übernimmt. Jede Gruppe stellt in ca. **5 Minuten** kurz vor, woran sie arbeiten und was sie vielleicht schon haben. Keine Folien nötig, einfach erzählen und ggf. kurz zeigen.
 
 ---
 
