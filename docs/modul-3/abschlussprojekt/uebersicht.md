@@ -34,9 +34,10 @@ In den letzten drei Wochen von Modul 3 (Woche 10 bis 12) entwickelt ihr in **Tea
 
 ### Tagesablauf
 
-1. **09:00 Uhr** – Check-in im [Klassenzimmer](https://meet.google.com/qnu-awsy-euv) (Anwesenheit)
-2. Danach arbeiten die Teams eigenständig
-3. Jedes Team hält ein **Daily Standup** ab
+1. **09:00 Uhr** – Check-in im [Klassenzimmer](https://meet.google.com/qnu-awsy-euv) (Anwesenheit). Bei Fragen könnt ihr im Anschluss einzeln mit Jacob sprechen.
+2. Danach arbeiten die Teams **eigenständig**
+3. Jedes Team hält ein **Daily Standup** ab (siehe unten)
+4. Bei Fragen könnt ihr **den ganzen Tag über Slack** an **Jacob** oder **Patrick** schreiben
 
 ### Daily Standup (Scrum)
 
@@ -53,10 +54,59 @@ Die Daily-Ergebnisse werden von **allen Teammitgliedern** im **[Google Classroom
 
 ### Sprints & Terminplan
 
-Wir arbeiten in Sprints, ähnlich wie im letzten Abschlussprojekt. Der genaue **Terminplan mit allen wichtigen Terminen** wird am Montag veröffentlicht.
+Wir arbeiten in **Sprints** von jeweils ca. **3 Tagen**, angelehnt an Scrum. Dabei gelten folgende Regeln:
 
-!!! info "Hinweis"
-    Ab Montag stehen die Teams endgültig fest und es gibt hier weitere Informationen zur Projektphase. Bis dahin verschaffen wir uns einen groben Überblick.
+- Bei jedem **Sprint-Meeting** erzählt **eine Person pro Gruppe** und beantwortet die Fragen zum aktuellen Stand
+- Jedes Sprint-Meeting hat einen **Scrum Master**, der das Meeting moderiert. Der Scrum Master wird von Jacob ausgewählt oder meldet sich freiwillig
+- Jacob übernimmt die Rolle des **Product Owners** für die gesamte Projektphase
+
+!!! tip "Scrum Master werden"
+    Ihr könnt euch freiwillig als Scrum Master für ein Sprint-Meeting melden. Schreibt Jacob einfach bei **Slack**. Wer sich nicht meldet, wird ggf. ausgewählt.
+
+!!! warning "Gruppen und Thema"
+    Die **Gruppen** müssen bis **heute (Mo 09.03.)** feststehen. Wer noch keine Gruppe hat, schreibt Jacob bitte im Laufe des Tages! Das **Thema** sollte idealerweise heute, spätestens aber **morgen (Di 10.03.)** festgelegt werden.
+
+---
+
+### Woche 1 (09.03. bis 13.03.)
+
+| Tag | Datum | Was passiert |
+|-----|-------|--------------|
+| **Mo** | 09.03. | **Projektstart**: Organisatorisches, Gruppen finalisieren, Thema festlegen |
+| **Di** | 10.03. | Arbeitstag (Thema muss spätestens heute stehen) |
+| **Mi** | 11.03. | **1. Sprint-Meeting** (Scrum Master: **Jacob**) |
+| **Do** | 12.03. | Arbeitstag |
+| **Fr** | 13.03. | **Zwischenpräsentation** (kein Sprint-Meeting, Details siehe unten) |
+
+!!! info "Freitag, 13.03.: Besuch von Sohib"
+    Am Freitag kommt **Sohib** zu Besuch, der neue Trainer, der ab Modul 4 den Kurs übernimmt. Jede Gruppe stellt in ca. **5 Minuten** kurz vor, woran sie arbeiten und was sie vielleicht schon haben. Keine Folien nötig, einfach erzählen und ggf. kurz zeigen.
+
+---
+
+### Woche 2 (16.03. bis 20.03.)
+
+| Tag | Datum | Was passiert |
+|-----|-------|--------------|
+| **Mo** | 16.03. | **Sprint-Meeting** |
+| **Di** | 17.03. | Arbeitstag |
+| **Mi** | 18.03. | **Sprint-Meeting** |
+| **Do** | 19.03. | Arbeitstag |
+| **Fr** | 20.03. | Arbeitstag |
+
+---
+
+### Woche 3 (23.03. bis 27.03.)
+
+| Tag | Datum | Was passiert |
+|-----|-------|--------------|
+| **Mo** | 23.03. | **Sprint-Meeting** |
+| **Di** | 24.03. | Arbeitstag |
+| **Mi** | 25.03. | **Sprint-Meeting** |
+| **Do** | 26.03. | **Deadline**: Code fertig im Repository, Deployment steht, letzte Vorbereitungen |
+| **Fr** | 27.03. | **Abschlusspräsentationen** vor Publikum (70% der Bewertung!) |
+
+!!! danger "Abgabe bis 26.03."
+    Bis spätestens **Donnerstag, 26.03.** muss der Code fertig im GitHub-Repository eingereicht sein und die Anwendung muss deployed sein. Am Freitag wird nur noch präsentiert.
 
 ---
 
