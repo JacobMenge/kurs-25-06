@@ -211,4 +211,4 @@ m3-t1-hilger-wueste-khalil-little
 |---|---|
 | **Mitglieder** | Nico Britz, Reyyan Ahmad, Marvin Stenzel |
 | **Thema** | Event Planer |
-| **GitHub** | *wird noch ergänzt* |
+| **GitHub** | [team8-reyyan-nico-marvin.s](https://github.com/kurs-25-06/team8-reyyan-nico-marvin.s) |
