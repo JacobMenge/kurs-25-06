@@ -185,7 +185,7 @@ m3-t1-hilger-wueste-khalil-little
 
 | | |
 |---|---|
-| **Mitglieder** | Marcel Dean Mikulovic, Baris Özgün, Javier Tu Apellido |
+| **Mitglieder** | Marcel Dean Mikulovic, Baris Özgün, Javier Aran Alcaide |
 | **Thema** | *wird noch ergänzt* |
 | **GitHub** | *wird noch ergänzt* |
 
