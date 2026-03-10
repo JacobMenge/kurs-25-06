@@ -135,10 +135,10 @@ Jedes Team erstellt ein Repository in der **[Kurs-Organisation (kurs-25-06)](htt
 m3-t<teamnummer>-<nachname1>-<nachname2>-<nachname3>
 ```
 
-**Beispiel:** Team 1 mit Marvin, Khalil und Little erstellt:
+**Beispiel:** Team 1 mit Hilger, Wüste, Khalil und Little erstellt:
 
 ```
-m3-t1-marvin-khalil-little
+m3-t1-hilger-wueste-khalil-little
 ```
 
 !!! warning "Wichtig"
@@ -152,7 +152,7 @@ m3-t1-marvin-khalil-little
 
 | | |
 |---|---|
-| **Mitglieder** | Marc Marvin, Elisabeth Khalil, Chris Little |
+| **Mitglieder** | Marc Hilger, Marvin Wüste, Elisabeth Khalil, Chris Little |
 | **Thema** | *wird noch ergänzt* |
 | **GitHub** | *wird noch ergänzt* |
 
@@ -168,7 +168,7 @@ m3-t1-marvin-khalil-little
 
 | | |
 |---|---|
-| **Mitglieder** | Tobias, Tommy, Auren |
+| **Mitglieder** | Auren Appelt, Fhong Nguyen, Tobias Hoppen |
 | **Thema** | CloudCookBook |
 | **GitHub** | *wird noch ergänzt* |
 
@@ -176,8 +176,8 @@ m3-t1-marvin-khalil-little
 
 | | |
 |---|---|
-| **Mitglieder** | Katharina, Marina Stanic, Alex Bergheim, Florian |
-| **Thema** | *wird noch ergänzt* |
+| **Mitglieder** | Marina Stanic Dujo, Florian Feddern, Katharina Frame, Alex Bergheim |
+| **Thema** | *Projekt Feedbackanwendung? / Formularanwendung? sagt mir mal bescheid wenn ihr eine gute Beschreibung habt ;)* |
 | **GitHub** | *wird noch ergänzt* |
 
 ### Team 5
@@ -193,5 +193,21 @@ m3-t1-marvin-khalil-little
 | | |
 |---|---|
 | **Mitglieder** | Rebekka Mangelsdorf, Katja Schulz |
+| **Thema** | Bibliotheks-App |
+| **GitHub** | *wird noch ergänzt* |
+
+### Team 7
+
+| | |
+|---|---|
+| **Mitglieder** | Beka Kikalishvili, Roman Fedorchenk, Karim Kaffo, Leif Arne Rosocha |
 | **Thema** | *wird noch ergänzt* |
+| **GitHub** | *wird noch ergänzt* |
+
+### Team 8
+
+| | |
+|---|---|
+| **Mitglieder** | Nico Britz, Reyyan Ahmad, Marvin Stenzel |
+| **Thema** | Event Planer |
 | **GitHub** | *wird noch ergänzt* |
