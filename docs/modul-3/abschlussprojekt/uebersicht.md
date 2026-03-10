@@ -177,7 +177,8 @@ m3-t1-hilger-wueste-khalil-little
 | | |
 |---|---|
 | **Mitglieder** | Marina Stanic Dujo, Florian Feddern, Katharina Frame, Alex Bergheim |
-| **Thema** | *Projekt Feedbackanwendung? / Formularanwendung? sagt mir mal bescheid wenn ihr eine gute Beschreibung habt ;)* |
+| **Thema** | Templatebasiertes Umfrage- und Auswertungssystem |
+| **Beschreibung** | Ein templatebasiertes Umfrage- und Auswertungssystem, mit dem Administratoren Fragebögen für Projekte erstellen können, die Teilnehmer anschließend ausfüllen und deren Ergebnisse automatisch ausgewertet werden. |
 | **GitHub** | *wird noch ergänzt* |
 
 ### Team 5
