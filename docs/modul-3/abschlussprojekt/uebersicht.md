@@ -56,7 +56,7 @@ Die Daily-Ergebnisse werden von **allen Teammitgliedern** im **[Google Classroom
 
 Wir arbeiten in **Sprints** von jeweils ca. **3 Tagen**, angelehnt an Scrum. Dabei gelten folgende Regeln:
 
-- Bei jedem **Sprint-Meeting** erzählt **eine Person pro Gruppe** und beantwortet die Fragen zum aktuellen Stand
+- Die **Sprint-Meetings** finden um **09:15 Uhr** statt. Dabei erzählt **eine Person pro Gruppe** und beantwortet die Fragen zum aktuellen Stand
 - Jedes Sprint-Meeting hat einen **Scrum Master**, der das Meeting moderiert. Der Scrum Master wird von Jacob ausgewählt oder meldet sich freiwillig
 - Jacob übernimmt die Rolle des **Product Owners** für die gesamte Projektphase
 
@@ -74,7 +74,7 @@ Wir arbeiten in **Sprints** von jeweils ca. **3 Tagen**, angelehnt an Scrum. Dab
 |-----|-------|--------------|
 | **Mo** | 09.03. | **Projektstart**: Organisatorisches, Gruppen finalisieren, Thema festlegen |
 | **Di** | 10.03. | Arbeitstag (Thema muss spätestens heute stehen) |
-| **Mi** | 11.03. | **1. Sprint-Meeting** (Scrum Master: **Jacob**) |
+| **Mi** | 11.03. | **1. Sprint-Meeting um 09:15 Uhr** (Scrum Master: **Jacob**) |
 | **Do** | 12.03. | Arbeitstag |
 | **Fr** | 13.03. | **Zwischenpräsentation** (kein Sprint-Meeting, Details siehe unten) |
 
@@ -87,9 +87,9 @@ Wir arbeiten in **Sprints** von jeweils ca. **3 Tagen**, angelehnt an Scrum. Dab
 
 | Tag | Datum | Was passiert |
 |-----|-------|--------------|
-| **Mo** | 16.03. | **Sprint-Meeting** |
+| **Mo** | 16.03. | **Sprint-Meeting um 09:15 Uhr** |
 | **Di** | 17.03. | Arbeitstag |
-| **Mi** | 18.03. | **Sprint-Meeting** |
+| **Mi** | 18.03. | **Sprint-Meeting um 09:15 Uhr** |
 | **Do** | 19.03. | Arbeitstag |
 | **Fr** | 20.03. | Arbeitstag |
 
@@ -99,9 +99,9 @@ Wir arbeiten in **Sprints** von jeweils ca. **3 Tagen**, angelehnt an Scrum. Dab
 
 | Tag | Datum | Was passiert |
 |-----|-------|--------------|
-| **Mo** | 23.03. | **Sprint-Meeting** |
+| **Mo** | 23.03. | **Sprint-Meeting um 09:15 Uhr** |
 | **Di** | 24.03. | Arbeitstag |
-| **Mi** | 25.03. | **Sprint-Meeting** |
+| **Mi** | 25.03. | **Sprint-Meeting um 09:15 Uhr** |
 | **Do** | 26.03. | **Deadline**: Code fertig im Repository, Deployment steht, letzte Vorbereitungen |
 | **Fr** | 27.03. | **Abschlusspräsentationen** vor Publikum (70% der Bewertung!) |
 
