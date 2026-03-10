@@ -201,7 +201,7 @@ m3-t1-hilger-wueste-khalil-little
 
 | | |
 |---|---|
-| **Mitglieder** | Beka Kikalishvili, Roman Fedorchenk, Karim Kaffo, Leif Arne Rosocha |
+| **Mitglieder** | Beka Kikalishvili, Roman Tettinger, Karim Kaffo, Leif Arne Rosocha |
 | **Thema** | *wird noch ergänzt* |
 | **GitHub** | *wird noch ergänzt* |
 
